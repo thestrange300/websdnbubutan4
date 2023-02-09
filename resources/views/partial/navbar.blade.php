@@ -27,21 +27,23 @@
             </svg>
           </button>
         </div>
-        <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+        <div class="flex-1 flex items-center justify-center px-5">
           <div class="flex-shrink-0 flex items-center">
             {{-- <img class="block lg:hidden h-8 w-auto" src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2020/03/Logo-Sekolah.png" alt="Workflow">
             <img class="hidden lg:block h-8 w-auto" src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2020/03/Logo-Sekolah.png" alt="Workflow"> --}}
           </div>
           <div class="hidden sm:block sm:ml-6">
-            <div class="flex space-x-4">
+            <div class="flex space-x-4 gap-8">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300" -->
               <a href="#" class=" bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-3 py-2 rounded-md text-base font-bold" aria-current="page">Dashboard</a>
   
-              <a href="#" class="text-cyan-900 px-3 py-2 rounded-md text-base font-medium">Team</a>
+              <a href="#" class="text-cyan-900 px-3 py-2 rounded-md text-base font-medium">Profil</a>
+              <a href="#" class="text-cyan-900 px-3 py-2 rounded-md text-base font-medium">Kurikulum</a>
+              <a href="#" class="text-cyan-900 px-3 py-2 rounded-md text-base font-medium">Ekstrakulikuler</a>
   
-              <a href="#" class="text-cyan-900 px-3 py-2 rounded-md text-base font-medium">Projects</a>
+              <a href="#" class="text-cyan-900 px-3 py-2 rounded-md text-base font-medium">Karya dan Prestasi</a>
   
-              <a href="#" class="text-cyan-900 px-3 py-2 rounded-md text-base font-medium">Calendar</a>
+              <a href="#" class="text-cyan-900 px-3 py-2 rounded-md text-base font-medium">Perpustakaan</a>
             </div>
           </div>
         </div>
@@ -55,7 +57,7 @@
           </button> --}}
   
           <!-- Profile dropdown -->
-          <div class="ml-3 relative">
+          {{-- <div class="ml-3 relative">
             <div>
               <button type="button" id="dropdown" class="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
                 <span class="sr-only">Open user menu</span>
@@ -79,7 +81,7 @@
               <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</a>
               <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
             </div>
-          </div>
+          </div> --}}
         </div>
       </div>
     </div>

@@ -7,7 +7,8 @@
   <div class="content-center px-5 pt-4">
     <div class="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
       <div class="absolute inset-0">
-        <img class="h-full w-full object-cover" src="{{asset('img/ghibli.png')}}" alt="Pemandangan">
+        <img class="h-full w-full object-cover " src="{{asset('img/ghibli.png')}}" alt="Pemandangan">
+        <div class="absolute inset-0 bg-slate-400 mix-blend-multiply"></div>
       </div>
       <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
         <h1 class="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
@@ -43,6 +44,7 @@
       <div class="mt-12 sm:mt-16 lg:mt-0">
         {{-- ring-1 ring-black ring-opacity-5 --}}
           <img class=" lg:absolute lg:left-25 lg:h-full lg:w-auto lg:max-w-none" src="{{asset('img/kepsek.png')}}" alt="Kepala">
+          {{-- <p class="mt-4 text-base text-gray-500 text-justify">Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis bibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at. Lectus viverra dui tellus ornare pharetra.</p> --}}
       </div>
     </div>
   </div>
