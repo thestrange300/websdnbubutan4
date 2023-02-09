@@ -1,4 +1,4 @@
-<nav class="z-30 drop-shadow-lg backdrop-blur-sm bg-white/80 rounded-lg mx-20 mt-5 max-sm:bg-black/30 max-sm:mx-3 max-sm:mt-3 sticky top-4 z-50">
+<nav class="z-30 drop-shadow-lg backdrop-blur-sm bg-white/80 rounded-lg mx-48 mt-5 max-sm:bg-black/30 max-sm:mx-3 max-sm:mt-3 sticky top-4 z-50">
     <div class="mx-auto px-2 sm:px-6 lg:px-8">
       <div class="relative flex items-center justify-between h-16">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -27,14 +27,16 @@
             </svg>
           </button>
         </div>
-        <div class="flex-1 flex items-center justify-center px-5">
+        <img class="bg-cover bg-clip-content w-10 h-10" src="{{asset('img/Logo-Sekolah.png')}}" alt="logo sekolah">
+        <div class="flex-1 flex items-center justify-center pr-5">
           <div class="flex-shrink-0 flex items-center">
             {{-- <img class="block lg:hidden h-8 w-auto" src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2020/03/Logo-Sekolah.png" alt="Workflow">
             <img class="hidden lg:block h-8 w-auto" src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2020/03/Logo-Sekolah.png" alt="Workflow"> --}}
           </div>
-          <div class="hidden sm:block sm:ml-6">
+          <div class="hidden sm:block">
             <div class="flex space-x-4 gap-8">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300" -->
+              
               <a href="#" class=" bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-3 py-2 rounded-md text-base font-bold" aria-current="page">Dashboard</a>
   
               <a href="#" class="text-cyan-900 px-3 py-2 rounded-md text-base font-medium">Profil</a>
