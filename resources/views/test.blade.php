@@ -110,4 +110,132 @@
   </div>
 </div>  
 
+{{-- LAINNYA --}}
+<!--
+  This example requires Tailwind CSS v2.0+ 
+  
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ],
+  }
+  ```
+-->
+<div class="bg-transparent pb-20 px-4 sm:px-6 lg:pb-28 lg:px-8">
+  <div class="relative mx-auto divide-y-2 divide-gray-200 lg:max-w-1">
+    <div class=" mt-6 grid gap-16 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
+
+      <div>
+        <a href="#" class="mt-2 block">
+          <p class="text-xl font-bold text-gray-900">Boost your conversion rate</p>
+          <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+        </a>
+        <p class="text-sm text-gray-500">
+          <a href="#" class="inline-block">
+            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800"> Video </span>
+          </a>
+          <time datetime="2020-03-16">Mar 16, 2020</time>
+        </p>
+        <div class="mt-3">
+          <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Read full story </a>
+        </div>
+      </div>
+
+      <div>
+        <a href="#" class="mt-2 block">
+          <p class="text-xl font-bold text-gray-900">Boost your conversion rate</p>
+          <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+        </a>
+        <p class="text-sm text-gray-500">
+          <a href="#" class="inline-block">
+            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800"> Video </span>
+          </a>
+          <time datetime="2020-03-16">Mar 16, 2020</time>
+        </p>
+        <div class="mt-3">
+          <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Read full story </a>
+        </div>
+      </div>
+
+
+      <div>
+        <a href="#" class="mt-2 block">
+          <p class="text-xl font-bold text-gray-900">Boost your conversion rate</p>
+          <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+        </a>
+        <p class="text-sm text-gray-500">
+          <a href="#" class="inline-block">
+            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800"> Video </span>
+          </a>
+          <time datetime="2020-03-16">Mar 16, 2020</time>
+        </p>
+        <div class="mt-3">
+          <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Read full story </a>
+        </div>
+      </div>
+
+
+      <div>
+        <a href="#" class="mt-2 block">
+          <p class="text-xl font-bold text-gray-900">Boost your conversion rate</p>
+          <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+        </a>
+        <p class="text-sm text-gray-500">
+          <a href="#" class="inline-block">
+            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800"> Video </span>
+          </a>
+          <time datetime="2020-03-16">Mar 16, 2020</time>
+        </p>
+        <div class="mt-3">
+          <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Read full story </a>
+        </div>
+      </div>
+
+
+      <div>
+        <a href="#" class="mt-2 block">
+          <p class="text-xl font-bold text-gray-900">Boost your conversion rate</p>
+          <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+        </a>
+        <p class="text-sm text-gray-500">
+          <a href="#" class="inline-block">
+            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800"> Video </span>
+          </a>
+          <time datetime="2020-03-16">Mar 16, 2020</time>
+        </p>
+        <div class="mt-3">
+          <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Read full story </a>
+        </div>
+      </div>
+
+
+      <div>
+        <a href="#" class="mt-2 block">
+          <p class="text-xl font-bold text-gray-900">Boost your conversion rate</p>
+          <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+        </a>
+        <p class="text-sm text-gray-500">
+          <a href="#" class="inline-block">
+            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800"> Video </span>
+          </a>
+          <time datetime="2020-03-16">Mar 16, 2020</time>
+        </p>
+        <div class="mt-3">
+          <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Read full story </a>
+        </div>
+      </div>
+
+
+      
+    </div>
+  </div>
+</div>
+
+
 @endsection
