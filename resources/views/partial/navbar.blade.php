@@ -39,7 +39,6 @@
   
               <a href="#" class="text-cyan-900 px-3 py-2 rounded-md text-base font-medium">Profil</a>
               <a href="#" class="text-cyan-900 px-3 py-2 rounded-md text-base font-medium">Kurikulum</a>
-              <a href="#" class="text-cyan-900 px-3 py-2 rounded-md text-base font-medium">Ekstrakulikuler</a>
   
               <a href="#" class="text-cyan-900 px-3 py-2 rounded-md text-base font-medium">Karya dan Prestasi</a>
   
