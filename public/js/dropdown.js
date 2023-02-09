@@ -4,6 +4,7 @@ console.log("tes")
 
 dropdown.addEventListener("click", function() {
     drop1.classList.toggle("hidden");
+    console.log("success")
 });
 
 

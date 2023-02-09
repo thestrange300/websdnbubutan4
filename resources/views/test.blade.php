@@ -17,8 +17,8 @@
           <span class="block text-white underline decoration-indigo-500">SDN Bubutan IV</span>
         </h1>
         <p class="mt-6 max-w-lg mx-auto text-center text-base text-white sm:max-w-3xl">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
-        <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
-            <a href="#" class="items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8"> Profil Sekolah </a>
+        <div class="mt-10 max-w-sm mx-auto max-w-none flex justify-center">
+            <a href="#" class="transition-all items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50"> Profil Sekolah </a>
         </div>
       </div>
     </div>
@@ -57,14 +57,13 @@
 
 {{-- INI BUAT KARTU --}}
 
-<!-- component -->
 
-<div class="mb-12 space-y-2 text-center">
-  <h2 class="text-2xl text-cyan-900 font-bold md:text-4xl">Post Pilihan Kami ahhh</h2>
-  <p class="lg:w-6/12 lg:mx-auto">Quam hic dolore cumque voluptate rerum beatae et quae, tempore sunt, debitis dolorum officia aliquid explicabo? Excepturi, voluptate?</p>
+<div class="text-center">
+  <h2 class="text-2xl text-cyan-900 font-extrabold md:text-4xl">Post Pilihan Kami</h2>
+  <p class="lg:w-6/12 pt-4 lg:mx-auto">Our featured post in the school company profile highlights the achievements and mission of the institution to educate and inspire the future leaders of tomorrow.</p>
 </div>
 
-	<div class="relative mt-12 flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
+	<div class="relative mt-4 flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
 		<div class="w-full md:w-1/3 bg-white grid place-items-center">
 			<img src="https://images.pexels.com/photos/4381392/pexels-photo-4381392.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="tailwind logo" class="rounded-xl" />
     </div>
@@ -77,12 +76,13 @@
 	</div>
   
 
-<!-- component -->
+
 <div class="bg-transparent from-green-50 to-cyan-100">  
   <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
-
       <div class="py-4 grid gap-12 lg:grid-cols-2">
-        <div class="relative mt-12 flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
+
+{{-- KARTU KEDUA --}}
+        <div class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
           <div class="w-full md:w-1/3 bg-white grid place-items-center">
             <img src="https://images.pexels.com/photos/4381392/pexels-photo-4381392.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="tailwind logo" class="rounded-xl" />
           </div>
@@ -93,7 +93,9 @@
               <a href="#" class="block w-max text-cyan-600">Read more</a>
           </div>
         </div>
-        <div class="relative mt-12 flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
+
+{{-- KARTU KETIGA --}}
+        <div class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
           <div class="w-full md:w-1/3 bg-white grid place-items-center">
             <img src="https://images.pexels.com/photos/4381392/pexels-photo-4381392.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="tailwind logo" class="rounded-xl" />
           </div>

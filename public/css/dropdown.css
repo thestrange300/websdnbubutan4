@@ -1,0 +1,17 @@
+.btn-dropdown {
+    position: relative;
+    cursor: pointer;
+    padding: 8px 16px;
+    border: 1px solid gray;
+  }
+  
+  .dropdown-content-container {
+    overflow-y: hidden;
+    max-height: 0;
+    transition: all 0.25s;
+  }
+  
+  .btn-dropdown.open>.dropdown-content-container {
+    max-height: 120px;
+    transition: all 0.4s;
+  }
