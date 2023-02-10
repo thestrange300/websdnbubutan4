@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="{{asset('img/Logo-Sekolah.png')}}" type="image/png">
     <link href="{{ asset('/css/dropdown.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>SDN Tersayang</title>
     @vite('resources/css/app.css')
 </head>
 <body>
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
     {{-- class="bg-cover bg-center" style="background-image:url({{asset('img/ghibli.png')}})"  --}}
     <div>
         @include('partial.navbar')
