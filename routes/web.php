@@ -24,3 +24,7 @@ Route::get('/test', function () {
 Route::get('/test2', function () {
     return view('test2');
 });
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
