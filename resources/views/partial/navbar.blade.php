@@ -28,7 +28,7 @@
               
               <a href="/" class="my-auto relative bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-3 py-2 rounded-md text-base font-bold" aria-current="page">Dashboard</a>
   
-              <a href="#" class="my-auto text-cyan-900 px-3 py-2 rounded-md text-base font-medium">Profil</a>
+              <a href="/profile" class="my-auto text-cyan-900 px-3 py-2 rounded-md text-base font-medium">Profil</a>
               <a href="#" class="my-auto text-cyan-900 px-3 py-2 rounded-md text-base font-medium">Kurikulum</a>
   
               <a href="#" class="my-auto text-cyan-900 px-3 py-2 rounded-md text-base font-medium">Karya dan Prestasi</a>
