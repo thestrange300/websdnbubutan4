@@ -26,7 +26,7 @@
             <div class="flex space-x-4 gap-8">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300" -->
               
-              <a href="/" class="my-auto relative bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-3 py-2 rounded-md text-base font-bold" aria-current="page">Dashboard</a>
+              <a href="/" class="my-auto relative bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-3 py-2 rounded-md text-base font-bold" aria-current="page">Home</a>
   
               <a href="/profile" class="my-auto text-cyan-900 px-3 py-2 rounded-md text-base font-medium">Profil</a>
               <a href="#" class="my-auto text-cyan-900 px-3 py-2 rounded-md text-base font-medium">Kurikulum</a>
@@ -83,7 +83,7 @@
       
       <div id="drop1" class="transition-all  px-2 pt-2 pb-3 space-y-1">
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300" -->
-        <a href="/" class="bg-gradient-to-r from-cyan-500 to-blue-500 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Dashboard</a>
+        <a href="/" class="bg-gradient-to-r from-cyan-500 to-blue-500 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Home</a>
   
         <a href="#" class="text-cyan-900 block px-3 py-2 rounded-md text-base font-medium">Profil</a>
   
