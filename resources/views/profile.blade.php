@@ -2,138 +2,125 @@
 
 @section('container')
 
-    <div class="text-center text-4xl font-bold m-10">Profil Sekolah</div>
+    <div class="animate__animated animate__backInDown text-center text-4xl font-bold m-10">Profil Sekolah</div>
 
     <!-- NAMA KEPSEK WAKASEK -->
 
-    <div class="grid grid-cols-2 gap-12">
+    <div class="grid grid-cols-2">
         <div class="text-center flex flex-col justify-center items-center">
-            <img src="{{asset('img/kepsek.png')}}" alt="" class="max-w-xs">
+            <img src="{{asset('img/kepsek.png')}}" alt="" class="max-w-xs max-sm:w-60">
             <p class="font-semibold">Kepala Sekolah</p>
             <p>nama</p>
-            
+            <p>nip</p>
         </div>
-        <div class="text-center flex flex-col justify-center items-center">
-            <img src="{{asset('img/kepsek.png')}}" alt="" class="max-w-xs">
-            <p class="font-semibold">Wakil Kepala Sekolah</p>
-            <p>nama</p>
+        <div class="text-center flex flex-col justify-center items-center overflow-x-auto">
+            <table class="table-fixed border-collapse">
+                <tbody>
+                    <tr>
+                        <td class="pr-10">Nama Sekolah</td>
+                        <td class="break-all">:&nbsp;SDN Bubutan IV Surabaya</td>
+                    </tr>
+                    <td>&nbsp;</td>
+                    <tr>
+                        <td class="pr-10">NPSN</td>
+                        <td class="break-all">:&nbsp;20532958</td>
+                    </tr>
+                    <td>&nbsp;</td>
+                    <tr>
+                        <td class="pr-10">NSS</td>
+                        <td class="break-all">:&nbsp;101056004010</td>
+                    </tr>
+                    <td>&nbsp;</td>
+                    <tr>
+                        <td class="pr-10">Alamat</td>
+                        <td class="break-all">:&nbsp;Jl. Semarang No.90</td>
+                    </tr>
+                    <td>&nbsp;</td>
+                    <tr>
+                        <td class="pr-10">No. Telepon</td>
+                        <td class="break-all">:&nbsp;031-5483243</td>
+                    </tr>
+                    <td>&nbsp;</td>
+                    <tr>
+                        <td class="pr-10">Alamat email</td>
+                        <td class="break-all">:&nbsp;sdnbubutanempat72@gmail.com</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
+
+    <!-- MAP -->
+
     <div class="grid grid-cols-2 gap-12">
         <div class="text-center flex flex-col items-center">
-            <div class="max-w-xs text-justify flex-1">
+            <div class="max-sm:ml-10 max-w-xs text-justify flex-1 lg:mt-5">
                 <p>ini sebenernya ingin buat sambutan tapi kalo misalkan tidak ada kata sambutan yasudah tidak apa-apa kita bisa gunakan kalimat lain saja daripada susah susah</p>
             </div>
         </div>
-        <div class="text-center flex flex-col items-center">
-            <div class="max-w-xs text-justify flex-1">
-                <p>ini sebenernya ingin buat sambutan</p>
-            </div>
+        <div class="flex flex-col items-center max-sm:overflow-auto max-sm:relative max-sm:mt-5">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247.36903993294723!2d112.72935277790985!3d-7.251693397360204!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f94668aca7af%3A0x38c23305fd460e5b!2sBubutan%20IV%20Elementary%20School%20Surabaya!5e0!3m2!1sen!2sid!4v1677412017573!5m2!1sen!2sid" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
     </div>
 
     <!-- VISI MISI -->
 
     <div class="text-center text-4xl font-bold m-10">Visi dan Misi</div>
-    <div class="grid grid-cols-3 mb-3">
-        <div class="text-center flex flex-col justify-center items-center">
-            <p class="text-2xl font-semibold">Visi</p>
-        </div>
-        <div class="text-center flex flex-col justify-center items-center col-span-2">
-            <p class="text-2xl font-semibold">Misi</p>
-        </div>
+    <div class="lg:pl-52 max-sm:pl-10">
+        <p class="text-xl font-semibold">Visi SDN Bubutan 4 Surabaya</p>
+        <p>“Berprestasi, Peduli Lingkungan, Berwawasan Global, Berjiwa Nasional, Berdasar Iman Dan Taqwa”</p>
     </div>
-    <div class="grid grid-cols-3">
-        <div class="text-center flex flex-col justify-center items-center">
-            <p class="max-w-sm flex-1">
-                Berprestasi, Peduli Lingkungan, Berwawasan Global, Berjiwa Nasional, Berdasar Iman Dan Taqwa
-            </p>
-        </div>
-        <div class="flex flex-col justify-center items-center col-span-2">
-            <div class="flex">
-                <div class="text-left mr-2">
-                    <p class="">1.</p>
-                </div>
-                <div class="max-w-lg">
-                    <p>Meningkatkan iman dan taqwa kepada tuhan YME melalui intra kurikuler maupun kegiatan-kegiatan peningkatan keimanan dan ketaqwaan</p>
-                </div>
-            </div>
-            <div class="flex">
-                <div class="text-left mr-2">
-                    <p>2.</p>
-                </div>
-                <div class="max-w-lg">
-                    <p>Menumbuhkembangkan semangat kompetisi secara sehat dalam prestasi akademik maupun non akademik</p>
-                </div>
-            </div>
-            <div class="flex">
-                <div class="text-left mr-2">
-                    <p>3.</p>
-                </div>
-                <div class="max-w-lg">
-                    <p>Mengembangkan budaya gemar membaca, rasa ingin tahu, bertoleransi, bekerjasama, saling menghargai, disiplin, jujur, kerja keras, kreatif dan mandiri</p>
-                </div>
-            </div>
-            <div class="flex">
-                <div class="text-left mr-2">
-                    <p>4.</p>
-                </div>
-                <div class="max-w-lg">
-                    <p>Menumbuhkembangkan rasa percaya diri untuk maju dan kedisiplinandalam pelayanan pendidikan</p>
-                </div>
-            </div>
-            <div class="flex">
-                <div class="text-left mr-2">
-                    <p>5.</p>
-                </div>
-                <div class="max-w-lg">
-                    <p>Menyiapkan generasi unggul yang memiliki potensi di bidang imtaq dan iptek</p>
-                </div>
-            </div>
-            <div class="flex">
-                <div class="text-left mr-2">
-                    <p>6.</p>
-                </div>
-                <div class="max-w-lg">
-                    <p>Meningkatkan usaha pelestarian lingkungan dengan cara konservasi air dan menciptakan lingkungan hijau</p>
-                </div>
-            </div>
-            <div class="flex">
-                <div class="text-left mr-2">
-                    <p>7.</p>
-                </div>
-                <div class="max-w-lg">
-                    <p>Melaksanakan pencegahan pencemaran lingkungan dengan cara memanfaatkan biopori, sumur resapan dan water threatment (apal – alat pengetahuan air limbah, rain water tank)</p>
-                </div>
-            </div>
-            <div class="flex">
-                <div class="text-left mr-2">
-                    <p>8.</p>
-                </div>
-                <div class="max-w-lg">
-                    <p>Mencegah kerusakan lingkungan dengan cara pengolahan sampah dan peremajaan tanaman</p>
-                </div>
-            </div>
-            <div class="flex">
-                <div class="text-left mr-2">
-                    <p>9.</p>
-                </div>
-                <div class="max-w-lg">
-                    <p>Menumbuhkankembangkan sikap toleransi berwawasan pergaulan global agar tercipta rasa dan sikap estetika, etika berdasarkan pancasila</p>
-                </div>
-            </div>
-            <div class="flex mr-9 lg:w-6/12">
-                <div class="text-left mr-2">
-                    <p>10.</p>
-                </div>
-                <div class="max-w-lg">
-                    <p>Mengembangkan sikap cinta budaya nasional</p>
-                </div>
-            </div>
-        </div>
+    <br>
+    <div class="lg:px-52 max-sm:pl-10">
+        <p class="text-xl font-semibold">Misi SDN Bubutan 4 Surabaya</p>
+        <table class="border-collapse"> 
+            <tbody>
+                <tr>
+                    <td class="align-top">1.</td>
+                    <td>Meningkatkan iman dan taqwa kepada tuhan YME melalui intra kurikuler maupun kegiatan-kegiatan peningkatan keimanan dan ketaqwaan.</td>
+                </tr>
+                <tr>
+                    <td class="align-top">2.</td>
+                    <td>Menumbuhkembangkan semangat kompetisi secara sehat dalam prestasi akademik maupun non akademik.</td>
+                </tr>
+                <tr>
+                    <td class="align-top">3.</td>
+                    <td>Mengembangkan budaya gemar membaca, rasa ingin tahu, bertoleransi, bekerjasama, saling menghargai, disiplin, jujur, kerja keras, kreatif dan mandiri.</td>
+                </tr>
+                <tr>
+                    <td class="align-top">4.</td>
+                    <td>Menumbuhkembangkan rasa percaya diri untuk maju dan kedisiplinandalam pelayanan pendidikan.</td>
+                </tr>
+                <tr>
+                    <td class="align-top">5.</td>
+                    <td>Menyiapkan generasi unggul yang memiliki potensi di bidang imtaq dan iptek.</td>
+                </tr>
+                <tr>
+                    <td class="align-top">6.</td>
+                    <td>Meningkatkan usaha pelestarian lingkungan dengan cara konservasi air dan menciptakan lingkungan hijau.</td>
+                </tr>
+                <tr>
+                    <td class="align-top">7.</td>
+                    <td>Melaksanakan pencegahan pencemaran lingkungan dengan cara memanfaatkan biopori, sumur resapan dan water threatment (apal – alat pengetahuan air limbah, rain water tank).</td>
+                </tr>
+                <tr>
+                    <td class="align-top">8.</td>
+                    <td>Mencegah kerusakan lingkungan dengan cara pengolahan sampah dan peremajaan tanaman.</td>
+                </tr>
+                <tr>
+                    <td class="align-top">9.</td>
+                    <td>Menumbuhkankembangkan sikap toleransi berwawasan pergaulan global agar tercipta rasa dan sikap estetika, etika berdasarkan pancasila.</td>
+                </tr>
+                <tr>
+                    <td class="align-top">10.</td>
+                    <td>Mengembangkan sikap cinta budaya nasional.</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
     <!-- EKSTRA NYA -->
+
     <div class="bg-gradient-to-b from-white to-black">
         <div class="text-center text-4xl font-bold m-20">Ekstrakurikuler</div>
         <div class="flex items-center justify-center w-full px-36 pb-10">
@@ -265,10 +252,12 @@
     </div>
     
 
+    <!-- SCRIPT CAROUSEL -->
+
     <script>
         let defaultTransform = 0;
         function goNext() {
-            defaultTransform = defaultTransform - 398;
+            defaultTransform = defaultTransform - 225;
             var slider = document.getElementById("slider");
             if (Math.abs(defaultTransform) >= slider.scrollWidth / 1.7) defaultTransform = 0;
             slider.style.transform = "translateX(" + defaultTransform + "px)";
@@ -277,9 +266,28 @@
         function goPrev() {
             var slider = document.getElementById("slider");
             if (Math.abs(defaultTransform) === 0) defaultTransform = 0;
-            else defaultTransform = defaultTransform + 398;
+            else defaultTransform = defaultTransform + 225;
             slider.style.transform = "translateX(" + defaultTransform + "px)";
         }
         prev.addEventListener("click", goPrev);
     </script>
+
+    <!-- SCRIPT API GMAPS -->
+
+    <script>
+        function initMap() {
+        var uluru = {lat: -7.251563330133019, lng: 112.72942524348672};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 19,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+        }
+    </script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMVKQLW6QFxQBXMVWy9n1t3v5N9_eReQU&callback=initMap"></script>
+
 @endsection

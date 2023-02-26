@@ -6,6 +6,10 @@
     <link rel="shortcut icon" href="{{asset('img/Logo-Sekolah.png')}}" type="image/png">
     <link href="{{ asset('/css/dropdown.css') }}" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>SDN Bubutan IV</title>
     @vite('resources/css/app.css')
 </head>
