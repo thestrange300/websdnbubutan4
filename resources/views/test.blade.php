@@ -13,8 +13,8 @@
       </div>
       <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
         <h1 class="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-          <span class="block text-white mb-5">Selamat Datang di</span>
-          <span class="block text-white underline decoration-indigo-500">SDN Bubutan IV</span>
+          <span class="block text-white mb-5 "data-aos="zoom-in"data-aos-duration="800">Selamat Datang di</span>
+          <span class="block text-white underline decoration-indigo-500"data-aos="zoom-in"data-aos-duration="1200">SDN Bubutan IV</span>
         </h1>
         <p class="mt-6 max-w-lg mx-auto text-center text-base text-white sm:max-w-3xl">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
         <div class="mt-10 max-w-sm mx-auto max-w-none flex justify-center">
@@ -38,9 +38,9 @@
           <div class="">
             <h2 class="text-3xl font-extrabold tracking-tight text-gray-900">Sambutan Kepala Sekolah</h2>
             <p class="mt-4 text-base text-gray-500 text-justify">"Kita bersama-sama bekerja keras untuk memastikan bahwa setiap siswa merasa dihargai dan mendapatkan pendidikan yang berkualitas, sehingga mereka siap untuk menjadi generasi pemimpin masa depan."</p>
-            <div class="mt-6">
+            {{-- <div class="mt-6">
               <a href="#" class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700"> Get started </a>
-            </div>
+            </div> --}}
           </div>
         </div>
       </div>
@@ -110,7 +110,7 @@
 {{-- INI BUAT KARTU --}}
 <div class="text-center">
   <h2 class="text-2xl text-cyan-900 font-extrabold md:text-4xl">Post Pilihan Kami</h2>
-  <p class="lg:w-6/12 pt-4 lg:mx-auto">Our featured post in the school company profile highlights the achievements and mission of the institution to educate and inspire the future leaders of tomorrow.</p>
+  <p class="lg:w-6/12 pt-4 lg:mx-auto">Postingan unggulan kami di profil perusahaan sekolah menyoroti pencapaian dan misi institusi untuk mendidik dan menginspirasi para pemimpin masa depan.</p>
 </div>
 
 <div class="bg-transparent from-green-50 to-cyan-100">  
@@ -120,12 +120,11 @@
 {{-- KARTU KEDUA --}}
         <div class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
           <div class="w-full md:w-1/3 bg-white grid place-items-center">
-            <img src="https://images.pexels.com/photos/4381392/pexels-photo-4381392.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="tailwind logo" class="rounded-xl" />
+            <img src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2022/11/WhatsApp-Image-2022-11-21-at-09.23.29-2-1536x1152.jpeg" alt="tailwind logo" class="w-full h-full object-cover bg-cover rounded-xl" />
           </div>
             <div class="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">
-              <h3 class="font-black text-gray-800 md:text-2xl text-xl">The Majestic and Wonderful Bahamas</h3>
-              <p class="md:text-base text-gray-500 text-base">The best kept secret of The Bahamas is the country’s sheer
-                size and diversity. With 16 major islands, The Bahamas is an unmatched destination</p>
+              <h3 class="font-black text-gray-800 md:text-2xl text-xl">Kegiatan Market Day Gelar Karya Kelas 4</h3>
+              <p class="md:text-base text-justify text-gray-500 text-base">Penerapan Kurikulum Merdeka. Hari Senin tanggal 21 November 2022, para peserta didik kelas 4A, 4B, 4C, dan 4D SDN Bubutan 4 melaksanakan sebuah kegiatan Gelar Karya dalam pembelajaran Proyek Penguatan Profil Pelajar...</p>
               <a href="#" class="block w-max text-cyan-600">Read more</a>
           </div>
         </div>
@@ -133,12 +132,11 @@
 {{-- KARTU KETIGA --}}
         <div class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
           <div class="w-full md:w-1/3 bg-white grid place-items-center">
-            <img src="https://images.pexels.com/photos/4381392/pexels-photo-4381392.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="tailwind logo" class="rounded-xl" />
+            <img src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2022/11/WhatsApp-Image-2022-11-10-at-10.47.54-1536x1152.jpeg" alt="tailwind logo" class="w-full h-full object-cover bg-cover rounded-xl" />
           </div>
             <div class="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">
-              <h3 class="font-black text-gray-800 md:text-2xl text-xl">The Majestic and Wonderful Bahamas</h3>
-              <p class="md:text-base text-gray-500 text-base">The best kept secret of The Bahamas is the country’s sheer
-                size and diversity. With 16 major islands, The Bahamas is an unmatched destination</p>
+              <h3 class="font-black text-gray-800 md:text-2xl text-xl">Peringatan Hari Pahlawan Tahun 2022</h3>
+              <p class="md:text-base text-gray-500 text-base">“Hari ini kita memeringati Hari Pahlawan yang merupakan hari penting dalam perjalanan sejarah bangsa Indonesia. Pertempuran Surabaya inilah yang menjadi cikal bakal Hari Pahlawan Nasional yang masih kita peringati hingga...</p>
               <a href="#" class="block w-max text-cyan-600">Read more</a>
           </div>
         </div>
@@ -164,107 +162,119 @@
   ```
 -->
 <div class="bg-transparent pb-20 px-4 sm:px-6 lg:pb-28 lg:px-8">
-  <h2 class="text-2xl text-cyan-900 font-extrabold mt-6">Lainnya</h2>
+  <h2 class="text-2xl text-cyan-900 font-extrabold mt-6">Postingan Terbaru</h2>
   <div class="relative mx-auto divide-y-2 divide-gray-200 lg:max-w-1">
     <div class=" mt-4 grid gap-16 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
-
-      <div>
-        <a href="#" class="mt-2 block">
-          <p class="text-xl font-bold text-gray-900">Boost your conversion rate</p>
-          <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
-        </a>
-        <p class="text-sm text-gray-500">
-          <a href="#" class="inline-block">
-            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800"> Video </span>
-          </a>
-          <time datetime="2020-03-16">Mar 16, 2020</time>
-        </p>
-        <div class="mt-3">
-          <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Read full story </a>
+      <div class="col-span-2">
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <a href="#" class="mt-2 block">
+              <p class="text-xl font-bold text-gray-900">Bazar Olahan Sayur Hidroponik</p>
+              <div class="pt-1">
+                <time class="text-sm text-slate-600" datetime="2020-03-16">Mar 16, 2020</time>
+              </div>
+              <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Pada tanggal 27 September 2018, SDN Bubutan IV mengadakan acara Bazar dari hasil kebun hidroponik. Kegiatan ini dimaksudkan untuk memberikan pendidikan kepada para siswa berwiraswasta  dari tanaman yang ada disekitar mereka. Acara ini dimaksudkan agar lahan kosong yang ada disekitar kita bisa kita manfaatkkan semaksimal mungkin.</p>
+            </a>
+            <p class="text-sm text-gray-500">
+              <a href="#" class="inline-block">
+                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800"> Ecopreneur </span>
+              </a>
+              <a href="#" class="inline-block">
+                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-orange-100 text-orange-800"> Ecoschool </span>
+              </a>
+            </p>
+            <div class="mt-3">
+              <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Selengkapnya </a>
+            </div>
+          </div>
+    
+          <div>
+            <a href="#" class="mt-2 block">
+              <p class="text-xl font-bold text-gray-900">Boost your conversion rate</p>
+              <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+            </a>
+            <p class="text-sm text-gray-500">
+              <a href="#" class="inline-block">
+                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800"> Video </span>
+              </a>
+              <time datetime="2020-03-16">Mar 16, 2020</time>
+            </p>
+            <div class="mt-3">
+              <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Read full story </a>
+            </div>
+          </div>
+    
+    
+          <div>
+            <a href="#" class="mt-2 block">
+              <p class="text-xl font-bold text-gray-900">Boost your conversion rate</p>
+              <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+            </a>
+            <p class="text-sm text-gray-500">
+              <a href="#" class="inline-block">
+                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800"> Video </span>
+              </a>
+              <time datetime="2020-03-16">Mar 16, 2020</time>
+            </p>
+            <div class="mt-3">
+              <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Read full story </a>
+            </div>
+          </div>
+    
+    
+          <div>
+            <a href="#" class="mt-2 block">
+              <p class="text-xl font-bold text-gray-900">Boost your conversion rate</p>
+              <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+            </a>
+            <p class="text-sm text-gray-500">
+              <a href="#" class="inline-block">
+                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800"> Video </span>
+              </a>
+              <time datetime="2020-03-16">Mar 16, 2020</time>
+            </p>
+            <div class="mt-3">
+              <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Read full story </a>
+            </div>
+          </div>
+    
+    
+          <div>
+            <a href="#" class="mt-2 block">
+              <p class="text-xl font-bold text-gray-900">Boost your conversion rate</p>
+              <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+            </a>
+            <p class="text-sm text-gray-500">
+              <a href="#" class="inline-block">
+                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800"> Video </span>
+              </a>
+              <time datetime="2020-03-16">Mar 16, 2020</time>
+            </p>
+            <div class="mt-3">
+              <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Read full story </a>
+            </div>
+          </div>
+    
+          <div>
+            <a href="#" class="mt-2 block">
+              <p class="text-xl font-bold text-gray-900">Boost your conversion rate</p>
+              <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+            </a>
+            <p class="text-sm text-gray-500">
+              <a href="#" class="inline-block">
+                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800"> Video </span>
+              </a>
+              <time datetime="2020-03-16">Mar 16, 2020</time>
+            </p>
+            <div class="mt-3">
+              <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Read full story </a>
+            </div>
+          </div>
         </div>
       </div>
-
       <div>
-        <a href="#" class="mt-2 block">
-          <p class="text-xl font-bold text-gray-900">Boost your conversion rate</p>
-          <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
-        </a>
-        <p class="text-sm text-gray-500">
-          <a href="#" class="inline-block">
-            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800"> Video </span>
-          </a>
-          <time datetime="2020-03-16">Mar 16, 2020</time>
-        </p>
-        <div class="mt-3">
-          <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Read full story </a>
-        </div>
-      </div>
-
-
-      <div>
-        <a href="#" class="mt-2 block">
-          <p class="text-xl font-bold text-gray-900">Boost your conversion rate</p>
-          <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
-        </a>
-        <p class="text-sm text-gray-500">
-          <a href="#" class="inline-block">
-            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800"> Video </span>
-          </a>
-          <time datetime="2020-03-16">Mar 16, 2020</time>
-        </p>
-        <div class="mt-3">
-          <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Read full story </a>
-        </div>
-      </div>
-
-
-      <div>
-        <a href="#" class="mt-2 block">
-          <p class="text-xl font-bold text-gray-900">Boost your conversion rate</p>
-          <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
-        </a>
-        <p class="text-sm text-gray-500">
-          <a href="#" class="inline-block">
-            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800"> Video </span>
-          </a>
-          <time datetime="2020-03-16">Mar 16, 2020</time>
-        </p>
-        <div class="mt-3">
-          <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Read full story </a>
-        </div>
-      </div>
-
-
-      <div>
-        <a href="#" class="mt-2 block">
-          <p class="text-xl font-bold text-gray-900">Boost your conversion rate</p>
-          <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
-        </a>
-        <p class="text-sm text-gray-500">
-          <a href="#" class="inline-block">
-            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800"> Video </span>
-          </a>
-          <time datetime="2020-03-16">Mar 16, 2020</time>
-        </p>
-        <div class="mt-3">
-          <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Read full story </a>
-        </div>
-      </div>
-
-
-      <div>
-        <a href="#" class="mt-2 block">
-          <p class="text-xl font-bold text-gray-900">Boost your conversion rate</p>
-          <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
-        </a>
-        <p class="text-sm text-gray-500">
-          <a href="#" class="inline-block">
-            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800"> Video </span>
-          </a>
-          <time datetime="2020-03-16">Mar 16, 2020</time>
-        </p>
-        <div class="mt-3">
-          <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Read full story </a>
+        <div class=" rounded-xl shadow-lg p-3 mx-auto border border-white bg-white">
+          <p>TEST</p>
         </div>
       </div>
 
@@ -273,6 +283,7 @@
     </div>
   </div>
 </div>
+
 
 
 @endsection

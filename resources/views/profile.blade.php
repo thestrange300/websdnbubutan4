@@ -6,12 +6,12 @@
 
     <!-- NAMA KEPSEK WAKASEK -->
 
-    <div class="grid grid-cols-2">
+    <div class="grid grid-cols-2 lg:px-36">
         <div class="text-center flex flex-col justify-center items-center">
             <img src="{{asset('img/kepsek.png')}}" alt="" class="max-w-xs max-sm:w-60">
             <p class="font-semibold">Kepala Sekolah</p>
-            <p>nama</p>
-            <p>nip</p>
+            <p>Endriyani Hasto Dewi, S.Pd.</p>
+            <p>19680804 199403 2 009</p>
         </div>
         <div class="text-center flex flex-col justify-center items-center overflow-x-auto">
             <table class="table-fixed border-collapse">
@@ -52,23 +52,27 @@
 
     <!-- MAP -->
 
-    <div class="grid grid-cols-2 gap-12">
+    <div class="grid grid-cols-2 lg:px-36">
         <div class="text-center flex flex-col items-center">
             <div class="max-sm:ml-10 max-w-xs text-justify flex-1 lg:mt-5">
-                <p>ini sebenernya ingin buat sambutan tapi kalo misalkan tidak ada kata sambutan yasudah tidak apa-apa kita bisa gunakan kalimat lain saja daripada susah susah</p>
+                <p>Kami berkomitmen untuk memberikan pendidikan terbaik kepada para siswa, serta menciptakan lingkungan belajar yang aman, nyaman, dan mendukung.</p>
             </div>
         </div>
-        <div class="flex flex-col items-center max-sm:overflow-auto max-sm:relative max-sm:mt-5">
+        <div class="flex flex-col items-center max-sm:overflow-auto max-sm:relative max-sm:mt-5 max-sm:hidden">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247.36903993294723!2d112.72935277790985!3d-7.251693397360204!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f94668aca7af%3A0x38c23305fd460e5b!2sBubutan%20IV%20Elementary%20School%20Surabaya!5e0!3m2!1sen!2sid!4v1677412017573!5m2!1sen!2sid" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
     </div>
+    <div class="flex flex-col items-center max-sm:overflow-auto max-sm:relative max-sm:mt-5 lg:hidden">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247.36903993294723!2d112.72935277790985!3d-7.251693397360204!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f94668aca7af%3A0x38c23305fd460e5b!2sBubutan%20IV%20Elementary%20School%20Surabaya!5e0!3m2!1sen!2sid!4v1677412017573!5m2!1sen!2sid" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
 
     <!-- VISI MISI -->
-
+    <div class="">
     <div class="text-center text-4xl font-bold m-10">Visi dan Misi</div>
     <div class="lg:pl-52 max-sm:pl-10">
         <p class="text-xl font-semibold">Visi SDN Bubutan 4 Surabaya</p>
-        <p>“Berprestasi, Peduli Lingkungan, Berwawasan Global, Berjiwa Nasional, Berdasar Iman Dan Taqwa”</p>
+        <br>
+        <p class="text-base font-medium">“Berprestasi, Peduli Lingkungan, Berwawasan Global, Berjiwa Nasional, Berdasar Iman Dan Taqwa”</p>
     </div>
     <br>
     <div class="lg:px-52 max-sm:pl-10">
@@ -118,10 +122,10 @@
             </tbody>
         </table>
     </div>
-
+</div>
     <!-- EKSTRA NYA -->
 
-    <div class="bg-gradient-to-b from-white to-black">
+    <div class="">
         <div class="text-center text-4xl font-bold m-20">Ekstrakurikuler</div>
         <div class="flex items-center justify-center w-full px-36 pb-10">
             <div class="w-full relative flex items-center justify-center">
@@ -130,11 +134,11 @@
                         <path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                 </button>
-                <div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
+                <div class="back w-full h-full mx-auto overflow-x-hidden overflow-y-hidden ">
                     <div id="slider" class="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
                         <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                            <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" class="object-cover object-center w-full" />
-                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" class="object-cover object-center w-full rounded-xl shadow-lg" />
+                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
                                 <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 1</h2>
                                 <div class="flex h-full items-end pb-6">
                                     <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Tari</h3>
@@ -142,8 +146,8 @@
                             </div>
                         </div>
                         <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                            <img src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="sitting area" class="object-cover object-center w-full" />
-                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <img src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="sitting area" class="object-cover object-center w-full rounded-xl shadow-lg" />
+                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
                                 <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 2</h2>
                                 <div class="flex h-full items-end pb-6">
                                     <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Drumband</h3>
@@ -151,8 +155,8 @@
                             </div>
                         </div>
                         <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                            <img src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="sitting area" class="object-cover object-center w-full" />
-                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <img src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="sitting area" class="object-cover object-center w-full rounded-xl shadow-lg" />
+                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
                                 <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 2</h2>
                                 <div class="flex h-full items-end pb-6">
                                     <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Pencak Silat</h3>
@@ -160,8 +164,8 @@
                             </div>
                         </div>
                         <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                            <img src="https://i.ibb.co/rFsGfr5/carosel-4.png" alt="sitting area" class="object-cover object-center w-full" />
-                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <img src="https://i.ibb.co/rFsGfr5/carosel-4.png" alt="sitting area" class="object-cover object-center w-full rounded-xl shadow-lg" />
+                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
                                 <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 2</h2>
                                 <div class="flex h-full items-end pb-6">
                                     <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Qiroah</h3>
@@ -169,8 +173,8 @@
                             </div>
                         </div>
                         <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                            <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" class="object-cover object-center w-full" />
-                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" class="object-cover object-center w-full rounded-xl shadow-lg" />
+                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
                                 <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 2</h2>
                                 <div class="flex h-full items-end pb-6">
                                     <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Samproh</h3>
@@ -178,8 +182,8 @@
                             </div>
                         </div>
                         <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                            <img src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="sitting area" class="object-cover object-center w-full" />
-                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <img src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="sitting area" class="object-cover object-center w-full rounded-xl shadow-lg" />
+                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
                                 <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 2</h2>
                                 <div class="flex h-full items-end pb-6">
                                     <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Pramuka</h3>
@@ -187,8 +191,8 @@
                             </div>
                         </div>
                         <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                            <img src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="sitting area" class="object-cover object-center w-full" />
-                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <img src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="sitting area" class="object-cover object-center w-full rounded-xl shadow-lg" />
+                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
                                 <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 2</h2>
                                 <div class="flex h-full items-end pb-6">
                                     <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Minimal Interior</h3>
@@ -196,8 +200,8 @@
                             </div>
                         </div>
                         <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                            <img src="https://i.ibb.co/rFsGfr5/carosel-4.png" alt="sitting area" class="object-cover object-center w-full" />
-                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <img src="https://i.ibb.co/rFsGfr5/carosel-4.png" alt="sitting area" class="object-cover object-center w-full rounded-xl shadow-lg" />
+                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
                                 <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 2</h2>
                                 <div class="flex h-full items-end pb-6">
                                     <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Minimal Interior</h3>
@@ -205,8 +209,8 @@
                             </div>
                         </div>
                         <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                            <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" class="object-cover object-center w-full" />
-                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" class="object-cover object-center w-full rounded-xl shadow-lg" />
+                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
                                 <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 2</h2>
                                 <div class="flex h-full items-end pb-6">
                                     <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Minimal Interior</h3>
@@ -214,8 +218,8 @@
                             </div>
                         </div>
                         <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                            <img src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="sitting area" class="object-cover object-center w-full" />
-                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <img src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="sitting area" class="object-cover object-center w-full rounded-xl shadow-lg" />
+                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
                                 <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 2</h2>
                                 <div class="flex h-full items-end pb-6">
                                     <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Minimal Interior</h3>
@@ -223,8 +227,8 @@
                             </div>
                         </div>
                         <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                            <img src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="sitting area" class="object-cover object-center w-full" />
-                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <img src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="sitting area" class="object-cover object-center w-full rounded-xl shadow-lg" />
+                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
                                 <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 2</h2>
                                 <div class="flex h-full items-end pb-6">
                                     <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Minimal Interior</h3>
@@ -232,8 +236,8 @@
                             </div>
                         </div>
                         <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                            <img src="https://i.ibb.co/rFsGfr5/carosel-4.png" alt="sitting area" class="object-cover object-center w-full" />
-                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <img src="https://i.ibb.co/rFsGfr5/carosel-4.png" alt="sitting area" class="object-cover object-center w-full rounded-xl shadow-lg" />
+                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
                                 <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 2</h2>
                                 <div class="flex h-full items-end pb-6">
                                     <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Minimal Interior</h3>
