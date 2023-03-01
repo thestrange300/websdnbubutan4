@@ -26,7 +26,7 @@
             <div class="flex space-x-4 gap-8">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300" -->
               
-              <a href="/" class="my-auto relative bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-3 py-2 rounded-md text-base font-bold" aria-current="page">Dashboard</a>
+              <a href="/" class="my-auto relative bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-3 py-2 rounded-md text-base font-bold" aria-current="page">Home</a>
   
               <a href="/profile" class="my-auto text-cyan-900 px-3 py-2 rounded-md text-base font-medium">Profil</a>
               
@@ -34,7 +34,7 @@
   
               <a href="/post" class="my-auto text-cyan-900 px-3 py-2 rounded-md text-base font-medium">Karya dan Prestasi</a>
   
-              <a href="#" class="my-auto text-cyan-900 px-3 py-2 rounded-md text-base font-medium">Perpustakaan</a>
+              <a href="https://sipus.surabaya.go.id/" class="my-auto text-cyan-900 px-3 py-2 rounded-md text-base font-medium">Perpustakaan</a>
             </div>
           </div>
         </div>

@@ -77,6 +77,7 @@
     <br>
     <div class="lg:px-52 max-sm:pl-10">
         <p class="text-xl font-semibold">Misi SDN Bubutan 4 Surabaya</p>
+        <br>
         <table class="border-collapse"> 
             <tbody>
                 <tr>

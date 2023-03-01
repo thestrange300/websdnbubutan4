@@ -125,7 +125,7 @@
             <div class="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">
               <h3 class="font-black text-gray-800 md:text-2xl text-xl">Kegiatan Market Day Gelar Karya Kelas 4</h3>
               <p class="md:text-base text-justify text-gray-500 text-base">Penerapan Kurikulum Merdeka. Hari Senin tanggal 21 November 2022, para peserta didik kelas 4A, 4B, 4C, dan 4D SDN Bubutan 4 melaksanakan sebuah kegiatan Gelar Karya dalam pembelajaran Proyek Penguatan Profil Pelajar...</p>
-              <a href="#" class="block w-max text-cyan-600">Read more</a>
+              <a href="#" class="block w-max font-semibold text-cyan-600">Selengkapnya</a>
           </div>
         </div>
 
@@ -137,7 +137,7 @@
             <div class="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">
               <h3 class="font-black text-gray-800 md:text-2xl text-xl">Peringatan Hari Pahlawan Tahun 2022</h3>
               <p class="md:text-base text-gray-500 text-base">“Hari ini kita memeringati Hari Pahlawan yang merupakan hari penting dalam perjalanan sejarah bangsa Indonesia. Pertempuran Surabaya inilah yang menjadi cikal bakal Hari Pahlawan Nasional yang masih kita peringati hingga...</p>
-              <a href="#" class="block w-max text-cyan-600">Read more</a>
+              <a href="#" class="block w-max font-semibold text-cyan-600">Selengkapnya</a>
           </div>
         </div>
       </div>
@@ -167,6 +167,7 @@
     <div class=" mt-4 grid gap-16 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
       <div class="col-span-2">
         <div class="grid grid-cols-2 gap-4">
+          
           <div>
             <a href="#" class="mt-2 block">
               <p class="text-xl font-bold text-gray-900">Bazar Olahan Sayur Hidroponik</p>
@@ -187,89 +188,69 @@
               <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Selengkapnya </a>
             </div>
           </div>
-    
+
           <div>
             <a href="#" class="mt-2 block">
-              <p class="text-xl font-bold text-gray-900">Boost your conversion rate</p>
-              <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+              <p class="text-xl font-bold text-gray-900">Kegiatan Penanaman Pohon Untuk Memperingati Hari Guru</p>
+              <div class="pt-1">
+                <time class="text-sm text-slate-600" datetime="2020-03-16">Nov 30, 2020</time>
+              </div>
+              <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Pada tanggal 27 September 2018, SDN Bubutan IV mengadakan acara Bazar dari hasil kebun hidroponik. Kegiatan ini dimaksudkan untuk memberikan pendidikan kepada para siswa berwiraswasta  dari tanaman yang ada disekitar mereka. Acara ini dimaksudkan agar lahan kosong yang ada disekitar kita bisa kita manfaatkkan semaksimal mungkin.</p>
             </a>
             <p class="text-sm text-gray-500">
               <a href="#" class="inline-block">
-                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800"> Video </span>
+                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800"> Adiwiyata </span>
               </a>
-              <time datetime="2020-03-16">Mar 16, 2020</time>
+              <a href="#" class="inline-block">
+                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-orange-100 text-orange-800"> Ecoschool </span>
+              </a>
             </p>
             <div class="mt-3">
-              <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Read full story </a>
+              <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Selengkapnya </a>
             </div>
           </div>
-    
-    
+
           <div>
             <a href="#" class="mt-2 block">
-              <p class="text-xl font-bold text-gray-900">Boost your conversion rate</p>
-              <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+              <p class="text-xl font-bold text-gray-900">Kunjungan Penelitian Balitbang Kemendikbud Jakarta</p>
+              <div class="pt-1">
+                <time class="text-sm text-slate-600" datetime="2020-03-16">Mar 16, 2020</time>
+              </div>
+              <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Sebuah kehormatan bagi kami mendapat Kunjungan hari ini Kamis 13 septermber 2018  dari Balitbang Kemendikbud Jakarta .Kali ini  kegiatanya berfokus pada penelitian LITERASI. Mereka secara langsung menyaksikan keterlaksanaan program literasi di SD Negeri Bubutan IV Surabaya.Program ini sudah berjalan beberapa tahun yang lalu,sebagai...</p>
             </a>
             <p class="text-sm text-gray-500">
               <a href="#" class="inline-block">
-                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800"> Video </span>
+                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800"> Perpustakaan </span>
               </a>
-              <time datetime="2020-03-16">Mar 16, 2020</time>
             </p>
             <div class="mt-3">
-              <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Read full story </a>
+              <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Selengkapnya </a>
             </div>
           </div>
-    
-    
+
           <div>
             <a href="#" class="mt-2 block">
-              <p class="text-xl font-bold text-gray-900">Boost your conversion rate</p>
-              <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+              <p class="text-xl font-bold text-gray-900">Bazar Olahan Sayur Hidroponik</p>
+              <div class="pt-1">
+                <time class="text-sm text-slate-600" datetime="2020-03-16">Mar 16, 2020</time>
+              </div>
+              <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Pada tanggal 27 September 2018, SDN Bubutan IV mengadakan acara Bazar dari hasil kebun hidroponik. Kegiatan ini dimaksudkan untuk memberikan pendidikan kepada para siswa berwiraswasta  dari tanaman yang ada disekitar mereka. Acara ini dimaksudkan agar lahan kosong yang ada disekitar kita bisa kita manfaatkkan semaksimal mungkin.</p>
             </a>
             <p class="text-sm text-gray-500">
               <a href="#" class="inline-block">
-                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800"> Video </span>
+                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800"> Ecopreneur </span>
               </a>
-              <time datetime="2020-03-16">Mar 16, 2020</time>
-            </p>
-            <div class="mt-3">
-              <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Read full story </a>
-            </div>
-          </div>
-    
-    
-          <div>
-            <a href="#" class="mt-2 block">
-              <p class="text-xl font-bold text-gray-900">Boost your conversion rate</p>
-              <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
-            </a>
-            <p class="text-sm text-gray-500">
               <a href="#" class="inline-block">
-                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800"> Video </span>
+                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-orange-100 text-orange-800"> Ecoschool </span>
               </a>
-              <time datetime="2020-03-16">Mar 16, 2020</time>
             </p>
             <div class="mt-3">
-              <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Read full story </a>
+              <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Selengkapnya </a>
             </div>
           </div>
-    
-          <div>
-            <a href="#" class="mt-2 block">
-              <p class="text-xl font-bold text-gray-900">Boost your conversion rate</p>
-              <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
-            </a>
-            <p class="text-sm text-gray-500">
-              <a href="#" class="inline-block">
-                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800"> Video </span>
-              </a>
-              <time datetime="2020-03-16">Mar 16, 2020</time>
-            </p>
-            <div class="mt-3">
-              <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Read full story </a>
-            </div>
-          </div>
+
+          
+
         </div>
       </div>
       <div>
