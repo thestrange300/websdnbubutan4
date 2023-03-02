@@ -255,16 +255,146 @@
       </div>
       <div>
         <div class=" rounded-xl shadow-lg p-3 mx-auto border border-white bg-white">
-          <p>TEST</p>
+          <h3 class="text-lg font-medium text-gray-800">Kategori</h3>
+          <div class="h-1 w-full mx-auto border-b my-2"></div>
+          <!-- MAIN CATEGORY -->
+          <div class="transition">
+            <!-- header -->
+            <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+                <i class="fas fa-solid fa-chevron-right"></i>
+                <h3>Kurikulum</h3>
+            </div>
+            <!-- SUB CATEGORY -->
+            <div class="accordion-content px-5 pt-0 overflow-auto max-h-0">
+              <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+                  <i class="fas fa-solid fa-chevron-right"></i>
+                  <h3>Kurikulum K13</h3>
+              </div>
+              <div class="accordion-content px-5 pt-0 overflow-auto max-h-0">
+                  <a href="/profile" class="leading-6 font-light pl-9 text-justify">Silabus</a>
+                  <a href="/profile" class="leading-6 font-light pl-9 text-justify">RPP</a>
+              </div>
+              <div class="accordion-header1 cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+                  <i class="fas fa-solid fa-chevron-right"></i>
+                  <h3>Kurikulum Merdeka</h3>
+              </div>
+              <div class="accordion-content1 px-5 pt-0 overflow-auto max-h-0">
+                  <a href="/profile" class="leading-6 font-light pl-9 text-justify">Silabus</a>
+                  <a href="/profile" class="leading-6 font-light pl-9 text-justify">RPP</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- MAIN CATEGORY -->
+          <div class="transition">
+            <!-- header -->
+            <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+                <i class="fas fa-solid fa-chevron-right"></i>
+                <h3>Ekstrakurikuler</h3>
+            </div>
+            <!-- SUB CATEGORY -->
+            <div class="accordion-content px-5 pt-0 overflow-auto max-h-0">
+              <a href="#" class="inline-block pl-9">
+                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800"> Tari </span>
+              </a>
+              <a href="#" class="inline-block">
+                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800"> Drumband </span>
+              </a>
+              <a href="#" class="inline-block">
+                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800"> Pencak Silat </span>
+              </a>
+              <a href="#" class="inline-block">
+                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800"> Qiroah </span>
+              </a>
+              <a href="#" class="inline-block">
+                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800"> Samproh </span>
+              </a>
+              <a href="#" class="inline-block">
+                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800"> Pramuka </span>
+              </a>
+          </div>
+        </div>
+
+        <!-- MAIN CATEGORY -->
+        <div class="transition">
+          <!-- header -->
+          <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+              <i class="fas fa-solid fa-chevron-right"></i>
+              <h3>Adiwiyata</h3>
+          </div>
+          <!-- SUB CATEGORY -->
+          <div class="accordion-content px-5 pt-0 overflow-auto max-h-0">
+            <a href="" class="leading-6 font-light pl-9 text-justify">Ecopreneur</a>
+            <a href="" class="leading-6 font-light pl-9 text-justify">Ecoschool</a>
+          </div>
+        </div>
+
+        <!-- MAIN CATEGORY -->
+        <div class="transition">
+          <!-- header -->
+          <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+              <i class="fas fa-solid fa-chevron-right"></i>
+              <h3>Karya dan Prestasi</h3>
+          </div>
+          <!-- SUB CATEGORY -->
+          <div class="accordion-content px-5 pt-0 overflow-auto max-h-0">
+            <a href="" class="leading-6 font-light pl-9 text-justify">Guru</a>
+            <a href="" class="leading-6 font-light pl-9 text-justify">Siswa</a>
+          </div>
         </div>
       </div>
-
-
-      
     </div>
   </div>
 </div>
 
+<style>
+  .accordion-content {
+  transition: max-height 0.3s ease-out, padding 0.3s ease;
+  }
 
+  .accordion-content1 {
+  transition: max-height 0.3s ease-out, padding 0.3s ease;
+  }
+</style>
+
+<script>
+  const accordionHeader = document.querySelectorAll(".accordion-header");
+  accordionHeader.forEach((header) => {
+  header.addEventListener("click", function () {
+      const accordionContent = header.parentElement.querySelector(".accordion-content");
+      let accordionMaxHeight = accordionContent.style.maxHeight;
+
+      // Condition handling
+      if (accordionMaxHeight == "0px" || accordionMaxHeight.length == 0) {
+      accordionContent.style.maxHeight = `${accordionContent.scrollHeight + 200}px`;
+      header.querySelector(".fas").classList.remove("fa-chevron-right");
+      header.querySelector(".fas").classList.add("fa-chevron-down");
+      } else {
+      accordionContent.style.maxHeight = `0px`;
+      header.querySelector(".fas").classList.add("fa-chevron-right");
+      header.querySelector(".fas").classList.remove("fa-chevron-down");
+      }
+  });
+  });
+
+  const accordionHeader1 = document.querySelectorAll(".accordion-header1");
+  accordionHeader1.forEach((header) => {
+  header.addEventListener("click", function () {
+      const accordionContent1 = header.parentElement.querySelector(".accordion-content1");
+      let accordionMaxHeight1 = accordionContent1.style.maxHeight;
+
+      // Condition handling
+      if (accordionMaxHeight1 == "0px" || accordionMaxHeight1.length == 0) {
+      accordionContent1.style.maxHeight = `${accordionContent1.scrollHeight + 200}px`;
+      header.querySelector(".fas").classList.remove("fa-chevron-right");
+      header.querySelector(".fas").classList.add("fa-chevron-down");
+      } else {
+      accordionContent1.style.maxHeight = `0px`;
+      header.querySelector(".fas").classList.add("fa-chevron-right");
+      header.querySelector(".fas").classList.remove("fa-chevron-down");
+      }
+  });
+  });
+</script>
 
 @endsection
