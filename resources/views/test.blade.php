@@ -136,7 +136,7 @@
           </div>
             <div class="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">
               <h3 class="font-black text-gray-800 md:text-2xl text-xl">Peringatan Hari Pahlawan Tahun 2022</h3>
-              <p class="md:text-base text-gray-500 text-base">“Hari ini kita memeringati Hari Pahlawan yang merupakan hari penting dalam perjalanan sejarah bangsa Indonesia. Pertempuran Surabaya inilah yang menjadi cikal bakal Hari Pahlawan Nasional yang masih kita peringati hingga...</p>
+              <p class="md:text-base text-gray-500 text-base">Hari ini kita memeringati Hari Pahlawan yang merupakan hari penting dalam perjalanan sejarah bangsa Indonesia. Pertempuran Surabaya inilah yang menjadi cikal bakal Hari Pahlawan Nasional yang masih kita peringati hingga...</p>
               <a href="#" class="block w-max font-semibold text-cyan-600">Selengkapnya</a>
           </div>
         </div>
@@ -174,8 +174,8 @@
               <div class="pt-1">
                 <time class="text-sm text-slate-600" datetime="2020-03-16">Mar 16, 2020</time>
               </div>
-              <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Pada tanggal 27 September 2018, SDN Bubutan IV mengadakan acara Bazar dari hasil kebun hidroponik. Kegiatan ini dimaksudkan untuk memberikan pendidikan kepada para siswa berwiraswasta  dari tanaman yang ada disekitar mereka. Acara ini dimaksudkan agar lahan kosong yang ada disekitar kita bisa kita manfaatkkan semaksimal mungkin.</p>
             </a>
+            <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Pada tanggal 27 September 2018, SDN Bubutan IV mengadakan acara Bazar dari hasil kebun hidroponik. Kegiatan ini dimaksudkan untuk memberikan pendidikan kepada para siswa berwiraswasta  dari tanaman yang ada disekitar mereka. Acara ini dimaksudkan agar lahan kosong yang ada disekitar kita bisa kita manfaatkkan semaksimal mungkin.</p>
             <p class="text-sm text-gray-500">
               <a href="#" class="inline-block">
                 <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800"> Ecopreneur </span>
@@ -195,8 +195,8 @@
               <div class="pt-1">
                 <time class="text-sm text-slate-600" datetime="2020-03-16">Nov 30, 2020</time>
               </div>
-              <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Pada tanggal 27 September 2018, SDN Bubutan IV mengadakan acara Bazar dari hasil kebun hidroponik. Kegiatan ini dimaksudkan untuk memberikan pendidikan kepada para siswa berwiraswasta  dari tanaman yang ada disekitar mereka. Acara ini dimaksudkan agar lahan kosong yang ada disekitar kita bisa kita manfaatkkan semaksimal mungkin.</p>
             </a>
+            <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Pada tanggal 27 September 2018, SDN Bubutan IV mengadakan acara Bazar dari hasil kebun hidroponik. Kegiatan ini dimaksudkan untuk memberikan pendidikan kepada para siswa berwiraswasta  dari tanaman yang ada disekitar mereka. Acara ini dimaksudkan agar lahan kosong yang ada disekitar kita bisa kita manfaatkkan semaksimal mungkin.</p>
             <p class="text-sm text-gray-500">
               <a href="#" class="inline-block">
                 <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800"> Adiwiyata </span>
@@ -216,8 +216,8 @@
               <div class="pt-1">
                 <time class="text-sm text-slate-600" datetime="2020-03-16">Mar 16, 2020</time>
               </div>
-              <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Sebuah kehormatan bagi kami mendapat Kunjungan hari ini Kamis 13 septermber 2018  dari Balitbang Kemendikbud Jakarta .Kali ini  kegiatanya berfokus pada penelitian LITERASI. Mereka secara langsung menyaksikan keterlaksanaan program literasi di SD Negeri Bubutan IV Surabaya.Program ini sudah berjalan beberapa tahun yang lalu,sebagai...</p>
             </a>
+            <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Sebuah kehormatan bagi kami mendapat Kunjungan hari ini Kamis 13 septermber 2018  dari Balitbang Kemendikbud Jakarta .Kali ini  kegiatanya berfokus pada penelitian LITERASI. Mereka secara langsung menyaksikan keterlaksanaan program literasi di SD Negeri Bubutan IV Surabaya.Program ini sudah berjalan beberapa tahun yang lalu,sebagai...</p>
             <p class="text-sm text-gray-500">
               <a href="#" class="inline-block">
                 <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800"> Perpustakaan </span>
@@ -234,8 +234,8 @@
               <div class="pt-1">
                 <time class="text-sm text-slate-600" datetime="2020-03-16">Mar 16, 2020</time>
               </div>
-              <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Pada tanggal 27 September 2018, SDN Bubutan IV mengadakan acara Bazar dari hasil kebun hidroponik. Kegiatan ini dimaksudkan untuk memberikan pendidikan kepada para siswa berwiraswasta  dari tanaman yang ada disekitar mereka. Acara ini dimaksudkan agar lahan kosong yang ada disekitar kita bisa kita manfaatkkan semaksimal mungkin.</p>
             </a>
+            <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Pada tanggal 27 September 2018, SDN Bubutan IV mengadakan acara Bazar dari hasil kebun hidroponik. Kegiatan ini dimaksudkan untuk memberikan pendidikan kepada para siswa berwiraswasta  dari tanaman yang ada disekitar mereka. Acara ini dimaksudkan agar lahan kosong yang ada disekitar kita bisa kita manfaatkkan semaksimal mungkin.</p>
             <p class="text-sm text-gray-500">
               <a href="#" class="inline-block">
                 <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800"> Ecopreneur </span>
