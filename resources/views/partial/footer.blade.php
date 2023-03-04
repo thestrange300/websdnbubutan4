@@ -21,9 +21,6 @@
           <a href="#" class="text-base text-gray-500 hover:text-black"> Accessibility </a>
         </div>
   
-        <div class="px-5 py-2">
-          <a href="#" class="text-base text-gray-500 hover:text-black"> Partners </a>
-        </div>
       </nav>
       <div class="mt-8 flex justify-center space-x-6">
         <a href="#" class="text-gray-400 hover:text-black">

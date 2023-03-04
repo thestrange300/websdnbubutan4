@@ -16,7 +16,7 @@
           <span class="block text-white mb-5 "data-aos="zoom-in"data-aos-duration="800">Selamat Datang di</span>
           <span class="block text-white underline decoration-indigo-500"data-aos="zoom-in"data-aos-duration="1200">SDN Bubutan IV</span>
         </h1>
-        <p class="mt-6 max-w-lg mx-auto text-center text-base text-white sm:max-w-3xl">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+        <p class="mt-6 max-w-lg mx-auto text-center text-base text-white sm:max-w-3xl">Selamat datang di website resmi sekolah dasar kami! Di sini, Anda akan menemukan informasi terbaru tentang program belajar mengajar dan kegiatan sekolah kami. Kami dengan senang hati mempersembahkan website sekolah dasar ini kepada seluruh siswa, guru, dan orang tua.</p>
         <div class="mt-10 max-w-sm mx-auto max-w-none flex justify-center">
             <a href="/profile" class="transition-all items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50"> Profil Sekolah </a>
         </div>
@@ -109,7 +109,7 @@
 
 {{-- INI BUAT KARTU --}}
 <div class="text-center">
-  <h2 class="text-2xl text-cyan-900 font-extrabold md:text-4xl">Post Pilihan Kami</h2>
+  <h2 class="text-2xl text-black font-extrabold md:text-4xl">Post Pilihan Kami</h2>
   <p class="lg:w-6/12 pt-4 lg:mx-auto">Postingan unggulan kami di profil perusahaan sekolah menyoroti pencapaian dan misi institusi untuk mendidik dan menginspirasi para pemimpin masa depan.</p>
 </div>
 
@@ -162,7 +162,7 @@
   ```
 -->
 <div class="bg-transparent pb-20 px-4 sm:px-6 lg:pb-28 lg:px-8">
-  <h2 class="text-2xl text-cyan-900 font-extrabold mt-6">Postingan Terbaru</h2>
+  <h2 class="text-2xl md:text-3xl text-black font-extrabold mt-6">Postingan Terbaru</h2>
   <div class="relative mx-auto divide-y-2 divide-gray-200 lg:max-w-1">
     <div class=" mt-4 grid gap-16 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
       <div class="col-span-2">
@@ -255,62 +255,74 @@
       </div>
       <div>
         <div class=" rounded-xl shadow-lg p-3 mx-auto border border-white bg-white">
-          <h3 class="text-lg font-medium text-gray-800">Kategori</h3>
+          <h3 class="text-xl font-bold text-center text-gray-800">Kategori</h3>
           <div class="h-1 w-full mx-auto border-b my-2"></div>
           <!-- MAIN CATEGORY -->
           <div class="transition">
             <!-- header -->
-            <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+            <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center mt-4 mb-1">
                 <i class="fas fa-solid fa-chevron-right"></i>
-                <h3>Kurikulum</h3>
+                <h3 class="font-semibold">Kurikulum</h3>
             </div>
             <!-- SUB CATEGORY -->
-            <div class="accordion-content px-5 pt-0 overflow-auto max-h-0">
-              <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+            <div class="accordion-content px-5 overflow-auto max-h-0">
+              <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center mt-2 mb-2">
                   <i class="fas fa-solid fa-chevron-right"></i>
-                  <h3>Kurikulum K13</h3>
+                  <h3 class="text-sm" >Kurikulum K13</h3>
               </div>
               <div class="accordion-content px-5 pt-0 overflow-auto max-h-0">
-                  <a href="/profile" class="leading-6 font-light pl-9 text-justify">Silabus</a>
-                  <a href="/profile" class="leading-6 font-light pl-9 text-justify">RPP</a>
+                  {{-- <a href="/profile" class="leading-6 text-sm font-light pl-9 text-justify">Silabus</a>
+                  <a href="/profile" class="leading-6 text-sm font-light pl-9 text-justify">RPP</a> --}}
+                  <a href="#" class="leading-6 text-sm font-light pl-9 text-justify">
+                    <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800"> Silabus </span>
+                  </a>
+                  <a href="#" class="leading-6 text-sm font-light pl-2 text-justify">
+                    <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-yellow-100 text-yellow-800"> RPP </span>
+                  </a>
               </div>
-              <div class="accordion-header1 cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+              <div class="accordion-header1 cursor-pointer transition flex space-x-5 px-5 items-center mt-2 mb-2">
                   <i class="fas fa-solid fa-chevron-right"></i>
-                  <h3>Kurikulum Merdeka</h3>
+                  <h3 class="text-sm" >Kurikulum Merdeka</h3>
               </div>
               <div class="accordion-content1 px-5 pt-0 overflow-auto max-h-0">
-                  <a href="/profile" class="leading-6 font-light pl-9 text-justify">Silabus</a>
-                  <a href="/profile" class="leading-6 font-light pl-9 text-justify">RPP</a>
-              </div>
+                {{-- <a href="/profile" class="leading-6 text-sm font-light pl-9 text-justify">Silabus</a>
+                <a href="/profile" class="leading-6 text-sm font-light pl-9 text-justify">RPP</a> --}}
+                <a href="#" class="leading-6 text-sm font-light pl-9 text-justify">
+                  <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800"> Silabus </span>
+                </a>
+                <a href="#" class="leading-6 text-sm font-light pl-2 text-justify">
+                  <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-yellow-100 text-yellow-800"> RPP </span>
+                </a>
+            </div>
             </div>
           </div>
 
           <!-- MAIN CATEGORY -->
           <div class="transition">
             <!-- header -->
-            <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+            <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center mt-2 mb-2">
                 <i class="fas fa-solid fa-chevron-right"></i>
-                <h3>Ekstrakurikuler</h3>
+                <h3 class="font-semibold">Ekstrakurikuler</h3>
             </div>
             <!-- SUB CATEGORY -->
-            <div class="accordion-content px-5 pt-0 overflow-auto max-h-0">
-              <a href="#" class="inline-block pl-9">
-                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800"> Tari </span>
+            <div class="accordion-content px-5 pl-11 pt-0 overflow-auto max-h-0">
+              <a href="#" class="inline-block pl-2">
+                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-violet-100 text-violet-800"> Tari </span>
               </a>
-              <a href="#" class="inline-block">
-                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800"> Drumband </span>
+              <a href="#" class="inline-block pl-2 py-1">
+                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800"> Drumband </span>
               </a>
-              <a href="#" class="inline-block">
-                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800"> Pencak Silat </span>
+              <a href="#" class="inline-block pl-2 py-1">
+                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-fuchsia-100 text-fuchsia-800"> Pencaksilat </span>
               </a>
-              <a href="#" class="inline-block">
-                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800"> Qiroah </span>
+              <a href="#" class="inline-block pl-2 py-1">
+                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-teal-100 text-teal-800"> Qiroah </span>
               </a>
-              <a href="#" class="inline-block">
-                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800"> Samproh </span>
+              <a href="#" class="inline-block pl-2 py-1">
+                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-emerald-100 text-emerald-800"> Samproh </span>
               </a>
-              <a href="#" class="inline-block">
-                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800"> Pramuka </span>
+              <a href="#" class="inline-block pl-2 py-1">
+                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-rose-100 text-rose-800"> Pramuka </span>
               </a>
           </div>
         </div>
@@ -318,28 +330,36 @@
         <!-- MAIN CATEGORY -->
         <div class="transition">
           <!-- header -->
-          <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+          <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center mt-2 mb-2">
               <i class="fas fa-solid fa-chevron-right"></i>
-              <h3>Adiwiyata</h3>
+              <h3 class="font-semibold">Adiwiyata</h3>
           </div>
           <!-- SUB CATEGORY -->
-          <div class="accordion-content px-5 pt-0 overflow-auto max-h-0">
-            <a href="" class="leading-6 font-light pl-9 text-justify">Ecopreneur</a>
-            <a href="" class="leading-6 font-light pl-9 text-justify">Ecoschool</a>
+          <div class="accordion-content px-5 pt-0 pl-11 overflow-auto max-h-0">
+            <a href="#" class="inline-block pl-2 py-1">
+              <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-lime-100 text-lime-800"> Ecopreneur </span>
+            </a>
+            <a href="#" class="inline-block pl-2 py-1">
+              <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800"> Ecoschool </span>
+            </a>
           </div>
         </div>
 
         <!-- MAIN CATEGORY -->
         <div class="transition">
           <!-- header -->
-          <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+          <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center mt-2 mb-2">
               <i class="fas fa-solid fa-chevron-right"></i>
-              <h3>Karya dan Prestasi</h3>
+              <h3 class="font-semibold">Karya dan Prestasi</h3>
           </div>
           <!-- SUB CATEGORY -->
-          <div class="accordion-content px-5 pt-0 overflow-auto max-h-0">
-            <a href="" class="leading-6 font-light pl-9 text-justify">Guru</a>
-            <a href="" class="leading-6 font-light pl-9 text-justify">Siswa</a>
+          <div class="accordion-content px-5 pl-11 pt-0 overflow-auto max-h-0">
+            <a href="#" class="inline-block pl-2 py-1">
+              <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-orange-100 text-orange-800"> Guru </span>
+            </a>
+            <a href="#" class="inline-block pl-2 py-1">
+              <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-fuchsia-100 text-fuchsia-800"> Siswa </span>
+            </a>
           </div>
         </div>
       </div>
