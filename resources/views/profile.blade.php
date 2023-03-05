@@ -67,7 +67,7 @@
     </div>
 
     <!-- VISI MISI -->
-    <div class="">
+    <div data-aos="fade-up" data-aos-duration="2000">
     <div class="text-center text-4xl font-bold m-10">Visi dan Misi</div>
     <div class="lg:pl-52 max-sm:pl-10">
         <p class="text-xl font-semibold">Visi SDN Bubutan 4 Surabaya</p>
@@ -126,9 +126,9 @@
 </div>
     <!-- EKSTRA NYA -->
 
-    <div class="">
-        <div class="text-center text-4xl font-bold m-20">Ekstrakurikuler</div>
-        <div class="flex items-center justify-center w-full px-36 pb-10">
+    <div >
+        <div data-aos="fade-right" data-aos-duration="2000" class="text-center text-4xl font-bold m-20">Ekstrakurikuler</div>
+        <div data-aos="fade-left" data-aos-duration="2000" class="flex items-center justify-center w-full px-36 pb-10">
             <div class="w-full relative flex items-center justify-center">
                 <button aria-label="slide backward" class="absolute z-30 left-0 ml-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer" id="prev">
                     <svg class="dark:text-white" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
