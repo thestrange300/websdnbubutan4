@@ -1,4 +1,4 @@
-<nav class="z-30 drop-shadow-lg backdrop-blur-sm bg-white/80 rounded-lg mx-48 mt-5 max-sm:bg-white/80 max-sm:mx-3 max-sm:mt-3 sticky top-4 z-50">
+<nav class="z-30 drop-shadow-lg backdrop-blur-sm bg-white/80 rounded-lg mx-48 mt-5 max-sm:bg-white/80 max-sm:mx-3 max-sm:mt-3 sm:sticky top-4 z-50">
     <div class="mx-auto px-2 sm:px-6 lg:px-8">
       <div class="relative flex items-center justify-between h-16 sm:grid-cols-2">
         <img class=" relative invisible md:visible w-10 h-10 place-content-left" src="{{asset('img/Logo-Sekolah.png')}}" alt="logo sekolah">

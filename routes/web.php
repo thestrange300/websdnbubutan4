@@ -32,3 +32,7 @@ Route::get('/post', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 });
+
+Route::get('/dashboard/post', function () {
+    return view('dashboard_post');
+});

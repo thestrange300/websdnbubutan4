@@ -6,11 +6,13 @@
 <div class="px-6 pt-6 2xl:container">
     <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         <div class="md:col-span-2 lg:col-span-1" >
-            <div class="h-full py-3 px-6 rounded-xl border border-gray-200 bg-white">
+
+
+            <div class="drop-shadow-md h-full py-3 px-6 rounded-xl border border-gray-200 bg-white ">
                 
                 <h5 class="text-2xl text-gray-800 font-bold lg:block">Postingan Terbaru</h5>
 
-                <div class="mt-2 mb-2">
+                <div class="mt-2 mb-2" data-aos="zoom-in" data-aos-duration="300">
                     <div class="sm:flex sm:items-center sm:justify-between sm:space-x-5">
                       <div class="flex items-center flex-1 min-w-0">
                         <div class="mt-0 mr-0 mb-0 flex-1 min-w-0">
@@ -29,7 +31,7 @@
                   </div>
                   <hr/>
                   
-                  <div class="mt-2 mb-2">
+                  <div class="mt-2 mb-2" data-aos="zoom-in" data-aos-duration="500">
                     <div class="sm:flex sm:items-center sm:justify-between sm:space-x-5">
                       <div class="flex items-center flex-1 min-w-0">
                         <div class="mt-0 mr-0 mb-0 flex-1 min-w-0">
@@ -48,7 +50,7 @@
                   </div>
                   <hr/>
 
-                  <div class="mt-2 mb-2">
+                  <div class="mt-2 mb-2 " data-aos="zoom-in" data-aos-duration="700">
                     <div class="sm:flex sm:items-center sm:justify-between sm:space-x-5">
                       <div class="flex items-center flex-1 min-w-0">
                         <div class="mt-0 mr-0 mb-0 flex-1 min-w-0">
@@ -74,8 +76,10 @@
 
             </div>
         </div>
+        
+       
         <div>
-            <div class="h-full py-6 px-6 rounded-xl border border-gray-200 bg-white">
+            <div class="drop-shadow-md h-full py-6 px-6 rounded-xl border border-gray-200 bg-white">
                 <h5 class="text-xl text-gray-700">Categories</h5>
                 <div class="my-8">
                     <h1 class="text-5xl font-bold text-gray-800">ini nanti total kategori</h1>
@@ -85,8 +89,10 @@
                 </table>   
             </div>
         </div>
+        
+        
         <div>
-            <div class="lg:h-full py-2 px-2 text-gray-600 rounded-xl border border-gray-200 bg-white" id="chart-container">
+            <div class="drop-shadow-md lg:h-full py-2 px-2 text-gray-600 rounded-xl border border-gray-200 bg-white" id="chart-container">
                 <script>
                 var dom = document.getElementById('chart-container');
                 var myChart = echarts.init(dom,'roma', {
