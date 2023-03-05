@@ -118,7 +118,7 @@
       <div class="py-4 grid gap-12 lg:grid-cols-2">
 
 {{-- KARTU KEDUA --}}
-        <div class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
+        <div data-aos="fade-right" data-aos-duration="2000" class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
           <div class="w-full md:w-1/3 bg-white grid place-items-center">
             <img src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2022/11/WhatsApp-Image-2022-11-21-at-09.23.29-2-1536x1152.jpeg" alt="tailwind logo" class="w-full h-full object-cover bg-cover rounded-xl" />
           </div>
@@ -130,7 +130,7 @@
         </div>
 
 {{-- KARTU KETIGA --}}
-        <div class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
+        <div data-aos="fade-left" data-aos-duration="2000" class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
           <div class="w-full md:w-1/3 bg-white grid place-items-center">
             <img src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2022/11/WhatsApp-Image-2022-11-10-at-10.47.54-1536x1152.jpeg" alt="tailwind logo" class="w-full h-full object-cover bg-cover rounded-xl" />
           </div>
@@ -165,7 +165,7 @@
   <h2 class="text-2xl md:text-3xl text-black font-extrabold mt-6">Postingan Terbaru</h2>
   <div class="relative mx-auto divide-y-2 divide-gray-200 lg:max-w-1">
     <div class=" mt-4 grid gap-16 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
-      <div class="col-span-2">
+      <div data-aos="fade-right" data-aos-duration="2000" class="col-span-2">
         <div class="grid grid-cols-2 gap-4">
           
           <div>
@@ -254,7 +254,7 @@
         </div>
       </div>
       <div>
-        <div class=" rounded-xl shadow-lg p-3 mx-auto border border-white bg-white">
+        <div data-aos="fade-left" data-aos-duration="2000" class="rounded-xl shadow-lg p-3 mx-auto border border-white bg-white">
           <h3 class="text-xl font-bold text-center text-gray-800">Kategori</h3>
           <div class="h-1 w-full mx-auto border-b my-2"></div>
           <!-- MAIN CATEGORY -->
