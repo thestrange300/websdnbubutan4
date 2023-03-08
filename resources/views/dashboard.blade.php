@@ -89,8 +89,7 @@
                 </table>   
             </div>
         </div>
-        
-        
+      
         <div>
             <div class="drop-shadow-md lg:h-full py-2 px-2 text-gray-600 rounded-xl border border-gray-200 bg-white" id="chart-container">
                 <script>
@@ -152,7 +151,44 @@
             </div>
         </div>
     </div>
+    <div class="drop-shadow-md h-2/5 relative p-2 mt-6 rounded-xl border border-gray-200 bg-white " id="line-chart">
+      <script>
+        var dom = document.getElementById('line-chart');
+        var myChart = echarts.init(dom, null, {
+          renderer: 'canvas',
+          useDirtyRect: false
+        });
+        var app = {};
+
+        var option;
+
+        option = {
+          xAxis: {
+            type: 'category',
+            data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+          },
+          yAxis: {
+            type: 'value'
+          },
+          series: [
+            {
+              data: [150, 230, 224, 218, 135, 147, 260],
+              type: 'line'
+            }
+          ]
+        };
+
+        if (option && typeof option === 'object') {
+          myChart.setOption(option);
+        }
+
+        window.addEventListener('resize', myChart.resize);
+        </script>
+    </div>
 </div>
+
 </div>
+
+
 
 @endsection

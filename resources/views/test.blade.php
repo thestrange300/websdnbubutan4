@@ -8,7 +8,7 @@
   <div class="content-center px-5 pt-4">
     <div class="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
       <div class="absolute inset-0">
-        <img class="h-full w-full object-cover " src="{{asset('img/ghibli.png')}}" alt="Pemandangan">
+        <img class="h-full w-full object-cover " src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2020/07/WhatsApp-Image-2019-11-22-at-22.03.07.jpeg" alt="Img Header">
         <div class="absolute inset-0 bg-slate-400 mix-blend-multiply"></div>
       </div>
       <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
@@ -18,7 +18,7 @@
         </h1>
         <p class="mt-6 max-w-lg mx-auto text-center text-base text-white sm:max-w-3xl">Selamat datang di website resmi sekolah dasar kami! Di sini, Anda akan menemukan informasi terbaru tentang program belajar mengajar dan kegiatan sekolah kami. Kami dengan senang hati mempersembahkan website sekolah dasar ini kepada seluruh siswa, guru, dan orang tua.</p>
         <div class="mt-10 max-w-sm mx-auto max-w-none flex justify-center">
-            <a href="/profile" class="transition-all items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50"> Profil Sekolah </a>
+            <a href="/profile" class="sticky duration-500 transform hover:-translate-y-3 text-2xl hover:text-white items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-sky-500"> Profil Sekolah </a>
         </div>
       </div>
     </div>
@@ -165,10 +165,10 @@
   <h2 class="text-2xl md:text-3xl text-black font-extrabold mt-6">Postingan Terbaru</h2>
   <div class="relative mx-auto divide-y-2 divide-gray-200 lg:max-w-1">
     <div class=" mt-4 grid gap-16 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
-      <div data-aos="fade-right" data-aos-duration="2000" class="col-span-2">
+      <div class="col-span-2">
         <div class="grid grid-cols-2 gap-4">
           
-          <div>
+          <div data-aos="zoom-in" data-aos-duration="1000">
             <a href="#" class="mt-2 block">
               <p class="text-xl font-bold text-gray-900">Bazar Olahan Sayur Hidroponik</p>
               <div class="pt-1">
@@ -189,7 +189,7 @@
             </div>
           </div>
 
-          <div>
+          <div data-aos="zoom-in" data-aos-duration="1200">
             <a href="#" class="mt-2 block">
               <p class="text-xl font-bold text-gray-900">Kegiatan Penanaman Pohon Untuk Memperingati Hari Guru</p>
               <div class="pt-1">
@@ -210,7 +210,7 @@
             </div>
           </div>
 
-          <div>
+          <div data-aos="zoom-in" data-aos-duration="1000">
             <a href="#" class="mt-2 block">
               <p class="text-xl font-bold text-gray-900">Kunjungan Penelitian Balitbang Kemendikbud Jakarta</p>
               <div class="pt-1">
@@ -228,7 +228,7 @@
             </div>
           </div>
 
-          <div>
+          <div data-aos="zoom-in" data-aos-duration="1200">
             <a href="#" class="mt-2 block">
               <p class="text-xl font-bold text-gray-900">Bazar Olahan Sayur Hidroponik</p>
               <div class="pt-1">
@@ -416,5 +416,6 @@
   });
   });
 </script>
+
 
 @endsection
