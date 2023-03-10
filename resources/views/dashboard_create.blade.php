@@ -23,6 +23,20 @@
             focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
             max-w-lg" id="title" name="title">
           </div>
+
+          <div class="mb-1">
+            <label for="title" class="form-label block text-sm font-medium text-gray-700 pt-4 pb-2">Slug</label>
+            <input type="text" class="form-control drop-shadow-md px-2 py-2 
+            mt-1
+            block
+            w-full
+            rounded-md
+            border-gray-300
+            shadow-sm
+            focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
+            max-w-lg pointer-events-none bg-neutral-100" id="slug" name="slug">
+          </div>
+
           <div class="py-6">
             <label for="content_title" class="form-label block text-sm font-medium text-gray-700 pb-2">Konten</label>
             <input id="content" type="hidden" name="content">

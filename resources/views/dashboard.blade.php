@@ -81,15 +81,15 @@
         <div>
             <div class="drop-shadow-md h-full pt-4 px-6 rounded-xl border border-gray-200 bg-white">
                 <h5 class="text-2xl text-gray-800 font-bold mb-8">Kategori</h5>
-                <div class="flex items-center justify-between">
+                <div class="flex items-center justify-between" data-aos="zoom-in" data-aos-duration="300">
                       <p class="text-base font-semibold text-gray-800 truncate">Adiwiyata</p>
                       <h4 class="text-base text-right font-bold mt-4">122</h4>
                 </div>
-                <div class="flex items-center justify-between">
+                <div class="flex items-center justify-between" data-aos="zoom-in" data-aos-duration="500">
                   <p class="text-base font-semibold text-gray-800 truncate">Karya dan Prestasi</p>
                   <h4 class="text-base text-right font-bold mt-4">312</h4>
                 </div>
-                <div class="flex items-center justify-between">
+                <div class="flex items-center justify-between" data-aos="zoom-in" data-aos-duration="700">
                   <p class="text-base font-semibold text-gray-800 truncate">Ekstrakurikuler</p>
                   <h4 class="text-base text-right font-bold mt-4">612</h4>
                 </div>
@@ -97,7 +97,7 @@
                   <hr/>
                 </div>
                    
-                <div class="flex items-center justify-between">
+                <div class="flex items-center justify-between" data-aos="zoom-in" data-aos-duration="1100">
                   <p class="text-lg font-bold text-gray-800 truncate">Total</p>
                   <h4 class="text-lg text-right font-bold">857</h4>
                 </div> 

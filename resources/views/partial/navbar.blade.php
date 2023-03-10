@@ -29,8 +29,8 @@
               <a href="/" class="my-auto relative bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-3 py-2 rounded-md text-base font-bold" aria-current="page">Home</a>
               
               {{-- DROPDOWN PROFIL --}}
-
-              <a href="/profile" class="text-cyan-900 block px-3 py-2 rounded-md text-base font-medium">Profil</a>
+{{-- 
+              <a href="/profile" class="text-cyan-900 block px-3 py-2 rounded-md text-base font-medium">Profil</a> --}}
 
               {{-- DROPDOWN KURIKULUM --}}
               
@@ -151,6 +151,44 @@
                       >Pramuka</a
                     >
                   </li>
+                </ul>
+              </div>
+
+              {{-- DROPDOWN ADIWIYATA --}}
+
+              <div data-te-dropdown-ref class="my-auto">
+                <a
+                  class="my-auto text-cyan-900 px-3 py-2 rounded-md text-base font-medium transition duration-150 ease-in-out motion-reduce:transition-none"
+                  href="#"
+                  type="button"
+                  id="dropdownMenuButton2"
+                  data-te-dropdown-toggle-ref
+                  aria-expanded="false"
+                  data-te-ripple-init
+                  data-te-ripple-color="light">
+                  Adiwiyata
+                </a>
+                <ul
+                  class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
+                  aria-labelledby="dropdownMenuButton2"
+                  data-te-dropdown-menu-ref>
+                  <li>
+                    <a
+                      class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-black hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
+                      href="#"
+                      data-te-dropdown-item-ref
+                      >Ecopreneur</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-black hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
+                      href="#"
+                      data-te-dropdown-item-ref
+                      >Ecoschool</a
+                    >
+                  </li>
+                  
                 </ul>
               </div>
 

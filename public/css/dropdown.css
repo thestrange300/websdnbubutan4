@@ -33,3 +33,27 @@
     .dropdown-menu > li:hover > .dropdown-submenu {
     display: block;
     }
+
+    html::-webkit-scrollbar {
+      width: 10px;
+    }
+  
+  html::-webkit-scrollbar-track {
+      background: rgb(219, 219, 219);
+      border-radius: 10px;
+  }
+  
+  html::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg, rgba(32,194,213,1) 0%, rgb(44, 123, 241) 100%);
+      border-radius: 10px;
+    }
+  
+  html::-webkit-scrollbar-thumb:hover {
+      background: linear-gradient(180deg, rgba(29,164,180,1) 0%, rgba(1,87,212,1) 100%);
+      border-radius: 10px;
+    }
+  
+  html::-webkit-scrollbar-thumb:active {
+    background: linear-gradient(180deg, rgba(23,129,142,1) 0%, rgba(2,65,158,1) 100%);
+      border-radius: 10px;
+    }

@@ -118,7 +118,7 @@
       <div class="py-4 grid gap-12 lg:grid-cols-2">
 
 {{-- KARTU KEDUA --}}
-        <div data-aos="fade-right" data-aos-duration="2000" class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
+        <div class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
           <div class="w-full md:w-1/3 bg-white grid place-items-center">
             <img src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2022/11/WhatsApp-Image-2022-11-21-at-09.23.29-2-1536x1152.jpeg" alt="" class="w-full h-full object-cover bg-cover rounded-xl max-w-xs transition duration-300 ease-in-out hover:scale-105" />
           </div>
@@ -130,7 +130,7 @@
         </div>
 
 {{-- KARTU KETIGA --}}
-        <div data-aos="fade-left" data-aos-duration="2000" class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
+        <div class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
           <div class="w-full md:w-1/3 bg-white grid place-items-center">
             <img src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2022/11/WhatsApp-Image-2022-11-10-at-10.47.54-1536x1152.jpeg" alt="tailwind logo" class="w-full h-full object-cover bg-cover rounded-xl max-w-xs transition duration-300 ease-in-out hover:scale-105" />
           </div>
@@ -254,7 +254,7 @@
         </div>
       </div>
       <div>
-        <div data-aos="fade-left" data-aos-duration="2000" class="rounded-xl shadow-lg p-3 mx-auto border border-white bg-white">
+        <div class="rounded-xl shadow-lg p-3 mx-auto border border-white bg-white">
           <h3 class="text-xl font-bold text-center text-gray-800">Kategori</h3>
           <div class="h-1 w-full mx-auto border-b my-2"></div>
           <!-- MAIN CATEGORY -->
