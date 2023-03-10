@@ -136,7 +136,7 @@
                     </svg>
                 </button>
                 <div class="back w-full h-full mx-auto overflow-x-hidden overflow-y-hidden ">
-                    <div id="slider" class="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
+                    <div id="slider" class="h-3/5 flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
                         <div class="flex flex-shrink-0 relative w-full sm:w-auto">
                             <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" class="object-cover object-center w-full rounded-xl shadow-lg" />
                             <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">

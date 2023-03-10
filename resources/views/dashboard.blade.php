@@ -13,7 +13,7 @@
                 <h5 class="text-2xl text-gray-800 font-bold lg:block">Postingan Terbaru</h5>
 
                 <div class="mt-2 mb-2" data-aos="zoom-in" data-aos-duration="300">
-                    <div class="sm:flex sm:items-center sm:justify-between sm:space-x-5">
+                    <div class="flex items-center justify-between space-x-5">
                       <div class="flex items-center flex-1 min-w-0">
                         <div class="mt-0 mr-0 mb-0 flex-1 min-w-0">
                           <p class="text-base font-semibold text-gray-800 truncate">Bazaar olahan Sayur Hidroponik</p>
@@ -32,7 +32,7 @@
                   <hr/>
                   
                   <div class="mt-2 mb-2" data-aos="zoom-in" data-aos-duration="500">
-                    <div class="sm:flex sm:items-center sm:justify-between sm:space-x-5">
+                    <div class="flex items-center justify-between space-x-5">
                       <div class="flex items-center flex-1 min-w-0">
                         <div class="mt-0 mr-0 mb-0 flex-1 min-w-0">
                           <p class="text-base font-semibold text-gray-800 truncate">Bazaar olahan Sayur Hidroponik</p>
@@ -51,7 +51,7 @@
                   <hr/>
 
                   <div class="mt-2 mb-2 " data-aos="zoom-in" data-aos-duration="700">
-                    <div class="sm:flex sm:items-center sm:justify-between sm:space-x-5">
+                    <div class="flex items-center justify-between space-x-5">
                       <div class="flex items-center flex-1 min-w-0">
                         <div class="mt-0 mr-0 mb-0 flex-1 min-w-0">
                           <p class="text-base font-semibold text-gray-800 truncate">Bazaar olahan Sayur Hidroponik</p>
@@ -79,17 +79,31 @@
         
        
         <div>
-            <div class="drop-shadow-md h-full py-6 px-6 rounded-xl border border-gray-200 bg-white">
-                <h5 class="text-xl text-gray-700">Categories</h5>
-                <div class="my-8">
-                    <h1 class="text-5xl font-bold text-gray-800">ini nanti total kategori</h1>
+            <div class="drop-shadow-md h-full pt-4 px-6 rounded-xl border border-gray-200 bg-white">
+                <h5 class="text-2xl text-gray-800 font-bold mb-8">Kategori</h5>
+                <div class="flex items-center justify-between">
+                      <p class="text-base font-semibold text-gray-800 truncate">Adiwiyata</p>
+                      <h4 class="text-base text-right font-bold mt-4">122</h4>
                 </div>
-                <table class="mt-6 -mb-2 w-full text-gray-600">
-                    ini tabel nama kategori
-                </table>   
+                <div class="flex items-center justify-between">
+                  <p class="text-base font-semibold text-gray-800 truncate">Karya dan Prestasi</p>
+                  <h4 class="text-base text-right font-bold mt-4">312</h4>
+                </div>
+                <div class="flex items-center justify-between">
+                  <p class="text-base font-semibold text-gray-800 truncate">Ekstrakurikuler</p>
+                  <h4 class="text-base text-right font-bold mt-4">612</h4>
+                </div>
+                <div class="my-4">
+                  <hr/>
+                </div>
+                   
+                <div class="flex items-center justify-between">
+                  <p class="text-lg font-bold text-gray-800 truncate">Total</p>
+                  <h4 class="text-lg text-right font-bold">857</h4>
+                </div> 
             </div>
         </div>
-      
+
         <div>
             <div class="drop-shadow-md lg:h-full py-2 px-2 text-gray-600 rounded-xl border border-gray-200 bg-white" id="chart-container">
                 <script>

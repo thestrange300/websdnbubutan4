@@ -8,7 +8,7 @@
   <div class="content-center px-5 pt-4">
     <div class="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
       <div class="absolute inset-0">
-        <img class="h-full w-full object-cover " src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2020/07/WhatsApp-Image-2019-11-22-at-22.03.07.jpeg" alt="Img Header">
+        <img class="h-full w-full object-cover " src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2018/07/IMG_20180717_123720.jpg" alt="Img Header">
         <div class="absolute inset-0 bg-slate-400 mix-blend-multiply"></div>
       </div>
       <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
@@ -110,7 +110,7 @@
 {{-- INI BUAT KARTU --}}
 <div class="text-center">
   <h2 class="text-2xl text-black font-extrabold md:text-4xl">Post Pilihan Kami</h2>
-  <p class="lg:w-6/12 pt-4 lg:mx-auto">Postingan unggulan kami di profil perusahaan sekolah menyoroti pencapaian dan misi institusi untuk mendidik dan menginspirasi para pemimpin masa depan.</p>
+  <p class="lg:w-6/12 pt-4 lg:mx-auto text-base text-gray-500">Postingan unggulan kami di profil perusahaan sekolah menyoroti pencapaian dan misi institusi untuk mendidik dan menginspirasi para pemimpin masa depan.</p>
 </div>
 
 <div class="bg-transparent from-green-50 to-cyan-100">  
@@ -120,7 +120,7 @@
 {{-- KARTU KEDUA --}}
         <div data-aos="fade-right" data-aos-duration="2000" class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
           <div class="w-full md:w-1/3 bg-white grid place-items-center">
-            <img src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2022/11/WhatsApp-Image-2022-11-21-at-09.23.29-2-1536x1152.jpeg" alt="tailwind logo" class="w-full h-full object-cover bg-cover rounded-xl" />
+            <img src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2022/11/WhatsApp-Image-2022-11-21-at-09.23.29-2-1536x1152.jpeg" alt="" class="w-full h-full object-cover bg-cover rounded-xl max-w-xs transition duration-300 ease-in-out hover:scale-105" />
           </div>
             <div class="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">
               <h3 class="font-black text-gray-800 md:text-2xl text-xl">Kegiatan Market Day Gelar Karya Kelas 4</h3>
@@ -132,7 +132,7 @@
 {{-- KARTU KETIGA --}}
         <div data-aos="fade-left" data-aos-duration="2000" class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
           <div class="w-full md:w-1/3 bg-white grid place-items-center">
-            <img src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2022/11/WhatsApp-Image-2022-11-10-at-10.47.54-1536x1152.jpeg" alt="tailwind logo" class="w-full h-full object-cover bg-cover rounded-xl" />
+            <img src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2022/11/WhatsApp-Image-2022-11-10-at-10.47.54-1536x1152.jpeg" alt="tailwind logo" class="w-full h-full object-cover bg-cover rounded-xl max-w-xs transition duration-300 ease-in-out hover:scale-105" />
           </div>
             <div class="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">
               <h3 class="font-black text-gray-800 md:text-2xl text-xl">Peringatan Hari Pahlawan Tahun 2022</h3>
