@@ -29,6 +29,10 @@ Route::get('/post', function () {
     return view('post');
 });
 
+Route::get('/about', function () {
+    return view('about');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 });

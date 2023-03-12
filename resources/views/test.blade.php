@@ -18,7 +18,7 @@
         </h1>
         <p class="mt-6 max-w-lg mx-auto text-center text-base text-white sm:max-w-3xl">Selamat datang di website resmi sekolah dasar kami! Di sini, Anda akan menemukan informasi terbaru tentang program belajar mengajar dan kegiatan sekolah kami. Kami dengan senang hati mempersembahkan website sekolah dasar ini kepada seluruh siswa, guru, dan orang tua.</p>
         <div class="mt-10 max-w-sm mx-auto max-w-none flex justify-center">
-            <a href="/profile" class="sticky duration-500 transform hover:-translate-y-3 text-2xl hover:text-white items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-sky-500"> Profil Sekolah </a>
+            <a href="/profile" class="sticky duration-500 transform hover:-translate-y-3 text-2xl hover:text-white items-center justify-center px-4 py-3 text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500"> Profil Sekolah </a>
         </div>
       </div>
     </div>
