@@ -110,14 +110,14 @@
   }
   ```
 -->
-<div class="bg-transparent pb-20 px-4 sm:px-6 lg:pb-28 lg:px-8">
+<div class="bg-transparent pb-10 px-4 sm:px-6 lg:pb-10 lg:px-8">
   <h2 class="text-2xl md:text-3xl text-black font-extrabold mt-6">Postingan Terbaru</h2>
   <div class="relative mx-auto divide-y-2 divide-gray-200 lg:max-w-1">
-    <div class=" mt-4 grid gap-16 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
+    <div class=" mt-4 grid gap-16 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
       <div class="col-span-2">
-        <div class="grid grid-cols-2 gap-4">
+        <div class="grid grid-cols-3 gap-6">
           
-          <div data-aos="zoom-in" data-aos-duration="1000">
+          <div>
             <a href="#" class="mt-2 block">
               <p class="text-xl font-bold text-gray-900">Bazar Olahan Sayur Hidroponik</p>
               <div class="pt-1">
@@ -138,7 +138,7 @@
             </div>
           </div>
 
-          <div data-aos="zoom-in" data-aos-duration="1200">
+          <div>
             <a href="#" class="mt-2 block">
               <p class="text-xl font-bold text-gray-900">Kegiatan Penanaman Pohon Untuk Memperingati Hari Guru</p>
               <div class="pt-1">
@@ -159,7 +159,7 @@
             </div>
           </div>
 
-          <div data-aos="zoom-in" data-aos-duration="1000">
+          <div>
             <a href="#" class="mt-2 block">
               <p class="text-xl font-bold text-gray-900">Kunjungan Penelitian Balitbang Kemendikbud Jakarta</p>
               <div class="pt-1">
@@ -177,7 +177,7 @@
             </div>
           </div>
 
-          <div data-aos="zoom-in" data-aos-duration="1200">
+          <div>
             <a href="#" class="mt-2 block">
               <p class="text-xl font-bold text-gray-900">Bazar Olahan Sayur Hidroponik</p>
               <div class="pt-1">
@@ -198,119 +198,49 @@
             </div>
           </div>
 
-          
+          <div>
+            <a href="#" class="mt-2 block">
+              <p class="text-xl font-bold text-gray-900">Bazar Olahan Sayur Hidroponik</p>
+              <div class="pt-1">
+                <time class="text-sm text-slate-600" datetime="2020-03-16">Mar 16, 2020</time>
+              </div>
+            </a>
+            <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Pada tanggal 27 September 2018, SDN Bubutan IV mengadakan acara Bazar dari hasil kebun hidroponik. Kegiatan ini dimaksudkan untuk memberikan pendidikan kepada para siswa berwiraswasta  dari tanaman yang ada disekitar mereka. Acara ini dimaksudkan agar lahan kosong yang ada disekitar kita bisa kita manfaatkkan semaksimal mungkin.</p>
+            <p class="text-sm text-gray-500">
+              <a href="#" class="inline-block">
+                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800"> Ecopreneur </span>
+              </a>
+              <a href="#" class="inline-block">
+                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-orange-100 text-orange-800"> Ecoschool </span>
+              </a>
+            </p>
+            <div class="mt-3">
+              <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Selengkapnya </a>
+            </div>
+          </div>
+
+          <div>
+            <a href="#" class="mt-2 block">
+              <p class="text-xl font-bold text-gray-900">Kunjungan Penelitian Balitbang Kemendikbud Jakarta</p>
+              <div class="pt-1">
+                <time class="text-sm text-slate-600" datetime="2020-03-16">Mar 16, 2020</time>
+              </div>
+            </a>
+            <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Sebuah kehormatan bagi kami mendapat Kunjungan hari ini Kamis 13 septermber 2018  dari Balitbang Kemendikbud Jakarta .Kali ini  kegiatanya berfokus pada penelitian LITERASI. Mereka secara langsung menyaksikan keterlaksanaan program literasi di SD Negeri Bubutan IV Surabaya.Program ini sudah berjalan beberapa tahun yang lalu,sebagai...</p>
+            <p class="text-sm text-gray-500">
+              <a href="#" class="inline-block">
+                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800"> Perpustakaan </span>
+              </a>
+            </p>
+            <div class="mt-3">
+              <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Selengkapnya </a>
+            </div>
+          </div>
 
         </div>
       </div>
       <div>
-        <div class="rounded-xl shadow-lg p-3 mx-auto border border-white bg-white">
-          <h3 class="text-xl font-bold text-center text-gray-800">Kategori</h3>
-          <div class="h-1 w-full mx-auto border-b my-2"></div>
-          <!-- MAIN CATEGORY -->
-          <div class="transition">
-            <!-- header -->
-            <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center mt-4 mb-1">
-                <i class="fas fa-solid fa-chevron-right"></i>
-                <h3 class="font-semibold">Kurikulum</h3>
-            </div>
-            <!-- SUB CATEGORY -->
-            <div class="accordion-content px-5 overflow-auto max-h-0">
-              <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center mt-2 mb-2">
-                  <i class="fas fa-solid fa-chevron-right"></i>
-                  <h3 class="text-sm" >Kurikulum K13</h3>
-              </div>
-              <div class="accordion-content px-5 pt-0 overflow-auto max-h-0">
-                  {{-- <a href="/profile" class="leading-6 text-sm font-light pl-9 text-justify">Silabus</a>
-                  <a href="/profile" class="leading-6 text-sm font-light pl-9 text-justify">RPP</a> --}}
-                  <a href="#" class="leading-6 text-sm font-light pl-9 text-justify">
-                    <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800"> Silabus </span>
-                  </a>
-                  <a href="#" class="leading-6 text-sm font-light pl-2 text-justify">
-                    <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-yellow-100 text-yellow-800"> RPP </span>
-                  </a>
-              </div>
-              <div class="accordion-header1 cursor-pointer transition flex space-x-5 px-5 items-center mt-2 mb-2">
-                  <i class="fas fa-solid fa-chevron-right"></i>
-                  <h3 class="text-sm" >Kurikulum Merdeka</h3>
-              </div>
-              <div class="accordion-content1 px-5 pt-0 overflow-auto max-h-0">
-                {{-- <a href="/profile" class="leading-6 text-sm font-light pl-9 text-justify">Silabus</a>
-                <a href="/profile" class="leading-6 text-sm font-light pl-9 text-justify">RPP</a> --}}
-                <a href="#" class="leading-6 text-sm font-light pl-9 text-justify">
-                  <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800"> Silabus </span>
-                </a>
-                <a href="#" class="leading-6 text-sm font-light pl-2 text-justify">
-                  <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-yellow-100 text-yellow-800"> RPP </span>
-                </a>
-            </div>
-            </div>
-          </div>
-
-          <!-- MAIN CATEGORY -->
-          <div class="transition">
-            <!-- header -->
-            <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center mt-2 mb-2">
-                <i class="fas fa-solid fa-chevron-right"></i>
-                <h3 class="font-semibold">Ekstrakurikuler</h3>
-            </div>
-            <!-- SUB CATEGORY -->
-            <div class="accordion-content px-5 pl-11 pt-0 overflow-auto max-h-0">
-              <a href="#" class="inline-block pl-2">
-                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-violet-100 text-violet-800"> Tari </span>
-              </a>
-              <a href="#" class="inline-block pl-2 py-1">
-                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800"> Drumband </span>
-              </a>
-              <a href="#" class="inline-block pl-2 py-1">
-                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-fuchsia-100 text-fuchsia-800"> Pencaksilat </span>
-              </a>
-              <a href="#" class="inline-block pl-2 py-1">
-                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-teal-100 text-teal-800"> Qiroah </span>
-              </a>
-              <a href="#" class="inline-block pl-2 py-1">
-                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-emerald-100 text-emerald-800"> Samproh </span>
-              </a>
-              <a href="#" class="inline-block pl-2 py-1">
-                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-rose-100 text-rose-800"> Pramuka </span>
-              </a>
-          </div>
-        </div>
-
-        <!-- MAIN CATEGORY -->
-        <div class="transition">
-          <!-- header -->
-          <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center mt-2 mb-2">
-              <i class="fas fa-solid fa-chevron-right"></i>
-              <h3 class="font-semibold">Adiwiyata</h3>
-          </div>
-          <!-- SUB CATEGORY -->
-          <div class="accordion-content px-5 pt-0 pl-11 overflow-auto max-h-0">
-            <a href="#" class="inline-block pl-2 py-1">
-              <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-lime-100 text-lime-800"> Ecopreneur </span>
-            </a>
-            <a href="#" class="inline-block pl-2 py-1">
-              <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800"> Ecoschool </span>
-            </a>
-          </div>
-        </div>
-
-        <!-- MAIN CATEGORY -->
-        <div class="transition">
-          <!-- header -->
-          <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center mt-2 mb-2">
-              <i class="fas fa-solid fa-chevron-right"></i>
-              <h3 class="font-semibold">Karya dan Prestasi</h3>
-          </div>
-          <!-- SUB CATEGORY -->
-          <div class="accordion-content px-5 pl-11 pt-0 overflow-auto max-h-0">
-            <a href="#" class="inline-block pl-2 py-1">
-              <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-orange-100 text-orange-800"> Guru </span>
-            </a>
-            <a href="#" class="inline-block pl-2 py-1">
-              <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-fuchsia-100 text-fuchsia-800"> Siswa </span>
-            </a>
-          </div>
-        </div>
+        
       </div>
     </div>
   </div>
