@@ -118,7 +118,7 @@
         <div class="grid grid-cols-2 gap-4">
           
           <div data-aos="zoom-in" data-aos-duration="1000">
-            <a href="#" class="mt-2 block">
+            <a href="#" class="mt-2 block lg:h-20 max-sm:h-36">
               <p class="text-xl font-bold text-gray-900">Bazar Olahan Sayur Hidroponik</p>
               <div class="pt-1">
                 <time class="text-sm text-slate-600" datetime="2020-03-16">Mar 16, 2020</time>
@@ -139,7 +139,7 @@
           </div>
 
           <div data-aos="zoom-in" data-aos-duration="1200">
-            <a href="#" class="mt-2 block">
+            <a href="#" class="mt-2 block lg:h-20 max-sm:h-36">
               <p class="text-xl font-bold text-gray-900">Kegiatan Penanaman Pohon Untuk Memperingati Hari Guru</p>
               <div class="pt-1">
                 <time class="text-sm text-slate-600" datetime="2020-03-16">Nov 30, 2020</time>
@@ -160,7 +160,7 @@
           </div>
 
           <div data-aos="zoom-in" data-aos-duration="1000">
-            <a href="#" class="mt-2 block">
+            <a href="#" class="mt-2 block lg:h-20 max-sm:h-36">
               <p class="text-xl font-bold text-gray-900">Kunjungan Penelitian Balitbang Kemendikbud Jakarta</p>
               <div class="pt-1">
                 <time class="text-sm text-slate-600" datetime="2020-03-16">Mar 16, 2020</time>
@@ -178,7 +178,7 @@
           </div>
 
           <div data-aos="zoom-in" data-aos-duration="1200">
-            <a href="#" class="mt-2 block">
+            <a href="#" class="mt-2 block lg:h-20 max-sm:h-36">
               <p class="text-xl font-bold text-gray-900">Bazar Olahan Sayur Hidroponik</p>
               <div class="pt-1">
                 <time class="text-sm text-slate-600" datetime="2020-03-16">Mar 16, 2020</time>

@@ -124,157 +124,141 @@
         </table>
     </div>
 </div>
-    <!-- EKSTRA NYA -->
 
-    <div >
-        <div data-aos="fade-right" data-aos-duration="2000" class="text-center text-4xl font-bold m-20">Ekstrakurikuler</div>
-        <div data-aos="fade-left" data-aos-duration="2000" class="flex items-center justify-center w-full px-36 pb-10">
-            <div class="w-full relative flex items-center justify-center">
-                <button aria-label="slide backward" class="absolute z-30 left-0 ml-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer" id="prev">
-                    <svg class="dark:text-white" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </button>
-                <div class="back w-full h-full mx-auto overflow-x-hidden overflow-y-hidden ">
-                    <div id="slider" class="h-3/5 flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
-                        <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                            <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" class="object-cover object-center w-full rounded-xl shadow-lg" />
-                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
-                                <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 1</h2>
-                                <div class="flex h-full items-end pb-6">
-                                    <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Tari</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                            <img src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="sitting area" class="object-cover object-center w-full rounded-xl shadow-lg" />
-                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
-                                <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 2</h2>
-                                <div class="flex h-full items-end pb-6">
-                                    <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Drumband</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                            <img src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="sitting area" class="object-cover object-center w-full rounded-xl shadow-lg" />
-                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
-                                <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 2</h2>
-                                <div class="flex h-full items-end pb-6">
-                                    <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Pencak Silat</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                            <img src="https://i.ibb.co/rFsGfr5/carosel-4.png" alt="sitting area" class="object-cover object-center w-full rounded-xl shadow-lg" />
-                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
-                                <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 2</h2>
-                                <div class="flex h-full items-end pb-6">
-                                    <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Qiroah</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                            <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" class="object-cover object-center w-full rounded-xl shadow-lg" />
-                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
-                                <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 2</h2>
-                                <div class="flex h-full items-end pb-6">
-                                    <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Samproh</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                            <img src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="sitting area" class="object-cover object-center w-full rounded-xl shadow-lg" />
-                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
-                                <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 2</h2>
-                                <div class="flex h-full items-end pb-6">
-                                    <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Pramuka</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                            <img src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="sitting area" class="object-cover object-center w-full rounded-xl shadow-lg" />
-                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
-                                <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 2</h2>
-                                <div class="flex h-full items-end pb-6">
-                                    <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Minimal Interior</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                            <img src="https://i.ibb.co/rFsGfr5/carosel-4.png" alt="sitting area" class="object-cover object-center w-full rounded-xl shadow-lg" />
-                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
-                                <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 2</h2>
-                                <div class="flex h-full items-end pb-6">
-                                    <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Minimal Interior</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                            <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" class="object-cover object-center w-full rounded-xl shadow-lg" />
-                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
-                                <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 2</h2>
-                                <div class="flex h-full items-end pb-6">
-                                    <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Minimal Interior</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                            <img src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="sitting area" class="object-cover object-center w-full rounded-xl shadow-lg" />
-                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
-                                <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 2</h2>
-                                <div class="flex h-full items-end pb-6">
-                                    <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Minimal Interior</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                            <img src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="sitting area" class="object-cover object-center w-full rounded-xl shadow-lg" />
-                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
-                                <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 2</h2>
-                                <div class="flex h-full items-end pb-6">
-                                    <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Minimal Interior</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                            <img src="https://i.ibb.co/rFsGfr5/carosel-4.png" alt="sitting area" class="object-cover object-center w-full rounded-xl shadow-lg" />
-                            <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
-                                <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 2</h2>
-                                <div class="flex h-full items-end pb-6">
-                                    <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Minimal Interior</h3>
-                                </div>
-                            </div>
+    <!-- EKSTRA NYA -->
+    <div class="text-center text-4xl font-bold m-10">Ekstrakurikuler</div>
+    <div class="lg:px-36 lg:py-10">
+        <div class="swiper mySwiper h-3/5 max-sm:w-3/5 lg:w-4/5">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" class="object-cover object-center object-contain w-full rounded-xl shadow-lg" />
+                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
+                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 1</h2>
+                        <div class="flex h-full items-end pb-6">
+                            <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Tari</h3>
                         </div>
                     </div>
                 </div>
-                <button aria-label="slide forward" class="absolute z-30 right-0 mr-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400" id="next">
-                    <svg class="dark:text-white" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </button>
+                <div class="swiper-slide">
+                    <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" class="object-cover object-center object-contain w-full rounded-xl shadow-lg" />
+                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
+                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 2</h2>
+                        <div class="flex h-full items-end pb-6">
+                            <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Drumband</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" class="object-cover object-center object-contain w-full rounded-xl shadow-lg" />
+                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
+                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 3</h2>
+                        <div class="flex h-full items-end pb-6">
+                            <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Pencak Silat</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" class="object-cover object-center object-contain w-full rounded-xl shadow-lg" />
+                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
+                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 4</h2>
+                        <div class="flex h-full items-end pb-6">
+                            <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Qiroah</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" class="object-cover object-center object-contain w-full rounded-xl shadow-lg" />
+                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
+                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 5</h2>
+                        <div class="flex h-full items-end pb-6">
+                            <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Samproh</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" class="object-cover object-center object-contain w-full rounded-xl shadow-lg" />
+                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
+                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 6</h2>
+                        <div class="flex h-full items-end pb-6">
+                            <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Pramuka</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </div>
+
+    <!-- DAFTAR GURU DAN STAFF -->
+    <div class="text-center text-4xl font-bold m-10">Daftar Guru & Staff</div>
+    <div class="lg:mx-36 mx-20 my-10">
+        <div class="drop-shadow-md py-2 align-middle md:px-6 lg:px-8">
+          <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
+            <table class="table-auto w-full min-w-full divide-y divide-gray-300">
+              <thead class="bg-gray-50">
+                <tr>
+                  <th scope="col" class="py-3.5 lg:px-10 text-left text-sm font-semibold text-gray-900 sm:pl-6">Nama</th>
+                  <th scope="col" class="py-3.5 lg:px-10 text-left text-sm font-semibold text-gray-900">Posisi</th>
+                </tr>
+              </thead>
+              {{-- @foreach ($teachers as $teacher) --}}
+              <tbody class="divide-y divide-gray-200 bg-white">
+                <tr>
+                  <td class="whitespace-nowrap py-4 lg:px-10 text-sm font-medium text-gray-900 sm:pl-6">Tegar Alwinata</td>
+                  <td class="whitespace-nowrap py-4 lg:px-10 text-sm text-gray-500">Guru IPS</td>
+                </tr>
+                {{-- @endforeach --}}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     
+    <!-- Style Carousel -->
+
+    <style>
+        .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+    </style>
 
     <!-- SCRIPT CAROUSEL -->
 
     <script>
-        let defaultTransform = 0;
-        function goNext() {
-            defaultTransform = defaultTransform - 225;
-            var slider = document.getElementById("slider");
-            if (Math.abs(defaultTransform) >= slider.scrollWidth / 1.7) defaultTransform = 0;
-            slider.style.transform = "translateX(" + defaultTransform + "px)";
-        }
-        next.addEventListener("click", goNext);
-        function goPrev() {
-            var slider = document.getElementById("slider");
-            if (Math.abs(defaultTransform) === 0) defaultTransform = 0;
-            else defaultTransform = defaultTransform + 225;
-            slider.style.transform = "translateX(" + defaultTransform + "px)";
-        }
-        prev.addEventListener("click", goPrev);
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                },
+                768: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+                },
+                1024: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+                },
+            },
+        });
     </script>
 
     <!-- SCRIPT API GMAPS -->
