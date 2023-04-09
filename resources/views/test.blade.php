@@ -143,7 +143,7 @@
   }
   ```
 -->
-<div class="bg-transparent pb-20 px-4 sm:px-6 lg:pb-28 lg:px-8">
+<div class="bg-transparent pb-10 px-4 sm:px-6 lg:pb-10 lg:px-8">
   <h2 class="text-2xl md:text-3xl text-black font-extrabold mt-6">Postingan Terbaru</h2>
   <div class="relative mx-auto divide-y-2 divide-gray-200 lg:max-w-1">
     <div class=" mt-4 grid gap-16 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
@@ -237,6 +237,18 @@
               <div class="pt-1">
                 <time class="text-sm text-slate-600" datetime="2020-03-16">Mar 16, 2020</time>
               </div>
+            </a>
+            <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Pada tanggal 27 September 2018, SDN Bubutan IV mengadakan acara Bazar dari hasil kebun hidroponik. Kegiatan ini dimaksudkan untuk memberikan pendidikan kepada para siswa berwiraswasta  dari tanaman yang ada disekitar mereka. Acara ini dimaksudkan agar lahan kosong yang ada disekitar kita bisa kita manfaatkkan semaksimal mungkin.</p>
+            <p class="text-sm text-gray-500">
+              <a href="#" class="inline-block">
+                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800"> Ecopreneur </span>
+              </a>
+              <a href="#" class="inline-block">
+                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-orange-100 text-orange-800"> Ecoschool </span>
+              </a>
+            </p>
+            <div class="mt-3">
+              <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Selengkapnya </a>
             </a>
             <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Pada tanggal 27 September 2018, SDN Bubutan IV mengadakan acara Bazar dari hasil kebun hidroponik. Kegiatan ini dimaksudkan untuk memberikan pendidikan kepada para siswa berwiraswasta  dari tanaman yang ada disekitar mereka. Acara ini dimaksudkan agar lahan kosong yang ada disekitar kita bisa kita manfaatkkan semaksimal mungkin.</p>
             <p class="text-sm text-gray-500">
