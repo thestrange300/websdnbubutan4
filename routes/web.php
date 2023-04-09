@@ -41,6 +41,10 @@ Route::get('/dashboard/post', function () {
     return view('dashboard_post');
 });
 
+Route::get('/dashboard/guru', function () {
+    return view('dashboard_guru');
+});
+
 Route::get('/dashboard/create', function () {
     return view('dashboard_create');
 });

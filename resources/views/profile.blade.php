@@ -6,7 +6,7 @@
 
     <!-- NAMA KEPSEK WAKASEK -->
 
-    <div class="grid grid-cols-2 lg:px-36">
+    <div class="grid grid-cols-2 lg:px-36 ">
         <div class="text-center flex flex-col justify-center items-center">
             <img src="{{asset('img/kepsek.png')}}" alt="" class="max-w-xs max-sm:w-60">
             <p class="font-semibold">Kepala Sekolah</p>
@@ -14,57 +14,61 @@
             <p>19680804 199403 2 009</p>
         </div>
         <div class="text-center flex flex-col justify-center items-center overflow-x-auto">
-            <table class="table-fixed border-collapse">
-                <tbody>
-                    <tr>
-                        <td class="pr-10">Nama Sekolah</td>
-                        <td class="break-all">:&nbsp;SDN Bubutan IV Surabaya</td>
-                    </tr>
-                    <td>&nbsp;</td>
-                    <tr>
-                        <td class="pr-10">NPSN</td>
-                        <td class="break-all">:&nbsp;20532958</td>
-                    </tr>
-                    <td>&nbsp;</td>
-                    <tr>
-                        <td class="pr-10">NSS</td>
-                        <td class="break-all">:&nbsp;101056004010</td>
-                    </tr>
-                    <td>&nbsp;</td>
-                    <tr>
-                        <td class="pr-10">Alamat</td>
-                        <td class="break-all">:&nbsp;Jl. Semarang No.90</td>
-                    </tr>
-                    <td>&nbsp;</td>
-                    <tr>
-                        <td class="pr-10">No. Telepon</td>
-                        <td class="break-all">:&nbsp;031-5483243</td>
-                    </tr>
-                    <td>&nbsp;</td>
-                    <tr>
-                        <td class="pr-10">Alamat email</td>
-                        <td class="break-all">:&nbsp;sdnbubutanempat72@gmail.com</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="bg-white rounded-lg drop-shadow-xl p-6">
+                <table class="table-fixed border-collapse ">
+                    <tbody>
+                        <tr>
+                            <td class="pr-10">Nama Sekolah</td>
+                            <td class="break-all">:&nbsp;SDN Bubutan IV Surabaya</td>
+                        </tr>
+                        <td>&nbsp;</td>
+                        <tr>
+                            <td class="pr-10">NPSN</td>
+                            <td class="break-all">:&nbsp;20532958</td>
+                        </tr>
+                        <td>&nbsp;</td>
+                        <tr>
+                            <td class="pr-10">NSS</td>
+                            <td class="break-all">:&nbsp;101056004010</td>
+                        </tr>
+                        <td>&nbsp;</td>
+                        <tr>
+                            <td class="pr-10">Alamat</td>
+                            <td class="break-all">:&nbsp;Jl. Semarang No.90</td>
+                        </tr>
+                        <td>&nbsp;</td>
+                        <tr>
+                            <td class="pr-10">No. Telepon</td>
+                            <td class="break-all">:&nbsp;031-5483243</td>
+                        </tr>
+                        <td>&nbsp;</td>
+                        <tr>
+                            <td class="pr-10">Alamat email</td>
+                            <td class="break-all">:&nbsp;sdnbubutanempat72@gmail.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
         </div>
     </div>
-
+    
     <!-- MAP -->
-
+    
     <div class="grid grid-cols-2 lg:px-36">
         <div class="text-center flex flex-col items-center">
             <div class="max-sm:ml-10 max-w-xs text-justify flex-1 lg:mt-5">
                 <p>Kami berkomitmen untuk memberikan pendidikan terbaik kepada para siswa, serta menciptakan lingkungan belajar yang aman, nyaman, dan mendukung.</p>
             </div>
         </div>
-        <div class="flex flex-col items-center max-sm:overflow-auto max-sm:relative max-sm:mt-5 max-sm:hidden">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247.36903993294723!2d112.72935277790985!3d-7.251693397360204!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f94668aca7af%3A0x38c23305fd460e5b!2sBubutan%20IV%20Elementary%20School%20Surabaya!5e0!3m2!1sen!2sid!4v1677412017573!5m2!1sen!2sid" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="bg-white rounded-lg drop-shadow-xl p-6">
+                    <div class="flex flex-col items-center max-sm:overflow-auto max-sm:relative max-sm:mt-5 max-sm:hidden">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247.36903993294723!2d112.72935277790985!3d-7.251693397360204!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f94668aca7af%3A0x38c23305fd460e5b!2sBubutan%20IV%20Elementary%20School%20Surabaya!5e0!3m2!1sen!2sid!4v1677412017573!5m2!1sen!2sid" width="600" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
+        </div>
+
     </div>
-    <div class="flex flex-col items-center max-sm:overflow-auto max-sm:relative max-sm:mt-5 lg:hidden">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247.36903993294723!2d112.72935277790985!3d-7.251693397360204!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f94668aca7af%3A0x38c23305fd460e5b!2sBubutan%20IV%20Elementary%20School%20Surabaya!5e0!3m2!1sen!2sid!4v1677412017573!5m2!1sen!2sid" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
+
 
     <!-- VISI MISI -->
     <div data-aos="fade-up" data-aos-duration="2000">
@@ -131,54 +135,48 @@
         <div class="swiper mySwiper h-3/5 max-sm:w-3/5 lg:w-4/5">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" class="object-cover object-center object-contain w-full rounded-xl shadow-lg" />
+                    <img src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2021/10/WhatsApp-Image-2021-09-29-at-19.14.58.jpeg" alt="black chair and white table" class="object-cover object-center object-contain w-full rounded-xl shadow-lg" />
                     <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
-                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 1</h2>
                         <div class="flex h-full items-end pb-6">
                             <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Tari</h3>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" class="object-cover object-center object-contain w-full rounded-xl shadow-lg" />
+                    <img src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2018/07/Drumband-705x400.jpg" alt="black chair and white table" class="object-cover object-center object-contain w-full rounded-xl shadow-lg" />
                     <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
-                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 2</h2>
                         <div class="flex h-full items-end pb-6">
                             <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Drumband</h3>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" class="object-cover object-center object-contain w-full rounded-xl shadow-lg" />
+                    <img src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2018/07/IMG-20180426-WA0043-715x400.jpg" alt="black chair and white table" class="object-cover object-center object-contain w-full rounded-xl shadow-lg" />
                     <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
-                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 3</h2>
                         <div class="flex h-full items-end pb-6">
                             <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Pencak Silat</h3>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" class="object-cover object-center object-contain w-full rounded-xl shadow-lg" />
+                    <img src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2018/07/IMG-20180426-WA0051-715x400.jpg" alt="black chair and white table" class="object-cover object-center object-contain w-full rounded-xl shadow-lg" />
                     <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
-                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 4</h2>
                         <div class="flex h-full items-end pb-6">
                             <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Qiroah</h3>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" class="object-cover object-center object-contain w-full rounded-xl shadow-lg" />
+                    <img src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2018/07/samproh-715x400.jpg" alt="black chair and white table" class="object-cover object-center object-contain w-full rounded-xl shadow-lg" />
                     <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
-                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 5</h2>
                         <div class="flex h-full items-end pb-6">
                             <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Samproh</h3>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" class="object-cover object-center object-contain w-full rounded-xl shadow-lg" />
+                    <img src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2018/07/IMG_2790-715x400.jpg" alt="black chair and white table" class="object-cover object-center object-contain w-full rounded-xl shadow-lg" />
                     <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
-                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-white">Catalog 6</h2>
                         <div class="flex h-full items-end pb-6">
                             <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Pramuka</h3>
                         </div>
@@ -191,7 +189,7 @@
     </div>
 
     <!-- DAFTAR GURU DAN STAFF -->
-    <div class="text-center text-4xl font-bold m-10">Daftar Guru & Staff</div>
+    <div class="text-center text-4xl font-bold mx-10 my-4">Daftar Guru & Staff</div>
     <div class="lg:mx-36 mx-20 my-10">
         <div class="drop-shadow-md py-2 align-middle md:px-6 lg:px-8">
           <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
@@ -215,6 +213,9 @@
         </div>
       </div>
     
+
+
+
     <!-- Style Carousel -->
 
     <style>
