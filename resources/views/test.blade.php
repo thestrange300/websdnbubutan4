@@ -231,24 +231,13 @@
             </div>
           </div>
 
+
           <div data-aos="zoom-in" data-aos-duration="1000">
             <a href="#" class="mt-2 block lg:h-20 max-sm:h-36">
               <p class="text-xl font-bold text-gray-900">Bazar Olahan Sayur Hidroponik</p>
               <div class="pt-1">
                 <time class="text-sm text-slate-600" datetime="2020-03-16">Mar 16, 2020</time>
               </div>
-            </a>
-            <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Pada tanggal 27 September 2018, SDN Bubutan IV mengadakan acara Bazar dari hasil kebun hidroponik. Kegiatan ini dimaksudkan untuk memberikan pendidikan kepada para siswa berwiraswasta  dari tanaman yang ada disekitar mereka. Acara ini dimaksudkan agar lahan kosong yang ada disekitar kita bisa kita manfaatkkan semaksimal mungkin.</p>
-            <p class="text-sm text-gray-500">
-              <a href="#" class="inline-block">
-                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800"> Ecopreneur </span>
-              </a>
-              <a href="#" class="inline-block">
-                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-orange-100 text-orange-800"> Ecoschool </span>
-              </a>
-            </p>
-            <div class="mt-3">
-              <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Selengkapnya </a>
             </a>
             <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Pada tanggal 27 September 2018, SDN Bubutan IV mengadakan acara Bazar dari hasil kebun hidroponik. Kegiatan ini dimaksudkan untuk memberikan pendidikan kepada para siswa berwiraswasta  dari tanaman yang ada disekitar mereka. Acara ini dimaksudkan agar lahan kosong yang ada disekitar kita bisa kita manfaatkkan semaksimal mungkin.</p>
             <p class="text-sm text-gray-500">
