@@ -9,3 +9,7 @@ module.exports = {
   },
   plugins: [],
 }
+
+// fontFamily: {
+//   sans: []
+// }

@@ -34,17 +34,25 @@ Route::get('/about', function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('dashboard', [
+        'active' => 'dashboard'
+    ]);
 });
 
 Route::get('/dashboard/post', function () {
-    return view('dashboard_post');
+    return view('dashboard_post', [
+        'active' => 'dashboardpost'
+    ]);
 });
 
 Route::get('/dashboard/guru', function () {
-    return view('dashboard_guru');
+    return view('dashboard_guru', [
+        'active' => 'dashboardguru'
+    ]);
 });
 
-Route::get('/dashboard/create', function () {
-    return view('dashboard_create');
+Route::get('/dashboard/post/create', function () {
+    return view('dashboard_create', [
+        'active' => 'dashboardpost'
+    ]);
 });
