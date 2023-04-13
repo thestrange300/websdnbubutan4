@@ -26,7 +26,7 @@
             <div class="flex space-x-4 gap-8">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300" -->
               
-              <a href="/" class="my-auto relative bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-3 py-2 rounded-md text-base font-bold" aria-current="page">Home</a>
+              <a href="/" class="my-auto relative {{ $active == "home" ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold' : 'text-cyan-900' }} px-3 py-2 rounded-md text-base" aria-current="page">Home</a>
               
               {{-- DROPDOWN PROFIL --}}
 {{-- 

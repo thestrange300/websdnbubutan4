@@ -18,11 +18,15 @@ Route::get('/', function () {
 });
 
 Route::get('/profile', function () {
-    return view('profile');
+    return view('profile', [
+        'active' => 'profile'
+    ]);
 });
 
 Route::get('/test', function () {
-    return view('test');
+    return view('test', [
+        'active' => 'home'
+    ]);
 });
 
 Route::get('/post', function () {
