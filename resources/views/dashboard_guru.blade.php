@@ -38,6 +38,22 @@
                         <td class="whitespace-nowrap py-4 lg:px-10 text-sm font-medium text-gray-900 sm:pl-6">Tegar Alwinata</td>
                         <td class="whitespace-nowrap py-4 lg:px-10 text-sm text-gray-500">Guru IPS</td>
                       </tr>
+                      <tr>
+                          <td class="whitespace-nowrap py-4 lg:px-10 text-sm font-medium text-gray-900 sm:pl-6">Mirza Alwinata</td>
+                          <td class="whitespace-nowrap py-4 lg:px-10 text-sm text-gray-500">Guru IPA</td>              
+                      </tr>
+                      <tr>
+                          <td class="whitespace-nowrap py-4 lg:px-10 text-sm font-medium text-gray-900 sm:pl-6">Auliya Alwinata</td>
+                          <td class="whitespace-nowrap py-4 lg:px-10 text-sm text-gray-500">Guru Kelas 2</td>                        
+                      </tr>
+                      <tr>
+                          <td class="whitespace-nowrap py-4 lg:px-10 text-sm font-medium text-gray-900 sm:pl-6">Tegar Amir Faizi</td>
+                          <td class="whitespace-nowrap py-4 lg:px-10 text-sm text-gray-500">Guru Kelas 5</td>                     
+                      </tr>
+                      <tr>
+                          <td class="whitespace-nowrap py-4 lg:px-10 text-sm font-medium text-gray-900 sm:pl-6">Tegar Rakhman Hidayat</td>
+                          <td class="whitespace-nowrap py-4 lg:px-10 text-sm text-gray-500">Tata Kelola</td> 
+                      </tr>
                       {{-- @endforeach --}}
                     </tbody>
                   </table>

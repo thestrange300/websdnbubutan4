@@ -46,8 +46,11 @@
           <label for="content_title" class="form-label block text-sm font-medium text-gray-700 pb-2">Kategori</label>
           <div class="relative">
             <select class="block w-5/12 bg-white border border-gray-200 text-gray-700 shadow-md py-3 px-4 pr-8 rounded-md focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
-              <option>Adiwiyata</option>
-              <option>Ekstrakurikuler</option>
+              
+              <option>Ecopreneur</option>
+              <option>Ecoschool</option>
+              <option>Tari</option>
+              <option></option>
               <option>Karya dan Prestasi</option>
             </select>
           </div>
