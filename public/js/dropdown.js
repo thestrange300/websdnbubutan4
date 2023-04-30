@@ -7,4 +7,5 @@ dropdown.addEventListener("click", function() {
     console.log("success")
 });
 
-
+import { Carousel, initTE } from "tw-elements";
+initTE({ Carousel }, true );  
