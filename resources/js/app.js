@@ -1,8 +1,9 @@
 import './bootstrap';
 import {
     Dropdown,
+    Modal,
     Ripple,
     initTE,
   } from "tw-elements";
   
-initTE({ Dropdown, Ripple });
+initTE({ Modal, Dropdown, Ripple });

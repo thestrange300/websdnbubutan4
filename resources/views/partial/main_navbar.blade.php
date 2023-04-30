@@ -15,6 +15,7 @@
     <script type="text/javascript" src="https://unpkg.com/trix@2.0.0/dist/trix.umd.min.js"></script>
     <title>SDN Bubutan IV</title>
     @vite('resources/css/app.css')
+    @vite('resources/js/app.js')
 </head>
 <body>
   <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
