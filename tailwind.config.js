@@ -6,7 +6,11 @@ module.exports = {
     "./resources/**/*.vue",
     "./node_modules/tw-elements/dist/js/**/*.js"
   ],  theme: {
-    extend: {},
+    extend: {
+      maxHeight: {
+        '128': '32rem',
+      }
+    },
   },
   plugins: []
 }

@@ -30,7 +30,15 @@ Route::get('/test', function () {
 });
 
 Route::get('/post', function () {
-    return view('post');
+    return view('post', [
+        'active' => 'home'
+    ]);
+});
+
+Route::get('/post/detail', function () {
+    return view('detailpost', [
+        'active' => 'home'
+    ]);
 });
 
 Route::get('/about', function () {
