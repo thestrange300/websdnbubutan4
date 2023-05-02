@@ -52,7 +52,7 @@ Hydroponics is also a more sustainable method of agriculture, as it eliminates t
 
 In addition, hydroponics can be used to grow plants year-round, regardless of the weather or season. This makes it an ideal method of agriculture for areas with long winters or limited growing seasons. 
 
-Overall, hydroponics is an innovative and sustainable method of agriculture that offers many advantages over traditional soil-based agriculture. With its ability to produce higher yields in a smaller space, conserve water, and offer more precise control over the growing environment, hydroponics is a promising solution to the challenges of feeding a growing global population while minimizing environmental impact.
+Overall, hydroponics is an <u> innovative and sustainable</u>  method of agriculture that offers many advantages over traditional soil-based agriculture. With its ability to produce higher yields in a smaller space, conserve water, and offer more precise control over the growing environment, hydroponics is a promising solution to the challenges of feeding a growing global population while minimizing environmental impact.
     </p>
 
 <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
