@@ -9,7 +9,10 @@ module.exports = {
     extend: {
       maxHeight: {
         '128': '32rem',
-      }
+      },
+      spacing: {
+        '100': '28rem',
+      }      
     },
   },
   plugins: []

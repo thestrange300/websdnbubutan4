@@ -47,6 +47,12 @@ Route::get('/about', function () {
     ]);
 });
 
+Route::get('/login', function () {
+    return view('login', [
+        'active' => 'home'
+    ]);
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard', [
         'active' => 'dashboard'
