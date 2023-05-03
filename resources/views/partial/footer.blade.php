@@ -6,19 +6,7 @@
         </div>
   
         <div class="px-5 py-2">
-          <a href="#" class="text-base text-gray-500 hover:text-black"> Blog </a>
-        </div>
-  
-        <div class="px-5 py-2">
-          <a href="#" class="text-base text-gray-500 hover:text-black"> Jobs </a>
-        </div>
-  
-        <div class="px-5 py-2">
-          <a href="#" class="text-base text-gray-500 hover:text-black"> Press </a>
-        </div>
-  
-        <div class="px-5 py-2">
-          <a href="#" class="text-base text-gray-500 hover:text-black"> Accessibility </a>
+          <a href="#" class="text-base text-gray-500 hover:text-black"> Login </a>
         </div>
   
       </nav>

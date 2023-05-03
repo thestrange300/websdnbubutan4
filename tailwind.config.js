@@ -4,10 +4,18 @@ module.exports = {
     "./resources/**/*.blade.php",
     "./resources/**/*.js",
     "./resources/**/*.vue",
+    "./node_modules/tw-elements/dist/js/**/*.js"
   ],  theme: {
-    extend: {},
+    extend: {
+      maxHeight: {
+        '128': '32rem',
+      },
+      spacing: {
+        '100': '28rem',
+      }      
+    },
   },
-  plugins: [],
+  plugins: []
 }
 
 // fontFamily: {
