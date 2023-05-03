@@ -100,7 +100,7 @@
       <div class="py-4 grid gap-12 lg:grid-cols-2">
 
 {{-- KARTU KEDUA --}}
-        <div class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
+        <div data-aos="zoom-in" data-aos-duration="1000" class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
           <div class="w-full md:w-1/3 bg-white grid place-items-center">
             <img src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2022/11/WhatsApp-Image-2022-11-21-at-09.23.29-2-1536x1152.jpeg" alt="" class="w-full h-full object-cover bg-cover rounded-xl max-w-xs transition duration-300 ease-in-out hover:scale-105" />
           </div>
@@ -112,7 +112,7 @@
         </div>
 
 {{-- KARTU KETIGA --}}
-        <div class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
+        <div data-aos="zoom-in" data-aos-duration="1000" class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
           <div class="w-full md:w-1/3 bg-white grid place-items-center">
             <img src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2022/11/WhatsApp-Image-2022-11-10-at-10.47.54-1536x1152.jpeg" alt="tailwind logo" class="w-full h-full object-cover bg-cover rounded-xl max-w-xs transition duration-300 ease-in-out hover:scale-105" />
           </div>
@@ -150,7 +150,7 @@
       <div class="col-span-3">
         <div class="grid grid-cols-3 gap-4">
           
-          <div data-aos="zoom-in" data-aos-duration="1000">
+          <div>
             <a href="#" class="mt-2 block lg:h-20 max-sm:h-36">
               <p class="text-xl font-bold text-gray-900">Bazar Olahan Sayur Hidroponik</p>
               <div class="pt-1">
@@ -171,7 +171,7 @@
             </div>
           </div>
 
-          <div data-aos="zoom-in" data-aos-duration="1200">
+          <div>
             <a href="#" class="mt-2 block lg:h-20 max-sm:h-36">
               <p class="text-xl font-bold text-gray-900">Kegiatan Penanaman Pohon Untuk Memperingati Hari Guru</p>
               <div class="pt-1">
@@ -192,7 +192,7 @@
             </div>
           </div>
 
-          <div data-aos="zoom-in" data-aos-duration="1000">
+          <div>
             <a href="#" class="mt-2 block lg:h-20 max-sm:h-36">
               <p class="text-xl font-bold text-gray-900">Kunjungan Penelitian Balitbang Kemendikbud Jakarta</p>
               <div class="pt-1">
@@ -210,7 +210,7 @@
             </div>
           </div>
 
-          <div data-aos="zoom-in" data-aos-duration="1200">
+          <div>
             <a href="#" class="mt-2 block lg:h-20 max-sm:h-36">
               <p class="text-xl font-bold text-gray-900">Bazar Olahan Sayur Hidroponik</p>
               <div class="pt-1">
@@ -232,7 +232,7 @@
           </div>
 
 
-          <div data-aos="zoom-in" data-aos-duration="1000">
+          <div>
             <a href="#" class="mt-2 block lg:h-20 max-sm:h-36">
               <p class="text-xl font-bold text-gray-900">Bazar Olahan Sayur Hidroponik</p>
               <div class="pt-1">
@@ -253,7 +253,7 @@
             </div>
           </div>
 
-          <div data-aos="zoom-in" data-aos-duration="1000">
+          <div>
             <a href="#" class="mt-2 block lg:h-20 max-sm:h-36">
               <p class="text-xl font-bold text-gray-900">Bazar Olahan Sayur Hidroponik</p>
               <div class="pt-1">

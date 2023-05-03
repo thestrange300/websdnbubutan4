@@ -12,11 +12,11 @@
         {{-- @foreach ($posts as $post) --}}
         <div class="px-4 py-5 bg-white shadow-lg rounded-lg overflow-hidden sm:p-6">
           <dt class="text-xl font-medium text-black truncate">Post 1</dt>
-          <dd class="mt-1 text-sm text-gray-500">Isi Post 1</dd>
+          <dd class="mt-1 text-sm text-gray-500 truncate text-justify">In information systems, ROC (Receiver Operating Characteristic) is a graphical representation of the performance of a binary classification model. It is commonly used to evaluate the accuracy of machine learning models that are used for tasks such as fraud detection, spam filtering, or medical diagnosis.</dd>
           <div class="text-right">
             <button 
             type="button"  
-            class="text-sm text-right font-bold text-black transition-all duration-200 rounded-lg"
+            class="text-sm text-right font-bold text-black transition-all duration-200 rounded-lg mt-2"
             data-te-toggle="modal"
             data-te-target="#postingan1"
             data-te-ripple-init>Ubah
@@ -26,13 +26,13 @@
         </div>
         <div class="px-4 py-5 bg-white shadow-lg rounded-lg overflow-hidden sm:p-6">
           <dt class="text-xl font-medium text-black truncate">Post 2</dt>
-          <dd class="mt-1 text-sm text-gray-500">Isi Post 2</dd>
+          <dd class="mt-1 text-sm text-gray-500 truncate text-justify">The area under the ROC curve (AUC-ROC) is a commonly used metric to evaluate the overall performance of a binary classification model. A model with an AUC-ROC of 1.0 is considered perfect, while a model with an AUC-ROC of 0.5 is no better than random guessing. Generally, a model with an AUC-ROC of 0.7 or higher is considered to be good, while a model with an AUC-ROC below 0.7 may need improvement.</dd>
           <div class="text-right">
             <button 
             type="button"  
-            class="text-sm text-right font-bold text-black transition-all duration-200 rounded-lg"
+            class="text-sm text-right font-bold text-black transition-all duration-200 rounded-lg mt-2"
             data-te-toggle="modal"
-            data-te-target="#postingan1"
+            data-te-target="#postingan2"
             data-te-ripple-init>Ubah
             </button> 
           </div>        
@@ -102,12 +102,13 @@
       </div>
     </div>
 
+    {{-- MODAL POST 1 --}}
     <div
     data-te-modal-init
     class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
     id="postingan1"
     tabindex="-1"
-    aria-labelledby="exampleModalCenterTitle"
+    aria-labelledby="exampleModalCenterTitle1"
     aria-modal="true"
     role="dialog">
     <div
@@ -119,7 +120,7 @@
           class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-neutral-100 border-opacity-100 p-4 ">
           <!--Modal title-->
           <h5
-            class="text-xl font-medium leading-normal text-neutral-800 "
+            class="text-xl font-bold leading-normal text-neutral-800 "
             id="exampleModalScrollableLabel">
             Pilih Postingan 1
           </h5>
@@ -147,29 +148,99 @@
         <!--Modal body-->
         <div class="relative p-4">
           <div class="mb-1">
-            <label for="title" class="form-label block text-sm font-medium text-gray-700 pt-4 pb-2">Nama Guru</label>
-            <input type="text" class="form-control drop-shadow-md px-2 py-2 
-            mt-1
-            block
-            w-full
-            rounded-md
-            border-gray-300
-            shadow-sm
-            focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
-            max-w-lg" id="title" name="title">
+            <label for="title" class="form-label block text-sm text font-medium text-gray-700 pb-3">Kategori</label>
+            <div class="relative" data-te-dropdown-ref>
+              <button
+                class="inline-flex items-center text-center drop-shadow rounded-md bg-white w-64 px-20 pb-2 pt-2 text-sm font-medium text-gray-700 leading-normal shadow-[0_4px_9px_-4px_#fbfbfb] transition duration-150 ease-in-out hover:bg-neutral-100 hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:bg-neutral-100 focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] motion-reduce:transition-none"
+                type="button"
+                id="post1"
+                data-te-dropdown-toggle-ref
+                aria-expanded="false"
+                data-te-ripple-init>
+                Pilih Kategori
+                <span class="w-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="h-5 w-5">
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </span>
+              </button>
+              <ul
+                class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
+                aria-labelledby="dropdownMenuButton9"
+                data-te-dropdown-menu-ref>
+                <li>
+                  <a
+                    class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-gray-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
+                    href="#"
+                    data-te-dropdown-item-ref
+                    >Something else here</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-gray-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
+                    href="#"
+                    data-te-dropdown-item-ref
+                    >Something else here</a
+                  >
+                </li>                
+              </ul>
+            </div>            
           </div>
           <div class="mb-1">
-            <label for="title" class="form-label block text-sm font-medium text-gray-700 pt-4 pb-2">Posisi</label>
-            <input type="text" class="form-control drop-shadow-md px-2 py-2 
-            mt-1
-            block
-            w-full
-            rounded-md
-            border-gray-300
-            shadow-sm
-            focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
-            max-w-lg" id="title" name="title">
-          </div>                
+            <label for="title" class="form-label block text-sm text font-medium text-gray-700 pt-4 pb-3">Postingan</label>
+            <div class="relative" data-te-dropdown-ref>
+              <button
+                class="inline-flex items-center text-center drop-shadow rounded-md bg-white w-68 px-20 pb-2 pt-2 text-sm font-medium text-gray-700 leading-normal shadow-[0_4px_9px_-4px_#fbfbfb] transition duration-150 ease-in-out hover:bg-neutral-100 hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:bg-neutral-100 focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] motion-reduce:transition-none"
+                type="button"
+                id="post1"
+                data-te-dropdown-toggle-ref
+                aria-expanded="false"
+                data-te-ripple-init>
+                Pilih Postingan
+                <span class="w-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="h-5 w-5">
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </span>
+              </button>
+              <ul
+                class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
+                aria-labelledby="dropdownMenuButton9"
+                data-te-dropdown-menu-ref>
+                <li>
+                  <a
+                    class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-gray-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
+                    href="#"
+                    data-te-dropdown-item-ref
+                    >Something else here</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-gray-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
+                    href="#"
+                    data-te-dropdown-item-ref
+                    >Something else here</a
+                  >
+                </li>                
+              </ul>
+            </div>            
+          </div>                        
         </div>
   
         <!--Modal footer-->
@@ -193,6 +264,10 @@
         </div>
       </div>
     </div>
+    
+    {{-- MODAL POST 2 --}}
+    {{-- PAKE MODAL 1 HEHE --}}
+
   </div>     
 
 @endsection

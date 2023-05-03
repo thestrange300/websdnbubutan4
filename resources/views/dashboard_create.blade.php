@@ -50,7 +50,6 @@
               <option>Ecopreneur</option>
               <option>Ecoschool</option>
               <option>Tari</option>
-              <option></option>
               <option>Karya dan Prestasi</option>
             </select>
           </div>
