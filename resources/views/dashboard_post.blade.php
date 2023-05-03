@@ -66,13 +66,14 @@
                     <th scope="col" class="py-4 px-8 text-left text-sm font-semibold text-gray-900">Action</th>
                   </tr>
                 </thead>
-                {{-- @foreach ($posts as $post) --}}
                 <tbody class="divide-y divide-gray-200 bg-white">
+                  @foreach ($post as $item)
                   <tr>
                     <td class="whitespace-nowrap py-4 text-sm font-medium text-gray-900 sm:pl-6">INI ID</td>
                     <td class="whitespace-nowrap py-4 text-sm text-gray-500">INI TITLE</td>
                     <td class="whitespace-nowrap text-sm text-gray-500 max-w-md truncate overflow-auto">INI CONTENT</td>
-                    <td class="whitespace-nowrap pt-4 lg:px-8 text-sm text-gray-500">
+                    <td class="whitespace-nowrap py-4 px-8 text-sm text-gray-500">
+                        {{-- action = "{{ route('delete',$post) }}" --}}
                       <form method="post" action="" enctype="multipart/form-data">
                         <button type="button" onclick="location.href=''"  class="inline-flex items-center px-2 py-2 border border-transparent shadow-sm text-sm leading-4 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                           <!-- Heroicon name: solid/mail -->
@@ -92,7 +93,7 @@
                     </form>
                     </td>
                   </tr>
-                  {{-- @endforeach --}}
+                  @endforeach
                 </tbody>
               </table>
               

@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\postController;
+use App\Http\Controllers\guruController;
 
 /*
 |--------------------------------------------------------------------------
@@ -59,20 +61,20 @@ Route::get('/dashboard', function () {
     ]);
 });
 
-Route::get('/dashboard/post', function () {
-    return view('dashboard_post', [
-        'active' => 'dashboardpost'
-    ]);
-});
+// Route::get('/dashboard/post', function () {
+//     return view('dashboard_post', [
+//         'active' => 'dashboardpost'
+//     ]);
+// });
 
-Route::get('/dashboard/guru', function () {
-    return view('dashboard_guru', [
-        'active' => 'dashboardguru'
-    ]);
-});
+Route::get('/dashboard/guru', [guruController::class, 'index'])->name('index.guru');
+Route::post('/dashboard/guru/tambah', [guruController::class, 'store'])->name('tambah.guru');
+Route::delete('/dashboard/guru/hapus/{guru:id}', [guruController::class, 'delete'])->name('hapus.guru');
 
 Route::get('/dashboard/post/create', function () {
     return view('dashboard_create', [
         'active' => 'dashboardpost'
     ]);
 });
+
+Route::resource('dashboard/post', postController::class);
