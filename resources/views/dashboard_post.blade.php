@@ -32,12 +32,12 @@
                     <th scope="col" class="py-4 px-8 text-left text-sm font-semibold text-gray-900">Action</th>
                   </tr>
                 </thead>
-                {{-- @foreach ($posts as $post) --}}
                 <tbody class="divide-y divide-gray-200 bg-white">
+                  @foreach ($post as $item)
                   <tr>
-                    <td class="whitespace-nowrap py-4 text-sm font-medium text-gray-900 sm:pl-6">INI ID</td>
-                    <td class="whitespace-nowrap py-4 text-sm text-gray-500">INI TITLE</td>
-                    <td class="whitespace-nowrap text-sm text-gray-500 max-w-md truncate overflow-auto">INI CONTENT</td>
+                    <td class="whitespace-nowrap py-4 text-sm font-medium text-gray-900 sm:pl-6">{{ $item->id }}</td>
+                    <td class="whitespace-nowrap py-4 text-sm text-gray-500">{{ $item->judul }}</td>
+                    <td class="whitespace-nowrap text-sm text-gray-500 max-w-md truncate overflow-auto">{{ $item->konten }}</td>
                     <td class="whitespace-nowrap py-4 px-8 text-sm text-gray-500">
                         {{-- action = "{{ route('delete',$post) }}" --}}
                       <form method="post" action="" enctype="multipart/form-data">
@@ -51,7 +51,7 @@
                     </form>
                     </td>
                   </tr>
-                  {{-- @endforeach --}}
+                  @endforeach
                 </tbody>
               </table>
               

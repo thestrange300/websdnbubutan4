@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\postController;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,11 +44,11 @@ Route::get('/dashboard', function () {
     ]);
 });
 
-Route::get('/dashboard/post', function () {
-    return view('dashboard_post', [
-        'active' => 'dashboardpost'
-    ]);
-});
+// Route::get('/dashboard/post', function () {
+//     return view('dashboard_post', [
+//         'active' => 'dashboardpost'
+//     ]);
+// });
 
 Route::get('/dashboard/guru', function () {
     return view('dashboard_guru', [
@@ -60,3 +61,5 @@ Route::get('/dashboard/post/create', function () {
         'active' => 'dashboardpost'
     ]);
 });
+
+Route::resource('dashboard/post', postController::class);
