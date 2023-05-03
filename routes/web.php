@@ -71,10 +71,9 @@ Route::get('/dashboard/guru', [guruController::class, 'index'])->name('index.gur
 Route::post('/dashboard/guru/tambah', [guruController::class, 'store'])->name('tambah.guru');
 Route::delete('/dashboard/guru/hapus/{guru:id}', [guruController::class, 'delete'])->name('hapus.guru');
 
-Route::get('/dashboard/post/create', function () {
-    return view('dashboard_create', [
-        'active' => 'dashboardpost'
-    ]);
-});
-
-Route::resource('dashboard/post', postController::class);
+Route::get('/dashboard/post', [postController::class, 'index'])->name('index.post');
+Route::get('/dashboard/post/create', [postController::class, 'create'])->name('create.post');
+Route::post('/dashboard/post/create', [postController::class, 'store'])->name('tambah.post');
+Route::get('/dashboard/post/{id}/edit', [postController::class, 'edit'])->name('edit.post');
+Route::put('/dashboard/post/{id}/edit', [postController::class, 'update'])->name('update.post');
+Route::delete('/dashboard/post/{id}', [postController::class, 'destroy'])->name('delete.post');

@@ -9,10 +9,10 @@
     </div>
   
   <div class="col-lg-8 pb-2">
-      <form method="post" action="/event" enctype="multipart/form-data">
+      <form method="post" action="{{ route('tambah.post') }}" enctype="multipart/form-data">
           @csrf
           <div class="mb-1">
-            <label for="title" class="form-label block text-sm font-medium text-gray-700 pt-4 pb-2">Judul</label>
+            <label for="judul" class="form-label block text-sm font-medium text-gray-700 pt-4 pb-2">Judul</label>
             <input type="text" class="form-control drop-shadow-md px-2 py-2 
             mt-1
             block
@@ -21,11 +21,11 @@
             border-gray-300
             shadow-sm
             focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
-            max-w-lg" id="title" name="title">
+            max-w-lg" id="judul" name="judul">
           </div>
 
-          <div class="mb-1">
-            <label for="title" class="form-label block text-sm font-medium text-gray-700 pt-4 pb-2">Slug</label>
+          {{-- <div class="mb-1">
+            <label for="slug" class="form-label block text-sm font-medium text-gray-700 pt-4 pb-2">Slug</label>
             <input type="text" class="form-control drop-shadow-md px-2 py-2 
             mt-1
             block
@@ -35,22 +35,21 @@
             shadow-sm
             focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
             max-w-lg pointer-events-none bg-neutral-100" id="slug" name="slug">
-          </div>
+          </div> --}}
 
           <div class="py-6">
-            <label for="content_title" class="form-label block text-sm font-medium text-gray-700 pb-2">Konten</label>
-            <input id="content" type="hidden" name="content">
-            <trix-editor input="content" class="shadow-md"></trix-editor>
+            <label for="konten" class="form-label block text-sm font-medium text-gray-700 pb-2">Konten</label>
+            <input id="konten" type="hidden" name="konten">
+            <trix-editor input="konten" class="shadow-md"></trix-editor>
           </div>
 
-          <label for="content_title" class="form-label block text-sm font-medium text-gray-700 pb-2">Kategori</label>
           <div class="relative">
-            <select class="block w-5/12 bg-white border border-gray-200 text-gray-700 shadow-md py-3 px-4 pr-8 rounded-md focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
-              
-              <option>Ecopreneur</option>
-              <option>Ecoschool</option>
-              <option>Tari</option>
-              <option>Karya dan Prestasi</option>
+            <label for="kategori" class="form-label block text-sm font-medium text-gray-700 pb-2">Kategori</label>
+            <select id="kategori" name="kategori" class="form-control block w-5/12 bg-white border border-gray-200 text-gray-700 shadow-md py-3 px-4 pr-8 rounded-md focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+              <option value="Ecopreneur">Ecopreneur</option>
+              <option value="Ecoschool">Ecoschool</option>
+              <option value="Tari">Tari</option>
+              <option value="Karya dan Prestasi">Karya dan Prestasi</option>
             </select>
           </div>
           
@@ -62,7 +61,6 @@
                 Create Post
               </button>
           </div>
-  
         </form>
   </div>
 
