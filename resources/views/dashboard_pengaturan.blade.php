@@ -42,7 +42,7 @@
             </button> 
 
             <div id="savebut" class="mt-4 pt-4" hidden>
-                <a href="/profile" class="sticky duration-500 transform hover:-translate-y-3 text-sm text-white items-center justify-center px-4 py-3 text-base font-bold rounded-md shadow-sm bg-gradient-to-r from-cyan-500 to-blue-500"> Simpan </a>
+                <a href="/123213" class="sticky duration-500 transform hover:-translate-y-3 text-sm text-white items-center justify-center px-4 py-3 font-bold rounded-md shadow-sm bg-gradient-to-r from-cyan-500 to-blue-500"> Simpan </a>
             </div>
                  
   </div>
@@ -51,14 +51,15 @@
 const button= document.getElementById("button");
 const change = document.getElementById("change");
 const change1 = document.getElementById("change1");
+const graycss = document.getElementById(".text-gray-500");
 const savebut = document.getElementById("savebut");
 console.log("tes")
 
 button.addEventListener("click", function() {
     change.toggleAttribute("disabled");
     change1.toggleAttribute("disabled");
-    change.className = element.className.replace('text-gray-500', 'text-black');
-    change1.className = element.className.replace('text-gray-500', 'text-black');    
+    // graycss.classList.remove('text-gray-500');
+    // graycss.classList.add('text-black');
     button.toggleAttribute("hidden");
     savebut.toggleAttribute("hidden");
     console.log("success")

@@ -4,9 +4,10 @@ import {
     Modal,
     Ripple,
     initTE,
+    Animate,
   } from "tw-elements";
   
-initTE({ Modal, Dropdown, Ripple });
+initTE({ Animate, Modal, Dropdown, Ripple });
 
 const button= document.getElementById("button");
 const change = document.getElementById("change");

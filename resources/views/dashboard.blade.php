@@ -25,8 +25,7 @@
                           </a>
                         </div>
                       </div>
-                        <a href="" class=" text-sm font-bold text-black transition-all
-                            duration-200 rounded-lg">Lihat</a>
+                        <a href="" class="hover:transform hover:scale-125 transition duration-300 text-sm font-bold text-black rounded-lg">Lihat</a>
                     </div>
                   </div>
                   <hr/>
@@ -44,8 +43,7 @@
                           </a>
                         </div>
                       </div>
-                        <a href="" class=" text-sm font-bold text-black transition-all
-                            duration-200 rounded-lg">Lihat</a>
+                        <a href="" class="hover:transform hover:scale-125 transition duration-300 text-sm font-bold text-black rounded-lg">Lihat</a>
                     </div>
                   </div>
                   <hr/>
@@ -63,14 +61,13 @@
                           </a>
                         </div>
                       </div>
-                        <a href="" class=" text-sm font-bold text-black transition-all
-                            duration-200 rounded-lg">Lihat</a>
+                        <a href="" class="hover:transform hover:scale-125 transition duration-300 text-sm font-bold text-black rounded-lg">Lihat</a>
                     </div>
                   </div>
                   <hr/>
                 
                 <div class="pb-1 pt-3 text-right">
-                    <a href="" class=" text-sm font-bold text-black transition-all duration-200 rounded-lg ">Selengkapnya</a> 
+                    <a href="" class="text-sm font-bold text-black rounded-lg ">Selengkapnya</a> 
                 </div>
                  
 
