@@ -36,9 +36,9 @@ initTE({ Carousel });
             <div class="bg-fixed bg-cover h-full w-full brightness-75" style="background-image: url('https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2022/11/WhatsApp-Image-2022-11-10-at-10.47.26-1536x1152.jpeg');"></div>
             <div class="absolute top-0 left-0 right-0 bottom-0">
                 <div class="flex items-center justify-center h-screen">
-                    <div class="drop-shadow-md h-100 w-96 py-6 px-6 rounded-xl border border-gray-200 bg-white mx-auto">
-                        <img class="h-16 w-auto mx-auto flex items-center justify-center" src="{{asset('img/Logo-Sekolah.png')}}" alt="">
-                        <h1 class="text-3xl font-bold text-center my-4">Login</h1>
+                    <div data-aos="fade-up" data-aos-duration="700" class="drop-shadow-md h-100 w-96 py-6 px-6 rounded-xl border border-gray-200 bg-white mx-auto">
+                        <img data-aos="fade-up" data-aos-duration="800" class="h-16 w-auto mx-auto flex items-center justify-center" src="{{asset('img/Logo-Sekolah.png')}}" alt="">
+                        <h1 data-aos="fade-up" data-aos-duration="900" class="text-3xl font-bold text-center my-4">Login</h1>
                         <div class="relative">
                             <div class="mb-1">
                               <label for="title" class="form-label block text-sm font-medium text-gray-700 pb-2">Username</label>

@@ -61,6 +61,12 @@ Route::get('/dashboard', function () {
     ]);
 });
 
+Route::get('/dashboard/setting', function () {
+    return view('dashboard_pengaturan', [
+        'active' => 'pengaturan'
+    ]);
+});
+
 // Route::get('/dashboard/post', function () {
 //     return view('dashboard_post', [
 //         'active' => 'dashboardpost'

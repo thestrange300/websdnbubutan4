@@ -6,7 +6,7 @@
         </div>
   
         <div class="px-5 py-2">
-          <a href="#" class="text-base text-gray-500 hover:text-black"> Login </a>
+          <a href="/login" class="text-base text-gray-500 hover:text-black"> Login </a>
         </div>
   
       </nav>
