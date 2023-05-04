@@ -2,6 +2,13 @@
 
 @section('container')
 
+@if(app()->environment('production'))
+<?php $active = 'error' ?>
+@else
+<?php $active = 'error' ?>
+@endif
+
+
     <main class="flex-grow flex flex-col justify-center max-w-7xl w-full pt-16 mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex-shrink-0 flex justify-center">
         <a href="/" class="inline-flex">

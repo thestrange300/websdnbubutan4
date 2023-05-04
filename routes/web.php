@@ -78,8 +78,13 @@ Route::post('/dashboard/guru/tambah', [guruController::class, 'store'])->name('t
 Route::delete('/dashboard/guru/hapus/{guru:id}', [guruController::class, 'delete'])->name('hapus.guru');
 
 Route::get('/dashboard/post', [postController::class, 'index'])->name('index.post');
+Route::get('/dashboard/posts/{id}', [postController::class, 'getPosts'])->name('posts.get');
+Route::get('/dashboard/posts2/{id}', [postController::class, 'getPosts2'])->name('posts2.get');
+Route::post('/dashboard/post/updateSpecial', [postController::class, 'updateSpecial'])->name('updateSpecial.post');
+Route::post('/dashboard/post/updateSpecial2', [postController::class, 'updateSpecial2'])->name('updateSpecial2.post');
+
 Route::get('/dashboard/post/create', [postController::class, 'create'])->name('create.post');
 Route::post('/dashboard/post/create', [postController::class, 'store'])->name('tambah.post');
 Route::get('/dashboard/post/{id}/edit', [postController::class, 'edit'])->name('edit.post');
-Route::put('/dashboard/post/{id}/edit', [postController::class, 'update'])->name('update.post');
+Route::put('/dashboard/post/update/{id}', [postController::class, 'update'])->name('update.post');
 Route::delete('/dashboard/post/{id}', [postController::class, 'destroy'])->name('delete.post');
