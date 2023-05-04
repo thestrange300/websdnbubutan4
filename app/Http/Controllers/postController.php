@@ -7,11 +7,6 @@ use Illuminate\Http\Request;
 
 class postController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         return view('dashboard_post', [
@@ -20,69 +15,53 @@ class postController extends Controller
         ]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
-        //
+        return view('dashboard_create', [
+            'active' => 'dashboardpost'
+        ]);
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'judul' => 'required',
+            'kategori' => 'required',
+            'konten' => 'required'
+        ]);
+        post::create($request->all());
+        return redirect()->route('index.post');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\post  $post
-     * @return \Illuminate\Http\Response
-     */
-    public function show(post $post)
+    public function edit()
     {
-        //
+        return view('dashboard_edit', [
+            'active' => 'dashboardpost',
+            'post' => post::get()
+        ]);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\post  $post
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(post $post)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\post  $post
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, post $post)
     {
-        //
+        $request->validate([
+            'judul' => 'required',
+            'konten' => 'required',
+            'kategori' => 'required'
+        ]);
+
+        $post->where('id', $request->id)->update([
+            'judul' => $request->judul,
+            'konten' => $request->konten,
+            'kategori' => $request->kategori
+        ]);
+
+        return redirect()->route('index.post');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\post  $post
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(post $post)
+    public function destroy(Request $request, post $post)
     {
-        //
+        $post->where('id', $request->id)->delete();
+        return redirect()->route('index.post');
     }
+
 }
