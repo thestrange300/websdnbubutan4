@@ -41,8 +41,10 @@
             class="text-sm text-right font-bold text-black transition-all duration-200 rounded-lg mt-2">Ubah
             </button> 
 
-            <div id="savebut" class="mt-4 pt-4" hidden>
-                <a href="/123213" class="sticky duration-500 transform hover:-translate-y-3 text-sm text-white items-center justify-center px-4 py-3 font-bold rounded-md shadow-sm bg-gradient-to-r from-cyan-500 to-blue-500"> Simpan </a>
+            <div class="pt-4" id="savebut" hidden>
+              <button type="submit" class="hover:transform hover:scale-110 transition duration-300 drop-shadow-lg inline-flex items-center px-3 py-2 shadow-md border border-transparent text-base font-bold rounded-md text-white bg-gradient-to-r from-cyan-500 to-blue-500" >        
+                  Simpan
+                </button>
             </div>
                  
   </div>

@@ -57,8 +57,8 @@
 
 
 <!-- component -->
-<div class="px-3 px-16 md:lg:xl:px-40 py-16 bg-opacity-10">
-  <div class="grid grid-cols-2 items-center rounded-lg md:lg:xl:grid-cols-3 group bg-white drop-shadow-xl shadow-neutral-200 ">
+<div class="px-3 px-24 md:lg:xl:px-40 py-16 bg-opacity-10">
+  <div class="grid grid-cols-1 items-center rounded-lg md:lg:xl:grid-cols-3 group bg-white drop-shadow-xl shadow-neutral-200 ">
 
       <div
           class="p-10 flex flex-col items-center text-center group md:lg:xl:border-r md:lg:xl:border-b "data-aos="zoom-in"data-aos-duration="300">

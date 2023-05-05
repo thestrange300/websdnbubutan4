@@ -15,7 +15,7 @@
             @foreach ($chosenPost as $selected)
               <div class="px-4 py-5 bg-white shadow-lg rounded-lg overflow-hidden sm:p-6">
                 <dt class="text-xl font-medium text-black truncate">{{ $selected->judul }}</dt>
-                <dd class="mt-1 text-sm text-gray-500 truncate text-justify">{!! html_entity_decode($selected->konten) !!}</dd>
+                <dd class="mt-1 text-sm text-gray-500 line-clamp-3 text-justify">{!! html_entity_decode($selected->konten) !!}</dd>
                 <div class="text-right">
                   <button type="button" class="text-sm text-right font-bold text-black transition-all duration-200 rounded-lg mt-2" data-te-toggle="modal" data-te-target="#postingan1" data-te-ripple-init>Ubah
                   </button> 
@@ -157,9 +157,9 @@
           <div class="relative p-4">
             <div class="mb-1">
               <label for="title" class="form-label block text-sm text font-medium text-gray-700 pb-3">Kategori</label>
-              <div class="relative" data-te-dropdown-ref>
-                <select onchange="getPosts()" id="chosenId" name="chosenId" class="inline-flex items-center text-center drop-shadow rounded-md bg-white w-64 px-20 pb-2 pt-2 text-sm font-medium text-gray-700 leading-normal shadow-[0_4px_9px_-4px_#fbfbfb] transition duration-150 ease-in-out hover:bg-neutral-100 hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:bg-neutral-100 focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] motion-reduce:transition-none">
-                  <option value="" selected disabled>Pilih Kategori</option>
+              <div class="relative mx-auto" data-te-dropdown-ref>
+                <select onchange="getPosts()" id="chosenId" name="chosenId" class="inline-flex items-center text-center drop-shadow rounded-md bg-white w-64 pb-2 pt-2 text-sm font-medium text-gray-700 leading-normal shadow-[0_4px_9px_-4px_#fbfbfb] transition duration-150 ease-in-out hover:bg-neutral-100 hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:bg-neutral-100 focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] motion-reduce:transition-none">
+                  <option class="" value="" selected disabled>Pilih Kategori</option>
                   <option value="Ecopreneur">Ecopreneur</option>
                   <option value="Ecoschool">Ecoschool</option>
                   <option value="Tari">Tari</option>
@@ -210,8 +210,8 @@
           <div class="relative p-4">
             <div class="mb-1">
               <label for="title" class="form-label block text-sm text font-medium text-gray-700 pb-3">Kategori</label>
-              <div class="relative" data-te-dropdown-ref>
-                <select onchange="getPosts2()" id="chosenId2" name="chosenId2" class="inline-flex items-center text-center drop-shadow rounded-md bg-white w-64 px-20 pb-2 pt-2 text-sm font-medium text-gray-700 leading-normal shadow-[0_4px_9px_-4px_#fbfbfb] transition duration-150 ease-in-out hover:bg-neutral-100 hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:bg-neutral-100 focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] motion-reduce:transition-none">
+              <div class="relative mx-auto" data-te-dropdown-ref>
+                <select onchange="getPosts2()" id="chosenId2" name="chosenId2" class="inline-flex text-center drop-shadow rounded-md bg-white w-64 pb-2 pt-2 text-sm font-medium text-gray-700 leading-normal shadow-[0_4px_9px_-4px_#fbfbfb] transition duration-150 ease-in-out hover:bg-neutral-100 hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:bg-neutral-100 focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] motion-reduce:transition-none">
                   <option value="" selected disabled>Pilih Kategori</option>
                   <option value="Ecopreneur">Ecopreneur</option>
                   <option value="Ecoschool">Ecoschool</option>
@@ -222,9 +222,9 @@
             </div>
             <div class="mb-1">
               <label for="title" class="form-label block text-sm text font-medium text-gray-700 pt-4 pb-3">Postingan</label>
-              <div class="relative" data-te-dropdown-ref>
-                <select id="post2" name="post2" class="inline-flex items-center text-center drop-shadow rounded-md bg-white w-68 px-20 pb-2 pt-2 text-sm font-medium text-gray-700 leading-normal shadow-[0_4px_9px_-4px_#fbfbfb] transition duration-150 ease-in-out hover:bg-neutral-100 hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:bg-neutral-100 focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] motion-reduce:transition-none" aria-expanded="false" data-te-ripple-init>
-                  <option value="">Select a post</option>
+              <div class="relative mx-auto" data-te-dropdown-ref>
+                <select id="post2" name="post2" class="inline-flex text-center drop-shadow rounded-md bg-white w-68 pb-2 pt-2 text-sm font-medium text-gray-700 leading-normal shadow-[0_4px_9px_-4px_#fbfbfb] transition duration-150 ease-in-out hover:bg-neutral-100 hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:bg-neutral-100 focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] motion-reduce:transition-none" aria-expanded="false" data-te-ripple-init>
+                  <option value="">Pilih Postingan</option>
                 </select>
               </div>            
             </div>                        
@@ -301,7 +301,7 @@
             success: function (data) {
                 var posts = $("#post");
                 posts.empty();
-                posts.append('<option value="" selected disabled>Select a post</option>');
+                posts.append('<option value="" selected disabled>Pilih Postingan</option>');
                 $.each(data, function (index, post) {
                     if (post.isChosen) {
                         posts.append('<option value="' + post.id + '" selected>' + post.judul + '</option>');
@@ -321,7 +321,7 @@
             success: function (data) {
                 var posts = $("#post2");
                 posts.empty();
-                posts.append('<option value="" selected disabled>Select a post</option>');
+                posts.append('<option value="" selected disabled>Pilih Postingan</option>');
                 $.each(data, function (index, post) {
                     if (post.isChosen2) {
                         posts.append('<option value="' + post.id + '" selected>' + post.judul + '</option>');

@@ -44,6 +44,21 @@
             
           </div>
 
+          <div>
+            <label for="konten" class="form-label block text-sm font-medium text-gray-700 pb-2">Konten</label>
+            <input type="file" id="file_input" class="block w-full text-sm text-slate-500
+            file:mr-4 file:py-2 file:px-4
+            file:rounded-full file:border-0
+            file:text-sm file:font-semibold
+            file:bg-violet-50 file:text-violet-700
+            hover:file:bg-violet-100"/>
+            <div class="pt-2">
+              <p class="my-1 text-xs text-gray-500 pb-6" id="file_input_help">PNG atau JPG (Max. 2MB).</p>
+            </div>
+            
+            
+          </div>
+
           <div class="mb-1">
             <label for="title" class="form-label block text-sm text font-medium text-gray-700 pb-3">Kategori</label>
             <input type="hidden" name="kategori" id="kategori" value="">
