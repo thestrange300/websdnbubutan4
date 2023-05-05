@@ -12,7 +12,7 @@
         {{-- @foreach ($posts as $post) --}}
         <div class="px-4 py-5 bg-white shadow-lg rounded-lg overflow-hidden sm:p-6">
           <dt class="text-xl font-medium text-black truncate">Post 1</dt>
-          <dd class="mt-1 text-sm text-gray-500 truncate text-justify">In information systems, ROC (Receiver Operating Characteristic) is a graphical representation of the performance of a binary classification model. It is commonly used to evaluate the accuracy of machine learning models that are used for tasks such as fraud detection, spam filtering, or medical diagnosis.</dd>
+          <dd class="mt-1 text-sm text-gray-500 line-clamp-3 text-justify">In information systems, ROC (Receiver Operating Characteristic) is a graphical representation of the performance of a binary classification model. It is commonly used to evaluate the accuracy of machine learning models that are used for tasks such as fraud detection, spam filtering, or medical diagnosis.</dd>
           <div class="text-right">
             <button 
             type="button"  
@@ -26,7 +26,7 @@
         </div>
         <div class="px-4 py-5 bg-white shadow-lg rounded-lg overflow-hidden sm:p-6">
           <dt class="text-xl font-medium text-black truncate">Post 2</dt>
-          <dd class="mt-1 text-sm text-gray-500 truncate text-justify">The area under the ROC curve (AUC-ROC) is a commonly used metric to evaluate the overall performance of a binary classification model. A model with an AUC-ROC of 1.0 is considered perfect, while a model with an AUC-ROC of 0.5 is no better than random guessing. Generally, a model with an AUC-ROC of 0.7 or higher is considered to be good, while a model with an AUC-ROC below 0.7 may need improvement.</dd>
+          <dd class="mt-1 text-sm text-gray-500 line-clamp-3 text-justify">The area under the ROC curve (AUC-ROC) is a commonly used metric to evaluate the overall performance of a binary classification model. A model with an AUC-ROC of 1.0 is considered perfect, while a model with an AUC-ROC of 0.5 is no better than random guessing. Generally, a model with an AUC-ROC of 0.7 or higher is considered to be good, while a model with an AUC-ROC below 0.7 may need improvement.</dd>
           <div class="text-right">
             <button 
             type="button"  

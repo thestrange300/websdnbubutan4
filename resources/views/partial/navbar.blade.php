@@ -242,18 +242,44 @@
     <!-- Mobile menu, show/hide based on menu state. -->
     <div class="sm:hidden" id="mobile-menu">
       
-      <div id="drop1" class="transition-all  px-2 pt-2 pb-3 space-y-1 hidden">
+      <div id="drop1" class="transition-all  px-2 pt-2 pb-3 space-y-1" hidden>
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300" -->
-        <a href="/" class="bg-gradient-to-r from-cyan-500 to-blue-500 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Dashboard</a>
+        <a href="/" class="bg-gradient-to-r from-cyan-500 to-blue-500 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Home</a>
   
-        <a href="#" class="text-cyan-900 block px-3 py-2 rounded-md text-base font-medium">Profil</a>
+        <a href="#" class="text-cyan-900 block px-3 py-2 rounded-md text-base font-medium" id="mobile_profil">Profil</a>
   
-        <a href="#" class="text-cyan-900 block px-3 py-2 rounded-md text-base font-medium">Kurikulum</a>
+        <a href="#" class="text-cyan-900 block px-3 py-2 rounded-md text-base font-medium" id="mobile_kurikulum">Kurikulum</a>
+        
+        <div hidden id="expand_kurikulum">
+          <a href="#" hidden class="block px-3 pb-1 pl-6 rounded-md text-sm font-bold text-neutral-600">Kurikulum 2013</a>
+          <a href="#" hidden class="block px-3 pb-1 pl-12 rounded-md text-sm font-normal text-black">Silabus</a>
+          <a href="#" hidden class="block px-3 pb-1 pl-12 rounded-md text-sm font-normal text-black">RPP</a>
   
-        <a href="#" class="text-cyan-900 block px-3 py-2 rounded-md text-base font-medium">Karya dan Prestasi</a>
+          <a href="#" hidden class="block px-3 pb-1 pl-6 rounded-md text-sm font-bold text-neutral-600">Kurikulum Merdeka</a>
+          <a href="#" hidden class="block px-3 pb-1 pl-12 rounded-md text-sm font-normal text-black">Silabus</a>
+          <a href="#" hidden class="block px-3 pb-1 pl-12 rounded-md text-sm font-normal text-black">RPP</a>
+        </div>
+  
+        <a href="#" class="text-cyan-900 block px-3 py-2 rounded-md text-base font-medium" id="mobile_kapres">Karya dan Prestasi</a>
 
         <a href="#" class="text-cyan-900 block px-3 py-2 rounded-md text-base font-medium">Perpustakaan</a>
       </div>
     </div>
   </nav>
-<script src="{{ asset("js/dropdown.js") }}"></script>
+
+<script>
+const dropdown = document.getElementById("dropdown");
+const drop1 = document.getElementById("drop1");
+const mobile_kurikulum = document.getElementById("mobile_kurikulum")
+const expand_kurikulum = document.getElementById("expand_kurikulum")
+console.log("tes")
+
+dropdown.addEventListener("click", function() {
+    drop1.toggleAttribute("hidden");
+});
+
+mobile_kurikulum.addEventListener("click", function() {
+    expand_kurikulum.toggleAttribute("hidden");
+});
+
+  </script>

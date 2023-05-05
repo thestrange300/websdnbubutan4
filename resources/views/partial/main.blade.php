@@ -25,6 +25,7 @@
 import { Carousel, initTE } from "tw-elements";
 initTE({ Carousel });    
   </script>
+  <script src="{{ asset('js/dropdown.js') }}"></script>
   <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
     {{-- class="bg-cover bg-center" style="background-image:url({{asset('img/ghibli.png')}})"  --}}
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

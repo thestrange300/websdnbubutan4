@@ -8,15 +8,15 @@
   <div class="content-center px-5 pt-4">
     <div class="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
       <div class="absolute inset-0">
-        <img class="h-full w-full object-cover " src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2018/07/IMG_20180717_123720.jpg" alt="Img Header">
-        <div class="absolute inset-0 bg-slate-400 mix-blend-multiply"></div>
+        <img class="h-full w-full object-cover rounded-2xl" src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2018/07/IMG_20180717_123720.jpg" alt="Img Header">
+        <div class="absolute inset-0 bg-slate-500 rounded-2xl mix-blend-multiply"></div>
       </div>
       <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
         <h1 class="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
           <span class="block text-white mb-5 "data-aos="zoom-in"data-aos-duration="800">Selamat Datang di</span>
           <span class="block text-white underline decoration-indigo-500"data-aos="zoom-in"data-aos-duration="1200">SDN Bubutan IV</span>
         </h1>
-        <p class="mt-6 max-w-lg mx-auto text-center text-base text-white sm:max-w-3xl">Selamat datang di website resmi sekolah dasar kami! Di sini, Anda akan menemukan informasi terbaru tentang program belajar mengajar dan kegiatan sekolah kami. Kami dengan senang hati mempersembahkan website sekolah dasar ini kepada seluruh siswa, guru, dan orang tua.</p>
+        <p class="mt-6 max-w-lg mx-auto text-center text-sm sm:text-base text-white sm:max-w-3xl">Selamat datang di website resmi sekolah dasar kami! Di sini, Anda akan menemukan informasi terbaru tentang program belajar mengajar dan kegiatan sekolah kami. Kami dengan senang hati mempersembahkan website sekolah dasar ini kepada seluruh siswa, guru, dan orang tua.</p>
         <div class="mt-10 max-w-sm mx-auto max-w-none flex justify-center">
             <a href="/profile" class="sticky duration-500 transform hover:-translate-y-3 text-2xl hover:text-white items-center justify-center px-4 py-3 text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500"> Profil Sekolah </a>
         </div>
@@ -36,7 +36,7 @@
           <div>
           </div>
           <div class="">
-            <h2 class="text-3xl font-extrabold tracking-tight text-gray-900">Sambutan Kepala Sekolah</h2>
+            <h2 class="text-center sm:text-left text-2xl md:text-3xl pt-8 pb-4 font-extrabold tracking-tight text-gray-900">Sambutan Kepala Sekolah</h2>
             <p class="mt-4 text-base text-gray-500 text-justify">"Kita bersama-sama bekerja keras untuk memastikan bahwa setiap siswa merasa dihargai dan mendapatkan pendidikan yang berkualitas, sehingga mereka siap untuk menjadi generasi pemimpin masa depan."</p>
             {{-- <div class="mt-6">
               <a href="#" class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700"> Get started </a>
@@ -57,8 +57,8 @@
 
 
 <!-- component -->
-<div class="px-3 md:lg:xl:px-40 py-16 bg-opacity-10">
-  <div class="grid grid-cols-1 rounded-lg md:lg:xl:grid-cols-3 group bg-white drop-shadow-xl shadow-neutral-200 ">
+<div class="px-3 px-16 md:lg:xl:px-40 py-16 bg-opacity-10">
+  <div class="grid grid-cols-2 items-center rounded-lg md:lg:xl:grid-cols-3 group bg-white drop-shadow-xl shadow-neutral-200 ">
 
       <div
           class="p-10 flex flex-col items-center text-center group md:lg:xl:border-r md:lg:xl:border-b "data-aos="zoom-in"data-aos-duration="300">
@@ -144,20 +144,20 @@
   ```
 -->
 <div class="bg-transparent pb-10 px-4 sm:px-6 lg:pb-10 lg:px-8">
-  <h2 class="text-2xl md:text-3xl text-black font-extrabold mt-6">Postingan Terbaru</h2>
+  <h2 class="text-2xl md:text-3xl text-center sm:text-left text-black font-extrabold my-6">Postingan Terbaru</h2>
   <div class="relative mx-auto divide-y-2 divide-gray-200 lg:max-w-1">
     <div class=" mt-4 grid gap-16 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
       <div class="col-span-3">
-        <div class="grid grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
           
           <div>
-            <a href="#" class="mt-2 block lg:h-20 max-sm:h-36">
+            <a href="#" class="mt-2 sm:block lg:h-20 max-sm:h-36">
               <p class="text-xl font-bold text-gray-900">Bazar Olahan Sayur Hidroponik</p>
               <div class="pt-1">
                 <time class="text-sm text-slate-600" datetime="2020-03-16">Mar 16, 2020</time>
               </div>
             </a>
-            <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Pada tanggal 27 September 2018, SDN Bubutan IV mengadakan acara Bazar dari hasil kebun hidroponik. Kegiatan ini dimaksudkan untuk memberikan pendidikan kepada para siswa berwiraswasta  dari tanaman yang ada disekitar mereka. Acara ini dimaksudkan agar lahan kosong yang ada disekitar kita bisa kita manfaatkkan semaksimal mungkin.</p>
+            <p class="mt-3 mb-3 text-base text-gray-500 text-justify line-clamp-5">Pada tanggal 27 September 2018, SDN Bubutan IV mengadakan acara Bazar dari hasil kebun hidroponik. Kegiatan ini dimaksudkan untuk memberikan pendidikan kepada para siswa berwiraswasta  dari tanaman yang ada disekitar mereka. Acara ini dimaksudkan agar lahan kosong yang ada disekitar kita bisa kita manfaatkkan semaksimal mungkin.</p>
             <p class="text-sm text-gray-500">
               <a href="#" class="inline-block">
                 <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800"> Ecopreneur </span>
@@ -172,13 +172,13 @@
           </div>
 
           <div>
-            <a href="#" class="mt-2 block lg:h-20 max-sm:h-36">
+            <a href="#" class="mt-2 sm:block lg:h-20 max-sm:h-36">
               <p class="text-xl font-bold text-gray-900">Kegiatan Penanaman Pohon Untuk Memperingati Hari Guru</p>
               <div class="pt-1">
                 <time class="text-sm text-slate-600" datetime="2020-03-16">Nov 30, 2020</time>
               </div>
             </a>
-            <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Pada tanggal 27 September 2018, SDN Bubutan IV mengadakan acara Bazar dari hasil kebun hidroponik. Kegiatan ini dimaksudkan untuk memberikan pendidikan kepada para siswa berwiraswasta  dari tanaman yang ada disekitar mereka. Acara ini dimaksudkan agar lahan kosong yang ada disekitar kita bisa kita manfaatkkan semaksimal mungkin.</p>
+            <p class="mt-3 mb-3 text-base text-gray-500 text-justify line-clamp-5">Pada tanggal 27 September 2018, SDN Bubutan IV mengadakan acara Bazar dari hasil kebun hidroponik. Kegiatan ini dimaksudkan untuk memberikan pendidikan kepada para siswa berwiraswasta  dari tanaman yang ada disekitar mereka. Acara ini dimaksudkan agar lahan kosong yang ada disekitar kita bisa kita manfaatkkan semaksimal mungkin.</p>
             <p class="text-sm text-gray-500">
               <a href="#" class="inline-block">
                 <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800"> Adiwiyata </span>
@@ -193,13 +193,13 @@
           </div>
 
           <div>
-            <a href="#" class="mt-2 block lg:h-20 max-sm:h-36">
+            <a href="#" class="mt-2 sm:block lg:h-20 max-sm:h-36">
               <p class="text-xl font-bold text-gray-900">Kunjungan Penelitian Balitbang Kemendikbud Jakarta</p>
               <div class="pt-1">
                 <time class="text-sm text-slate-600" datetime="2020-03-16">Mar 16, 2020</time>
               </div>
             </a>
-            <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Sebuah kehormatan bagi kami mendapat Kunjungan hari ini Kamis 13 septermber 2018  dari Balitbang Kemendikbud Jakarta .Kali ini  kegiatanya berfokus pada penelitian LITERASI. Mereka secara langsung menyaksikan keterlaksanaan program literasi di SD Negeri Bubutan IV Surabaya.Program ini sudah berjalan beberapa tahun yang lalu,sebagai...</p>
+            <p class="mt-3 mb-3 text-base text-gray-500 text-justify line-clamp-5">Sebuah kehormatan bagi kami mendapat Kunjungan hari ini Kamis 13 septermber 2018  dari Balitbang Kemendikbud Jakarta .Kali ini  kegiatanya berfokus pada penelitian LITERASI. Mereka secara langsung menyaksikan keterlaksanaan program literasi di SD Negeri Bubutan IV Surabaya.Program ini sudah berjalan beberapa tahun yang lalu,sebagai...</p>
             <p class="text-sm text-gray-500">
               <a href="#" class="inline-block">
                 <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800"> Perpustakaan </span>
@@ -211,13 +211,13 @@
           </div>
 
           <div>
-            <a href="#" class="mt-2 block lg:h-20 max-sm:h-36">
+            <a href="#" class="mt-2 sm:block lg:h-20 max-sm:h-36">
               <p class="text-xl font-bold text-gray-900">Bazar Olahan Sayur Hidroponik</p>
               <div class="pt-1">
                 <time class="text-sm text-slate-600" datetime="2020-03-16">Mar 16, 2020</time>
               </div>
             </a>
-            <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Pada tanggal 27 September 2018, SDN Bubutan IV mengadakan acara Bazar dari hasil kebun hidroponik. Kegiatan ini dimaksudkan untuk memberikan pendidikan kepada para siswa berwiraswasta  dari tanaman yang ada disekitar mereka. Acara ini dimaksudkan agar lahan kosong yang ada disekitar kita bisa kita manfaatkkan semaksimal mungkin.</p>
+            <p class="mt-3 mb-3 text-base text-gray-500 text-justify line-clamp-5">Pada tanggal 27 September 2018, SDN Bubutan IV mengadakan acara Bazar dari hasil kebun hidroponik. Kegiatan ini dimaksudkan untuk memberikan pendidikan kepada para siswa berwiraswasta  dari tanaman yang ada disekitar mereka. Acara ini dimaksudkan agar lahan kosong yang ada disekitar kita bisa kita manfaatkkan semaksimal mungkin.</p>
             <p class="text-sm text-gray-500">
               <a href="#" class="inline-block">
                 <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800"> Ecopreneur </span>
@@ -233,13 +233,13 @@
 
 
           <div>
-            <a href="#" class="mt-2 block lg:h-20 max-sm:h-36">
+            <a href="#" class="mt-2 sm:block lg:h-20 max-sm:h-36">
               <p class="text-xl font-bold text-gray-900">Bazar Olahan Sayur Hidroponik</p>
               <div class="pt-1">
                 <time class="text-sm text-slate-600" datetime="2020-03-16">Mar 16, 2020</time>
               </div>
             </a>
-            <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Pada tanggal 27 September 2018, SDN Bubutan IV mengadakan acara Bazar dari hasil kebun hidroponik. Kegiatan ini dimaksudkan untuk memberikan pendidikan kepada para siswa berwiraswasta  dari tanaman yang ada disekitar mereka. Acara ini dimaksudkan agar lahan kosong yang ada disekitar kita bisa kita manfaatkkan semaksimal mungkin.</p>
+            <p class="mt-3 mb-3 text-base text-gray-500 text-justify line-clamp-5">Pada tanggal 27 September 2018, SDN Bubutan IV mengadakan acara Bazar dari hasil kebun hidroponik. Kegiatan ini dimaksudkan untuk memberikan pendidikan kepada para siswa berwiraswasta  dari tanaman yang ada disekitar mereka. Acara ini dimaksudkan agar lahan kosong yang ada disekitar kita bisa kita manfaatkkan semaksimal mungkin.</p>
             <p class="text-sm text-gray-500">
               <a href="#" class="inline-block">
                 <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800"> Ecopreneur </span>
@@ -254,13 +254,13 @@
           </div>
 
           <div>
-            <a href="#" class="mt-2 block lg:h-20 max-sm:h-36">
+            <a href="#" class="mt-2 sm:block lg:h-20 max-sm:h-36">
               <p class="text-xl font-bold text-gray-900">Bazar Olahan Sayur Hidroponik</p>
               <div class="pt-1">
                 <time class="text-sm text-slate-600" datetime="2020-03-16">Mar 16, 2020</time>
               </div>
             </a>
-            <p class="mt-3 mb-3 text-base text-gray-500 text-justify">Pada tanggal 27 September 2018, SDN Bubutan IV mengadakan acara Bazar dari hasil kebun hidroponik. Kegiatan ini dimaksudkan untuk memberikan pendidikan kepada para siswa berwiraswasta  dari tanaman yang ada disekitar mereka. Acara ini dimaksudkan agar lahan kosong yang ada disekitar kita bisa kita manfaatkkan semaksimal mungkin.</p>
+            <p class="mt-3 mb-3 text-base text-gray-500 text-justify line-clamp-5">Pada tanggal 27 September 2018, SDN Bubutan IV mengadakan acara Bazar dari hasil kebun hidroponik. Kegiatan ini dimaksudkan untuk memberikan pendidikan kepada para siswa berwiraswasta  dari tanaman yang ada disekitar mereka. Acara ini dimaksudkan agar lahan kosong yang ada disekitar kita bisa kita manfaatkkan semaksimal mungkin.</p>
             <p class="text-sm text-gray-500">
               <a href="#" class="inline-block">
                 <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800"> Ecopreneur </span>
