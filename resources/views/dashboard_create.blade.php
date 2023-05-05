@@ -46,11 +46,12 @@
 
           <div class="mb-1">
             <label for="title" class="form-label block text-sm text font-medium text-gray-700 pb-3">Kategori</label>
+            <input type="hidden" name="kategori" id="kategori" value="">
             <div class="relative" data-te-dropdown-ref>
               <button
-                class="inline-flex items-center text-center drop-shadow rounded-md bg-white w-64 px-20 pb-2 pt-2 text-sm font-medium text-gray-700 leading-normal shadow-[0_4px_9px_-4px_#fbfbfb] transition duration-150 ease-in-out hover:bg-neutral-100 hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:bg-neutral-100 focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] motion-reduce:transition-none"
+                class="dropdown-button inline-flex items-center text-center drop-shadow rounded-md bg-white w-64 px-20 pb-2 pt-2 text-sm font-medium text-gray-700 leading-normal shadow-[0_4px_9px_-4px_#fbfbfb] transition duration-150 ease-in-out hover:bg-neutral-100 hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:bg-neutral-100 focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] motion-reduce:transition-none"
                 type="button"
-                id="post1"
+                id="kategori"
                 data-te-dropdown-toggle-ref
                 aria-expanded="false"
                 data-te-ripple-init>
@@ -69,15 +70,15 @@
                 </span>
               </button>
               <ul
-                class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
-                aria-labelledby="dropdownMenuButton9"
+                class="dropdown-list absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
                 data-te-dropdown-menu-ref>
                 <li>
                   <a
                     class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-gray-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
                     href="#"
                     data-te-dropdown-item-ref
-                    >Something else here</a
+                    data-category="Ecopreneur"
+                    >Ecopreneur</a
                   >
                 </li>
                 <li>
@@ -85,7 +86,8 @@
                     class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-gray-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
                     href="#"
                     data-te-dropdown-item-ref
-                    >Something else here</a
+                    data-category="Ecoschool"
+                    >Ecoschool</a
                   >
                 </li>                
               </ul>
@@ -103,5 +105,22 @@
           </div>
         </form>
   </div>
+
+  <script>
+    // Get the button and dropdown list elements
+    const button = document.querySelector('.dropdown-button');
+    const dropdownList = document.querySelector('.dropdown-list');
+  
+    // Add an event listener to the dropdown list
+    dropdownList.addEventListener('click', (event) => {
+      // Get the selected category
+      const selectedCategory = event.target.textContent;
+      // Update the button text with the selected category
+      button.textContent = selectedCategory;
+      // Update the hidden input value with the selected category
+      document.querySelector('#kategori').value = selectedCategory;
+    });
+  </script>
+  
 
 @endsection

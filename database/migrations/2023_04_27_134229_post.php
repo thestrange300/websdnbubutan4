@@ -23,6 +23,8 @@ return new class extends Migration
             $table->string('image')->nullable();
             $table->string('warna1')->nullable();
             $table->string('warna2')->nullable();
+            $table->boolean('isChosen')->default(false);
+            $table->boolean('isChosen2')->default(false);
         });
     }
 

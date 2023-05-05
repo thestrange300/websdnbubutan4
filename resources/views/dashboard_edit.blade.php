@@ -46,14 +46,43 @@
           <trix-editor input="konten" class="shadow-md"></trix-editor>
         </div>
 
-        <div class="relative">
-          <label for="kategori" class="form-label block text-sm font-medium text-gray-700 pb-2">Kategori</label>
-          <select id="kategori" name="kategori" class="form-control block w-5/12 bg-white border border-gray-200 text-gray-700 shadow-md py-3 px-4 pr-8 rounded-md focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
-            <option value="Ecopreneur" {{ old('kategori', $item->kategori) == 'Ecoproneur' ? 'selected' : '' }}>Ecopreneur</option>
-            <option value="Ecoschool" {{ old('kategori', $item->kategori) == 'Ecoschool' ? 'selected' : '' }}>Ecoschool</option>
-            <option value="Tari" {{ old('kategori', $item->kategori) == 'Tari' ? 'selected' : '' }}>Tari</option>
-            <option value="Karya dan Prestasi" {{ old('kategori', $item->kategori) == 'Karya dan Prestasi' ? 'selected' : '' }}>Karya dan Prestasi</option>
-          </select>
+        <div class="mb-1">
+          <label for="title" class="form-label block text-sm text font-medium text-gray-700 pb-3">Kategori</label>
+          <input type="hidden" name="kategori" id="kategori" value="">
+          <div class="relative" data-te-dropdown-ref>
+            <button
+              class="dropdown-button inline-flex items-center text-center drop-shadow rounded-md bg-white w-64 px-20 pb-2 pt-2 text-sm font-medium text-gray-700 leading-normal shadow-[0_4px_9px_-4px_#fbfbfb] transition duration-150 ease-in-out hover:bg-neutral-100 hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:bg-neutral-100 focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] motion-reduce:transition-none"
+              type="button"
+              id="kategori"
+              data-te-dropdown-toggle-ref
+              aria-expanded="false"
+              data-te-ripple-init>
+              Pilih Kategori
+              <span class="w-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="h-5 w-5">
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                    clip-rule="evenodd" />
+                </svg>
+              </span>
+            </button>
+            <ul class="dropdown-list absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block" data-te-dropdown-menu-ref>
+              <li>
+                <a class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-gray-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 {{ old('kategori', $item->kategori) == 'Ecopreneur' ? 'selected' : '' }}" href="#" data-te-dropdown-item-ref data-category="Ecopreneur">Ecopreneur</a>
+              </li>
+              <li>
+                <a class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-gray-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 {{ old('kategori', $item->kategori) == 'Ecoschool' ? 'selected' : '' }}" href="#" data-te-dropdown-item-ref data-category="Ecoschool">Ecoschool</a>
+              </li>
+              <li>
+                <a class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-gray-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 {{ old('kategori', $item->kategori) == 'Tari' ? 'selected' : '' }}" href="#" data-te-dropdown-item-ref data-category="Tari">Tari</a>
+              </li>
+            </ul>            
+          </div>            
         </div>
         
         <div class="pt-8">
@@ -67,5 +96,29 @@
       </form>
     @endforeach
   </div>
+
+  <script>
+    // Get the button and dropdown list elements
+    const button = document.querySelector('.dropdown-button');
+    const dropdownList = document.querySelector('.dropdown-list');
+  
+    // Set the default selected category
+    const defaultCategory = "{{ old('kategori', $item->kategori) }}";
+    // Update the button text with the default selected category
+    button.textContent = defaultCategory;
+    // Update the hidden input value with the default selected category
+    document.querySelector('#kategori').value = defaultCategory;
+
+    // Add an event listener to the dropdown list
+    dropdownList.addEventListener('click', (event) => {
+      // Get the selected category
+      const selectedCategory = event.target.textContent;
+      // Update the button text with the selected category
+      button.textContent = selectedCategory;
+      // Update the hidden input value with the selected category
+      document.querySelector('#kategori').value = selectedCategory;
+    });
+</script>
+
 
 @endsection

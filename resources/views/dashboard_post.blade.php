@@ -8,37 +8,71 @@
       <div class="sm:flex-auto">
         <h1 class="text-xl text-center font-bold text-gray-900 py-4">Postingan Terpilih</h1>
       </div>
+
       <dl class=" grid grid-cols-1 gap-5 sm:grid-cols-2">
-        {{-- @foreach ($posts as $post) --}}
-        <div class="px-4 py-5 bg-white shadow-lg rounded-lg overflow-hidden sm:p-6">
-          <dt class="text-xl font-medium text-black truncate">Post 1</dt>
-          <dd class="mt-1 text-sm text-gray-500 line-clamp-3 text-justify">In information systems, ROC (Receiver Operating Characteristic) is a graphical representation of the performance of a binary classification model. It is commonly used to evaluate the accuracy of machine learning models that are used for tasks such as fraud detection, spam filtering, or medical diagnosis.</dd>
-          <div class="text-right">
-            <button 
-            type="button"  
-            class="text-sm text-right font-bold text-black transition-all duration-200 rounded-lg mt-2"
-            data-te-toggle="modal"
-            data-te-target="#postingan1"
-            data-te-ripple-init>Ubah
-            </button> 
+        @if($chosenPost->count() > 0 || $chosenPost2->count() > 0)
+          @if($chosenPost->count() > 0)
+            @foreach ($chosenPost as $selected)
+              <div class="px-4 py-5 bg-white shadow-lg rounded-lg overflow-hidden sm:p-6">
+                <dt class="text-xl font-medium text-black truncate">{{ $selected->judul }}</dt>
+                <dd class="mt-1 text-sm text-gray-500 truncate text-justify">{!! html_entity_decode($selected->konten) !!}</dd>
+                <div class="text-right">
+                  <button type="button" class="text-sm text-right font-bold text-black transition-all duration-200 rounded-lg mt-2" data-te-toggle="modal" data-te-target="#postingan1" data-te-ripple-init>Ubah
+                  </button> 
+                </div>
+              </div>
+            @endforeach
+          @else
+            <div class="px-4 py-5 bg-white shadow-lg rounded-lg overflow-hidden sm:p-6">
+              <dt class="text-xl font-medium text-black truncate">Post 1</dt>
+              <dd class="mt-1 text-sm text-gray-500 truncate text-justify">Tidak Ada Post Terpilih</dd>
+              <div class="text-right">
+                <button type="button" class="text-sm text-right font-bold text-black transition-all duration-200 rounded-lg mt-2" data-te-toggle="modal" data-te-target="#postingan1" data-te-ripple-init>Ubah
+                </button> 
+              </div>
+            </div>
+          @endif
+          @if($chosenPost2->count() > 0)
+            @foreach ($chosenPost2 as $selected)
+              <div class="px-4 py-5 bg-white shadow-lg rounded-lg overflow-hidden sm:p-6">
+                <dt class="text-xl font-medium text-black truncate">{{ $selected->judul }}</dt>
+                <dd class="mt-1 text-sm text-gray-500 truncate text-justify">{!! html_entity_decode($selected->konten) !!}</dd>
+                <div class="text-right">
+                  <button type="button" class="text-sm text-right font-bold text-black transition-all duration-200 rounded-lg mt-2" data-te-toggle="modal" data-te-target="#postingan2" data-te-ripple-init>Ubah
+                  </button> 
+                </div>
+              </div>
+            @endforeach
+          @else
+            <div class="px-4 py-5 bg-white shadow-lg rounded-lg overflow-hidden sm:p-6">
+              <dt class="text-xl font-medium text-black truncate">Post 2</dt>
+              <dd class="mt-1 text-sm text-gray-500 truncate text-justify">Tidak Ada Post Terpilih</dd>
+              <div class="text-right">
+                <button type="button" class="text-sm text-right font-bold text-black transition-all duration-200 rounded-lg mt-2" data-te-toggle="modal" data-te-target="#postingan2" data-te-ripple-init>Ubah
+                </button> 
+              </div>        
+            </div>
+          @endif
+        @else
+          <div class="px-4 py-5 bg-white shadow-lg rounded-lg overflow-hidden sm:p-6">
+            <dt class="text-xl font-medium text-black truncate">Post 1</dt>
+            <dd class="mt-1 text-sm text-gray-500 truncate text-justify">Tidak Ada Post Terpilih</dd>
+            <div class="text-right">
+              <button type="button" class="text-sm text-right font-bold text-black transition-all duration-200 rounded-lg mt-2" data-te-toggle="modal" data-te-target="#postingan1" data-te-ripple-init>Ubah
+              </button> 
+            </div>
           </div>
-         
-        </div>
-        <div class="px-4 py-5 bg-white shadow-lg rounded-lg overflow-hidden sm:p-6">
-          <dt class="text-xl font-medium text-black truncate">Post 2</dt>
-          <dd class="mt-1 text-sm text-gray-500 line-clamp-3 text-justify">The area under the ROC curve (AUC-ROC) is a commonly used metric to evaluate the overall performance of a binary classification model. A model with an AUC-ROC of 1.0 is considered perfect, while a model with an AUC-ROC of 0.5 is no better than random guessing. Generally, a model with an AUC-ROC of 0.7 or higher is considered to be good, while a model with an AUC-ROC below 0.7 may need improvement.</dd>
-          <div class="text-right">
-            <button 
-            type="button"  
-            class="text-sm text-right font-bold text-black transition-all duration-200 rounded-lg mt-2"
-            data-te-toggle="modal"
-            data-te-target="#postingan2"
-            data-te-ripple-init>Ubah
-            </button> 
-          </div>        
-        </div>
-        {{-- @endforeach --}}
+          <div class="px-4 py-5 bg-white shadow-lg rounded-lg overflow-hidden sm:p-6">
+            <dt class="text-xl font-medium text-black truncate">Post 2</dt>
+            <dd class="mt-1 text-sm text-gray-500 truncate text-justify">Tidak Ada Post Terpilih</dd>
+            <div class="text-right">
+              <button type="button" class="text-sm text-right font-bold text-black transition-all duration-200 rounded-lg mt-2" data-te-toggle="modal" data-te-target="#postingan2" data-te-ripple-init>Ubah
+              </button> 
+            </div>        
+          </div>
+        @endif
       </dl> 
+
       <div class="sm:flex sm:items-center mt-5">
         <div class="sm:flex-auto">
           <h1 class="text-xl font-bold text-gray-900">Post</h1>
@@ -75,11 +109,10 @@
                   <tr>
                     <td class="whitespace-nowrap py-4 text-sm font-medium text-gray-900 sm:pl-6">{{ $item->id }}</td>
                     <td class="whitespace-nowrap py-4 text-sm text-gray-500">{{ $item->judul }}</td>
-                    <td class="whitespace-nowrap text-sm text-gray-500 max-w-md truncate overflow-auto">{{ $item->konten }}</td>
+                    <td class="whitespace-nowrap text-sm text-gray-500 max-w-md truncate overflow-auto">{!! html_entity_decode($item->konten) !!}</td>
                     <td class="whitespace-nowrap py-4 px-8 text-sm text-gray-500">
                         {{-- action = "{{ route('delete',$post) }}" --}}
-                      <form method="post" action="{{ route('delete.post', $item->id) }}" enctype="multipart/form-data">
-                        <input type="hidden" name="id" value="{{ $item->id }}">
+                      <form method="post" action="{{ route('delete.post', ['id' => $item->id]) }}" enctype="multipart/form-data">
                         <button type="button" onclick="location.href='{{ route('edit.post', $item->id) }}'"  class="inline-flex items-center px-2 py-2 border border-transparent shadow-sm text-sm leading-4 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                           <!-- Heroicon name: solid/mail -->
                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
@@ -99,7 +132,6 @@
                   @endforeach
                 </tbody>
               </table>
-              
             </div>
           </div>
         </div>
@@ -107,171 +139,198 @@
     </div>
 
     {{-- MODAL POST 1 --}}
-    <div
-    data-te-modal-init
-    class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
-    id="postingan1"
-    tabindex="-1"
-    aria-labelledby="exampleModalCenterTitle1"
-    aria-modal="true"
-    role="dialog">
-    <div
-      data-te-modal-dialog-ref
-      class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]">
-      <div
-        class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-lg outline-none ">
-        <div
-          class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-neutral-100 border-opacity-100 p-4 ">
-          <!--Modal title-->
-          <h5
-            class="text-xl font-bold leading-normal text-neutral-800 "
-            id="exampleModalScrollableLabel">
-            Pilih Postingan 1
-          </h5>
-          <!--Close button-->
-          <button
-            type="button"
-            class="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
-            data-te-modal-dismiss
-            aria-label="Close">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="h-6 w-6">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-        </div>
-  
-        <!--Modal body-->
-        <div class="relative p-4">
-          <div class="mb-1">
-            <label for="title" class="form-label block text-sm text font-medium text-gray-700 pb-3">Kategori</label>
-            <div class="relative" data-te-dropdown-ref>
-              <button
-                class="inline-flex items-center text-center drop-shadow rounded-md bg-white w-64 px-20 pb-2 pt-2 text-sm font-medium text-gray-700 leading-normal shadow-[0_4px_9px_-4px_#fbfbfb] transition duration-150 ease-in-out hover:bg-neutral-100 hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:bg-neutral-100 focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] motion-reduce:transition-none"
-                type="button"
-                id="post1"
-                data-te-dropdown-toggle-ref
-                aria-expanded="false"
-                data-te-ripple-init>
-                Pilih Kategori
-                <span class="w-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    class="h-5 w-5">
-                    <path
-                      fill-rule="evenodd"
-                      d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                      clip-rule="evenodd" />
-                  </svg>
-                </span>
-              </button>
-              <ul
-                class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
-                aria-labelledby="dropdownMenuButton9"
-                data-te-dropdown-menu-ref>
-                <li>
-                  <a
-                    class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-gray-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
-                    href="#"
-                    data-te-dropdown-item-ref
-                    >Something else here</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-gray-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
-                    href="#"
-                    data-te-dropdown-item-ref
-                    >Something else here</a
-                  >
-                </li>                
-              </ul>
-            </div>            
+    <div data-te-modal-init class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none" id="postingan1" tabindex="-1" aria-labelledby="exampleModalCenterTitle1" aria-modal="true" role="dialog">
+      <div data-te-modal-dialog-ref class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]">
+        <div class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-lg outline-none ">
+          <div class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-neutral-100 border-opacity-100 p-4 ">
+            <!--Modal title-->
+            <h5 class="text-xl font-bold leading-normal text-neutral-800 " id="exampleModalScrollableLabel1">Pilih Postingan 1</h5>
+            <!--Close button-->
+            <button type="button" class="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none" data-te-modal-dismiss aria-label="Close">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+              </svg>
+            </button>
           </div>
-          <div class="mb-1">
-            <label for="title" class="form-label block text-sm text font-medium text-gray-700 pt-4 pb-3">Postingan</label>
-            <div class="relative" data-te-dropdown-ref>
-              <button
-                class="inline-flex items-center text-center drop-shadow rounded-md bg-white w-68 px-20 pb-2 pt-2 text-sm font-medium text-gray-700 leading-normal shadow-[0_4px_9px_-4px_#fbfbfb] transition duration-150 ease-in-out hover:bg-neutral-100 hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:bg-neutral-100 focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] motion-reduce:transition-none"
-                type="button"
-                id="post1"
-                data-te-dropdown-toggle-ref
-                aria-expanded="false"
-                data-te-ripple-init>
-                Pilih Postingan
-                <span class="w-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    class="h-5 w-5">
-                    <path
-                      fill-rule="evenodd"
-                      d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                      clip-rule="evenodd" />
-                  </svg>
-                </span>
-              </button>
-              <ul
-                class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
-                aria-labelledby="dropdownMenuButton9"
-                data-te-dropdown-menu-ref>
-                <li>
-                  <a
-                    class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-gray-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
-                    href="#"
-                    data-te-dropdown-item-ref
-                    >Something else here</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-gray-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
-                    href="#"
-                    data-te-dropdown-item-ref
-                    >Something else here</a
-                  >
-                </li>                
-              </ul>
-            </div>            
-          </div>                        
-        </div>
-  
-        <!--Modal footer-->
-        <div
-          class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 border-opacity-100 p-4 ">
-          <button
-            type="button"
-            class="inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200"
-            data-te-modal-dismiss
-            data-te-ripple-init
-            data-te-ripple-color="light">
-            Close
-          </button>
-          <button
-            type="button"
-            class="ml-1 inline-block rounded bg-indigo-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
-            data-te-ripple-init
-            data-te-ripple-color="light">
-            Save changes
-          </button>
+    
+          <!--Modal body-->
+          <div class="relative p-4">
+            <div class="mb-1">
+              <label for="title" class="form-label block text-sm text font-medium text-gray-700 pb-3">Kategori</label>
+              <div class="relative" data-te-dropdown-ref>
+                <select onchange="getPosts()" id="chosenId" name="chosenId" class="inline-flex items-center text-center drop-shadow rounded-md bg-white w-64 px-20 pb-2 pt-2 text-sm font-medium text-gray-700 leading-normal shadow-[0_4px_9px_-4px_#fbfbfb] transition duration-150 ease-in-out hover:bg-neutral-100 hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:bg-neutral-100 focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] motion-reduce:transition-none">
+                  <option value="" selected disabled>Pilih Kategori</option>
+                  <option value="Ecopreneur">Ecopreneur</option>
+                  <option value="Ecoschool">Ecoschool</option>
+                  <option value="Tari">Tari</option>
+                  <option value="Karya dan Prestasi">Karya dan Prestasi</option>
+              </select>            
+              </div>            
+            </div>
+            <div class="mb-1">
+              <label for="title" class="form-label block text-sm text font-medium text-gray-700 pt-4 pb-3">Postingan</label>
+              <div class="relative" data-te-dropdown-ref>
+                <select id="post" name="post" class="inline-flex items-center text-center drop-shadow rounded-md bg-white w-68 px-20 pb-2 pt-2 text-sm font-medium text-gray-700 leading-normal shadow-[0_4px_9px_-4px_#fbfbfb] transition duration-150 ease-in-out hover:bg-neutral-100 hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:bg-neutral-100 focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] motion-reduce:transition-none" aria-expanded="false" data-te-ripple-init>
+                  <option value="">Select a post</option>
+                </select>
+              </div>            
+            </div>                        
+          </div>
+    
+          <!--Modal footer-->
+          <div class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 border-opacity-100 p-4 ">
+            <button type="button" class="inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200" data-te-modal-dismiss data-te-ripple-init data-te-ripple-color="light">
+              Close
+            </button>
+            <button type="button" id="saveBtn" class="ml-1 inline-block rounded bg-indigo-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]" data-te-ripple-init data-te-ripple-color="light">
+              Save changes
+            </button>
+          </div>
         </div>
       </div>
     </div>
+
+    {{--MODAL POST 2 --}}
+
+    <div data-te-modal-init class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none" id="postingan2" tabindex="-1" aria-labelledby="exampleModalCenterTitle2" aria-modal="true" role="dialog">
+      <div data-te-modal-dialog-ref class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]">
+        <div class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-lg outline-none ">
+          <div class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-neutral-100 border-opacity-100 p-4 ">
+            <!--Modal title-->
+            <h5 class="text-xl font-bold leading-normal text-neutral-800 " id="exampleModalScrollableLabel">Pilih Postingan 2</h5>
+            <!--Close button-->
+            <button type="button" class="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none" data-te-modal-dismiss aria-label="Close">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+              </svg>
+            </button>
+          </div>
     
-    {{-- MODAL POST 2 --}}
-    {{-- PAKE MODAL 1 HEHE --}}
+          <!--Modal body-->
+          <div class="relative p-4">
+            <div class="mb-1">
+              <label for="title" class="form-label block text-sm text font-medium text-gray-700 pb-3">Kategori</label>
+              <div class="relative" data-te-dropdown-ref>
+                <select onchange="getPosts2()" id="chosenId2" name="chosenId2" class="inline-flex items-center text-center drop-shadow rounded-md bg-white w-64 px-20 pb-2 pt-2 text-sm font-medium text-gray-700 leading-normal shadow-[0_4px_9px_-4px_#fbfbfb] transition duration-150 ease-in-out hover:bg-neutral-100 hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:bg-neutral-100 focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] motion-reduce:transition-none">
+                  <option value="" selected disabled>Pilih Kategori</option>
+                  <option value="Ecopreneur">Ecopreneur</option>
+                  <option value="Ecoschool">Ecoschool</option>
+                  <option value="Tari">Tari</option>
+                  <option value="Karya dan Prestasi">Karya dan Prestasi</option>
+              </select>            
+              </div>            
+            </div>
+            <div class="mb-1">
+              <label for="title" class="form-label block text-sm text font-medium text-gray-700 pt-4 pb-3">Postingan</label>
+              <div class="relative" data-te-dropdown-ref>
+                <select id="post2" name="post2" class="inline-flex items-center text-center drop-shadow rounded-md bg-white w-68 px-20 pb-2 pt-2 text-sm font-medium text-gray-700 leading-normal shadow-[0_4px_9px_-4px_#fbfbfb] transition duration-150 ease-in-out hover:bg-neutral-100 hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:bg-neutral-100 focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] motion-reduce:transition-none" aria-expanded="false" data-te-ripple-init>
+                  <option value="">Select a post</option>
+                </select>
+              </div>            
+            </div>                        
+          </div>
+    
+          <!--Modal footer-->
+          <div class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 border-opacity-100 p-4 ">
+            <button type="button" class="inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200" data-te-modal-dismiss data-te-ripple-init data-te-ripple-color="light">
+              Close
+            </button>
+            <button type="button" id="saveBtn2" class="ml-1 inline-block rounded bg-indigo-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]" data-te-ripple-init data-te-ripple-color="light">
+              Save changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </div>     
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      getPosts();
+      getPosts2();
+        $("#saveBtn").click(function() {
+            var postId = $("#post").val();
+            console.log(postId);
+            $.ajax({
+                url: "/dashboard/post/updateSpecial",
+                type: "POST",
+                dataType: "json",
+                data: {
+                    "_token": "{{ csrf_token() }}",
+                    "id": postId
+                },
+                success: function (data) {
+                    window.location.href = "{{ route('index.post') }}";
+                },
+                error: function (data) {
+                    // Display an error message or redirect to an error page
+                }
+            });
+        });
+
+        $("#saveBtn2").click(function() {
+            var postId2 = $("#post2").val();
+            console.log(postId2);
+            $.ajax({
+                url: "/dashboard/post/updateSpecial2",
+                type: "POST",
+                dataType: "json",
+                data: {
+                    "_token": "{{ csrf_token() }}",
+                    "id": postId2
+                },
+                success: function (data) {
+                    window.location.href = "{{ route('index.post') }}";
+                },
+                error: function (data) {
+                    // Display an error message or redirect to an error page
+                }
+            });
+        });
+    });
+
+    function getPosts() {
+        var chosenId = $("#chosenId").val();
+        $.ajax({
+            url: "/dashboard/posts/" + chosenId,
+            type: "GET",
+            dataType: "json",
+            success: function (data) {
+                var posts = $("#post");
+                posts.empty();
+                posts.append('<option value="" selected disabled>Select a post</option>');
+                $.each(data, function (index, post) {
+                    if (post.isChosen) {
+                        posts.append('<option value="' + post.id + '" selected>' + post.judul + '</option>');
+                    } else {
+                        posts.append('<option value="' + post.id + '">' + post.judul + '</option>');
+                    }
+                });
+            }
+        });
+    }
+    function getPosts2() {
+        var chosenId2 = $("#chosenId2").val();
+        $.ajax({
+            url: "/dashboard/posts2/" + chosenId2,
+            type: "GET",
+            dataType: "json",
+            success: function (data) {
+                var posts = $("#post2");
+                posts.empty();
+                posts.append('<option value="" selected disabled>Select a post</option>');
+                $.each(data, function (index, post) {
+                    if (post.isChosen2) {
+                        posts.append('<option value="' + post.id + '" selected>' + post.judul + '</option>');
+                    } else {
+                        posts.append('<option value="' + post.id + '">' + post.judul + '</option>');
+                    }
+                });
+            }
+        });
+    }
+  </script>
 @endsection
