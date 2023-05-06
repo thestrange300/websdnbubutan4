@@ -4,7 +4,8 @@ module.exports = {
     "./resources/**/*.blade.php",
     "./resources/**/*.js",
     "./resources/**/*.vue",
-    "./node_modules/tw-elements/dist/js/**/*.js"
+    "./node_modules/tw-elements/dist/js/**/*.js",
+    "./src/**/*.{js,ts,jsx,tsx}"
   ],  theme: {
     extend: {
       maxHeight: {

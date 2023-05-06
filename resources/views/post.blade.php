@@ -3,8 +3,12 @@
 
 @section('container')
 <div class="py-8 px-4">
-
-<div class="relative mx-auto divide-y-2 divide-gray-200 lg:max-w-1 grid gap-16 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
+    <div class="mb-4">
+        <p class=" text-2xl sm:text-3xl font-black text-center sm:text-left">
+            Postingan Mengenai : Kategori A    
+        </p>
+    </div>
+<div class="flex place-items-center sm:place-items-start relative mx-auto divide-y-2 divide-gray-200 lg:max-w-1 grid gap-16 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
 
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
     <a href="#">
@@ -12,9 +16,11 @@
     </a>
     <div class="p-5">
         <a href="#">
-            <h5 class="mb-2 text-2xl font-black tracking-tight text-gray-900 text-black">Noteworthy technology acquisitions 2021</h5>
+            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 text-black">Noteworthy technology acquisitions 2021</h5>
         </a>
-        <p class="mb-3 font-normal text-gray-700 text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        <p class="mb-3 font-normal text-gray-700 line-clamp-4 text-justify">In this code, we're using a div with a black background color and 50% opacity as an overlay on top of the background image. We're positioning it absolutely and setting it to take up the full size of the parent container using the absolute inset-0 classes.
+
+            Then, we're adding another div inside the parent div and positioning it relatively. We're setting its z-index to a higher value than the overlay, so that it appears on top of the overlay. This is where we're including the navbar and container content.</p>
         <p class="text-sm text-gray-500 pb-4">
             <a href="#" class="inline-block">
               <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800"> Video </span>

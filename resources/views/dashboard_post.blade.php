@@ -25,7 +25,7 @@
           @else
             <div class="px-4 py-5 bg-white shadow-lg rounded-lg overflow-hidden sm:p-6">
               <dt class="text-xl font-medium text-black truncate">Post 1</dt>
-              <dd class="mt-1 text-sm text-gray-500 truncate text-justify">Tidak Ada Post Terpilih</dd>
+              <dd class="mt-1 text-sm text-gray-500 text-justify line-clamp-3">Tidak Ada Post Terpilih</dd>
               <div class="text-right">
                 <button type="button" class="text-sm text-right font-bold text-black transition-all duration-200 rounded-lg mt-2" data-te-toggle="modal" data-te-target="#postingan1" data-te-ripple-init>Ubah
                 </button> 
@@ -36,7 +36,7 @@
             @foreach ($chosenPost2 as $selected)
               <div class="px-4 py-5 bg-white shadow-lg rounded-lg overflow-hidden sm:p-6">
                 <dt class="text-xl font-medium text-black truncate">{{ $selected->judul }}</dt>
-                <dd class="mt-1 text-sm text-gray-500 truncate text-justify">{!! html_entity_decode($selected->konten) !!}</dd>
+                <dd class="mt-1 text-sm text-gray-500 text-justify line-clamp-3">{!! html_entity_decode($selected->konten) !!}</dd>
                 <div class="text-right">
                   <button type="button" class="text-sm text-right font-bold text-black transition-all duration-200 rounded-lg mt-2" data-te-toggle="modal" data-te-target="#postingan2" data-te-ripple-init>Ubah
                   </button> 
@@ -46,7 +46,7 @@
           @else
             <div class="px-4 py-5 bg-white shadow-lg rounded-lg overflow-hidden sm:p-6">
               <dt class="text-xl font-medium text-black truncate">Post 2</dt>
-              <dd class="mt-1 text-sm text-gray-500 truncate text-justify">Tidak Ada Post Terpilih</dd>
+              <dd class="mt-1 text-sm text-gray-500 text-justify line-clamp-3">Tidak Ada Post Terpilih</dd>
               <div class="text-right">
                 <button type="button" class="text-sm text-right font-bold text-black transition-all duration-200 rounded-lg mt-2" data-te-toggle="modal" data-te-target="#postingan2" data-te-ripple-init>Ubah
                 </button> 
@@ -56,7 +56,7 @@
         @else
           <div class="px-4 py-5 bg-white shadow-lg rounded-lg overflow-hidden sm:p-6">
             <dt class="text-xl font-medium text-black truncate">Post 1</dt>
-            <dd class="mt-1 text-sm text-gray-500 truncate text-justify">Tidak Ada Post Terpilih</dd>
+            <dd class="mt-1 text-sm text-gray-500 text-justify line-clamp-3">Tidak Ada Post Terpilih</dd>
             <div class="text-right">
               <button type="button" class="text-sm text-right font-bold text-black transition-all duration-200 rounded-lg mt-2" data-te-toggle="modal" data-te-target="#postingan1" data-te-ripple-init>Ubah
               </button> 
@@ -64,7 +64,7 @@
           </div>
           <div class="px-4 py-5 bg-white shadow-lg rounded-lg overflow-hidden sm:p-6">
             <dt class="text-xl font-medium text-black truncate">Post 2</dt>
-            <dd class="mt-1 text-sm text-gray-500 truncate text-justify">Tidak Ada Post Terpilih</dd>
+            <dd class="mt-1 text-sm text-gray-500 text-justify line-clamp-3">Tidak Ada Post Terpilih</dd>
             <div class="text-right">
               <button type="button" class="text-sm text-right font-bold text-black transition-all duration-200 rounded-lg mt-2" data-te-toggle="modal" data-te-target="#postingan2" data-te-ripple-init>Ubah
               </button> 
@@ -169,8 +169,8 @@
             </div>
             <div class="mb-1">
               <label for="title" class="form-label block text-sm text font-medium text-gray-700 pt-4 pb-3">Postingan</label>
-              <div class="relative" data-te-dropdown-ref>
-                <select id="post" name="post" class="inline-flex items-center text-center drop-shadow rounded-md bg-white w-68 px-20 pb-2 pt-2 text-sm font-medium text-gray-700 leading-normal shadow-[0_4px_9px_-4px_#fbfbfb] transition duration-150 ease-in-out hover:bg-neutral-100 hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:bg-neutral-100 focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] motion-reduce:transition-none" aria-expanded="false" data-te-ripple-init>
+              <div class="relative mx-auto" data-te-dropdown-ref>
+                <select id="post" name="post" class="inline-flex items-center text-center drop-shadow rounded-md bg-white w-68 pb-2 pt-2 text-sm font-medium text-gray-700 leading-normal shadow-[0_4px_9px_-4px_#fbfbfb] transition duration-150 ease-in-out hover:bg-neutral-100 hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:bg-neutral-100 focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] motion-reduce:transition-none" aria-expanded="false" data-te-ripple-init>
                   <option value="">Select a post</option>
                 </select>
               </div>            

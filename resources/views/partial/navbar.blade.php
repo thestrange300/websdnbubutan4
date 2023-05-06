@@ -26,7 +26,7 @@
             <div class="flex space-x-4 gap-8">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300" -->
               
-              <a href="/" class="my-auto relative {{ $active == "home" ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold' : 'text-cyan-900' }} px-3 py-2 rounded-md text-base" aria-current="page">Home</a>
+              <a href="/" class="my-auto relative {{ $active == "home" ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold' : 'text-cyan-900 font-medium' }} px-3 py-2 rounded-md text-base" aria-current="page">Home</a>
               
               {{-- DROPDOWN PROFIL --}}
 {{-- 
@@ -246,8 +246,6 @@
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300" -->
         <a href="/" class="bg-gradient-to-r from-cyan-500 to-blue-500 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Home</a>
   
-        <a href="#" class="text-cyan-900 block px-3 py-2 rounded-md text-base font-medium" id="mobile_profil">Profil</a>
-  
         <a href="#" class="text-cyan-900 block px-3 py-2 rounded-md text-base font-medium" id="mobile_kurikulum">Kurikulum</a>
         
         <div hidden id="expand_kurikulum">
@@ -259,6 +257,10 @@
           <a href="#" hidden class="block px-3 pb-1 pl-12 rounded-md text-sm font-normal text-black">Silabus</a>
           <a href="#" hidden class="block px-3 pb-1 pl-12 rounded-md text-sm font-normal text-black">RPP</a>
         </div>
+
+        <a href="#" class="text-cyan-900 block px-3 py-2 rounded-md text-base font-medium" id="mobile_kapres">Ekstrakurikuler</a>
+
+        <a href="#" class="text-cyan-900 block px-3 py-2 rounded-md text-base font-medium" id="mobile_kapres">Adiwiyata</a>
   
         <a href="#" class="text-cyan-900 block px-3 py-2 rounded-md text-base font-medium" id="mobile_kapres">Karya dan Prestasi</a>
 

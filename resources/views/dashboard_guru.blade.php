@@ -13,7 +13,7 @@
         <div class="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
           <button 
             type="button"  
-            class="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            class="hover:transform hover:scale-125 transition duration-300 inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             data-te-toggle="modal"
             data-te-target="#exampleModalCenter"
             data-te-ripple-init>

@@ -65,8 +65,8 @@ initTE({ Carousel });
                               max-w-lg" id="title" name="title">
                             </div>                
                           </div>
-                          <div class="mt-10 max-w-sm mx-auto max-w-none flex justify-center">
-                            <a href="" class="sticky text-2xl text-white items-center justify-center px-4 py-3 text-base font-bold rounded-md shadow-sm bg-gradient-to-r from-cyan-400 to-blue-400"> Login </a>
+                          <div class="mt-10 mx-auto max-w-none flex justify-center">
+                            <a href="" class="sticky text-2xl text-white items-center justify-center px-4 py-3 font-bold rounded-md shadow-sm bg-gradient-to-r from-cyan-400 to-blue-400"> Login </a>
                         </div>
                     </div>
                   </div> 

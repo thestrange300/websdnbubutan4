@@ -59,8 +59,7 @@
                 d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
               </path>
             </svg>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic
-            tenetur quae quaerat ad velit ab hic tenetur.
+            Menjadi jembatan antara desain dan teknologi dengan mengubah desain visual menjadi kode yang dapat diimplementasikan pada website.
           </p>
         </div>
 
@@ -73,7 +72,7 @@
           <h6 class="font-medium text-blue-600 mb-2">UI/UX Designer</h6>
           <div>
             <ul class="flex justify-center gap-4 mb-4">
-              <a href="">
+              <a href="https://github.com/mierjaX">
                 <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-4 w-4 "
@@ -111,8 +110,8 @@
               <path fill="currentColor"
                 d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
               </path>
-            </svg>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
-            laboriosam, nisi ut aliquid commodi.
+            </svg>
+            Mengembangkan desain antarmuka yang fokus pada pengalaman pengguna yang intuitif dan modern dengan menggunakan teknologi dan praktik terbaik dalam desain UX/UI.
           </p>
           <ul class="flex justify-center mb-0">
           </ul>
@@ -166,8 +165,8 @@
               <path fill="currentColor"
                 d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
               </path>
-            </svg>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-            voluptatum deleniti atque corrupti.
+            </svg>
+            Membangun dan memelihara arsitektur sistem yang handal dan efisien untuk mendukung fungsionalitas dan kinerja website dengan teknologi terbaru dalam pengembangan back-end.
           </p>
           <ul class="flex justify-center mb-0">
           </ul>

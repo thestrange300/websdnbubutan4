@@ -17,8 +17,8 @@
           <span class="block text-white underline decoration-indigo-500"data-aos="zoom-in"data-aos-duration="1200">SDN Bubutan IV</span>
         </h1>
         <p class="mt-6 max-w-lg mx-auto text-center text-sm sm:text-base text-white sm:max-w-3xl">Selamat datang di website resmi sekolah dasar kami! Di sini, Anda akan menemukan informasi terbaru tentang program belajar mengajar dan kegiatan sekolah kami. Kami dengan senang hati mempersembahkan website sekolah dasar ini kepada seluruh siswa, guru, dan orang tua.</p>
-        <div class="mt-10 max-w-sm mx-auto max-w-none flex justify-center">
-            <a href="/profile" class="sticky duration-500 transform hover:-translate-y-3 text-2xl hover:text-white items-center justify-center px-4 py-3 text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500"> Profil Sekolah </a>
+        <div class="mt-10 max-w-sm mx-auto flex justify-center">
+            <a href="/profile" class="sticky duration-500 transform hover:-translate-y-3 text-base hover:text-white items-center justify-center px-4 py-3 font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500"> Profil Sekolah </a>
         </div>
       </div>
     </div>
@@ -28,7 +28,7 @@
 
 <!-- SAMBUTAN KEPSEK-->
 <!-- This example requires Tailwind CSS v2.0+ -->
-<div class="relative bg-white overflow-hidden bg-transparent">
+<div class="relative overflow-hidden bg-transparent">
   <div class="relative mb-6">
     <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
       <div class="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
@@ -37,7 +37,9 @@
           </div>
           <div class="">
             <h2 class="text-center sm:text-left text-2xl md:text-3xl pt-8 pb-4 font-extrabold tracking-tight text-gray-900">Sambutan Kepala Sekolah</h2>
-            <p class="mt-4 text-base text-gray-500 text-justify">"Kita bersama-sama bekerja keras untuk memastikan bahwa setiap siswa merasa dihargai dan mendapatkan pendidikan yang berkualitas, sehingga mereka siap untuk menjadi generasi pemimpin masa depan."</p>
+            <p class="mt-4 text-base text-black text-center sm:text-justify">"Kita bersama-sama bekerja keras untuk memastikan bahwa setiap siswa merasa dihargai dan mendapatkan pendidikan yang berkualitas, sehingga mereka siap untuk menjadi generasi pemimpin masa depan."</p>
+            <p class="mt-4 text-base font-bold text-black text-center sm:text-justify">Endriyani Hasto Dewi, S.Pd.</p>
+            <p class="mt-1 text-sm font-semibold text-black text-center sm:text-justify">NIP. 19680804 199403 2 009</p>
             {{-- <div class="mt-6">
               <a href="#" class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700"> Get started </a>
             </div> --}}
@@ -55,15 +57,20 @@
   </div>
 </div>
 
+<div>
+  <p class="pt-10 text-center text-2xl md:text-3xl font-extrabold tracking-tight">
+    Keunggulan Sekolah
+  </p>
+</div>
 
 <!-- component -->
-<div class="px-3 px-24 md:lg:xl:px-40 py-16 bg-opacity-10">
+<div class=" px-24 md:lg:xl:px-40 py-8 bg-opacity-10">
   <div class="grid grid-cols-1 items-center rounded-lg md:lg:xl:grid-cols-3 group bg-white drop-shadow-xl shadow-neutral-200 ">
 
       <div
           class="p-10 flex flex-col items-center text-center group md:lg:xl:border-r md:lg:xl:border-b "data-aos="zoom-in"data-aos-duration="300">
           <span class="p-5 rounded-full bg-gradient-to-r from-blue-200 to-blue-100 drop-shadow-xl text-white shadow-cyan-200">
-              <img class="w-20 h-20" src="{{asset('img/award.gif')}}" alt="award">
+              <img class="w-20 h-20 group" src="{{asset('img/award.gif')}}" alt="award">
           </span>
           <p class="text-xl font-bold text-gray-700 mt-3">Unggul dalam Prestasi</p>
       </div>
@@ -92,11 +99,11 @@
 {{-- INI BUAT KARTU --}}
 <div class="text-center">
   <h2 class="text-2xl text-black font-extrabold md:text-4xl">Post Pilihan Kami</h2>
-  <p class="lg:w-6/12 pt-4 lg:mx-auto text-base text-gray-500">Postingan unggulan kami di profil perusahaan sekolah menyoroti pencapaian dan misi institusi untuk mendidik dan menginspirasi para pemimpin masa depan.</p>
+  <p class="lg:w-6/12 pt-4 lg:mx-auto text-base text-black">Postingan unggulan kami di profil perusahaan sekolah menyoroti pencapaian dan misi institusi untuk mendidik dan menginspirasi para pemimpin masa depan.</p>
 </div>
 
 <div class="bg-transparent from-green-50 to-cyan-100">  
-  <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+  <div class="container px-6 text-gray-600">
       <div class="py-4 grid gap-12 lg:grid-cols-2">
 
 {{-- KARTU KEDUA --}}
@@ -118,7 +125,7 @@
           </div>
             <div class="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">
               <h3 class="font-black text-gray-800 md:text-2xl text-xl">Peringatan Hari Pahlawan Tahun 2022</h3>
-              <p class="md:text-base text-gray-500 text-base">Hari ini kita memeringati Hari Pahlawan yang merupakan hari penting dalam perjalanan sejarah bangsa Indonesia. Pertempuran Surabaya inilah yang menjadi cikal bakal Hari Pahlawan Nasional yang masih kita peringati hingga...</p>
+              <p class="md:text-base text-justify text-gray-500 text-base">Hari ini kita memeringati Hari Pahlawan yang merupakan hari penting dalam perjalanan sejarah bangsa Indonesia. Pertempuran Surabaya inilah yang menjadi cikal bakal Hari Pahlawan Nasional yang masih kita peringati hingga...</p>
               <a href="#" class="block w-max font-semibold text-cyan-600">Selengkapnya</a>
           </div>
         </div>
@@ -143,6 +150,14 @@
   }
   ```
 -->
+<div class="relative flex flex-col items-center group">
+  <p class="text-xl font-bold text-gray-700 mt-3">Sekolah Zero Waste</p>
+  <div class="absolute top-0 flex flex-col items-center hidden mt-6 group-hover:flex">
+    <div class="w-3 h-3 -mb-2 rotate-45 bg-black"></div>
+    <span class="relative z-10 p-2 text-xs leading-none text-white whitespace-no-wrap bg-black shadow-lg">A bottom aligned tooltip.</span>
+  </div>
+</div>
+
 <div class="bg-transparent pb-10 px-4 sm:px-6 lg:pb-10 lg:px-8">
   <h2 class="text-2xl md:text-3xl text-center sm:text-left text-black font-extrabold my-6">Postingan Terbaru</h2>
   <div class="relative mx-auto divide-y-2 divide-gray-200 lg:max-w-1">

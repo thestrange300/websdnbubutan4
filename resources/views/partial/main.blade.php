@@ -21,9 +21,11 @@
 
 </head>
 <body>
+
   <script>
 import { Carousel, initTE } from "tw-elements";
-initTE({ Carousel });    
+initTE({ Carousel });
+import 'tw-elements';    
   </script>
   <script src="{{ asset('js/dropdown.js') }}"></script>
   <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
@@ -32,9 +34,11 @@ initTE({ Carousel });
     <script>
       AOS.init();
     </script>
-    <div>
+    <div class="bg-fixed bg-opacity-40" style="background-image: url({{ asset('svg/graph-paper.svg') }})">
+      <div class="">
         @include('partial.navbar')
-        @yield('container')
+        @yield('container')        
+      </div>  
     </div>
 </body>
 <!-- This example requires Tailwind CSS v2.0+ -->

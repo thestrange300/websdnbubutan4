@@ -2,7 +2,9 @@
 
 @section('container')
 
-    <div class="animate__animated animate__backInDown text-center text-4xl font-bold m-10">Profil Sekolah</div>
+    <p class="text-center text-4xl font-extrabold m-10" data-aos="zoom-in-down" data-aos-duration="800">
+        Profil Sekolah
+    </p>
 
     <!-- NAMA KEPSEK WAKASEK -->
 
@@ -11,7 +13,7 @@
             <img src="{{asset('img/kepsek.png')}}" alt="" class="max-w-xs max-sm:w-60">
             <p class="font-semibold">Kepala Sekolah</p>
             <p>Endriyani Hasto Dewi, S.Pd.</p>
-            <p>19680804 199403 2 009</p>
+            <p>NIP. 19680804 199403 2 009</p>
         </div>
         <div class="text-center flex flex-col justify-center items-center overflow-x-auto">
             <div class="bg-white rounded-lg drop-shadow-xl p-6">
@@ -71,62 +73,65 @@
 
 
     <!-- VISI MISI -->
-    <div data-aos="fade-up" data-aos-duration="2000">
+    <div>
     <div class="text-center text-4xl font-bold m-10">Visi dan Misi</div>
-    <div class="lg:pl-52 max-sm:pl-10">
-        <p class="text-xl font-semibold">Visi SDN Bubutan 4 Surabaya</p>
+    <div>
+        <div class="lg:pl-52 max-sm:pl-10" data-aos="fade-up" data-aos-duration="500">
+            <p class="text-xl font-bold">Visi SDN Bubutan 4 Surabaya</p>
+            <br>
+            <p class="text-base font-medium">“Berprestasi, Peduli Lingkungan, Berwawasan Global, Berjiwa Nasional, Berdasar Iman Dan Taqwa”</p>
+        </div>
         <br>
-        <p class="text-base font-medium">“Berprestasi, Peduli Lingkungan, Berwawasan Global, Berjiwa Nasional, Berdasar Iman Dan Taqwa”</p>
+        <div class="lg:px-52 max-sm:px-10" data-aos="fade-up" data-aos-duration="900">
+            <p class="text-xl font-bold">Misi SDN Bubutan 4 Surabaya</p>
+            <br>
+            <table class="border-collapse text-justify sm:text-left"> 
+                <tbody>
+                    <tr>
+                        <td class="align-top">1.</td>
+                        <td>Meningkatkan iman dan taqwa kepada tuhan YME melalui intra kurikuler maupun kegiatan-kegiatan peningkatan keimanan dan ketaqwaan.</td>
+                    </tr>
+                    <tr>
+                        <td class="align-top">2.</td>
+                        <td>Menumbuhkembangkan semangat kompetisi secara sehat dalam prestasi akademik maupun non akademik.</td>
+                    </tr>
+                    <tr>
+                        <td class="align-top">3.</td>
+                        <td>Mengembangkan budaya gemar membaca, rasa ingin tahu, bertoleransi, bekerjasama, saling menghargai, disiplin, jujur, kerja keras, kreatif dan mandiri.</td>
+                    </tr>
+                    <tr>
+                        <td class="align-top">4.</td>
+                        <td>Menumbuhkembangkan rasa percaya diri untuk maju dan kedisiplinandalam pelayanan pendidikan.</td>
+                    </tr>
+                    <tr>
+                        <td class="align-top">5.</td>
+                        <td>Menyiapkan generasi unggul yang memiliki potensi di bidang imtaq dan iptek.</td>
+                    </tr>
+                    <tr>
+                        <td class="align-top">6.</td>
+                        <td>Meningkatkan usaha pelestarian lingkungan dengan cara konservasi air dan menciptakan lingkungan hijau.</td>
+                    </tr>
+                    <tr>
+                        <td class="align-top">7.</td>
+                        <td>Melaksanakan pencegahan pencemaran lingkungan dengan cara memanfaatkan biopori, sumur resapan dan water threatment (apal – alat pengetahuan air limbah, rain water tank).</td>
+                    </tr>
+                    <tr>
+                        <td class="align-top">8.</td>
+                        <td>Mencegah kerusakan lingkungan dengan cara pengolahan sampah dan peremajaan tanaman.</td>
+                    </tr>
+                    <tr>
+                        <td class="align-top">9.</td>
+                        <td>Menumbuhkankembangkan sikap toleransi berwawasan pergaulan global agar tercipta rasa dan sikap estetika, etika berdasarkan pancasila.</td>
+                    </tr>
+                    <tr>
+                        <td class="align-top">10.</td>
+                        <td>Mengembangkan sikap cinta budaya nasional.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-    <br>
-    <div class="lg:px-52 max-sm:pl-10">
-        <p class="text-xl font-semibold">Misi SDN Bubutan 4 Surabaya</p>
-        <br>
-        <table class="border-collapse"> 
-            <tbody>
-                <tr>
-                    <td class="align-top">1.</td>
-                    <td>Meningkatkan iman dan taqwa kepada tuhan YME melalui intra kurikuler maupun kegiatan-kegiatan peningkatan keimanan dan ketaqwaan.</td>
-                </tr>
-                <tr>
-                    <td class="align-top">2.</td>
-                    <td>Menumbuhkembangkan semangat kompetisi secara sehat dalam prestasi akademik maupun non akademik.</td>
-                </tr>
-                <tr>
-                    <td class="align-top">3.</td>
-                    <td>Mengembangkan budaya gemar membaca, rasa ingin tahu, bertoleransi, bekerjasama, saling menghargai, disiplin, jujur, kerja keras, kreatif dan mandiri.</td>
-                </tr>
-                <tr>
-                    <td class="align-top">4.</td>
-                    <td>Menumbuhkembangkan rasa percaya diri untuk maju dan kedisiplinandalam pelayanan pendidikan.</td>
-                </tr>
-                <tr>
-                    <td class="align-top">5.</td>
-                    <td>Menyiapkan generasi unggul yang memiliki potensi di bidang imtaq dan iptek.</td>
-                </tr>
-                <tr>
-                    <td class="align-top">6.</td>
-                    <td>Meningkatkan usaha pelestarian lingkungan dengan cara konservasi air dan menciptakan lingkungan hijau.</td>
-                </tr>
-                <tr>
-                    <td class="align-top">7.</td>
-                    <td>Melaksanakan pencegahan pencemaran lingkungan dengan cara memanfaatkan biopori, sumur resapan dan water threatment (apal – alat pengetahuan air limbah, rain water tank).</td>
-                </tr>
-                <tr>
-                    <td class="align-top">8.</td>
-                    <td>Mencegah kerusakan lingkungan dengan cara pengolahan sampah dan peremajaan tanaman.</td>
-                </tr>
-                <tr>
-                    <td class="align-top">9.</td>
-                    <td>Menumbuhkankembangkan sikap toleransi berwawasan pergaulan global agar tercipta rasa dan sikap estetika, etika berdasarkan pancasila.</td>
-                </tr>
-                <tr>
-                    <td class="align-top">10.</td>
-                    <td>Mengembangkan sikap cinta budaya nasional.</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    
 </div>
 
     <!-- EKSTRA NYA -->
@@ -190,37 +195,37 @@
 
     <!-- DAFTAR GURU DAN STAFF -->
     <div class="text-center text-4xl font-bold mx-10 my-4">Daftar Guru & Staff</div>
-    <div class="lg:mx-36 mx-20 my-10">
-        <div class="drop-shadow-md py-2 align-middle md:px-6 lg:px-8">
-          <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
-            <table class="table-auto w-full min-w-full divide-y divide-gray-300">
+    <div class="lg:mx-36 mx-10 my-10">
+        <div class="drop-shadow-md py-2 align-middle    ">
+          <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 rounded-lg">
+            <table class="table-auto w-full px-6 min-w-full divide-y divide-gray-300">
               <thead class="bg-gray-50">
                 <tr>
-                  <th scope="col" class="py-3.5 lg:px-10 text-left text-sm font-semibold text-gray-900 sm:pl-6">Nama</th>
+                  <th scope="col" class="py-3.5 lg:px-10 text-left text-sm font-semibold text-gray-900 pl-6">Nama</th>
                   <th scope="col" class="py-3.5 lg:px-10 text-left text-sm font-semibold text-gray-900">Posisi</th>
                 </tr>
               </thead>
               {{-- @foreach ($teachers as $teacher) --}}
               <tbody class="divide-y divide-gray-200 bg-white">
                 <tr>
-                  <td class="whitespace-nowrap py-4 lg:px-10 text-sm font-medium text-gray-900 sm:pl-6">Tegar Alwinata</td>
-                  <td class="whitespace-nowrap py-4 lg:px-10 text-sm text-gray-500">Guru IPS</td>
+                  <td class="whitespace-nowrap py-4 lg:px-10 text-sm font-medium text-gray-900 pl-6">Tegar Alwinata</td>
+                  <td class="whitespace-nowrap py-4 lg:px-10 text-sm text-gray-700">Guru IPS</td>
                 </tr>
                 <tr>
-                    <td class="whitespace-nowrap py-4 lg:px-10 text-sm font-medium text-gray-900 sm:pl-6">Mirza Alwinata</td>
-                    <td class="whitespace-nowrap py-4 lg:px-10 text-sm text-gray-500">Guru IPA</td>              
+                    <td class="whitespace-nowrap py-4 lg:px-10 text-sm font-medium text-gray-900 pl-6">Mirza Alwinata</td>
+                    <td class="whitespace-nowrap py-4 lg:px-10 text-sm text-gray-700">Guru IPA</td>              
                 </tr>
                 <tr>
-                    <td class="whitespace-nowrap py-4 lg:px-10 text-sm font-medium text-gray-900 sm:pl-6">Auliya Alwinata</td>
-                    <td class="whitespace-nowrap py-4 lg:px-10 text-sm text-gray-500">Guru Kelas 2</td>                        
+                    <td class="whitespace-nowrap py-4 lg:px-10 text-sm font-medium text-gray-900 pl-6">Auliya Alwinata</td>
+                    <td class="whitespace-nowrap py-4 lg:px-10 text-sm text-gray-700">Guru Kelas 2</td>                        
                 </tr>
                 <tr>
-                    <td class="whitespace-nowrap py-4 lg:px-10 text-sm font-medium text-gray-900 sm:pl-6">Tegar Amir Faizi</td>
-                    <td class="whitespace-nowrap py-4 lg:px-10 text-sm text-gray-500">Guru Kelas 5</td>                     
+                    <td class="whitespace-nowrap py-4 lg:px-10 text-sm font-medium text-gray-900 pl-6">Tegar Amir Faizi</td>
+                    <td class="whitespace-nowrap py-4 lg:px-10 text-sm text-gray-700">Guru Kelas 5</td>                     
                 </tr>
                 <tr>
-                    <td class="whitespace-nowrap py-4 lg:px-10 text-sm font-medium text-gray-900 sm:pl-6">Tegar Rakhman Hidayat</td>
-                    <td class="whitespace-nowrap py-4 lg:px-10 text-sm text-gray-500">Tata Kelola</td> 
+                    <td class="whitespace-nowrap py-4 lg:px-10 text-sm font-medium text-gray-900 pl-6">Tegar Rakhman Hidayat</td>
+                    <td class="whitespace-nowrap py-4 lg:px-10 text-sm text-gray-700">Tata Kelola</td> 
                 </tr>
                 {{-- @endforeach --}}
               </tbody>
