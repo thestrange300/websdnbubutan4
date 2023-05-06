@@ -8,12 +8,13 @@
 
     <!-- NAMA KEPSEK WAKASEK -->
 
-    <div class="grid grid-cols-2 lg:px-36 ">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:px-36 ">
         <div class="text-center flex flex-col justify-center items-center">
             <img src="{{asset('img/kepsek.png')}}" alt="" class="max-w-xs max-sm:w-60">
             <p class="font-semibold">Kepala Sekolah</p>
             <p>Endriyani Hasto Dewi, S.Pd.</p>
-            <p>NIP. 19680804 199403 2 009</p>
+            <p class="pb-6 sm:pb-0">NIP. 19680804 199403 2 009</p>
+            <p class="px-4 pb-6 sm:hidden">Kami berkomitmen untuk memberikan pendidikan terbaik kepada para siswa, serta menciptakan lingkungan belajar yang aman, nyaman, dan mendukung.</p>
         </div>
         <div class="text-center flex flex-col justify-center items-center overflow-x-auto">
             <div class="bg-white rounded-lg drop-shadow-xl p-6">
@@ -58,25 +59,36 @@
     <!-- MAP -->
     
     <div class="grid grid-cols-2 lg:px-36">
-        <div class="text-center flex flex-col items-center">
-            <div class="max-sm:ml-10 max-w-xs text-justify flex-1 lg:mt-5">
+        <div class="hidden sm:inline text-center flex flex-col items-center">
+            <div class=" max-sm:ml-10 max-w-xs text-justify flex-1 lg:mt-5">
                 <p>Kami berkomitmen untuk memberikan pendidikan terbaik kepada para siswa, serta menciptakan lingkungan belajar yang aman, nyaman, dan mendukung.</p>
             </div>
         </div>
-        <div class="bg-white rounded-lg drop-shadow-xl p-6">
+        <div class="hidden sm:inline bg-white rounded-lg drop-shadow-xl p-6">
+            <div class="flex justify-center mb-4">             
+                <p class=" text-center text-2xl font-bold">Lokasi Kami</p>
+            </div>
                     <div class="flex flex-col items-center max-sm:overflow-auto max-sm:relative max-sm:mt-5 max-sm:hidden">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247.36903993294723!2d112.72935277790985!3d-7.251693397360204!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f94668aca7af%3A0x38c23305fd460e5b!2sBubutan%20IV%20Elementary%20School%20Surabaya!5e0!3m2!1sen!2sid!4v1677412017573!5m2!1sen!2sid" width="600" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
-        </div>
+            <iframe class="rounded-lg" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247.36903993294723!2d112.72935277790985!3d-7.251693397360204!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f94668aca7af%3A0x38c23305fd460e5b!2sBubutan%20IV%20Elementary%20School%20Surabaya!5e0!3m2!1sen!2sid!4v1677412017573!5m2!1sen!2sid" width="600" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+        </div>   
 
     </div>
 
+    <div class="sm:hidden bg-white rounded-lg drop-shadow-xl m-6 p-6">
+        <div class="flex justify-center mb-4">             
+            <p class=" text-center text-2xl font-bold">Lokasi Kami</p>
+        </div>
+        <div class="flex flex-col items-center">
+            <iframe class="rounded-lg" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247.36903993294723!2d112.72935277790985!3d-7.251693397360204!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f94668aca7af%3A0x38c23305fd460e5b!2sBubutan%20IV%20Elementary%20School%20Surabaya!5e0!3m2!1sen!2sid!4v1677412017573!5m2!1sen!2sid" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
 
     <!-- VISI MISI -->
     <div>
     <div class="text-center text-4xl font-bold m-10">Visi dan Misi</div>
     <div>
-        <div class="lg:pl-52 max-sm:pl-10" data-aos="fade-up" data-aos-duration="500">
+        <div class="lg:pl-52 max-sm:px-10" data-aos="fade-up" data-aos-duration="500">
             <p class="text-xl font-bold">Visi SDN Bubutan 4 Surabaya</p>
             <br>
             <p class="text-base font-medium">“Berprestasi, Peduli Lingkungan, Berwawasan Global, Berjiwa Nasional, Berdasar Iman Dan Taqwa”</p>

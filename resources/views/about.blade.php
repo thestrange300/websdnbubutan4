@@ -4,12 +4,14 @@
 
 
 <!-- Container for demo purpose -->
-<div class="container my-24 mt-8 px-6 mx-auto">
+<div class="bg-transparent pb-16 mt-8 px-6 mx-auto">
 
-    <section class="mb-32 text-gray-800 text-center">
+    <section class="text-gray-800 text-center">
   
-      <h2 class="text-3xl font-bold mb-12">Tim Website</h2>
-  
+      <h2 class="text-3xl font-bold mb-6">Tim Website</h2>
+      <div>
+        <p class="mb-12 sm:px-40 text-justify sm:text-center">Kami, sekelompok mahasiswa Prodi Sistem Informasi angkatan 2020 dari <b> Universitas Airlangga</b>, dengan penuh semangat dan dedikasi, bertekad untuk memberikan kontribusi positif bagi SDN Bubutan IV dengan mengembangkan sebuah website sekolah yang menarik, informatif, dan mudah diakses bagi seluruh pengguna. <span class="sm:hidden"><br><br></span> Dan kami berharap dapat membantu meningkatkan kualitas pendidikan di SDN Bubutan IV dan memberikan pengalaman belajar yang lebih baik bagi siswa-siswi sekolah tersebut.</p>
+      </div>
       <div class="grid md:grid-cols-3 gap-x-6 lg:gap-x-12">
         <div class="mb-12 md:mb-0">
           <div class="flex justify-center mb-6">

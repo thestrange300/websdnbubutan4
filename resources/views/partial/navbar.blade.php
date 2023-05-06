@@ -249,20 +249,38 @@
         <a href="#" class="text-cyan-900 block px-3 py-2 rounded-md text-base font-medium" id="mobile_kurikulum">Kurikulum</a>
         
         <div hidden id="expand_kurikulum">
-          <a href="#" hidden class="block px-3 pb-1 pl-6 rounded-md text-sm font-bold text-neutral-600">Kurikulum 2013</a>
-          <a href="#" hidden class="block px-3 pb-1 pl-12 rounded-md text-sm font-normal text-black">Silabus</a>
-          <a href="#" hidden class="block px-3 pb-1 pl-12 rounded-md text-sm font-normal text-black">RPP</a>
+          <p class="block px-3 pb-1 pl-6 rounded-md text-sm font-bold text-neutral-600">Kurikulum 2013</p>
+          <a href="#" hidden class="block px-3 py-2 pb-1 pl-12 rounded-md text-sm font-normal text-black">Silabus</a>
+          <a href="#" hidden class="block px-3 py-4 pb-1 pl-12 rounded-md text-sm font-normal text-black">RPP</a>
   
-          <a href="#" hidden class="block px-3 pb-1 pl-6 rounded-md text-sm font-bold text-neutral-600">Kurikulum Merdeka</a>
-          <a href="#" hidden class="block px-3 pb-1 pl-12 rounded-md text-sm font-normal text-black">Silabus</a>
-          <a href="#" hidden class="block px-3 pb-1 pl-12 rounded-md text-sm font-normal text-black">RPP</a>
+          <p class="block px-3 pb-1 pl-6 rounded-md text-sm font-bold text-neutral-600">Kurikulum Merdeka</p>
+          <a href="#" hidden class="block px-3 py-2 pb-1 pl-12 rounded-md text-sm font-normal text-black">Silabus</a>
+          <a href="#" hidden class="block px-3 py-4 pb-1 pl-12 rounded-md text-sm font-normal text-black">RPP</a>
         </div>
 
-        <a href="#" class="text-cyan-900 block px-3 py-2 rounded-md text-base font-medium" id="mobile_kapres">Ekstrakurikuler</a>
+        <a href="#" id="mobile_eskul" class="text-cyan-900 block px-3 py-2 rounded-md text-base font-medium" id="mobile_eskul">Ekstrakurikuler</a>
 
-        <a href="#" class="text-cyan-900 block px-3 py-2 rounded-md text-base font-medium" id="mobile_kapres">Adiwiyata</a>
+        <div hidden id="expand_eskul">
+          <a href="#" hidden class="block px-3 pl-6 rounded-md text-sm font-normal text-black">Tari</a>
+          <a href="#" hidden class="block px-3 py-4 pb-1 pl-6 rounded-md text-sm font-normal text-black">Pencak Silat</a>
+          <a href="#" hidden class="block px-3 py-4 pb-1 pl-6 rounded-md text-sm font-normal text-black">Qiroah</a>
+          <a href="#" hidden class="block px-3 py-4 pb-1 pl-6 rounded-md text-sm font-normal text-black">Samproh</a>
+          <a href="#" hidden class="block px-3 py-4 pb-1 pl-6 rounded-md text-sm font-normal text-black">Pramuka</a>
+        </div>
+
+        <a href="#" class="text-cyan-900 block px-3 py-2 rounded-md text-base font-medium" id="mobile_adi">Adiwiyata</a>
+
+        <div hidden id="expand_adi">
+          <a href="#" hidden class="block px-3 pb-1 pl-6 rounded-md text-sm font-normal text-black">Ecopreneur</a>
+          <a href="#" hidden class="block px-3 py-4 pb-1 pl-6 rounded-md text-sm font-normal text-black">Ecoschool</a>
+        </div>
   
         <a href="#" class="text-cyan-900 block px-3 py-2 rounded-md text-base font-medium" id="mobile_kapres">Karya dan Prestasi</a>
+
+        <div hidden id="expand_kapres">
+          <a href="#" hidden class="block px-3 pb-1 pl-6 rounded-md text-sm font-normal text-black">Guru</a>
+          <a href="#" hidden class="block px-3 py-4 pb-1 pl-6 rounded-md text-sm font-normal text-black">Siswa</a>
+        </div>
 
         <a href="#" class="text-cyan-900 block px-3 py-2 rounded-md text-base font-medium">Perpustakaan</a>
       </div>
@@ -274,6 +292,12 @@ const dropdown = document.getElementById("dropdown");
 const drop1 = document.getElementById("drop1");
 const mobile_kurikulum = document.getElementById("mobile_kurikulum")
 const expand_kurikulum = document.getElementById("expand_kurikulum")
+const mobile_eskul = document.getElementById("mobile_eskul")
+const expand_eskul = document.getElementById("expand_eskul")
+const mobile_adi = document.getElementById("mobile_adi")
+const expand_adi = document.getElementById("expand_adi")
+const mobile_kapres = document.getElementById("mobile_kapres")
+const expand_kapres = document.getElementById("expand_kapres")
 console.log("tes")
 
 dropdown.addEventListener("click", function() {
@@ -282,6 +306,18 @@ dropdown.addEventListener("click", function() {
 
 mobile_kurikulum.addEventListener("click", function() {
     expand_kurikulum.toggleAttribute("hidden");
+});
+
+mobile_eskul.addEventListener("click", function() {
+    expand_eskul.toggleAttribute("hidden");
+});
+
+mobile_adi.addEventListener("click", function() {
+    expand_adi.toggleAttribute("hidden");
+});
+
+mobile_kapres.addEventListener("click", function() {
+    expand_kapres.toggleAttribute("hidden");
 });
 
   </script>
