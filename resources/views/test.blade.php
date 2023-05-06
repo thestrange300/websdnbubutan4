@@ -100,7 +100,7 @@
 {{-- INI BUAT KARTU --}}
 <div class="text-center">
   <h2 class="text-2xl text-black font-extrabold md:text-4xl">Post Pilihan Kami</h2>
-  <p class="lg:w-6/12 pt-4 lg:mx-auto text-base text-black">Postingan unggulan kami di profil perusahaan sekolah menyoroti pencapaian dan misi institusi untuk mendidik dan menginspirasi para pemimpin masa depan.</p>
+  <p class="lg:w-6/12 pt-4 mx-5 lg:mx-auto text-base text-black">Postingan unggulan kami di profil perusahaan sekolah menyoroti pencapaian dan misi institusi untuk mendidik dan menginspirasi para pemimpin masa depan.</p>
 </div>
 
 <div class="bg-transparent from-green-50 to-cyan-100">  
