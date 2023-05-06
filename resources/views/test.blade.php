@@ -115,7 +115,7 @@
             <div class="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">
               <h3 class="font-black text-gray-800 md:text-2xl text-xl">Kegiatan Market Day Gelar Karya Kelas 4</h3>
               <p class="md:text-base text-justify text-gray-500 text-base">Penerapan Kurikulum Merdeka. Hari Senin tanggal 21 November 2022, para peserta didik kelas 4A, 4B, 4C, dan 4D SDN Bubutan 4 melaksanakan sebuah kegiatan Gelar Karya dalam pembelajaran Proyek Penguatan Profil Pelajar...</p>
-              <a href="#" class="block w-max font-semibold text-cyan-600">Selengkapnya</a>
+              <a href="#" class="hidden sm:block w-max font-semibold text-cyan-600">Selengkapnya</a>
           </div>
         </div>
 
@@ -127,7 +127,7 @@
             <div class="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">
               <h3 class="font-black text-gray-800 md:text-2xl text-xl">Peringatan Hari Pahlawan Tahun 2022</h3>
               <p class="md:text-base text-justify text-gray-500 text-base">Hari ini kita memeringati Hari Pahlawan yang merupakan hari penting dalam perjalanan sejarah bangsa Indonesia. Pertempuran Surabaya inilah yang menjadi cikal bakal Hari Pahlawan Nasional yang masih kita peringati hingga...</p>
-              <a href="#" class="block w-max font-semibold text-cyan-600">Selengkapnya</a>
+              <a href="#" class="hidden sm:block w-max font-semibold text-cyan-600">Selengkapnya</a>
           </div>
         </div>
       </div>
@@ -176,7 +176,7 @@
               </a>
             </p>
             <div class="mt-3">
-              <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Selengkapnya </a>
+              <a href="#" class=" sm:block hidden text-base font-semibold text-indigo-600 hover:text-indigo-500"> Selengkapnya </a>
             </div>
           </div>
 
@@ -197,7 +197,7 @@
               </a>
             </p>
             <div class="mt-3">
-              <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Selengkapnya </a>
+              <a href="#" class="sm:block hidden text-base font-semibold text-indigo-600 hover:text-indigo-500"> Selengkapnya </a>
             </div>
           </div>
 
@@ -215,7 +215,7 @@
               </a>
             </p>
             <div class="mt-3">
-              <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Selengkapnya </a>
+              <a href="#" class="sm:block hidden text-base font-semibold text-indigo-600 hover:text-indigo-500"> Selengkapnya </a>
             </div>
           </div>
 
@@ -236,7 +236,7 @@
               </a>
             </p>
             <div class="mt-3">
-              <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Selengkapnya </a>
+              <a href="#" class="sm:block hidden text-base font-semibold text-indigo-600 hover:text-indigo-500"> Selengkapnya </a>
             </div>
           </div>
 
@@ -258,7 +258,7 @@
               </a>
             </p>
             <div class="mt-3">
-              <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Selengkapnya </a>
+              <a href="#" class="sm:block hidden text-base font-semibold text-indigo-600 hover:text-indigo-500"> Selengkapnya </a>
             </div>
           </div>
 
@@ -279,7 +279,7 @@
               </a>
             </p>
             <div class="mt-3">
-              <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Selengkapnya </a>
+              <a href="#" class="sm:block hidden text-base font-semibold text-indigo-600 hover:text-indigo-500"> Selengkapnya </a>
             </div>
           </div>
           
