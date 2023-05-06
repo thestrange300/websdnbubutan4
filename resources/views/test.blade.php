@@ -150,13 +150,6 @@
   }
   ```
 -->
-<div class="relative flex flex-col items-center group">
-  <p class="text-xl font-bold text-gray-700 mt-3">Sekolah Zero Waste</p>
-  <div class="absolute top-0 flex flex-col items-center hidden mt-6 group-hover:flex">
-    <div class="w-3 h-3 -mb-2 rotate-45 bg-black"></div>
-    <span class="relative z-10 p-2 text-xs leading-none text-white whitespace-no-wrap bg-black shadow-lg">A bottom aligned tooltip.</span>
-  </div>
-</div>
 
 <div class="bg-transparent pb-10 px-4 sm:px-6 lg:pb-10 lg:px-8">
   <h2 class="text-2xl md:text-3xl text-center sm:text-left text-black font-extrabold my-6">Postingan Terbaru</h2>
