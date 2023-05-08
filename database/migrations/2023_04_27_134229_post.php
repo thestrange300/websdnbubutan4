@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('slug')->unique()->nullable();
             $table->text('konten');
             $table->string('kategori');
+            $table->string('mainKategori');
             $table->string('image')->nullable();
             $table->string('warna1')->nullable();
             $table->string('warna2')->nullable();

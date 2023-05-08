@@ -158,131 +158,29 @@
     <div class=" mt-4 grid gap-16 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
       <div class="col-span-3">
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          
+
+          @foreach ($latest->take(6) as $item)
           <div>
-            <a href="#" class="mt-2 sm:block lg:h-20 max-sm:h-36">
-              <p class="text-xl font-bold text-gray-900">Bazar Olahan Sayur Hidroponik</p>
+            <a href="/post/{{ $item->slug }}" class="mt-2 sm:block lg:h-20 max-sm:h-36">
+              <p class="text-xl font-bold text-gray-900">{{ $item->judul }}</p>
               <div class="pt-1">
-                <time class="text-sm text-slate-600" datetime="2020-03-16">Mar 16, 2020</time>
+                <time class="text-sm text-slate-600" datetime="{{ date('Y-m-d H:i:s', strtotime($item->created_at)) }}">{{ $item->created_at->format('M d, Y') }}</time>
               </div>
             </a>
-            <p class="mt-3 mb-3 text-base text-gray-500 text-justify line-clamp-5">Pada tanggal 27 September 2018, SDN Bubutan IV mengadakan acara Bazar dari hasil kebun hidroponik. Kegiatan ini dimaksudkan untuk memberikan pendidikan kepada para siswa berwiraswasta  dari tanaman yang ada disekitar mereka. Acara ini dimaksudkan agar lahan kosong yang ada disekitar kita bisa kita manfaatkkan semaksimal mungkin.</p>
+            <p class="mt-3 mb-3 text-base text-gray-500 text-justify line-clamp-5">{!! html_entity_decode($item->konten) !!}</p>
             <p class="text-sm text-gray-500">
               <a href="#" class="inline-block">
-                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800"> Ecopreneur </span>
+                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-{{ $item->warna1 }}-100 text-{{ $item->warna1 }}-800"> {{ $item->mainKategori }} </span>
               </a>
               <a href="#" class="inline-block">
-                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-orange-100 text-orange-800"> Ecoschool </span>
+                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-{{ $item->warna2 }}-100 text-{{ $item->warna2 }}-800"> {{ $item->kategori }} </span>
               </a>
             </p>
             <div class="mt-3">
-              <a href="#" class=" sm:block hidden text-base font-semibold text-indigo-600 hover:text-indigo-500"> Selengkapnya </a>
+              <a href="/post/{{ $item->kategori }}/{{ $item->slug }}" class=" sm:block hidden text-base font-semibold text-indigo-600 hover:text-indigo-500"> Selengkapnya </a>
             </div>
           </div>
-
-          <div>
-            <a href="#" class="mt-2 sm:block lg:h-20 max-sm:h-36">
-              <p class="text-xl font-bold text-gray-900">Kegiatan Penanaman Pohon Untuk Memperingati Hari Guru</p>
-              <div class="pt-1">
-                <time class="text-sm text-slate-600" datetime="2020-03-16">Nov 30, 2020</time>
-              </div>
-            </a>
-            <p class="mt-3 mb-3 text-base text-gray-500 text-justify line-clamp-5">Pada tanggal 27 September 2018, SDN Bubutan IV mengadakan acara Bazar dari hasil kebun hidroponik. Kegiatan ini dimaksudkan untuk memberikan pendidikan kepada para siswa berwiraswasta  dari tanaman yang ada disekitar mereka. Acara ini dimaksudkan agar lahan kosong yang ada disekitar kita bisa kita manfaatkkan semaksimal mungkin.</p>
-            <p class="text-sm text-gray-500">
-              <a href="#" class="inline-block">
-                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800"> Adiwiyata </span>
-              </a>
-              <a href="#" class="inline-block">
-                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-orange-100 text-orange-800"> Ecoschool </span>
-              </a>
-            </p>
-            <div class="mt-3">
-              <a href="#" class="sm:block hidden text-base font-semibold text-indigo-600 hover:text-indigo-500"> Selengkapnya </a>
-            </div>
-          </div>
-
-          <div>
-            <a href="#" class="mt-2 sm:block lg:h-20 max-sm:h-36">
-              <p class="text-xl font-bold text-gray-900">Kunjungan Penelitian Balitbang Kemendikbud Jakarta</p>
-              <div class="pt-1">
-                <time class="text-sm text-slate-600" datetime="2020-03-16">Mar 16, 2020</time>
-              </div>
-            </a>
-            <p class="mt-3 mb-3 text-base text-gray-500 text-justify line-clamp-5">Sebuah kehormatan bagi kami mendapat Kunjungan hari ini Kamis 13 septermber 2018  dari Balitbang Kemendikbud Jakarta .Kali ini  kegiatanya berfokus pada penelitian LITERASI. Mereka secara langsung menyaksikan keterlaksanaan program literasi di SD Negeri Bubutan IV Surabaya.Program ini sudah berjalan beberapa tahun yang lalu,sebagai...</p>
-            <p class="text-sm text-gray-500">
-              <a href="#" class="inline-block">
-                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800"> Perpustakaan </span>
-              </a>
-            </p>
-            <div class="mt-3">
-              <a href="#" class="sm:block hidden text-base font-semibold text-indigo-600 hover:text-indigo-500"> Selengkapnya </a>
-            </div>
-          </div>
-
-          <div>
-            <a href="#" class="mt-2 sm:block lg:h-20 max-sm:h-36">
-              <p class="text-xl font-bold text-gray-900">Bazar Olahan Sayur Hidroponik</p>
-              <div class="pt-1">
-                <time class="text-sm text-slate-600" datetime="2020-03-16">Mar 16, 2020</time>
-              </div>
-            </a>
-            <p class="mt-3 mb-3 text-base text-gray-500 text-justify line-clamp-5">Pada tanggal 27 September 2018, SDN Bubutan IV mengadakan acara Bazar dari hasil kebun hidroponik. Kegiatan ini dimaksudkan untuk memberikan pendidikan kepada para siswa berwiraswasta  dari tanaman yang ada disekitar mereka. Acara ini dimaksudkan agar lahan kosong yang ada disekitar kita bisa kita manfaatkkan semaksimal mungkin.</p>
-            <p class="text-sm text-gray-500">
-              <a href="#" class="inline-block">
-                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800"> Ecopreneur </span>
-              </a>
-              <a href="#" class="inline-block">
-                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-orange-100 text-orange-800"> Ecoschool </span>
-              </a>
-            </p>
-            <div class="mt-3">
-              <a href="#" class="sm:block hidden text-base font-semibold text-indigo-600 hover:text-indigo-500"> Selengkapnya </a>
-            </div>
-          </div>
-
-
-          <div>
-            <a href="#" class="mt-2 sm:block lg:h-20 max-sm:h-36">
-              <p class="text-xl font-bold text-gray-900">Bazar Olahan Sayur Hidroponik</p>
-              <div class="pt-1">
-                <time class="text-sm text-slate-600" datetime="2020-03-16">Mar 16, 2020</time>
-              </div>
-            </a>
-            <p class="mt-3 mb-3 text-base text-gray-500 text-justify line-clamp-5">Pada tanggal 27 September 2018, SDN Bubutan IV mengadakan acara Bazar dari hasil kebun hidroponik. Kegiatan ini dimaksudkan untuk memberikan pendidikan kepada para siswa berwiraswasta  dari tanaman yang ada disekitar mereka. Acara ini dimaksudkan agar lahan kosong yang ada disekitar kita bisa kita manfaatkkan semaksimal mungkin.</p>
-            <p class="text-sm text-gray-500">
-              <a href="#" class="inline-block">
-                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800"> Ecopreneur </span>
-              </a>
-              <a href="#" class="inline-block">
-                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-orange-100 text-orange-800"> Ecoschool </span>
-              </a>
-            </p>
-            <div class="mt-3">
-              <a href="#" class="sm:block hidden text-base font-semibold text-indigo-600 hover:text-indigo-500"> Selengkapnya </a>
-            </div>
-          </div>
-
-          <div>
-            <a href="#" class="mt-2 sm:block lg:h-20 max-sm:h-36">
-              <p class="text-xl font-bold text-gray-900">Bazar Olahan Sayur Hidroponik</p>
-              <div class="pt-1">
-                <time class="text-sm text-slate-600" datetime="2020-03-16">Mar 16, 2020</time>
-              </div>
-            </a>
-            <p class="mt-3 mb-3 text-base text-gray-500 text-justify line-clamp-5">Pada tanggal 27 September 2018, SDN Bubutan IV mengadakan acara Bazar dari hasil kebun hidroponik. Kegiatan ini dimaksudkan untuk memberikan pendidikan kepada para siswa berwiraswasta  dari tanaman yang ada disekitar mereka. Acara ini dimaksudkan agar lahan kosong yang ada disekitar kita bisa kita manfaatkkan semaksimal mungkin.</p>
-            <p class="text-sm text-gray-500">
-              <a href="#" class="inline-block">
-                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800"> Ecopreneur </span>
-              </a>
-              <a href="#" class="inline-block">
-                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-orange-100 text-orange-800"> Ecoschool </span>
-              </a>
-            </p>
-            <div class="mt-3">
-              <a href="#" class="sm:block hidden text-base font-semibold text-indigo-600 hover:text-indigo-500"> Selengkapnya </a>
-            </div>
-          </div>
-          
+          @endforeach
 
         </div>
       </div>

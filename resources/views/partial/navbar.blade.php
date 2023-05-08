@@ -114,7 +114,7 @@
                   <li>
                     <a
                       class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-black hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
-                      href="#"
+                      href="/post/Tari"
                       data-te-dropdown-item-ref
                       >Tari</a
                     >
@@ -122,7 +122,7 @@
                   <li>
                     <a
                       class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-black hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
-                      href="#"
+                      href="/post/Pencaksilat"
                       data-te-dropdown-item-ref
                       >Pencaksilat</a
                     >
@@ -130,7 +130,7 @@
                   <li>
                     <a
                       class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-black hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
-                      href="#"
+                      href="/post/Qiroah"
                       data-te-dropdown-item-ref
                       >Qiroah</a
                     >
@@ -138,7 +138,7 @@
                   <li>
                     <a
                       class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-black hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
-                      href="#"
+                      href="/post/Samproh"
                       data-te-dropdown-item-ref
                       >Samproh</a
                     >
@@ -146,7 +146,7 @@
                   <li>
                     <a
                       class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-black hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
-                      href="#"
+                      href="/post/Pramuka"
                       data-te-dropdown-item-ref
                       >Pramuka</a
                     >
@@ -175,7 +175,7 @@
                   <li>
                     <a
                       class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-black hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
-                      href="#"
+                      href="/post/Ecopreneur"
                       data-te-dropdown-item-ref
                       >Ecopreneur</a
                     >
@@ -183,7 +183,7 @@
                   <li>
                     <a
                       class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-black hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
-                      href="#"
+                      href="/post/Ecoschool"
                       data-te-dropdown-item-ref
                       >Ecoschool</a
                     >
@@ -213,7 +213,7 @@
                   <li>
                     <a
                       class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-black hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
-                      href="#"
+                      href="/post/Guru"
                       data-te-dropdown-item-ref
                       >Guru</a
                     >
@@ -221,7 +221,7 @@
                   <li>
                     <a
                       class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-black hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
-                      href="#"
+                      href="/post/Siswa"
                       data-te-dropdown-item-ref
                       >Siswa</a
                     >

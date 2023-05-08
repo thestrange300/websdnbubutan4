@@ -74,13 +74,31 @@
             </button>
             <ul class="dropdown-list absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block" data-te-dropdown-menu-ref>
               <li>
-                <a class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-gray-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 {{ old('kategori', $item->kategori) == 'Ecopreneur' ? 'selected' : '' }}" href="#" data-te-dropdown-item-ref data-category="Ecopreneur">Ecopreneur</a>
+                <a class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-gray-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 {{ old('kategori', $item->kategori) == 'Tari' ? 'selected' : '' }}" href="#" data-te-dropdown-item-ref data-category="Tari">Tari</a>
+              </li>
+              <li>
+                <a class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-gray-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 {{ old('kategori', $item->kategori) == 'Pencaksilat' ? 'selected' : '' }}" href="#" data-te-dropdown-item-ref data-category="Pencaksilat">Pencaksilat</a>
+              </li>
+              <li>
+                <a class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-gray-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 {{ old('kategori', $item->kategori) == 'Qiroah' ? 'selected' : '' }}" href="#" data-te-dropdown-item-ref data-category="Qiroah">Qiroah</a>
+              </li>
+              <li>
+                <a class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-gray-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 {{ old('kategori', $item->kategori) == 'Samproh' ? 'selected' : '' }}" href="#" data-te-dropdown-item-ref data-category="Samproh">Samproh</a>
+              </li>
+              <li>
+                <a class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-gray-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 {{ old('kategori', $item->kategori) == 'Pramuka' ? 'selected' : '' }}" href="#" data-te-dropdown-item-ref data-category="Pramuka">Pramuka</a>
               </li>
               <li>
                 <a class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-gray-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 {{ old('kategori', $item->kategori) == 'Ecoschool' ? 'selected' : '' }}" href="#" data-te-dropdown-item-ref data-category="Ecoschool">Ecoschool</a>
               </li>
               <li>
-                <a class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-gray-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 {{ old('kategori', $item->kategori) == 'Tari' ? 'selected' : '' }}" href="#" data-te-dropdown-item-ref data-category="Tari">Tari</a>
+                <a class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-gray-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 {{ old('kategori', $item->kategori) == 'Ecopreneur' ? 'selected' : '' }}" href="#" data-te-dropdown-item-ref data-category="Ecopreneur">Ecopreneur</a>
+              </li>
+              <li>
+                <a class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-gray-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 {{ old('kategori', $item->kategori) == 'Guru' ? 'selected' : '' }}" href="#" data-te-dropdown-item-ref data-category="Guru">Guru</a>
+              </li>
+              <li>
+                <a class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-gray-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 {{ old('kategori', $item->kategori) == 'Siswa' ? 'selected' : '' }}" href="#" data-te-dropdown-item-ref data-category="Siswa">Siswa</a>
               </li>
             </ul>            
           </div>            
