@@ -39,7 +39,7 @@
 
   <p class="text-base font-normal text-justify py-6">
   
-      <span class="text-2xl font-bold text-justify pt-6">
+      <span class="sm:text-xl text-base font-bold text-justify pt-6">
           Growing smarter, not harder – hydroponics for a sustainable future. <br><br>
       </span>
       
