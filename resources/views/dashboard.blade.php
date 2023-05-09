@@ -101,7 +101,7 @@
             </div>
         </div>
 
-        <div>
+        <div class="hidden sm:block">
             <div class="drop-shadow-md lg:h-full py-2 px-2 text-gray-600 rounded-xl border border-gray-200 bg-white" id="chart-container">
                 <script>
                 var dom = document.getElementById('chart-container');
