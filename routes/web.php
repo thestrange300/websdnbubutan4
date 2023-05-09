@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\postController;
 use App\Http\Controllers\guruController;
+use App\Http\Controllers\homeController;
+use App\Models\post;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,23 +27,11 @@ Route::get('/profile', function () {
     ]);
 });
 
-Route::get('/test', function () {
-    return view('test', [
-        'active' => 'home'
-    ]);
-});
+Route::get('/test', [homeController::class, 'index']);
 
-Route::get('/post', function () {
-    return view('post', [
-        'active' => 'home'
-    ]);
-});
+Route::get('/post/{kategori}', [homeController::class, 'filterPost']);
 
-Route::get('/post/detail', function () {
-    return view('detailpost', [
-        'active' => 'home'
-    ]);
-});
+Route::get('/post/{kategori}/{slug}', [homeController::class, 'show']);
 
 Route::get('/about', function () {
     return view('about', [

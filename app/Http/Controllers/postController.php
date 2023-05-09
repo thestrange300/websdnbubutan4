@@ -44,9 +44,30 @@ class postController extends Controller
         $request->validate([
             'judul' => 'required',
             'kategori' => 'required',
-            'konten' => 'required'
+            'konten' => 'required',
+            'slug' => 'required'
         ]);
-        post::create($request->all());
+        $post = new post();
+        $post->judul = $request->judul;
+        $post->kategori = $request->kategori;
+        $post->konten = $request->konten;
+        $post->slug = $request->slug;
+
+        if($request->kategori == 'Tari' || $request->kategori == 'Pencaksilat' || $request->kategori == 'Qiroah'|| $request->kategori == 'Samproh' || $request->kategori == 'Pramuka'){
+            $post->warna1 = "red";
+            $post->warna2 = "amber";
+            $post->mainKategori = "Ekstrakurikuler";
+        } elseif ($request->kategori == 'Ecoschool' || $request->kategori == 'Ecopreneur'){
+            $post->warna1 = "green";
+            $post->warna2 = "teal";
+            $post->mainKategori = "Adiwiyata";
+        } elseif ($request->kategori == 'Guru' || $request->kategori == 'Siswa'){
+            $post->warna1 = "blue";
+            $post->warna2 = "violet";
+            $post->mainKategori = "Karya dan Prestasi";
+        }
+
+        $post->save();
         return redirect()->route('index.post');
     }
 

@@ -24,7 +24,7 @@
             max-w-lg" id="judul" name="judul">
           </div>
 
-          {{-- <div class="mb-1">
+          <div class="mb-1">
             <label for="slug" class="form-label block text-sm font-medium text-gray-700 pt-4 pb-2">Slug</label>
             <input type="text" class="form-control drop-shadow-md px-2 py-2 
             mt-1
@@ -34,8 +34,8 @@
             border-gray-300
             shadow-sm
             focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
-            max-w-lg pointer-events-none bg-neutral-100" id="slug" name="slug">
-          </div> --}}
+            max-w-lg pointer-events-auto bg-neutral-100" id="slug" name="slug" onkeyup="createTextSlug()">
+          </div>
 
           <div class="py-6">
             <label for="konten" class="form-label block text-sm font-medium text-gray-700 pb-2">Konten</label>
@@ -44,7 +44,7 @@
             
           </div>
 
-          <div>
+          {{-- <div>
             <label for="konten" class="form-label block text-sm font-medium text-gray-700 pb-2">Konten</label>
             <input type="file" id="file_input" class="block w-full text-sm text-slate-500
             file:mr-4 file:py-2 file:px-4
@@ -55,9 +55,7 @@
             <div class="pt-2">
               <p class="my-1 text-xs text-gray-500 pb-6" id="file_input_help">PNG atau JPG (Max. 2MB).</p>
             </div>
-            
-            
-          </div>
+          </div> --}}
 
           <div class="mb-1">
             <label for="title" class="form-label block text-sm text font-medium text-gray-700 pb-3">Kategori</label>
@@ -92,6 +90,61 @@
                     class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-gray-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
                     href="#"
                     data-te-dropdown-item-ref
+                    data-category="Tari"
+                    >Tari</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-gray-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
+                    href="#"
+                    data-te-dropdown-item-ref
+                    data-category="Pencaksilat"
+                    >Pencaksilat</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-gray-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
+                    href="#"
+                    data-te-dropdown-item-ref
+                    data-category="Qiroah"
+                    >Qiroah</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-gray-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
+                    href="#"
+                    data-te-dropdown-item-ref
+                    data-category="Samproh"
+                    >Samproh</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-gray-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
+                    href="#"
+                    data-te-dropdown-item-ref
+                    data-category="Pramuka"
+                    >Pramuka</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-gray-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
+                    href="#"
+                    data-te-dropdown-item-ref
+                    data-category="Ecoschool"
+                    >Ecoschool</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-gray-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
+                    href="#"
+                    data-te-dropdown-item-ref
                     data-category="Ecopreneur"
                     >Ecopreneur</a
                   >
@@ -101,10 +154,19 @@
                     class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-gray-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
                     href="#"
                     data-te-dropdown-item-ref
-                    data-category="Ecoschool"
-                    >Ecoschool</a
+                    data-category="Guru"
+                    >Guru</a
                   >
-                </li>                
+                </li>
+                <li>
+                  <a
+                    class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-gray-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
+                    href="#"
+                    data-te-dropdown-item-ref
+                    data-category="Siswa"
+                    >Siswa</a
+                  >
+                </li>
               </ul>
             </div>            
           </div>
@@ -121,6 +183,7 @@
         </form>
   </div>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
     // Get the button and dropdown list elements
     const button = document.querySelector('.dropdown-button');
@@ -135,6 +198,21 @@
       // Update the hidden input value with the selected category
       document.querySelector('#kategori').value = selectedCategory;
     });
+
+    function createTextSlug() {
+    var title = document.getElementById("judul").value;
+    var slug = generateSlug(title);
+    document.getElementById("slug").value = slug;
+  }
+
+  function generateSlug(text) {
+    return text.toString().toLowerCase()
+      .replace(/^-+/, '')
+      .replace(/-+$/, '')
+      .replace(/\s+/g, '-')
+      .replace(/\-\-+/g, '-')
+      .replace(/[^\w\-]+/g, '');
+  }
   </script>
   
 
