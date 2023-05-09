@@ -63,7 +63,7 @@ class postController extends Controller
             $post->mainKategori = "Adiwiyata";
         } elseif ($request->kategori == 'Guru' || $request->kategori == 'Siswa'){
             $post->warna1 = "blue";
-            $post->warna2 = "violet";
+            $post->warna2 = "indigo";
             $post->mainKategori = "Karya dan Prestasi";
         }
 

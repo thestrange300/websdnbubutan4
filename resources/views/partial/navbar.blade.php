@@ -57,7 +57,7 @@
                   <li>
                     <a
                       class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-black hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
-                      href="#"
+                      href="https://drive.google.com/drive/folders/1CFczW4IfLzXJx_zdHgpKdvO487kuC3Un?usp=share_link"
                       data-te-dropdown-item-ref
                       >&ensp;Silabus</a
                     >
@@ -65,7 +65,7 @@
                   <li>
                     <a
                       class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-black hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
-                      href="#"
+                      href="https://drive.google.com/drive/folders/1Cttx5a4qj0qKEaVgaO8IsKN2t-5rr7DY?usp=share_link"
                       data-te-dropdown-item-ref
                       >&ensp;RPP</a
                     >
@@ -77,7 +77,7 @@
                   <li>
                     <a
                       class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-black hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
-                      href="#"
+                      href="https://drive.google.com/drive/folders/1OMAATKjcmsCDzeO-PXQeddwCQzK0wKoX?usp=share_link"
                       data-te-dropdown-item-ref
                       >&ensp;Silabus</a
                     >
@@ -85,7 +85,7 @@
                   <li>
                     <a
                       class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-black hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
-                      href="#"
+                      href="https://drive.google.com/drive/folders/18CldbisRc6lxZfn2AAhb7pnV7ZMDZtYo?usp=share_link"
                       data-te-dropdown-item-ref
                       >&ensp;RPP</a
                     >
@@ -250,12 +250,12 @@
         
         <div hidden id="expand_kurikulum">
           <p class="block px-3 pb-1 pl-6 rounded-md text-sm font-bold text-neutral-600">Kurikulum 2013</p>
-          <a href="#" hidden class="block px-3 py-2 pb-1 pl-12 rounded-md text-sm font-normal text-black">Silabus</a>
-          <a href="#" hidden class="block px-3 py-4 pb-1 pl-12 rounded-md text-sm font-normal text-black">RPP</a>
+          <a href="https://drive.google.com/drive/folders/1CFczW4IfLzXJx_zdHgpKdvO487kuC3Un?usp=share_link" hidden class="block px-3 py-2 pb-1 pl-12 rounded-md text-sm font-normal text-black">Silabus</a>
+          <a href="https://drive.google.com/drive/folders/1Cttx5a4qj0qKEaVgaO8IsKN2t-5rr7DY?usp=share_link" hidden class="block px-3 py-4 pb-1 pl-12 rounded-md text-sm font-normal text-black">RPP</a>
   
           <p class="block px-3 pb-1 pl-6 rounded-md text-sm font-bold text-neutral-600">Kurikulum Merdeka</p>
-          <a href="#" hidden class="block px-3 py-2 pb-1 pl-12 rounded-md text-sm font-normal text-black">Silabus</a>
-          <a href="#" hidden class="block px-3 py-4 pb-1 pl-12 rounded-md text-sm font-normal text-black">RPP</a>
+          <a href="https://drive.google.com/drive/folders/1OMAATKjcmsCDzeO-PXQeddwCQzK0wKoX?usp=share_link" hidden class="block px-3 py-2 pb-1 pl-12 rounded-md text-sm font-normal text-black">Silabus</a>
+          <a href="https://drive.google.com/drive/folders/18CldbisRc6lxZfn2AAhb7pnV7ZMDZtYo?usp=share_link" hidden class="block px-3 py-4 pb-1 pl-12 rounded-md text-sm font-normal text-black">RPP</a>
         </div>
 
         <a href="#" id="mobile_eskul" class="text-cyan-900 block px-3 py-2 rounded-md text-base font-medium" id="mobile_eskul">Ekstrakurikuler</a>

@@ -26,6 +26,7 @@ class homeController extends Controller
 
     public function filterPost($kategori){
         $post = post::where('kategori', $kategori)->paginate(8);
+        $kategori = ucwords($kategori);
         return view('post', [
             'active' => 'home',
             'post' => $post,
