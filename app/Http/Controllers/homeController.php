@@ -8,10 +8,11 @@ use Illuminate\Http\Request;
 class homeController extends Controller
 {
     public function index(){
-        $post = post::all();
         return view('test', [
             'active' => 'home',
             'latest' => post::latest()->get(),
+            'post1' => post::where('isChosen', 1)->first(),
+            'post2' => post::where('isChosen2', 1)->first()
         ]);
     }
 

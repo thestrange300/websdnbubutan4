@@ -108,28 +108,54 @@
       <div class="py-4 grid gap-12 lg:grid-cols-2">
 
 {{-- KARTU KEDUA --}}
+        @if ($post1)
         <div data-aos="zoom-in" data-aos-duration="1000" class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
           <div class="w-full md:w-1/3 bg-white grid place-items-center">
             <img src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2022/11/WhatsApp-Image-2022-11-21-at-09.23.29-2-1536x1152.jpeg" alt="" class="w-full h-full object-cover bg-cover rounded-xl max-w-xs transition duration-300 ease-in-out hover:scale-105" />
           </div>
             <div class="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">
-              <h3 class="font-black text-gray-800 md:text-2xl text-xl">Kegiatan Market Day Gelar Karya Kelas 4</h3>
-              <p class="md:text-base text-justify text-gray-500 text-base">Penerapan Kurikulum Merdeka. Hari Senin tanggal 21 November 2022, para peserta didik kelas 4A, 4B, 4C, dan 4D SDN Bubutan 4 melaksanakan sebuah kegiatan Gelar Karya dalam pembelajaran Proyek Penguatan Profil Pelajar...</p>
+              <h3 class="font-black text-gray-800 md:text-2xl text-xl">{{ $post1->judul }}</h3>
+              <p class="md:text-base text-justify text-gray-500 text-base">{!! html_entity_decode($post1->konten) !!}</p>
+              <a href="/post/{{ $post1->kategori }}/{{ $post1->slug }}" class="hidden sm:block w-max font-semibold text-cyan-600">Selengkapnya</a>
+          </div>
+        </div>
+        @else
+        <div data-aos="zoom-in" data-aos-duration="1000" class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
+          <div class="w-full md:w-1/3 bg-white grid place-items-center">
+            <img src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2022/11/WhatsApp-Image-2022-11-21-at-09.23.29-2-1536x1152.jpeg" alt="" class="w-full h-full object-cover bg-cover rounded-xl max-w-xs transition duration-300 ease-in-out hover:scale-105" />
+          </div>
+            <div class="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">
+              <h3 class="font-black text-gray-800 md:text-2xl text-xl">Belum Ada Post Terpilih</h3>
+              <p class="md:text-base text-justify text-gray-500 text-base"></p>
               <a href="#" class="hidden sm:block w-max font-semibold text-cyan-600">Selengkapnya</a>
           </div>
         </div>
+        @endif
 
 {{-- KARTU KETIGA --}}
+        @if ($post2)
         <div data-aos="zoom-in" data-aos-duration="1000" class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
           <div class="w-full md:w-1/3 bg-white grid place-items-center">
             <img src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2022/11/WhatsApp-Image-2022-11-10-at-10.47.54-1536x1152.jpeg" alt="tailwind logo" class="w-full h-full object-cover bg-cover rounded-xl max-w-xs transition duration-300 ease-in-out hover:scale-105" />
           </div>
             <div class="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">
-              <h3 class="font-black text-gray-800 md:text-2xl text-xl">Peringatan Hari Pahlawan Tahun 2022</h3>
-              <p class="md:text-base text-justify text-gray-500 text-base">Hari ini kita memeringati Hari Pahlawan yang merupakan hari penting dalam perjalanan sejarah bangsa Indonesia. Pertempuran Surabaya inilah yang menjadi cikal bakal Hari Pahlawan Nasional yang masih kita peringati hingga...</p>
+              <h3 class="font-black text-gray-800 md:text-2xl text-xl">{{ $post2->judul }}</h3>
+              <p class="md:text-base text-justify text-gray-500 text-base">{!! html_entity_decode($post2->konten) !!}</p>
+              <a href="/post/{{ $post2->kategori }}/{{ $post2->slug }}" class="hidden sm:block w-max font-semibold text-cyan-600">Selengkapnya</a>
+          </div>
+        </div>
+        @else
+        <div data-aos="zoom-in" data-aos-duration="1000" class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
+          <div class="w-full md:w-1/3 bg-white grid place-items-center">
+            <img src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2022/11/WhatsApp-Image-2022-11-10-at-10.47.54-1536x1152.jpeg" alt="tailwind logo" class="w-full h-full object-cover bg-cover rounded-xl max-w-xs transition duration-300 ease-in-out hover:scale-105" />
+          </div>
+            <div class="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">
+              <h3 class="font-black text-gray-800 md:text-2xl text-xl">Belum Ada Post Terpilih</h3>
+              <p class="md:text-base text-justify text-gray-500 text-base"></p>
               <a href="#" class="hidden sm:block w-max font-semibold text-cyan-600">Selengkapnya</a>
           </div>
         </div>
+        @endif
       </div>
   </div>
 </div>  
@@ -161,21 +187,19 @@
 
           @foreach ($latest->take(6) as $item)
           <div>
-            <a href="/post/{{ $item->slug }}" class="mt-2 sm:block lg:h-20 max-sm:h-36">
+            <a href="/post/{{ $item->kategori }}/{{ $item->slug }}" class="mt-2 sm:block lg:h-20 max-sm:h-36">
               <p class="text-xl font-bold text-gray-900">{{ $item->judul }}</p>
               <div class="pt-1">
                 <time class="text-sm text-slate-600" datetime="{{ date('Y-m-d H:i:s', strtotime($item->created_at)) }}">{{ $item->created_at->format('M d, Y') }}</time>
               </div>
             </a>
             <p class="mt-3 mb-3 text-base text-gray-500 text-justify line-clamp-5">{!! html_entity_decode($item->konten) !!}</p>
-            <p class="text-sm text-gray-500">
               <a href="#" class="inline-block">
-                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-{{ $item->warna1 }}-100 text-{{ $item->warna1 }}-800"> {{ $item->mainKategori }} </span>
+                <span id="kategori1" class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-{{ $item->warna1 }}-100 text-{{ $item->warna1 }}-800"> {{ $item->mainKategori }} </span>
               </a>
-              <a href="#" class="inline-block">
-                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-{{ $item->warna2 }}-100 text-{{ $item->warna2 }}-800"> {{ $item->kategori }} </span>
+              <a href="/post/{{ $item->kategori }}" class="inline-block">
+                <span id="kategori2" class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-{{ $item->warna2 }}-100 text-{{ $item->warna2 }}-800"> {{ $item->kategori }} </span>
               </a>
-            </p>
             <div class="mt-3">
               <a href="/post/{{ $item->kategori }}/{{ $item->slug }}" class=" sm:block hidden text-base font-semibold text-indigo-600 hover:text-indigo-500"> Selengkapnya </a>
             </div>

@@ -88,14 +88,29 @@ class postController extends Controller
             'kategori' => 'required'
         ]);
 
-        $post->where('id', $request->id)->update([
-            'judul' => $request->judul,
-            'konten' => $request->konten,
-            'kategori' => $request->kategori
-        ]);
+        $post->judul = $request->judul;
+        $post->konten = $request->konten;
+        $post->kategori = $request->kategori;
+
+        if($request->kategori == 'Tari' || $request->kategori == 'Pencaksilat' || $request->kategori == 'Qiroah'|| $request->kategori == 'Samproh' || $request->kategori == 'Pramuka'){
+            $post->warna1 = "red";
+            $post->warna2 = "yellow";
+            $post->mainKategori = "Ekstrakurikuler";
+        } elseif ($request->kategori == 'Ecoschool' || $request->kategori == 'Ecopreneur'){
+            $post->warna1 = "green";
+            $post->warna2 = "orange";
+            $post->mainKategori = "Adiwiyata";
+        } elseif ($request->kategori == 'Guru' || $request->kategori == 'Siswa'){
+            $post->warna1 = "blue";
+            $post->warna2 = "purple";
+            $post->mainKategori = "Karya dan Prestasi";
+        }
+
+        $post->save();
 
         return redirect()->route('index.post');
     }
+
 
     public function destroy(Request $request, post $post)
     {

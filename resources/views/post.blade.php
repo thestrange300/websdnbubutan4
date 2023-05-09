@@ -19,11 +19,11 @@
             {{-- START FOREACH --}}
             @foreach ($post as $item)
             <div class="sm:max-w-sm bg-white border border-gray-200 rounded-lg shadow">
-                <a href="#">
+                <a href="/post/{{ $item->kategori }}/{{ $item->slug }}">
                     <img class="rounded-t-lg w-full h-56 object-cover bg-cover" src="{{asset('img/ghibli.png')}}" alt="" />
                 </a>
                 <div class="p-2 sm:p-5">
-                    <a href="#">
+                    <a href="/post/{{ $item->kategori }}/{{ $item->slug }}">
                         <h5 class="mb-2 text-center sm:text-left text-2xl sm:text-xl font-bold tracking-tight text-gray-900 text-black">{{ $item->judul }}</h5>
                     </a>
                     <div class="hidden sm:inline">
@@ -31,8 +31,8 @@
                     </div>
                     <div class="flex justify-center sm:flex-none sm:justify-normal">
                         <p class="scale-90 sm:scale-100 text-sm text-gray-500 pb-4">
-                            <a href="#" class="inline-block">
-                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800"> Video </span>
+                            <a href="/post/{{ $item->kategori }}" class="inline-block">
+                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-{{ $item->warna2 }}-100 text-{{ $item->warna2 }}-800"> {{ $item->kategori }} </span>
                             </a>
                             <time datetime="{{ date('Y-m-d H:i:s', strtotime($item->created_at)) }}">{{ $item->created_at->format('M d, Y') }}</time>
                         </p>

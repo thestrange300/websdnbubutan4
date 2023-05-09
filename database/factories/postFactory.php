@@ -23,7 +23,7 @@ class postFactory extends Factory
             'kategori' => 'Siswa',
             'mainKategori' => 'Karya dan Prestasi',
             'warna1' => 'blue',
-            'warna2' => 'indigo'
+            'warna2' => 'purple'
         ];
     }
 }
