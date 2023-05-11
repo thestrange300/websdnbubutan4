@@ -12,62 +12,28 @@
                 
                 <h5 class="text-2xl text-gray-800 font-bold lg:block">Postingan Terbaru</h5>
 
+                @foreach ($latest->take(3) as $item)
                 <div class="mt-2 mb-2" data-aos="zoom-in" data-aos-duration="300">
-                    <div class="flex items-center justify-between space-x-5">
-                      <div class="flex items-center flex-1 min-w-0">
-                        <div class="mt-0 mr-0 mb-0 flex-1 min-w-0">
-                          <p class="text-base font-semibold text-gray-800 truncate">Bazaar olahan Sayur Hidroponik</p>
-                          <a href="#" class="inline-block">
-                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800"> Ecopreneur </span>
-                          </a>
-                          <a href="#" class="inline-block">
-                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800"> Ecoschool </span>
-                          </a>
-                        </div>
+                  <div class="flex items-center justify-between space-x-5">
+                    <div class="flex items-center flex-1 min-w-0">
+                      <div class="mt-0 mr-0 mb-0 flex-1 min-w-0">
+                        <p class="text-base font-semibold text-gray-800 truncate">{{ $item->judul }}</p>
+                        <a href="#" class="inline-block">
+                          <span class="inline-flex items-center px-3 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800"> {{ $item->mainKategori }} </span>
+                        </a>
+                        <a href="/post/{{ $item->kategori }}" class="inline-block">
+                          <span class="inline-flex items-center px-3 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800"> {{ $item->kategori }} </span>
+                        </a>
                       </div>
-                        <a href="" class="hover:transform hover:scale-125 transition duration-300 text-sm font-bold text-black rounded-lg">Lihat</a>
                     </div>
+                      <a href="/post/{{ $item->kategori }}/{{ $item->slug }}" class="hover:transform hover:scale-125 transition duration-300 text-sm font-bold text-black rounded-lg">Lihat</a>
                   </div>
-                  <hr/>
-                  
-                  <div class="mt-2 mb-2" data-aos="zoom-in" data-aos-duration="500">
-                    <div class="flex items-center justify-between space-x-5">
-                      <div class="flex items-center flex-1 min-w-0">
-                        <div class="mt-0 mr-0 mb-0 flex-1 min-w-0">
-                          <p class="text-base font-semibold text-gray-800 truncate">Bazaar olahan Sayur Hidroponik</p>
-                          <a href="#" class="inline-block">
-                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800"> Ecopreneur </span>
-                          </a>
-                          <a href="#" class="inline-block">
-                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800"> Ecoschool </span>
-                          </a>
-                        </div>
-                      </div>
-                        <a href="" class="hover:transform hover:scale-125 transition duration-300 text-sm font-bold text-black rounded-lg">Lihat</a>
-                    </div>
-                  </div>
-                  <hr/>
-
-                  <div class="mt-2 mb-2 " data-aos="zoom-in" data-aos-duration="700">
-                    <div class="flex items-center justify-between space-x-5">
-                      <div class="flex items-center flex-1 min-w-0">
-                        <div class="mt-0 mr-0 mb-0 flex-1 min-w-0">
-                          <p class="text-base font-semibold text-gray-800 truncate">Bazaar olahan Sayur Hidroponik</p>
-                          <a href="#" class="inline-block">
-                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800"> Ecopreneur </span>
-                          </a>
-                          <a href="#" class="inline-block">
-                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800"> Ecoschool </span>
-                          </a>
-                        </div>
-                      </div>
-                        <a href="" class="hover:transform hover:scale-125 transition duration-300 text-sm font-bold text-black rounded-lg">Lihat</a>
-                    </div>
-                  </div>
-                  <hr/>
+                </div>
+                <hr/>
+                @endforeach
                 
                 <div class="pb-1 pt-3 text-right">
-                    <a href="" class="text-sm font-bold text-black rounded-lg ">Selengkapnya</a> 
+                    <a href="/dashboard/post" class="text-sm font-bold text-black rounded-lg ">Selengkapnya</a> 
                 </div>
                  
 
@@ -76,30 +42,23 @@
         
        
         <div>
-            <div class="drop-shadow-md h-full pt-4 px-6 rounded-xl border border-gray-200 bg-white">
-                <h5 class="text-2xl text-gray-800 font-bold mb-8">Kategori</h5>
-                <div class="flex items-center justify-between" data-aos="zoom-in" data-aos-duration="300">
-                      <p class="text-base font-semibold text-gray-800 truncate">Adiwiyata</p>
-                      <h4 class="text-base text-right font-bold mt-4">122</h4>
-                </div>
-                <div class="flex items-center justify-between" data-aos="zoom-in" data-aos-duration="500">
-                  <p class="text-base font-semibold text-gray-800 truncate">Karya dan Prestasi</p>
-                  <h4 class="text-base text-right font-bold mt-4">312</h4>
-                </div>
-                <div class="flex items-center justify-between" data-aos="zoom-in" data-aos-duration="700">
-                  <p class="text-base font-semibold text-gray-800 truncate">Ekstrakurikuler</p>
-                  <h4 class="text-base text-right font-bold mt-4">612</h4>
-                </div>
-                <div class="my-4">
+          <div class="drop-shadow-md h-full pt-4 px-6 rounded-xl border border-gray-200 bg-white">
+              <h5 class="text-2xl text-gray-800 font-bold mb-8">Kategori</h5>
+              @foreach($postsByCategory as $post)
+              <div class="flex items-center justify-between" data-aos="zoom-in" data-aos-duration="300">
+                  <p class="text-base font-semibold text-gray-800 truncate">{{ $post->mainKategori }}</p>
+                  <h4 class="text-base text-right font-bold mt-4">{{ $post->total }}</h4>
+              </div>
+              @endforeach
+              <div class="my-4">
                   <hr/>
-                </div>
-                   
-                <div class="flex items-center justify-between" data-aos="zoom-in" data-aos-duration="1100">
+              </div>
+              <div class="flex items-center justify-between" data-aos="zoom-in" data-aos-duration="1100">
                   <p class="text-lg font-bold text-gray-800 truncate">Total</p>
-                  <h4 class="text-lg text-right font-bold">857</h4>
-                </div> 
-            </div>
-        </div>
+                  <h4 class="text-lg text-right font-bold">{{ $total }}</h4>
+              </div> 
+          </div>
+      </div>      
 
         <div class="hidden sm:block">
             <div class="drop-shadow-md lg:h-full py-2 px-2 text-gray-600 rounded-xl border border-gray-200 bg-white" id="chart-container">
@@ -133,9 +92,9 @@
                     type: 'pie',
                     radius: '70%',
                     data: [
-                        { value: 1048, name: 'Ekstra' },
-                        { value: 735, name: 'Adiwiyata' },
-                        { value: 580, name: 'Karya dan Prestasi' }
+                      @foreach($postsByCategory as $post)
+                          { value: {{ $post->total }}, name: '{{ $post->mainKategori }}' },
+                      @endforeach
                     ],
                     //     label: {
                     //     show: true,
@@ -164,38 +123,47 @@
     </div>
     <div class="drop-shadow-md h-2/5 relative p-2 mt-6 rounded-xl border border-gray-200 bg-white " id="line-chart">
       <script>
-        var dom = document.getElementById('line-chart');
-        var myChart = echarts.init(dom, null, {
-          renderer: 'canvas',
-          useDirtyRect: false
-        });
-        var app = {};
-
-        var option;
-
-        option = {
-          xAxis: {
-            type: 'category',
-            data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-          },
-          yAxis: {
-            type: 'value'
-          },
-          series: [
-            {
-              data: [150, 230, 224, 218, 135, 147, 260],
-              type: 'line'
-            }
-          ]
-        };
-
-        if (option && typeof option === 'object') {
-          myChart.setOption(option);
-        }
-
-        window.addEventListener('resize', myChart.resize);
-        </script>
-    </div>
+          var dom = document.getElementById('line-chart');
+          var myChart = echarts.init(dom, null, {
+              renderer: 'canvas',
+              useDirtyRect: false
+          });
+          var app = {};
+  
+          var option;
+          var today = new Date();
+          var year = today.getFullYear();
+          var month = today.toLocaleString('default', { month: 'long' });
+  
+          option = {
+              title: {
+                  text: 'Post Count by Day',
+                  subtext: month + ' ' + year,
+                  left: 'center'
+              },
+              xAxis: {
+                  type: 'category',
+                  data: {!! json_encode($postsByDate->pluck('dayname')) !!}
+              },
+              yAxis: {
+                  type: 'value'
+              },
+              series: [
+                  {
+                      data: {!! json_encode($postsByDate->pluck('total')) !!},
+                      type: 'line'
+                  }
+              ]
+          };
+  
+          if (option && typeof option === 'object') {
+              myChart.setOption(option);
+          }
+  
+          window.addEventListener('resize', myChart.resize);
+      </script>
+  </div>
+  
 </div>
 
 </div>

@@ -11,7 +11,7 @@
       <div class="content-center px-20 pt-4">
         <div class="relative drop-shadow-md sm:rounded-2xl sm:overflow-hidden">
           <div class="relative inset-0">
-            <img class="h-full w-full object-cover object-center max-h-128" src="https://tirainews.com/assets/berita/original/99738581944-img-20210928-wa0017.jpg" alt="Img Header">
+            <img class="h-full w-full object-cover object-center max-h-128" src="{{ asset('storage/' . $post->image) }}" alt="Img Header">
           </div>
         </div>
       </div>

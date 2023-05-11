@@ -27,18 +27,28 @@
           max-w-lg" id="judul" name="judul" value="{{ old('judul', $item->judul) }}">
         </div>
 
-        {{-- <div class="mb-1">
-          <label for="slug" class="form-label block text-sm font-medium text-gray-700 pt-4 pb-2">Slug</label>
-          <input type="text" class="form-control drop-shadow-md px-2 py-2 
-          mt-1
-          block
-          w-full
-          rounded-md
-          border-gray-300
-          shadow-sm
-          focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
-          max-w-lg pointer-events-none bg-neutral-100" id="slug" name="slug">
-        </div> --}}
+        <div>
+          <label for="image" class="form-label block text-sm font-medium text-gray-700 pb-2">Image</label>
+          @if ($item->image)
+              <img src="{{ asset('storage/' . $item->image) }}" alt="" class="img-preview img-fluid max-h-48">
+          @else
+            <img class="img-preview img-fluid max-h-48">
+          @endif
+          <input type="file" id="image" name="image" class="block w-full text-sm text-slate-500
+          file:mr-4 file:py-2 file:px-4
+          file:rounded-full file:border-0
+          file:text-sm file:font-semibold
+          file:bg-violet-50 file:text-violet-700
+          hover:file:bg-violet-100" onchange="previewImage()"/>
+          <div class="pt-2">
+            <p class="my-1 text-xs text-gray-500 pb-6" id="image_help">PNG atau JPG (Max. 2MB).</p>
+          </div>
+          @error('image')
+              <div class="invalid-feedback">
+                {{ $message }}
+              </div>
+          @enderror
+        </div>
 
         <div class="py-6">
           <label for="konten" class="form-label block text-sm font-medium text-gray-700 pb-2">Konten</label>
@@ -137,6 +147,20 @@
       // Update the hidden input value with the selected category
       document.querySelector('#kategori').value = selectedCategory;
     });
+
+    function previewImage(){
+      const img = document.querySelector('#image');
+      const imgPreview = document.querySelector('.img-preview');
+
+      imgPreview.style.display = 'block';
+
+      const oFReader = new FileReader();
+      oFReader.readAsDataURL(image.files[0]);
+
+      oFReader.onload = function(oFREvent){
+        imgPreview.src = oFREvent.target.result;
+      }
+    }
 </script>
 
 

@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\postController;
 use App\Http\Controllers\guruController;
 use App\Http\Controllers\homeController;
+use App\Http\Controllers\adminController;
+use App\Http\Controllers\dashboardController;
 use App\Models\post;
 
 /*
@@ -44,19 +46,15 @@ Route::get('/login', function () {
     return view('login', [
         'active' => 'home'
     ]);
-});
+})->name('login')->middleware('guest');
+Route::post('/login', [adminController::class, 'login']);
 
-Route::get('/dashboard', function () {
-    return view('dashboard', [
-        'active' => 'dashboard'
-    ]);
-});
+Route::post('/logout', [adminController::class, 'logout'])->name('logout');
 
-Route::get('/dashboard/setting', function () {
-    return view('dashboard_pengaturan', [
-        'active' => 'pengaturan'
-    ]);
-});
+Route::get('/dashboard', [dashboardController::class, 'index'])->name('dashboard')->middleware('admin');
+
+Route::get('/dashboard/setting', [adminController::class, 'index'])->name('index.setting')->middleware('admin');
+Route::put('/dashboard/setting', [adminController::class, 'update'])->name('update.setting');
 
 // Route::get('/dashboard/post', function () {
 //     return view('dashboard_post', [
@@ -64,18 +62,18 @@ Route::get('/dashboard/setting', function () {
 //     ]);
 // });
 
-Route::get('/dashboard/guru', [guruController::class, 'index'])->name('index.guru');
+Route::get('/dashboard/guru', [guruController::class, 'index'])->name('index.guru')->middleware('admin');
 Route::post('/dashboard/guru/tambah', [guruController::class, 'store'])->name('tambah.guru');
 Route::delete('/dashboard/guru/hapus/{guru:id}', [guruController::class, 'delete'])->name('hapus.guru');
 
-Route::get('/dashboard/post', [postController::class, 'index'])->name('index.post');
-Route::get('/dashboard/posts/{id}', [postController::class, 'getPosts'])->name('posts.get');
-Route::get('/dashboard/posts2/{id}', [postController::class, 'getPosts2'])->name('posts2.get');
+Route::get('/dashboard/post', [postController::class, 'index'])->name('index.post')->middleware('admin');
+Route::get('/dashboard/posts/{id}', [postController::class, 'getPosts'])->name('posts.get')->middleware('admin');
+Route::get('/dashboard/posts2/{id}', [postController::class, 'getPosts2'])->name('posts2.get')->middleware('admin');
 Route::post('/dashboard/post/updateSpecial', [postController::class, 'updateSpecial'])->name('updateSpecial.post');
 Route::post('/dashboard/post/updateSpecial2', [postController::class, 'updateSpecial2'])->name('updateSpecial2.post');
 
-Route::get('/dashboard/post/create', [postController::class, 'create'])->name('create.post');
+Route::get('/dashboard/post/create', [postController::class, 'create'])->name('create.post')->middleware('admin');
 Route::post('/dashboard/post/create', [postController::class, 'store'])->name('tambah.post');
-Route::get('/dashboard/post/{id}/edit', [postController::class, 'edit'])->name('edit.post');
+Route::get('/dashboard/post/{id}/edit', [postController::class, 'edit'])->name('edit.post')->middleware('admin');
 Route::put('/dashboard/post/update/{id}', [postController::class, 'update'])->name('update.post');
 Route::delete('/dashboard/post/{id}', [postController::class, 'destroy'])->name('delete.post');

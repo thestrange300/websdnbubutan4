@@ -21,7 +21,7 @@
             border-gray-300
             shadow-sm
             focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
-            max-w-lg" id="judul" name="judul">
+            max-w-lg" id="judul" name="judul" onkeyup="createTextSlug()">
           </div>
 
           <div class="mb-1">
@@ -34,7 +34,7 @@
             border-gray-300
             shadow-sm
             focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
-            max-w-lg pointer-events-auto bg-neutral-100" id="slug" name="slug" onkeyup="createTextSlug()">
+            max-w-lg pointer-events-auto bg-neutral-100" id="slug" name="slug">
           </div>
 
           <div class="py-6">
@@ -44,18 +44,24 @@
             
           </div>
 
-          {{-- <div>
-            <label for="konten" class="form-label block text-sm font-medium text-gray-700 pb-2">Konten</label>
-            <input type="file" id="file_input" class="block w-full text-sm text-slate-500
+          <div>
+            <label for="image" class="form-label block text-sm font-medium text-gray-700 pb-2">Image</label>
+            <img class="img-preview img-fluid max-h-48">
+            <input type="file" id="image" name="image" class="block w-full text-sm text-slate-500
             file:mr-4 file:py-2 file:px-4
             file:rounded-full file:border-0
             file:text-sm file:font-semibold
             file:bg-violet-50 file:text-violet-700
-            hover:file:bg-violet-100"/>
+            hover:file:bg-violet-100" onchange="previewImage()"/>
             <div class="pt-2">
-              <p class="my-1 text-xs text-gray-500 pb-6" id="file_input_help">PNG atau JPG (Max. 2MB).</p>
+              <p class="my-1 text-xs text-gray-500 pb-6" id="image_help">PNG atau JPG (Max. 2MB).</p>
             </div>
-          </div> --}}
+            @error('image')
+                <div class="invalid-feedback">
+                  {{ $message }}
+                </div>
+            @enderror
+          </div>
 
           <div class="mb-1">
             <label for="title" class="form-label block text-sm text font-medium text-gray-700 pb-3">Kategori</label>
@@ -203,16 +209,31 @@
     var title = document.getElementById("judul").value;
     var slug = generateSlug(title);
     document.getElementById("slug").value = slug;
-  }
+    }
 
-  function generateSlug(text) {
-    return text.toString().toLowerCase()
-      .replace(/^-+/, '')
-      .replace(/-+$/, '')
-      .replace(/\s+/g, '-')
-      .replace(/\-\-+/g, '-')
-      .replace(/[^\w\-]+/g, '');
-  }
+    function generateSlug(text) {
+      return text.toString().toLowerCase()
+        .replace(/^-+/, '')
+        .replace(/-+$/, '')
+        .replace(/\s+/g, '-')
+        .replace(/\-\-+/g, '-')
+        .replace(/[^\w\-]+/g, '');
+    }
+
+    function previewImage(){
+      const img = document.querySelector('#image');
+      const imgPreview = document.querySelector('.img-preview');
+
+      imgPreview.style.display = 'block';
+
+      const oFReader = new FileReader();
+      oFReader.readAsDataURL(image.files[0]);
+
+      oFReader.onload = function(oFREvent){
+        imgPreview.src = oFREvent.target.result;
+      }
+    }
+
   </script>
   
 

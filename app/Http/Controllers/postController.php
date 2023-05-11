@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Storage;
 use App\Models\post;
 use Illuminate\Http\Request;
 
@@ -44,26 +45,36 @@ class postController extends Controller
         $request->validate([
             'judul' => 'required',
             'kategori' => 'required',
+            'image' => 'image|file|max:2048',
             'konten' => 'required',
             'slug' => 'required'
         ]);
+
+        $filename = null;
+        if ($request->hasFile('image')) {
+            $image = $request->file('image');
+            $filename = time() . '.' . $image->getClientOriginalExtension();
+            $image->storeAs('public', $filename);
+        }
+        
         $post = new post();
         $post->judul = $request->judul;
         $post->kategori = $request->kategori;
+        $post->image = $filename;
         $post->konten = $request->konten;
         $post->slug = $request->slug;
 
         if($request->kategori == 'Tari' || $request->kategori == 'Pencaksilat' || $request->kategori == 'Qiroah'|| $request->kategori == 'Samproh' || $request->kategori == 'Pramuka'){
             $post->warna1 = "red";
-            $post->warna2 = "amber";
+            $post->warna2 = "yellow";
             $post->mainKategori = "Ekstrakurikuler";
         } elseif ($request->kategori == 'Ecoschool' || $request->kategori == 'Ecopreneur'){
             $post->warna1 = "green";
-            $post->warna2 = "teal";
+            $post->warna2 = "orange";
             $post->mainKategori = "Adiwiyata";
         } elseif ($request->kategori == 'Guru' || $request->kategori == 'Siswa'){
             $post->warna1 = "blue";
-            $post->warna2 = "indigo";
+            $post->warna2 = "purple";
             $post->mainKategori = "Karya dan Prestasi";
         }
 
@@ -82,11 +93,24 @@ class postController extends Controller
 
     public function update(Request $request, post $post)
     {
+        $post = post::where('id', $request->id)->first();
         $request->validate([
             'judul' => 'required',
             'konten' => 'required',
+            'image' => 'image|file|max:2048',
             'kategori' => 'required'
         ]);
+
+        if ($request->hasFile('image')) {
+            Storage::delete('public/' . $post->image);
+        }  
+        
+        if ($request->hasFile('image')) {
+            $image = $request->file('image');
+            $filename = time() . '.' . $image->getClientOriginalExtension();
+            $image->storeAs('public', $filename);
+            $post->image = $filename;
+        }              
 
         $post->judul = $request->judul;
         $post->konten = $request->konten;
@@ -114,7 +138,18 @@ class postController extends Controller
 
     public function destroy(Request $request, post $post)
     {
-        $post->where('id', $request->id)->delete();
+        $post = post::where('id', $request->id)->first();
+        // Get the filename of the image associated with the post
+        $filename = $post->image;
+
+        // Delete the post from the database
+        $post->delete();
+
+        // Delete the image from storage if it exists
+        if ($filename && Storage::exists('public/' . $filename)) {
+            Storage::delete('public/' . $filename);
+        }
+
         return redirect()->route('index.post');
     }
 

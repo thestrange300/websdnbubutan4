@@ -40,34 +40,37 @@ initTE({ Carousel });
                         <img data-aos="fade-up" data-aos-duration="800" class="h-16 w-auto mx-auto flex items-center justify-center" src="{{asset('img/Logo-Sekolah.png')}}" alt="">
                         <h1 data-aos="fade-up" data-aos-duration="900" class="text-3xl font-bold text-center my-4">Login</h1>
                         <div class="relative">
-                            <div class="mb-1">
-                              <label for="title" class="form-label block text-sm font-medium text-gray-700 pb-2">Username</label>
-                              <input type="text" class="form-control drop-shadow-md px-2 py-2 
-                              mt-1
-                              block
-                              w-full
-                              rounded-md
-                              border-gray-300
-                              shadow-sm
-                              focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
-                              max-w-lg" id="title" name="title">
+                            <form action="{{ route('login') }}" method="post">
+                              @csrf
+                              <div class="mb-1">
+                                <label for="title" class="form-label block text-sm font-medium text-gray-700 pb-2">Username</label>
+                                <input type="text" class="form-control drop-shadow-md px-2 py-2 
+                                mt-1
+                                block
+                                w-full
+                                rounded-md
+                                border-gray-300
+                                shadow-sm
+                                focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
+                                max-w-lg" id="username" name="username">
+                              </div>
+                              <div class="mb-1">
+                                <label for="title" class="form-label block text-sm font-medium text-gray-700 pt-4 pb-2">Password</label>
+                                <input type="password" class="form-control drop-shadow-md px-2 py-2 
+                                mt-1
+                                block
+                                w-full
+                                rounded-md
+                                border-gray-300
+                                shadow-sm
+                                focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
+                                max-w-lg" id="password" name="password">
+                              </div>                
                             </div>
-                            <div class="mb-1">
-                              <label for="title" class="form-label block text-sm font-medium text-gray-700 pt-4 pb-2">Password</label>
-                              <input type="text" class="form-control drop-shadow-md px-2 py-2 
-                              mt-1
-                              block
-                              w-full
-                              rounded-md
-                              border-gray-300
-                              shadow-sm
-                              focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
-                              max-w-lg" id="title" name="title">
-                            </div>                
+                            <div class="mt-10 mx-auto max-w-none flex justify-center">
+                              <button type="submit" class="sticky text-2xl text-white items-center justify-center px-4 py-3 font-bold rounded-md shadow-sm bg-gradient-to-r from-cyan-400 to-blue-400">Login</button>
                           </div>
-                          <div class="mt-10 mx-auto max-w-none flex justify-center">
-                            <a href="" class="sticky text-2xl text-white items-center justify-center px-4 py-3 font-bold rounded-md shadow-sm bg-gradient-to-r from-cyan-400 to-blue-400"> Login </a>
-                        </div>
+                            </form>
                     </div>
                   </div> 
             </div>
