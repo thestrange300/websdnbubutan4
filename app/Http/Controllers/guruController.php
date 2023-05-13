@@ -20,11 +20,11 @@ class guruController extends Controller
             'posisi' => 'required|string'
         ]);
         guru::create($request->all());
-        return redirect()->route('index.guru');
+        return redirect()->route('index.guru')->with('success','Data Guru Berhasil Dibuat!');
     }
 
     public function delete(guru $guru){
         $guru->delete();
-        return redirect()->route('index.guru');
+        return redirect()->route('index.guru')->with('success','Data Guru Berhasil Dihapus!');
     }
 }

@@ -18,16 +18,18 @@
         <div class="flex place-items-center sm:place-items-start relative mx-auto divide-gray-200 lg:max-w-1 grid grid-cols-1 sm:grid-cols-4 gap-y-6 lg:gap-x-5 lg:gap-y-12">
             {{-- START FOREACH --}}
             @foreach ($post as $item)
-            <div class="sm:max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+            <div class="sm:max-w-sm bg-white border h-full border-gray-200 rounded-lg shadow">
                 <a href="/post/{{ $item->kategori }}/{{ $item->slug }}">
-                    <img class="rounded-t-lg w-full h-56 object-cover bg-cover" src="{{asset('img/ghibli.png')}}" alt="" />
+                    <img class="rounded-t-lg w-96 h-56 object-cover bg-cover" src="{{ asset('storage/' . $item->image) }}" alt="" />
                 </a>
                 <div class="p-2 sm:p-5">
                     <a href="/post/{{ $item->kategori }}/{{ $item->slug }}">
                         <h5 class="mb-2 text-center sm:text-left text-2xl sm:text-xl font-bold tracking-tight text-gray-900 text-black">{{ $item->judul }}</h5>
                     </a>
                     <div class="hidden sm:inline">
-                        <p class="mb-3 font-normal text-base text-gray-700 line-clamp-4 text-justify">{!! html_entity_decode($item->konten) !!}</p>
+                        <div class="mb-3 font-normal text-base text-gray-700 line-clamp-4 text-justify">
+                            {!! html_entity_decode($item->konten) !!}
+                        </div>
                     </div>
                     <div class="flex justify-center sm:flex-none sm:justify-normal">
                         <p class="scale-90 sm:scale-100 text-sm text-gray-500 pb-4">

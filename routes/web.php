@@ -41,6 +41,11 @@ Route::get('/about', function () {
     ]);
 });
 
+Route::get('/dashboard/kepsek', function () {
+    return view('dashboard_kepsek', [
+        'active' => 'home'
+    ]);
+});
 
 Route::get('/login', function () {
     return view('login', [

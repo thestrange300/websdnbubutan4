@@ -8,7 +8,7 @@
  
 
   <div class="relative z-0">
-      <div class="content-center px-8 sm:px-20 pt-4">
+      <div class="content-center px-6 sm:px-20 pt-4">
         <div class="relative drop-shadow-md rounded-2xl overflow-hidden">
           <div class="relative inset-0">
             <img class="h-full w-full object-cover object-center max-h-128" src="{{ asset('storage/' . $post->image) }}" alt="Img Header">
@@ -22,7 +22,7 @@
 </div>
 
 
-<div class="drop-shadow-md content-center mx-12 sm:mx-24 my-4 px-8 sm:px-16 pt-4 pb-8 rounded-xl border border-gray-200 bg-white">
+<div class="drop-shadow-md content-center mx-10 sm:mx-24 my-4 px-8 sm:px-16 pt-4 pb-8 rounded-xl border border-gray-200 bg-white">
   <div class="place-item-left">
       <h1 class="font-black text-left text-gray-800 md:text-4xl text-2xl pt-6">{{ $post->judul }}</h1> 
   </div> 
@@ -37,14 +37,9 @@
         <time class="text-sm font-medium text-gray-600" datetime="{{ date('Y-m-d H:i:s', strtotime($post->created_at)) }}">{{ $post->created_at->format('M d, Y') }}</time>       
   </div>
 
-  <p class="text-base font-normal text-justify py-6">
-  
-      <span class="sm:text-xl text-base font-bold text-justify pt-6">
-          Growing smarter, not harder – hydroponics for a sustainable future. <br><br>
-      </span>
-      
-      {!! html_entity_decode($post->konten) !!}
-  </p>
+      <div class="text-base font-normal text-justify py-6">
+        {!! html_entity_decode($post->konten) !!}
+      </div>
 
 <a href="/post/{{ $post->kategori }}" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
   

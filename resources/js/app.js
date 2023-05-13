@@ -5,9 +5,10 @@ import {
     Ripple,
     initTE,
     Animate,
+    Toast,
   } from "tw-elements";
   
-initTE({ Animate, Modal, Dropdown, Ripple });
+initTE({ Animate, Toast, Modal, Dropdown, Ripple });
 
 const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-te-toggle="tooltip"]'));
 tooltipTriggerList.map((tooltipTriggerEl) => new te.Tooltip(tooltipTriggerEl));

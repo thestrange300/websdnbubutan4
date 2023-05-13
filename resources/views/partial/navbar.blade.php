@@ -261,28 +261,28 @@
         <a href="#" id="mobile_eskul" class="text-cyan-900 block px-3 py-2 rounded-md text-base font-medium" id="mobile_eskul">Ekstrakurikuler</a>
 
         <div hidden id="expand_eskul">
-          <a href="#" hidden class="block px-3 pl-6 rounded-md text-sm font-normal text-black">Tari</a>
-          <a href="#" hidden class="block px-3 py-4 pb-1 pl-6 rounded-md text-sm font-normal text-black">Pencak Silat</a>
-          <a href="#" hidden class="block px-3 py-4 pb-1 pl-6 rounded-md text-sm font-normal text-black">Qiroah</a>
-          <a href="#" hidden class="block px-3 py-4 pb-1 pl-6 rounded-md text-sm font-normal text-black">Samproh</a>
-          <a href="#" hidden class="block px-3 py-4 pb-1 pl-6 rounded-md text-sm font-normal text-black">Pramuka</a>
+          <a href="/post/Tari" hidden class="block px-3 pl-6 rounded-md text-sm font-normal text-black">Tari</a>
+          <a href="/post/Pencaksilat" hidden class="block px-3 py-4 pb-1 pl-6 rounded-md text-sm font-normal text-black">Pencak Silat</a>
+          <a href="/post/Qiroah" hidden class="block px-3 py-4 pb-1 pl-6 rounded-md text-sm font-normal text-black">Qiroah</a>
+          <a href="/post/Samproh" hidden class="block px-3 py-4 pb-1 pl-6 rounded-md text-sm font-normal text-black">Samproh</a>
+          <a href="/post/Pramuka" hidden class="block px-3 py-4 pb-1 pl-6 rounded-md text-sm font-normal text-black">Pramuka</a>
         </div>
 
         <a href="#" class="text-cyan-900 block px-3 py-2 rounded-md text-base font-medium" id="mobile_adi">Adiwiyata</a>
 
         <div hidden id="expand_adi">
-          <a href="#" hidden class="block px-3 pb-1 pl-6 rounded-md text-sm font-normal text-black">Ecopreneur</a>
-          <a href="#" hidden class="block px-3 py-4 pb-1 pl-6 rounded-md text-sm font-normal text-black">Ecoschool</a>
+          <a href="/post/Ecopreneur" hidden class="block px-3 pb-1 pl-6 rounded-md text-sm font-normal text-black">Ecopreneur</a>
+          <a href="/post/Ecoschool" hidden class="block px-3 py-4 pb-1 pl-6 rounded-md text-sm font-normal text-black">Ecoschool</a>
         </div>
   
         <a href="#" class="text-cyan-900 block px-3 py-2 rounded-md text-base font-medium" id="mobile_kapres">Karya dan Prestasi</a>
 
         <div hidden id="expand_kapres">
-          <a href="#" hidden class="block px-3 pb-1 pl-6 rounded-md text-sm font-normal text-black">Guru</a>
-          <a href="#" hidden class="block px-3 py-4 pb-1 pl-6 rounded-md text-sm font-normal text-black">Siswa</a>
+          <a href="/post/Guru" hidden class="block px-3 pb-1 pl-6 rounded-md text-sm font-normal text-black">Guru</a>
+          <a href="/post/Siswa" hidden class="block px-3 py-4 pb-1 pl-6 rounded-md text-sm font-normal text-black">Siswa</a>
         </div>
 
-        <a href="#" class="text-cyan-900 block px-3 py-2 rounded-md text-base font-medium">Perpustakaan</a>
+        <a href="https://sipus.surabaya.go.id/" class="text-cyan-900 block px-3 py-2 rounded-md text-base font-medium">Perpustakaan</a>
       </div>
     </div>
   </nav>

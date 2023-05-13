@@ -111,11 +111,13 @@
         @if ($post1)
         <div data-aos="zoom-in" data-aos-duration="1000" class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
           <div class="w-full md:w-1/3 bg-white grid place-items-center">
-            <img src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2022/11/WhatsApp-Image-2022-11-21-at-09.23.29-2-1536x1152.jpeg" alt="" class="w-full h-full object-cover bg-cover rounded-xl max-w-xs transition duration-300 ease-in-out hover:scale-105" />
+            <img src="{{ asset('storage/' . $post1->image) }}" alt="" class="w-56 h-56 object-cover bg-cover rounded-xl max-w-xs transition duration-300 ease-in-out hover:scale-105" />
           </div>
             <div class="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">
               <h3 class="font-black text-gray-800 md:text-2xl text-xl">{{ $post1->judul }}</h3>
-              <p class="md:text-base text-justify text-gray-500 text-base">{!! html_entity_decode($post1->konten) !!}</p>
+              <div class="md:text-base text-justify text-gray-500 line-clamp-4 text-base">
+                {!! html_entity_decode($post1->konten) !!}
+              </div>
               <a href="/post/{{ $post1->kategori }}/{{ $post1->slug }}" class="hidden sm:block w-max font-semibold text-cyan-600">Selengkapnya</a>
           </div>
         </div>
@@ -136,11 +138,14 @@
         @if ($post2)
         <div data-aos="zoom-in" data-aos-duration="1000" class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
           <div class="w-full md:w-1/3 bg-white grid place-items-center">
-            <img src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2022/11/WhatsApp-Image-2022-11-10-at-10.47.54-1536x1152.jpeg" alt="tailwind logo" class="w-full h-full object-cover bg-cover rounded-xl max-w-xs transition duration-300 ease-in-out hover:scale-105" />
+            <img src="{{ asset('storage/' . $post2->image) }}" alt="tailwind logo" class="w-56 h-56 object-cover bg-cover rounded-xl max-w-xs transition duration-300 ease-in-out hover:scale-105" />
           </div>
             <div class="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">
               <h3 class="font-black text-gray-800 md:text-2xl text-xl">{{ $post2->judul }}</h3>
-              <p class="md:text-base text-justify text-gray-500 text-base">{!! html_entity_decode($post2->konten) !!}</p>
+              <div class="md:text-base text-justify text-gray-500 line-clamp-4 text-base">
+                {!! html_entity_decode($post2->konten) !!}
+              </div>
+              
               <a href="/post/{{ $post2->kategori }}/{{ $post2->slug }}" class="hidden sm:block w-max font-semibold text-cyan-600">Selengkapnya</a>
           </div>
         </div>
@@ -193,7 +198,9 @@
                 <time class="text-sm text-slate-600" datetime="{{ date('Y-m-d H:i:s', strtotime($item->created_at)) }}">{{ $item->created_at->format('M d, Y') }}</time>
               </div>
             </a>
-            <p class="mt-3 mb-3 text-base text-gray-500 text-justify line-clamp-5">{!! html_entity_decode($item->konten) !!}</p>
+            <div class="mt-3 mb-3 text-base text-gray-500 text-justify line-clamp-5 overflow-ellipsis">
+              {!! html_entity_decode($item->konten) !!}
+            </div>
               <a href="#" class="inline-block">
                 <span id="kategori1" class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-{{ $item->warna1 }}-100 text-{{ $item->warna1 }}-800"> {{ $item->mainKategori }} </span>
               </a>

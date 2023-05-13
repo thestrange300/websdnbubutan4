@@ -79,7 +79,7 @@ class postController extends Controller
         }
 
         $post->save();
-        return redirect()->route('index.post');
+        return redirect()->route('index.post')->with('success','Post Berhasil Dibuat!');
     }
 
     public function edit($id)
@@ -132,7 +132,7 @@ class postController extends Controller
 
         $post->save();
 
-        return redirect()->route('index.post');
+        return redirect()->route('index.post')->with('success','Post Berhasil Diupdate!');
     }
 
 
@@ -150,7 +150,7 @@ class postController extends Controller
             Storage::delete('public/' . $filename);
         }
 
-        return redirect()->route('index.post');
+        return redirect()->route('index.post')->with('success','Post Berhasil Dihapus!');
     }
 
     public function updateSpecial(Request $request)
