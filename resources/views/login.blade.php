@@ -67,8 +67,8 @@ initTE({ Carousel });
                                 max-w-lg" id="password" name="password">
                               </div>                
                             </div>
-                            <div class="mt-10 mx-auto max-w-none flex justify-center">
-                              <button type="submit" class="sticky text-2xl text-white items-center justify-center px-4 py-3 font-bold rounded-md shadow-sm bg-gradient-to-r from-cyan-400 to-blue-400">Login</button>
+                            <div class="hover:transform hover:scale-110 transition duration-300 mt-10 mx-auto max-w-none flex justify-center">
+                              <button type="submit" class="sticky text-xl text-white items-center justify-center px-4 py-2 font-bold rounded-md shadow-sm bg-gradient-to-r bg-gradient-to-r from-cyan-500 to-blue-500">Login</button>
                           </div>
                             </form>
                     </div>
