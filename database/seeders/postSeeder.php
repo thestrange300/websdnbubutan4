@@ -16,5 +16,6 @@ class postSeeder extends Seeder
     {
         \App\Models\post::factory(10)->create();
         \App\Models\User::factory(1)->create();
+        \App\Models\kepsek::factory(1)->create();
     }
 }

@@ -25,12 +25,18 @@ class adminController extends Controller
             'password' => 'nullable|string|min:8',
         ]);
 
-        if ($request->password) {
-            $user->password = Hash::make($request->password);
-        }
-        $user->save();
-
-        return redirect()->route('index.setting');
+        if (Hash::check($request->password, $user->password)) { 
+            $user->fill([
+             'password' => Hash::make($request->new_password)
+             ])->save();
+         
+            $request->session()->flash('success', 'Password changed');
+             return redirect()->route('index.setting');
+         
+         } else {
+             $request->session()->flash('error', 'Password does not match');
+             return redirect()->route('index.setting');
+         }
     }
 
     public function login(Request $request)

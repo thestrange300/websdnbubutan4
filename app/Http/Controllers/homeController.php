@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\post;
+use App\Models\kepsek;
 use Illuminate\Http\Request;
 
 class homeController extends Controller
@@ -12,7 +13,8 @@ class homeController extends Controller
             'active' => 'home',
             'latest' => post::latest()->get(),
             'post1' => post::where('isChosen', 1)->first(),
-            'post2' => post::where('isChosen2', 1)->first()
+            'post2' => post::where('isChosen2', 1)->first(),
+            'kepsek' => kepsek::get()->first()
         ]);
     }
 

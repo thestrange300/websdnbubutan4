@@ -10,10 +10,10 @@
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:px-36 ">
         <div class="text-center flex flex-col justify-center items-center">
-            <img src="{{asset('img/kepsek.png')}}" alt="" class="max-w-xs max-sm:w-60">
+            <img src="{{ asset('storage/' . $kepsek->image) }}" alt="" class="max-w-xs max-sm:w-60">
             <p class="font-semibold">Kepala Sekolah</p>
-            <p>Endriyani Hasto Dewi, S.Pd.</p>
-            <p class="pb-6 sm:pb-0">NIP. 19680804 199403 2 009</p>
+            <p>{{ $kepsek->nama }}</p>
+            <p class="pb-6 sm:pb-0">NIP. {{ $kepsek->nip }}</p>
             <p class="px-4 pb-6 sm:hidden">Kami berkomitmen untuk memberikan pendidikan terbaik kepada para siswa, serta menciptakan lingkungan belajar yang aman, nyaman, dan mendukung.</p>
         </div>
         <div class="text-center flex flex-col justify-center items-center overflow-x-auto">

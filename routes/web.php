@@ -6,7 +6,7 @@ use App\Http\Controllers\guruController;
 use App\Http\Controllers\homeController;
 use App\Http\Controllers\adminController;
 use App\Http\Controllers\dashboardController;
-use App\Models\post;
+use App\Models\kepsek;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,7 +25,8 @@ Route::get('/', function () {
 
 Route::get('/profile', function () {
     return view('profile', [
-        'active' => 'profile'
+        'active' => 'profile',
+        'kepsek' => kepsek::all()->first()
     ]);
 });
 
@@ -41,11 +42,8 @@ Route::get('/about', function () {
     ]);
 });
 
-Route::get('/dashboard/kepsek', function () {
-    return view('dashboard_kepsek', [
-        'active' => 'home'
-    ]);
-});
+Route::get('/dashboard/kepsek', [dashboardController::class, 'kepsek'])->name('kepsek')->middleware('admin');
+Route::put('/dashboard/kepsek/{id}', [dashboardController::class, 'updateKepsek'])->name('update.kepsek');
 
 Route::get('/login', function () {
     return view('login', [
