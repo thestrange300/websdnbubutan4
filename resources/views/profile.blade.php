@@ -97,7 +97,7 @@
         <div class="lg:px-52 max-sm:px-10" data-aos="fade-up" data-aos-duration="900">
             <p class="text-xl font-bold">Misi SDN Bubutan 4 Surabaya</p>
             <br>
-            <table class="border-collapse text-justify sm:text-left"> 
+            <table class="sm:border-collapse sm:border-spacing-y-2 border-separate border-spacing-y-3 text-justify sm:text-left"> 
                 <tbody>
                     <tr>
                         <td class="align-top">1.</td>
@@ -152,7 +152,7 @@
         <div class="swiper mySwiper h-3/5 max-sm:w-3/5 lg:w-4/5">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2021/10/WhatsApp-Image-2021-09-29-at-19.14.58.jpeg" alt="black chair and white table" class="object-cover object-center object-contain w-full rounded-xl shadow-lg" />
+                    <img src="{{asset('img/eskul/tari.jpeg')}}" alt="black chair and white table" class="object-cover object-center object-contain w-full rounded-xl shadow-lg" />
                     <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
                         <div class="flex h-full items-end pb-6">
                             <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Tari</h3>
@@ -160,7 +160,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2018/07/Drumband-705x400.jpg" alt="black chair and white table" class="object-cover object-center object-contain w-full rounded-xl shadow-lg" />
+                    <img src="{{asset('img/eskul/drumband.jpg')}}" alt="black chair and white table" class="object-cover object-center object-contain w-full rounded-xl shadow-lg" />
                     <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
                         <div class="flex h-full items-end pb-6">
                             <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Drumband</h3>
@@ -168,7 +168,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2018/07/IMG-20180426-WA0043-715x400.jpg" alt="black chair and white table" class="object-cover object-center object-contain w-full rounded-xl shadow-lg" />
+                    <img src="{{asset('img/eskul/pencaksilat.jpg')}}" alt="black chair and white table" class="object-cover object-center object-contain w-full rounded-xl shadow-lg" />
                     <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
                         <div class="flex h-full items-end pb-6">
                             <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Pencak Silat</h3>
@@ -176,7 +176,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2018/07/IMG-20180426-WA0051-715x400.jpg" alt="black chair and white table" class="object-cover object-center object-contain w-full rounded-xl shadow-lg" />
+                    <img src="{{asset('img/eskul/qiroah.jpg')}}" alt="black chair and white table" class="object-cover object-center object-contain w-full rounded-xl shadow-lg" />
                     <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
                         <div class="flex h-full items-end pb-6">
                             <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Qiroah</h3>
@@ -184,7 +184,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2018/07/samproh-715x400.jpg" alt="black chair and white table" class="object-cover object-center object-contain w-full rounded-xl shadow-lg" />
+                    <img src="{{asset('img/eskul/samproh.jpg')}}" alt="black chair and white table" class="object-cover object-center object-contain w-full rounded-xl shadow-lg" />
                     <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
                         <div class="flex h-full items-end pb-6">
                             <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Samproh</h3>
@@ -192,7 +192,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2018/07/IMG_2790-715x400.jpg" alt="black chair and white table" class="object-cover object-center object-contain w-full rounded-xl shadow-lg" />
+                    <img src="{{asset('img/eskul/pramuka.jpg')}}" alt="black chair and white table" class="object-cover object-center object-contain w-full rounded-xl shadow-lg" />
                     <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-xl shadow-lg">
                         <div class="flex h-full items-end pb-6">
                             <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-white">Pramuka</h3>
@@ -207,7 +207,7 @@
 
     <!-- DAFTAR GURU DAN STAFF -->
     <div class="text-center text-4xl font-bold mx-10 my-4">Daftar Guru & Staff</div>
-    <div class="lg:mx-36 mx-10 my-10">
+    <div class="lg:mx-36 mx-10 py-10">
         <div class="drop-shadow-md py-2 align-middle    ">
           <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 rounded-lg">
             <table class="table-auto w-full px-6 min-w-full divide-y divide-gray-300">

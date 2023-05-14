@@ -15,7 +15,7 @@
       <div class="grid md:grid-cols-3 gap-x-6 lg:gap-x-12">
         <div class="mb-12 md:mb-0">
           <div class="flex justify-center mb-6">
-            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg" class="rounded-full shadow-lg w-32" />
+            <img src="{{asset('img/about/teguy.png')}}" class="rounded-full w-32" />
           </div>
           <h5 class="text-lg font-bold mb-2">Tegar Alwinata Masyhuda</h5>
           <h6 class="font-medium text-blue-600 mb-2">Front End Developer</h6>
@@ -68,7 +68,7 @@
 
         <div class="mb-12 md:mb-0">
           <div class="flex justify-center mb-6">
-            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(2).jpg" class="rounded-full shadow-lg w-32" />
+            <img src="{{asset('img/about/amir.png')}}" class="rounded-full w-32" />
           </div>
           <h5 class="text-lg font-bold mb-2">Mirza Amir Faizi</h5>
           <h6 class="font-medium text-blue-600 mb-2">UI/UX Designer</h6>
@@ -123,7 +123,7 @@
         </div>
         <div class="mb-0">
           <div class="flex justify-center mb-6">
-            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg" class="rounded-full shadow-lg w-32" />
+            <img src="{{asset('img/about/aul.png')}}" class="rounded-full w-32" />
           </div>
           <h5 class="text-lg font-bold mb-2">Auliya Rakhman Hidayat</h5>
           <h6 class="font-medium text-blue-600 mb-2">Back End Developer</h6>

@@ -8,7 +8,7 @@
   <div class="content-center px-5 pt-4">
     <div class="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
       <div class="absolute inset-0">
-        <img class="h-full w-full object-cover rounded-2xl" src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2018/07/IMG_20180717_123720.jpg" alt="Img Header">
+        <img class="h-full w-full object-cover rounded-2xl" src="{{asset('img/background.jpg')}}" alt="Img Header">
         <div class="absolute inset-0 bg-slate-500 rounded-2xl mix-blend-multiply"></div>
       </div>
       <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">

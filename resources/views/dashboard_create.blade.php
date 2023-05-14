@@ -33,8 +33,9 @@
             rounded-md
             border-gray-300
             shadow-sm
+             pointer-events-none
             focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
-            max-w-lg pointer-events-auto bg-neutral-100" id="slug" name="slug">
+            max-w-lg bg-neutral-100" id="slug" name="slug">
           </div>
 
           <div class="py-6">

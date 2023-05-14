@@ -33,7 +33,7 @@ initTE({ Carousel });
     </script>
     <div>
         <div class="relative min-h-screen min-w-screen">
-            <div class="bg-fixed bg-cover h-full w-full brightness-75" style="background-image: url('https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2022/11/WhatsApp-Image-2022-11-10-at-10.47.26-1536x1152.jpeg');"></div>
+            <div class="bg-fixed bg-cover h-full w-full brightness-75" style="background-image: url('{{asset('img/login_bg.jpeg')}}');"></div>
             <div class="absolute top-0 left-0 right-0 bottom-0">
                 <div class="flex items-center justify-center h-screen">
                     <div data-aos="fade-up" data-aos-duration="700" class="drop-shadow-md h-100 w-96 py-6 px-6 rounded-xl border border-gray-200 bg-white mx-auto">

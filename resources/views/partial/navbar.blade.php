@@ -19,7 +19,7 @@
           <div class="flex-shrink-0 flex items-center">
             
             {{-- ITEM MOBILE --}}
-            <img class="block sm:hidden h-10 w-10" src="https://www.sdnbubutan4sby.sch.id/wp-content/uploads/2020/03/Logo-Sekolah.png" alt="Workflow">
+            <img class="block sm:hidden h-10 w-10" src="{{asset('img/Logo-Sekolah.png')}}" alt="Workflow">
           </div>
           <div class="hidden sm:block">
             

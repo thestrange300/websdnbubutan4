@@ -26,8 +26,7 @@ function previewImage(){
 <div class="px-4 sm:px-6 lg:px-8 mt-10">
 
   @if ($message = Session::get('success'))
-  <div class="absolute top-16 right-8 max-w-xs bg-white border rounded-md shadow-lg" role="alert" id="toast-post">
-  <div class="absolute top-16 right-8 max-w-xs bg-white border rounded-md shadow-lg" role="alert" id="toast-post">
+  <div class="absolute top-16 right-8 bg-white border rounded-md shadow-lg" role="alert" id="toast-post">
     <div class="flex p-4">
       <div class="flex-shrink-0">
         <svg class="h-4 w-4 text-green-500 mt-0.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -40,7 +39,6 @@ function previewImage(){
         </p>
       </div>
     </div>
-  </div>
   </div>
   @endif
 
@@ -96,7 +94,7 @@ function previewImage(){
           file:bg-violet-50 file:text-violet-700
           hover:file:bg-violet-100" onchange="previewImage()"/>
           <div class="pt-2">
-            <p class="my-1 text-xs text-gray-500" id="image_help">PNG atau JPG (Max. 2MB dan <b>Transparan</b> ).</p>
+            <p class="my-1 text-xs text-gray-500" id="image_help">PNG (Max. 2MB, Rasio <b>1:1</b>, dan <b>Transparan</b> ).</p>
           </div>
           @error('image')
               <div class="invalid-feedback">
