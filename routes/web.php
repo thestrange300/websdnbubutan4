@@ -19,10 +19,6 @@ use App\Models\kepsek;
 |
 */
 
-Route::get('/', function () {
-    return redirect('/test');
-});
-
 Route::get('/profile', function () {
     return view('profile', [
         'active' => 'profile',
@@ -30,7 +26,7 @@ Route::get('/profile', function () {
     ]);
 });
 
-Route::get('/test', [homeController::class, 'index']);
+Route::get('/', [homeController::class, 'index']);
 
 Route::get('/post/{kategori}', [homeController::class, 'filterPost']);
 
