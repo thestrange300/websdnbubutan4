@@ -17,7 +17,7 @@ class postFactory extends Factory
     public function definition()
     {
         return [
-            'judul' => 'teguh kontol',
+            'judul' => 'test 123',
             'slug' => $this->faker->slug(),
             'konten' => $this->faker->paragraph(),
             'kategori' => 'Siswa',

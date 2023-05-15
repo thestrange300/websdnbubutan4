@@ -17,8 +17,8 @@ class kepsekFactory extends Factory
     public function definition()
     {
         return [
-            'nama' => 'teguh',
-            'nip' => '018240172597'
+            'nama' => 'Endriyani Hasto Dewi S.Pd',
+            'nip' => '19680804 199403 2 009'
         ];
     }
 }

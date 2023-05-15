@@ -48,9 +48,9 @@
         </div>
       </div>
       <div class="mt-8 sm:mt-16 lg:mt-0 ml-12">
-        <div class="ml-12 sm:p-12">
+        <div class=" sm:py-12">
           {{-- ring-1 ring-black ring-opacity-5 --}}
-          <img class=" hidden sm:block lg:absolute lg:left-25 lg:h-full lg:w-auto lg:max-w-none ml-12" style="padding: 1rem" src="{{ asset('storage/' . $kepsek->image) }}" alt="Kepala">
+          <img class=" hidden col-span-1 float-right sm:block w-auto h-80 justify-self-end"src="{{ asset('storage/' . $kepsek->image) }}" alt="Kepala">
           {{-- <p class="mt-4 text-base text-gray-500 text-justify">Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis bibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at. Lectus viverra dui tellus ornare pharetra.</p> --}}
         </div>
       </div>
