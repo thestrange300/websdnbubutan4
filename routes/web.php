@@ -7,6 +7,7 @@ use App\Http\Controllers\homeController;
 use App\Http\Controllers\adminController;
 use App\Http\Controllers\dashboardController;
 use App\Models\kepsek;
+use App\Models\guru;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,7 +23,8 @@ use App\Models\kepsek;
 Route::get('/profile', function () {
     return view('profile', [
         'active' => 'profile',
-        'kepsek' => kepsek::all()->first()
+        'kepsek' => kepsek::all()->first(),
+        'guru' => guru::get()
     ]);
 });
 

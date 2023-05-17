@@ -97,7 +97,7 @@
               
               <div data-te-dropdown-ref class="my-auto">
                 <a
-                  class="my-auto text-cyan-900 px-3 py-2 rounded-md text-base font-medium transition duration-150 ease-in-out motion-reduce:transition-none"
+                  class="{{ $active == "Tari" ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold' : 'text-cyan-900 font-medium' }} my-auto px-3 py-2 rounded-md text-base font-medium transition duration-150 ease-in-out motion-reduce:transition-none"
                   href="#"
                   type="button"
                   id="dropdownMenuButton2"
@@ -165,7 +165,8 @@
                   data-te-dropdown-toggle-ref
                   aria-expanded="false"
                   data-te-ripple-init
-                  data-te-ripple-color="light">
+                  data-te-ripple-color="light"
+                  {{ $active == "Adiwiyata" ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold' : 'text-cyan-900 font-medium' }}>
                   Adiwiyata
                 </a>
                 <ul
@@ -203,7 +204,8 @@
                   data-te-dropdown-toggle-ref
                   aria-expanded="false"
                   data-te-ripple-init
-                  data-te-ripple-color="light">
+                  data-te-ripple-color="light"
+                  {{ $active == "Karya dan Prestasi" ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold' : 'text-cyan-900 font-medium' }}>
                   Karya dan Prestasi
                 </a>
                 <ul

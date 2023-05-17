@@ -27,11 +27,12 @@ class homeController extends Controller
     }
     
 
-    public function filterPost($kategori){
+    public function filterPost($kategori, Request $request){
         $post = post::where('kategori', $kategori)->paginate(8);
         $kategori = ucwords($kategori);
+        $active = $request->kategori;
         return view('post', [
-            'active' => 'home',
+            'active' => $active,
             'post' => $post,
             'kategori' => $kategori
         ]);

@@ -17,8 +17,8 @@
             <p class="px-4 pb-6 sm:hidden">Kami berkomitmen untuk memberikan pendidikan terbaik kepada para siswa, serta menciptakan lingkungan belajar yang aman, nyaman, dan mendukung.</p>
         </div>
         <div class="text-center flex flex-col justify-center items-center overflow-x-auto">
-            <div class="bg-white rounded-lg drop-shadow-xl p-6">
-                <table class="table-fixed border-collapse ">
+            <div class="bg-white rounded-lg drop-shadow-xl sm:p-4 p-4 m-6 sm:m-4">
+                <table class="table-auto border-collapse text-sm sm:text-base">
                     <tbody>
                         <tr>
                             <td class="pr-10">Nama Sekolah</td>
@@ -80,7 +80,7 @@
             <p class=" text-center text-2xl font-bold">Lokasi Kami</p>
         </div>
         <div class="flex flex-col items-center">
-            <iframe class="rounded-lg" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247.36903993294723!2d112.72935277790985!3d-7.251693397360204!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f94668aca7af%3A0x38c23305fd460e5b!2sBubutan%20IV%20Elementary%20School%20Surabaya!5e0!3m2!1sen!2sid!4v1677412017573!5m2!1sen!2sid" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe class="rounded-lg" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247.36903993294723!2d112.72935277790985!3d-7.251693397360204!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f94668aca7af%3A0x38c23305fd460e5b!2sBubutan%20IV%20Elementary%20School%20Surabaya!5e0!3m2!1sen!2sid!4v1677412017573!5m2!1sen!2sid" width=auto height=auto frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
     </div>
 
@@ -88,13 +88,13 @@
     <div>
     <div class="text-center text-4xl font-bold m-10">Visi dan Misi</div>
     <div>
-        <div class="lg:pl-52 max-sm:px-10" data-aos="fade-up" data-aos-duration="500">
+        <div class="lg:pl-52 max-sm:px-10">
             <p class="text-xl font-bold">Visi SDN Bubutan 4 Surabaya</p>
             <br>
-            <p class="text-base font-medium">“Berprestasi, Peduli Lingkungan, Berwawasan Global, Berjiwa Nasional, Berdasar Iman Dan Taqwa”</p>
+            <p class="text-base sm:text-justify text-center font-medium">“Berprestasi, Peduli Lingkungan, Berwawasan Global, Berjiwa Nasional, Berdasar Iman Dan Taqwa”</p>
         </div>
         <br>
-        <div class="lg:px-52 max-sm:px-10" data-aos="fade-up" data-aos-duration="900">
+        <div class="lg:px-52 max-sm:px-10">
             <p class="text-xl font-bold">Misi SDN Bubutan 4 Surabaya</p>
             <br>
             <table class="sm:border-collapse sm:border-spacing-y-2 border-separate border-spacing-y-3 text-justify sm:text-left"> 
@@ -217,29 +217,13 @@
                   <th scope="col" class="py-3.5 lg:px-10 text-left text-sm font-semibold text-gray-900">Posisi</th>
                 </tr>
               </thead>
-              {{-- @foreach ($teachers as $teacher) --}}
+              @foreach ($guru as $item)
               <tbody class="divide-y divide-gray-200 bg-white">
                 <tr>
-                  <td class="whitespace-nowrap py-4 lg:px-10 text-sm font-medium text-gray-900 pl-6">Tegar Alwinata</td>
-                  <td class="whitespace-nowrap py-4 lg:px-10 text-sm text-gray-700">Guru IPS</td>
+                  <td class="whitespace-nowrap py-4 lg:px-10 text-sm font-medium text-gray-900 pl-6">{{ $item->nama }}</td>
+                  <td class="whitespace-nowrap py-4 lg:px-10 text-sm text-gray-700">{{ $item->posisi }}</td>
                 </tr>
-                <tr>
-                    <td class="whitespace-nowrap py-4 lg:px-10 text-sm font-medium text-gray-900 pl-6">Mirza Alwinata</td>
-                    <td class="whitespace-nowrap py-4 lg:px-10 text-sm text-gray-700">Guru IPA</td>              
-                </tr>
-                <tr>
-                    <td class="whitespace-nowrap py-4 lg:px-10 text-sm font-medium text-gray-900 pl-6">Auliya Alwinata</td>
-                    <td class="whitespace-nowrap py-4 lg:px-10 text-sm text-gray-700">Guru Kelas 2</td>                        
-                </tr>
-                <tr>
-                    <td class="whitespace-nowrap py-4 lg:px-10 text-sm font-medium text-gray-900 pl-6">Tegar Amir Faizi</td>
-                    <td class="whitespace-nowrap py-4 lg:px-10 text-sm text-gray-700">Guru Kelas 5</td>                     
-                </tr>
-                <tr>
-                    <td class="whitespace-nowrap py-4 lg:px-10 text-sm font-medium text-gray-900 pl-6">Tegar Rakhman Hidayat</td>
-                    <td class="whitespace-nowrap py-4 lg:px-10 text-sm text-gray-700">Tata Kelola</td> 
-                </tr>
-                {{-- @endforeach --}}
+                @endforeach
               </tbody>
             </table>
           </div>

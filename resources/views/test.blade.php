@@ -12,7 +12,7 @@
         <div class="absolute inset-0 bg-slate-500 rounded-2xl mix-blend-multiply"></div>
       </div>
       <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
-        <h1 class="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+        <h1 class="text-center text-4xl font-black sm:font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
           <span class="block text-white mb-5 "data-aos="zoom-in"data-aos-duration="800">Selamat Datang di</span>
           <span class="block text-white underline decoration-indigo-500"data-aos="zoom-in"data-aos-duration="1200">SDN Bubutan IV</span>
         </h1>
@@ -65,7 +65,7 @@
 </div>
 
 <!-- component -->
-<div class=" px-24 md:lg:xl:px-40 py-8 bg-opacity-10">
+<div class=" px-16 sm:px-24 md:lg:xl:px-40 py-8 bg-opacity-10">
   <div class="grid grid-cols-1 items-center rounded-lg md:lg:xl:grid-cols-3 group bg-white drop-shadow-xl shadow-neutral-200 ">
 
       <div
