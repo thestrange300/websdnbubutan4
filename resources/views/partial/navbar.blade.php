@@ -28,12 +28,6 @@
               
               <a href="/" class="my-auto relative {{ $active == "home" ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold' : 'text-cyan-900 font-medium' }} px-3 py-2 rounded-md text-base" aria-current="page">Home</a>
               
-              {{-- DROPDOWN PROFIL --}}
-{{-- 
-              <a href="/profile" class="text-cyan-900 block px-3 py-2 rounded-md text-base font-medium">Profil</a> --}}
-
-              {{-- DROPDOWN KURIKULUM --}}
-              
               <div data-te-dropdown-ref class="my-auto">
                 <a
                   class="my-auto text-cyan-900 px-3 py-2 rounded-md text-base font-medium transition duration-150 ease-in-out motion-reduce:transition-none"
@@ -97,7 +91,7 @@
               
               <div data-te-dropdown-ref class="my-auto">
                 <a
-                  class="{{ $active == "Tari" ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold' : 'text-cyan-900 font-medium' }} my-auto px-3 py-2 rounded-md text-base font-medium transition duration-150 ease-in-out motion-reduce:transition-none"
+                  class="{{ $active == "Tari" || $active == "Qiroah" || $active == "Samproh" || $active == "Pramuka" || $active == "Pencaksilat" ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold' : 'text-cyan-900 font-medium' }} my-auto px-3 py-2 rounded-md text-base font-medium transition duration-150 ease-in-out motion-reduce:transition-none"
                   href="#"
                   type="button"
                   id="dropdownMenuButton2"
@@ -158,15 +152,14 @@
 
               <div data-te-dropdown-ref class="my-auto">
                 <a
-                  class="my-auto text-cyan-900 px-3 py-2 rounded-md text-base font-medium transition duration-150 ease-in-out motion-reduce:transition-none"
+                  class="my-auto {{ $active == "Ecopreneur" || $active == "Ecoschool" ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold' : 'text-cyan-900 font-medium' }} px-3 py-2 rounded-md text-base font-medium transition duration-150 ease-in-out motion-reduce:transition-none"
                   href="#"
                   type="button"
                   id="dropdownMenuButton2"
                   data-te-dropdown-toggle-ref
                   aria-expanded="false"
                   data-te-ripple-init
-                  data-te-ripple-color="light"
-                  {{ $active == "Adiwiyata" ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold' : 'text-cyan-900 font-medium' }}>
+                  data-te-ripple-color="light">
                   Adiwiyata
                 </a>
                 <ul
@@ -197,15 +190,14 @@
 
               <div data-te-dropdown-ref class="my-auto">
                 <a
-                  class="my-auto text-cyan-900 px-3 py-2 rounded-md text-base font-medium transition duration-150 ease-in-out motion-reduce:transition-none"
+                  class="{{ $active == "Guru" || $active == "Siswa" ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold' : 'text-cyan-900 font-medium' }} my-auto px-3 py-2 rounded-md text-base font-medium transition duration-150 ease-in-out motion-reduce:transition-none"
                   href="#"
                   type="button"
                   id="dropdownMenuButton2"
                   data-te-dropdown-toggle-ref
                   aria-expanded="false"
                   data-te-ripple-init
-                  data-te-ripple-color="light"
-                  {{ $active == "Karya dan Prestasi" ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold' : 'text-cyan-900 font-medium' }}>
+                  data-te-ripple-color="light">
                   Karya dan Prestasi
                 </a>
                 <ul
@@ -246,7 +238,7 @@
       
       <div id="drop1" class="transition-all  px-2 pt-2 pb-3 space-y-1" hidden>
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300" -->
-        <a href="/" class="bg-gradient-to-r from-cyan-500 to-blue-500 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Home</a>
+        <a href="/" class="{{ $active == "home" ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold' : 'text-cyan-900 font-medium' }} block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Home</a>
   
         <a href="#" class="text-cyan-900 block px-3 py-2 rounded-md text-base font-medium" id="mobile_kurikulum">Kurikulum</a>
         
@@ -260,7 +252,7 @@
           <a href="https://drive.google.com/drive/folders/18CldbisRc6lxZfn2AAhb7pnV7ZMDZtYo?usp=share_link" hidden class="block px-3 py-4 pb-1 pl-12 rounded-md text-sm font-normal text-black">RPP</a>
         </div>
 
-        <a href="#" id="mobile_eskul" class="text-cyan-900 block px-3 py-2 rounded-md text-base font-medium" id="mobile_eskul">Ekstrakurikuler</a>
+        <a href="#" id="mobile_eskul" class="{{ $active == "Tari" || $active == "Qiroah" || $active == "Samproh" || $active == "Pramuka" || $active == "Pencaksilat" ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold' : 'text-cyan-900 font-medium' }} block px-3 py-2 rounded-md text-base font-medium" id="mobile_eskul">Ekstrakurikuler</a>
 
         <div hidden id="expand_eskul">
           <a href="/post/Tari" hidden class="block px-3 pl-6 rounded-md text-sm font-normal text-black">Tari</a>
@@ -270,14 +262,14 @@
           <a href="/post/Pramuka" hidden class="block px-3 py-4 pb-1 pl-6 rounded-md text-sm font-normal text-black">Pramuka</a>
         </div>
 
-        <a href="#" class="text-cyan-900 block px-3 py-2 rounded-md text-base font-medium" id="mobile_adi">Adiwiyata</a>
+        <a href="#" class="{{ $active == "Ecopreneur" || $active == "Ecoschool" ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold' : 'text-cyan-900 font-medium' }} block px-3 py-2 rounded-md text-base font-medium" id="mobile_adi">Adiwiyata</a>
 
         <div hidden id="expand_adi">
           <a href="/post/Ecopreneur" hidden class="block px-3 pb-1 pl-6 rounded-md text-sm font-normal text-black">Ecopreneur</a>
           <a href="/post/Ecoschool" hidden class="block px-3 py-4 pb-1 pl-6 rounded-md text-sm font-normal text-black">Ecoschool</a>
         </div>
   
-        <a href="#" class="text-cyan-900 block px-3 py-2 rounded-md text-base font-medium" id="mobile_kapres">Karya dan Prestasi</a>
+        <a href="#" class="{{ $active == "Guru" || $active == "Siswa" ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold' : 'text-cyan-900 font-medium' }} block px-3 py-2 rounded-md text-base font-medium" id="mobile_kapres">Karya dan Prestasi</a>
 
         <div hidden id="expand_kapres">
           <a href="/post/Guru" hidden class="block px-3 pb-1 pl-6 rounded-md text-sm font-normal text-black">Guru</a>
