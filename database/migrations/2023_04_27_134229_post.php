@@ -21,7 +21,10 @@ return new class extends Migration
             $table->text('konten');
             $table->string('kategori');
             $table->string('mainKategori');
+            $table->string('link')->nullable();
             $table->string('image')->nullable();
+            $table->string('image2')->nullable();
+            $table->string('image3')->nullable();
             $table->string('warna1')->nullable();
             $table->string('warna2')->nullable();
             $table->boolean('isChosen')->default(false);

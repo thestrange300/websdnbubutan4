@@ -46,8 +46,11 @@ class postController extends Controller
             'judul' => 'required',
             'kategori' => 'required',
             'image' => 'image|file|max:2048',
+            'image2' => 'image|file|max:2048',
+            'image3' => 'image|file|max:2048',
             'konten' => 'required',
-            'slug' => 'required'
+            'slug' => 'required',
+            'link'
         ]);
 
         $filename = null;
@@ -56,13 +59,30 @@ class postController extends Controller
             $filename = time() . '.' . $image->getClientOriginalExtension();
             $image->storeAs('public', $filename);
         }
+
+        $filename2 = null;
+        if ($request->hasFile('image2')) {
+            $image2 = $request->file('image2');
+            $filename2 = time() . '.' . $image2->getClientOriginalExtension();
+            $image2->storeAs('public', $filename2);
+        }
+
+        $filename3 = null;
+        if ($request->hasFile('image3')) {
+            $image3 = $request->file('image3');
+            $filename3 = time() . '.' . $image3->getClientOriginalExtension();
+            $image3->storeAs('public', $filename3);
+        }
         
         $post = new post();
         $post->judul = $request->judul;
         $post->kategori = $request->kategori;
         $post->image = $filename;
+        $post->image2 = $filename2;
+        $post->image2 = $filename3;
         $post->konten = $request->konten;
         $post->slug = $request->slug;
+        $post->link = $request->link;
 
         if($request->kategori == 'Tari' || $request->kategori == 'Pencaksilat' || $request->kategori == 'Qiroah'|| $request->kategori == 'Samproh' || $request->kategori == 'Pramuka'){
             $post->warna1 = "red";
@@ -98,23 +118,40 @@ class postController extends Controller
             'judul' => 'required',
             'konten' => 'required',
             'image' => 'image|file|max:2048',
-            'kategori' => 'required'
+            'image2' => 'image|file|max:2048',
+            'image3' => 'image|file|max:2048',
+            'kategori' => 'required',
+            'link'
         ]);
 
         if ($request->hasFile('image')) {
             Storage::delete('public/' . $post->image);
-        }  
-        
-        if ($request->hasFile('image')) {
             $image = $request->file('image');
-            $filename = time() . '.' . $image->getClientOriginalExtension();
+            $filename = time() . '_' . $image->getClientOriginalName();
             $image->storeAs('public', $filename);
             $post->image = $filename;
-        }              
+        }   
+        
+        if ($request->hasFile('image2')) {
+            Storage::delete('public/' . $post->image2);
+            $image2 = $request->file('image2');
+            $filename2 = time() . '_' . $image2->getClientOriginalName();
+            $image2->storeAs('public', $filename2);
+            $post->image2 = $filename2;
+        }
+        
+        if ($request->hasFile('image3')) {
+            Storage::delete('public/' . $post->image3);
+            $image3 = $request->file('image3');
+            $filename3 = time() . '_' . $image3->getClientOriginalName();
+            $image3->storeAs('public', $filename3);
+            $post->image3 = $filename3;
+        }
 
         $post->judul = $request->judul;
         $post->konten = $request->konten;
         $post->kategori = $request->kategori;
+        $post->link = $request->link;
 
         if($request->kategori == 'Tari' || $request->kategori == 'Pencaksilat' || $request->kategori == 'Qiroah'|| $request->kategori == 'Samproh' || $request->kategori == 'Pramuka'){
             $post->warna1 = "red";
@@ -141,6 +178,8 @@ class postController extends Controller
         $post = post::where('id', $request->id)->first();
         // Get the filename of the image associated with the post
         $filename = $post->image;
+        $filename2 = $post->image2;
+        $filename3 = $post->image3;
 
         // Delete the post from the database
         $post->delete();
@@ -148,6 +187,14 @@ class postController extends Controller
         // Delete the image from storage if it exists
         if ($filename && Storage::exists('public/' . $filename)) {
             Storage::delete('public/' . $filename);
+        }
+
+        if ($filename2 && Storage::exists('public/' . $filename2)) {
+            Storage::delete('public/' . $filename2);
+        }
+
+        if ($filename3 && Storage::exists('public/' . $filename3)) {
+            Storage::delete('public/' . $filename3);
         }
 
         return redirect()->route('index.post')->with('success','Post Berhasil Dihapus!');

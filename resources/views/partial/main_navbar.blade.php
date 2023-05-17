@@ -27,7 +27,7 @@
         <aside class="ml-[-100%] fixed z-10 top-0 pb-3 px-6 w-full flex flex-col justify-between h-screen border-r bg-white transition duration-300 lg:ml-0 xl:w-[15%] 2xl:w-[15%]">
             <div>   
                 <div class="-mx-6 px-6 py-4">
-                    <a href="/test" title="home">
+                    <a href="/" title="home">
                         <img src="{{asset('img/Logo-Sekolah.png')}}" class="w-8 float-left" alt="logo sd">
                         <p class="float-right text-lg font-bold mt-1">SDN Bubutan IV</p>
                     </a>

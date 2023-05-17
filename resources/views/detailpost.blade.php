@@ -41,11 +41,12 @@
         {!! html_entity_decode($post->konten) !!}
       </div>
 
+      @if ($post->image2)
       <div class="relative grid grid-cols-2 py-6 ">
         <div class="content-center px-6 sm:px-20 pt-4">
           <div class="relative drop-shadow-md rounded-2xl overflow-hidden">
             <div class="relative inset-0">
-              <img class="h-full w-full object-cover object-center max-h-64" src="{{ asset('storage/' . $post->image) }}" alt="Img Header">
+              <img class="h-full w-full object-cover object-center max-h-64" src="{{ asset('storage/' . $post->image2) }}" alt="Img Header">
             </div>
           </div>
         </div>
@@ -53,15 +54,18 @@
         <div class="content-center px-6 sm:px-20 pt-4">
           <div class="relative drop-shadow-md rounded-2xl overflow-hidden">
             <div class="relative inset-0">
-              <img class="h-full w-full object-cover object-center max-h-64" src="{{ asset('storage/' . $post->image) }}" alt="Img Header">
+              <img class="h-full w-full object-cover object-center max-h-64" src="{{ asset('storage/' . $post->image3) }}" alt="Img Header">
             </div>
           </div>
         </div>
       </div>
+      @endif
 
+      @if ($post->link)
       <div class="flex justify-center mb-12 mt-6">
-        <iframe class=" rounded-lg" width="560" height="315" src="https://www.youtube.com/embed/F4EW0w-uyzE?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class=" rounded-lg" width="560" height="315" src="{{ $post->link }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
+      @endif
       
 
 <a href="/post/{{ $post->kategori }}" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">

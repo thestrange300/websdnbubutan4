@@ -61,7 +61,7 @@
               border-gray-300
               shadow-sm
               focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
-              max-w-lg" id="judul" name="judul">  
+              max-w-lg" id="link" name="link">  
           </div>
 
           {{-- SCRIPT SWITCH --}}
@@ -100,27 +100,35 @@
 
           
           <div>
-            <label for="image" class="form-label block text-sm font-medium text-gray-700 pb-2">Image Tambahan (Optional)</label>
-            <img class="img-preview img-fluid max-h-48">
-            <div class="grid grid-cols-4 col-span-3">
-              <input type="file" id="image" name="image" class="block w-full text-sm text-slate-500
+            <label for="image" class="form-label block text-sm font-medium text-gray-700 pb-2">Gambar Tambahan (Optional)</label>
+            <div class="grid grid-cols-4 col-span-3 gap-x-4">
+              <img class="img-preview2 img-fluid max-h-48">
+              <img class="img-preview3 img-fluid max-h-48">
+            </div>
+            <div class="grid grid-cols-4 col-span-3 gap-x-4">
+              <input type="file" id="image2" name="image2" class="block w-full text-sm text-slate-500
               file:mr-4 file:py-2 file:px-4
               file:rounded-full file:border-0
               file:text-sm file:font-semibold
               file:bg-violet-50 file:text-violet-700
-              hover:file:bg-violet-100" onchange="previewImage()"/>
-              <input type="file" id="image" name="image" class="block w-full text-sm text-slate-500
+              hover:file:bg-violet-100" onchange="previewImage2()"/>
+              <input type="file" id="image3" name="image3" class="block w-full text-sm text-slate-500
               file:mr-4 file:py-2 file:px-4
               file:rounded-full file:border-0
               file:text-sm file:font-semibold
               file:bg-violet-50 file:text-violet-700
-              hover:file:bg-violet-100" onchange="previewImage()"/>
+              hover:file:bg-violet-100" onchange="previewImage3()"/>
             </div>
 
             <div class="pt-2">
               <p class="my-1 text-xs text-gray-500 pb-4" id="image_help">PNG atau JPG (Max. 2MB).</p>
             </div>
-            @error('image')
+            @error('image2')
+                <div class="invalid-feedback">
+                  {{ $message }}
+                </div>
+            @enderror
+            @error('image3')
                 <div class="invalid-feedback">
                   {{ $message }}
                 </div>
@@ -295,6 +303,34 @@
 
       oFReader.onload = function(oFREvent){
         imgPreview.src = oFREvent.target.result;
+      }
+    }
+
+    function previewImage2(){
+      const img2 = document.querySelector('#image2');
+      const imgPreview2 = document.querySelector('.img-preview2');
+
+      imgPreview2.style.display = 'block';
+
+      const oFReader2 = new FileReader();
+      oFReader2.readAsDataURL(image2.files[0]);
+
+      oFReader2.onload = function(oFREvent2){
+        imgPreview2.src = oFREvent2.target.result;
+      }
+    }
+
+    function previewImage3(){
+      const img3 = document.querySelector('#image3');
+      const imgPreview3 = document.querySelector('.img-preview3');
+
+      imgPreview3.style.display = 'block';
+
+      const oFReader3 = new FileReader();
+      oFReader3.readAsDataURL(image3.files[0]);
+
+      oFReader3.onload = function(oFREvent3){
+        imgPreview3.src = oFREvent3.target.result;
       }
     }
 

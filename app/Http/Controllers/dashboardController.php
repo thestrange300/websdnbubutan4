@@ -32,7 +32,7 @@ class dashboardController extends Controller
     public function kepsek(){
         $kepsek = kepsek::all()->first();
         return view('dashboard_kepsek', [
-            'active' => 'dashboard',
+            'active' => 'dashboardkepsek',
             'kepsek' => $kepsek
         ]);
     }

@@ -27,6 +27,47 @@
           max-w-lg" id="judul" name="judul" value="{{ old('judul', $item->judul) }}">
         </div>
 
+        <div class="py-6">
+          <label for="konten" class="form-label block text-sm font-medium text-gray-700 pb-2">Konten</label>
+          <input id="konten" type="hidden" name="konten" value="{{ old('konten', $item->konten) }}">
+          <trix-editor input="konten" class="shadow-md"></trix-editor>
+        </div>
+
+        <div>
+          <label for="embed" class="form-label block text-sm font-medium text-gray-700 pb-2">Link Youtube</label>
+          <input
+            class="mb-3 mr-2 mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-neutral-300 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-neutral-100 after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-gradient-to-r from-sky-600 to-cyan-400  checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s]"
+            type="checkbox"
+            role="switch"
+            id="switch_button">
+            <input type="text"
+            id="switch_content" 
+            class="hidden form-control drop-shadow-md mt-2 mb-4 px-2 py-2 
+            mt-1
+            block
+            w-full
+            rounded-md
+            border-gray-300
+            shadow-sm
+            focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
+            max-w-lg" id="link" name="link" value="{{ old('link', $item->link) }}">  
+        </div>
+
+        {{-- SCRIPT SWITCH --}}
+
+        <script>
+          const switchBtn = document.getElementById("switch_button");
+          const switchctn = document.getElementById("switch_content");
+        
+          switchBtn.addEventListener("change", () => {
+            if (switchBtn.checked) {
+              switchctn.classList.remove("hidden");
+            } else {
+              switchctn.classList.add("hidden");
+            }
+          });
+        </script>
+
         <div>
           <label for="image" class="form-label block text-sm font-medium text-gray-700 pb-2">Image</label>
           @if ($item->image)
@@ -50,12 +91,49 @@
           @enderror
         </div>
 
-        <div class="py-6">
-          <label for="konten" class="form-label block text-sm font-medium text-gray-700 pb-2">Konten</label>
-          <input id="konten" type="hidden" name="konten" value="{{ old('konten', $item->konten) }}">
-          <trix-editor input="konten" class="shadow-md"></trix-editor>
-        </div>
+        <div>
+          <label for="image" class="form-label block text-sm font-medium text-gray-700 pb-2">Gambar Tambahan (Optional)</label>
+          <div class="grid grid-cols-4 col-span-3 gap-x-4">
+            @if ($item->image2)
+            <img src="{{ asset('storage/' . $item->image2) }}" class="img-preview2 img-fluid max-h-48">
+            @else
+            <img class="img-preview2 img-fluid max-h-48">
+            @endif
+            @if ($item->image3)
+            <img src="{{ asset('storage/' . $item->image3) }}" class="img-preview3 img-fluid max-h-48">
+            @else
+            <img class="img-preview3 img-fluid max-h-48">
+            @endif
+          </div>
+          <div class="grid grid-cols-4 col-span-3 gap-x-4">
+            <input type="file" id="image2" name="image2" class="block w-full text-sm text-slate-500
+                  file:mr-4 file:py-2 file:px-4
+                  file:rounded-full file:border-0
+                  file:text-sm file:font-semibold
+                  file:bg-violet-50 file:text-violet-700
+                  hover:file:bg-violet-100" onchange="previewImage2()" />
+            <input type="file" id="image3" name="image3" class="block w-full text-sm text-slate-500
+                  file:mr-4 file:py-2 file:px-4
+                  file:rounded-full file:border-0
+                  file:text-sm file:font-semibold
+                  file:bg-violet-50 file:text-violet-700
+                  hover:file:bg-violet-100" onchange="previewImage3()" />
+          </div>
         
+          <div class="pt-2">
+            <p class="my-1 text-xs text-gray-500 pb-4" id="image_help">PNG atau JPG (Max. 2MB).</p>
+          </div>
+          @error('image2')
+          <div class="invalid-feedback">
+            {{ $message }}
+          </div>
+          @enderror
+          @error('image3')
+          <div class="invalid-feedback">
+            {{ $message }}
+          </div>
+          @enderror
+        </div>        
 
         <div class="mb-1">
           <label for="title" class="form-label block text-sm text font-medium text-gray-700 pb-3">Kategori</label>
@@ -159,6 +237,34 @@
 
       oFReader.onload = function(oFREvent){
         imgPreview.src = oFREvent.target.result;
+      }
+    }
+
+    function previewImage2(){
+      const img2 = document.querySelector('#image2');
+      const imgPreview2 = document.querySelector('.img-preview2');
+
+      imgPreview2.style.display = 'block';
+
+      const oFReader2 = new FileReader();
+      oFReader2.readAsDataURL(image2.files[0]);
+
+      oFReader2.onload = function(oFREvent2){
+        imgPreview2.src = oFREvent2.target.result;
+      }
+    }
+
+    function previewImage3(){
+      const img3 = document.querySelector('#image3');
+      const imgPreview3 = document.querySelector('.img-preview3');
+
+      imgPreview3.style.display = 'block';
+
+      const oFReader3 = new FileReader();
+      oFReader3.readAsDataURL(image3.files[0]);
+
+      oFReader3.onload = function(oFREvent3){
+        imgPreview3.src = oFREvent3.target.result;
       }
     }
 </script>
