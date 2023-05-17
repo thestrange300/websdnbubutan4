@@ -100,7 +100,7 @@
 
           
           <div>
-            <label for="image" class="form-label block text-sm font-medium text-gray-700 pb-2">Image Tambahan (Optional Rodghi kontol)</label>
+            <label for="image" class="form-label block text-sm font-medium text-gray-700 pb-2">Image Tambahan (Optional)</label>
             <img class="img-preview img-fluid max-h-48">
             <div class="grid grid-cols-4 col-span-3">
               <input type="file" id="image" name="image" class="block w-full text-sm text-slate-500
