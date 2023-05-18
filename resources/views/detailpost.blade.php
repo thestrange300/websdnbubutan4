@@ -37,7 +37,7 @@
         <time class="text-sm font-medium text-gray-600" datetime="{{ date('Y-m-d H:i:s', strtotime($post->created_at)) }}">{{ $post->created_at->format('M d, Y') }}</time>       
   </div>
 
-      <div class="text-base font-normal text-justify pt-6">
+      <div class="text-base font-normal text-justify py-6">
         {!! html_entity_decode($post->konten) !!}
       </div>
 
