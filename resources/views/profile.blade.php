@@ -10,8 +10,8 @@
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:px-36 ">
         <div class="text-center flex flex-col justify-center items-center">
-            <img src="{{ asset('storage/' . $kepsek->image) }}" alt="" class="max-w-xs max-sm:w-60">
-            <p class="font-semibold">Kepala Sekolah</p>
+            <img src="{{ asset('storage/' . $kepsek->image) }}" alt="" class="rounded-full border-4 border-blue-400 max-w-xs max-sm:w-60">
+            <p class="font-semibold pt-4">Kepala Sekolah</p>
             <p>{{ $kepsek->nama }}</p>
             <p class="pb-6 sm:pb-0">NIP. {{ $kepsek->nip }}</p>
             <p class="px-4 pb-6 sm:hidden">Kami berkomitmen untuk memberikan pendidikan terbaik kepada para siswa, serta menciptakan lingkungan belajar yang aman, nyaman, dan mendukung.</p>
@@ -60,7 +60,7 @@
     
     <div class="grid grid-cols-2 lg:px-36">
         <div class="hidden sm:inline text-center flex flex-col items-center">
-            <div class=" max-sm:ml-10 max-w-xs text-justify flex-1 lg:mt-5">
+            <div class="p-8">
                 <p>Kami berkomitmen untuk memberikan pendidikan terbaik kepada para siswa, serta menciptakan lingkungan belajar yang aman, nyaman, dan mendukung.</p>
             </div>
         </div>

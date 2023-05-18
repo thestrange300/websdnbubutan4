@@ -36,8 +36,7 @@
                 
                 <div class="mt-8 text-center">
                     <img src="{{asset('img/profile.png')}}" alt="" class="w-10 h-10 m-auto object-cover lg:w-20 lg:h-20">
-                    <h5 class="hidden mt-4 text-base font-semibold text-gray-800 lg:block">Tegar Alwinata</h5>
-                    <span class="hidden text-base text-gray-600 lg:block">Administrator</span>
+                    <h5 class="hidden mt-4 text-base font-bold text-gray-800 lg:block">Administrator</h5>
                 </div>
                 <ul class="space-y-2 tracking-wide mt-8">
                     <li>

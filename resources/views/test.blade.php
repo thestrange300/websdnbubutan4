@@ -38,7 +38,8 @@
           <div class="">
             <h2 class="text-center sm:text-left text-2xl md:text-3xl pt-8 pb-4 font-extrabold tracking-tight text-gray-900">Sambutan Kepala Sekolah</h2>
             <p class="mt-4 text-base text-black text-center sm:text-justify">"Kita bersama-sama bekerja keras untuk memastikan bahwa setiap siswa merasa dihargai dan mendapatkan pendidikan yang berkualitas, sehingga mereka siap untuk menjadi generasi pemimpin masa depan."</p>
-            <img class="sm:hidden mt-6 w-auto h-56 mx-auto bg-center" src="{{ asset('storage/' . $kepsek->image) }}" alt="Kepala">
+            {{-- MOBILE VIEW --}}
+            <img class="sm:hidden mt-6 rounded-full border-4 border-blue-400 w-auto h-56 mx-auto bg-center" src="{{ asset('storage/' . $kepsek->image) }}" alt="Kepala">
             <p class="mt-4 text-base font-bold text-black text-center sm:text-justify">{{ $kepsek->nama }}</p>
             <p class="mt-1 text-sm font-semibold text-black text-center sm:text-justify">NIP. {{ $kepsek->nip }}</p>
             {{-- <div class="mt-6">
@@ -50,7 +51,8 @@
       <div class="mt-8 sm:mt-16 lg:mt-0 ml-12">
         <div class=" sm:py-12">
           {{-- ring-1 ring-black ring-opacity-5 --}}
-          <img class=" hidden col-span-1 float-right sm:block w-auto h-80 justify-self-end"src="{{ asset('storage/' . $kepsek->image) }}" alt="Kepala">
+          {{-- WEB VIEW --}}
+          <img class=" hidden col-span-1 rounded-full border-4 border-blue-400 float-right sm:block w-auto h-72 justify-self-end"src="{{ asset('storage/' . $kepsek->image) }}" alt="Kepala">
           {{-- <p class="mt-4 text-base text-gray-500 text-justify">Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis bibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at. Lectus viverra dui tellus ornare pharetra.</p> --}}
         </div>
       </div>
@@ -103,7 +105,7 @@
   <p class="lg:w-6/12 pt-4 mx-5 lg:mx-auto text-base text-black">Postingan unggulan kami di profil perusahaan sekolah menyoroti pencapaian dan misi institusi untuk mendidik dan menginspirasi para pemimpin masa depan.</p>
 </div>
 
-<div class="bg-transparent from-green-50 to-cyan-100">  
+<div class="flex justify-center">  
   <div class="container px-6 text-gray-600">
       <div class="py-4 grid gap-12 lg:grid-cols-2">
 
@@ -114,7 +116,9 @@
             <img src="{{ asset('storage/' . $post1->image) }}" alt="" class="w-56 h-56 object-cover bg-cover rounded-xl max-w-xs transition duration-300 ease-in-out hover:scale-105" />
           </div>
             <div class="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">
-              <h3 class="font-black text-gray-800 md:text-2xl text-xl">{{ $post1->judul }}</h3>
+              <a href="/post/{{ $post1->kategori }}/{{ $post1->slug }}">
+                <h3 class="font-black text-gray-800 md:text-2xl text-xl">{{ $post1->judul }}</h3>
+              </a>
               <div class="md:text-base text-justify text-gray-500 line-clamp-4 text-base">
                 {!! html_entity_decode($post1->konten) !!}
               </div>
@@ -141,7 +145,9 @@
             <img src="{{ asset('storage/' . $post2->image) }}" alt="tailwind logo" class="w-56 h-56 object-cover bg-cover rounded-xl max-w-xs transition duration-300 ease-in-out hover:scale-105" />
           </div>
             <div class="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">
-              <h3 class="font-black text-gray-800 md:text-2xl text-xl">{{ $post2->judul }}</h3>
+              <a href="/post/{{ $post2->kategori }}/{{ $post2->slug }}">
+                <h3 class="font-black text-gray-800 md:text-2xl text-xl">{{ $post2->judul }}</h3>
+              </a>
               <div class="md:text-base text-justify text-gray-500 line-clamp-4 text-base">
                 {!! html_entity_decode($post2->konten) !!}
               </div>
