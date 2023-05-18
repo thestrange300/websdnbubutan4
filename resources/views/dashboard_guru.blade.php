@@ -30,10 +30,10 @@
 
       <div class="sm:flex sm:items-center mt-5">
         <div class="sm:flex-auto">
-          <h1 class="text-xl font-bold text-gray-900">Daftar Guru</h1>
-          <p class="mt-2 text-sm text-gray-700">Berisi tentang nama dan posisi guru-guru.</p>
+          <h1 class="text-center sm:text-left text-xl font-bold text-gray-900">Daftar Guru</h1>
+          <p class="text-center sm:text-left mt-2 text-sm text-gray-700">Berisi tentang nama dan posisi guru-guru.</p>
         </div>
-        <div class="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
+        <div class="relative flex justify-center sm:flex-none mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
           <button 
             type="button"  
             class="hover:transform hover:scale-125 transition duration-300 inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"

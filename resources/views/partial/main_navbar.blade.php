@@ -23,6 +23,9 @@
     <script>
       AOS.init();
     </script>
+
+
+
     <div>
         <aside class="ml-[-100%] fixed z-10 top-0 pb-3 px-6 w-full flex flex-col justify-between h-screen border-r bg-white transition duration-300 lg:ml-0 xl:w-[15%] 2xl:w-[15%]">
             <div>   
@@ -100,13 +103,79 @@
                 </form>
             </div>
         </aside>
+
         <div class="ml-auto mb-6 lg:w-[85%] ">
             <div class="sticky z-10 top-0 border-b bg-white lg:py-2.5">
                 <div class="px-6 flex items-center justify-between space-x-4 2xl:container">
                     <h5 hidden class="text-2xl text-gray-800 font-bold lg:block">Dashboard</h5>                    
                 </div>
             </div>
+            {{-- MOBILE NAVBAR --}}
+    <div>
+        <nav class="sm:hidden drop-shadow-lg bg-white/80 rounded-lg max-sm:bg-white/80 max-sm:mx-3 sm:sticky top-0 z-50">
+            <div class="mx-auto px-2 sm:px-6 lg:px-8">
+              <div class="relative flex items-center justify-between h-16 sm:grid-cols-2">
+                <img class=" relative invisible md:visible w-10 h-10 place-content-left" src="{{asset('img/Logo-Sekolah.png')}}" alt="logo sekolah">
+                {{-- <img class=" w-10 h-10 sm:block sm:place-content-center" src="{{asset('img/Logo-Sekolah.png')}}" alt="logo sekolah"> --}}
+                <!-- Mobile menu button-->
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                  
+                  <button type="button" class="pointer-events-auto inline-flex items-center justify-center p-2 rounded-md text-gray-400 bg-transparent" aria-controls="mobile-menu" aria-expanded="false">
+                    <svg id="dropdown" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" color="black" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                  </button>
+                </div>
+        
+                
+                <div class="flex-1 flex items-center justify-center pr-5">
+                  
+                  <div class="flex-shrink-0 flex items-center">
+                    
+                    {{-- ITEM MOBILE --}}
+                    <img class="block sm:hidden h-10 w-10" src="{{asset('img/Logo-Sekolah.png')}}" alt="Workflow">
+                  </div>
+                  <div class="hidden sm:block">
+                  </div>
+                </div>
+                <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                  
+                </div>
+              </div>
+            </div>
+          
+            <!-- Mobile menu, show/hide based on menu state. -->
+            <div class="sm:hidden" id="mobile-menu">
+              
+              <div id="drop1" class="transition-all  px-2 pt-2 pb-3 space-y-1" hidden>
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300" -->
+                <a href="/dashboard" class="{{ $active == "dashboard" ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold' : 'text-cyan-900 font-medium' }} block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Home</a>
+          
+                <a href="/dashboard/post" class="{{ $active == "dashboardpost" ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold' : 'text-cyan-900 font-medium' }} block px-3 py-2 rounded-md text-base font-medium" id="mobile_kurikulum">Post</a>
+        
+                <a href="/dashboard/guru" id="mobile_eskul" class="{{ $active == "dashboardguru" ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold' : 'text-cyan-900 font-medium' }} block px-3 py-2 rounded-md text-base font-medium" id="mobile_eskul">Daftar Guru</a>
+        
+        
+                <a href="/dashboard/kepsek" class="{{ $active == "dashboardkepsek" || $active == "Ecoschool" ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold' : 'text-cyan-900 font-medium' }} block px-3 py-2 rounded-md text-base font-medium" id="mobile_adi">Kepala Sekolah</a>
+        
+                <a href="/dashboard/setting" class="{{ $active == "pengaturan" || $active == "Siswa" ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold' : 'text-cyan-900 font-medium' }} block px-3 py-2 rounded-md text-base font-medium" id="mobile_kapres">Pengaturan</a>
+    
+              </div>
+            </div>
+          </nav>        
+    </div>
+
         @yield('container')
     </div>
+    
+    <script>
+    const dropdown = document.getElementById("dropdown");
+    const drop1 = document.getElementById("drop1");
+    
+    dropdown.addEventListener("click", function() {
+        drop1.toggleAttribute("hidden");
+    });
+    
+      </script>
 </body>
 </html>
