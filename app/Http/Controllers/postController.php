@@ -73,6 +73,12 @@ class postController extends Controller
             $filename3 = time() . '.' . $image3->getClientOriginalExtension();
             $image3->storeAs('public', $filename3);
         }
+
+        $link = $request->link;
+        if (strpos($link, 'https://www.youtube.com/watch?v=') === 0) {
+            $videoId = substr($link, strpos($link, '=') + 1);
+            $link = "https://www.youtube.com/embed/{$videoId}?controls=0";
+        }
         
         $post = new post();
         $post->judul = $request->judul;
@@ -82,7 +88,7 @@ class postController extends Controller
         $post->image2 = $filename3;
         $post->konten = $request->konten;
         $post->slug = $request->slug;
-        $post->link = $request->link;
+        $post->link = $link;
 
         if($request->kategori == 'Tari' || $request->kategori == 'Pencaksilat' || $request->kategori == 'Qiroah'|| $request->kategori == 'Samproh' || $request->kategori == 'Pramuka'){
             $post->warna1 = "red";

@@ -41,8 +41,8 @@
         {!! html_entity_decode($post->konten) !!}
       </div>
 
-      @if ($post->image2)
       <div class="relative grid grid-cols-2 py-6 ">
+        @if ($post->image2)
         <div class="content-center px-6 sm:px-20 pt-4">
           <div class="relative drop-shadow-md rounded-2xl overflow-hidden">
             <div class="relative inset-0">
@@ -50,7 +50,9 @@
             </div>
           </div>
         </div>
+        @endif
 
+        @if ($post->image3)
         <div class="content-center px-6 sm:px-20 pt-4">
           <div class="relative drop-shadow-md rounded-2xl overflow-hidden">
             <div class="relative inset-0">
@@ -58,8 +60,8 @@
             </div>
           </div>
         </div>
+        @endif
       </div>
-      @endif
 
       @if ($post->link)
       <div class="flex justify-center mb-12 mt-6">
