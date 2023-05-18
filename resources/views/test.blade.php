@@ -29,7 +29,7 @@
 <!-- SAMBUTAN KEPSEK-->
 <!-- This example requires Tailwind CSS v2.0+ -->
 <div class="relative overflow-hidden bg-transparent">
-  <div class="relative mb-6">
+  <div class="relative mb-6 mt-12">
     <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
       <div class="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
         <div>
@@ -198,7 +198,7 @@
 
           @foreach ($latest->take(6) as $item)
           <div>
-            <a href="/post/{{ $item->kategori }}/{{ $item->slug }}" class="mt-2 sm:block lg:h-20 max-sm:h-36">
+            <a href="/post/{{ $item->kategori }}/{{ $item->slug }}" class="mt-2 sm:block max-sm:h-36">
               <p class="text-xl font-bold text-gray-900">{{ $item->judul }}</p>
               <div class="pt-1">
                 <time class="text-sm text-slate-600" datetime="{{ date('Y-m-d H:i:s', strtotime($item->created_at)) }}">{{ $item->created_at->format('M d, Y') }}</time>
