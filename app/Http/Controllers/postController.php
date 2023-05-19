@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Storage;
 use App\Models\post;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
+
 
 class postController extends Controller
 {
@@ -56,21 +58,21 @@ class postController extends Controller
         $filename = null;
         if ($request->hasFile('image')) {
             $image = $request->file('image');
-            $filename = time() . '.' . $image->getClientOriginalExtension();
+            $filename = time() . '_' . Str::random(8) . '.' . $image->getClientOriginalExtension();
             $image->storeAs('public', $filename);
         }
 
         $filename2 = null;
         if ($request->hasFile('image2')) {
             $image2 = $request->file('image2');
-            $filename2 = time() . '.' . $image2->getClientOriginalExtension();
+            $filename2 = time() . '_' . Str::random(8) . '.' . $image2->getClientOriginalExtension();
             $image2->storeAs('public', $filename2);
         }
 
         $filename3 = null;
         if ($request->hasFile('image3')) {
             $image3 = $request->file('image3');
-            $filename3 = time() . '.' . $image3->getClientOriginalExtension();
+            $filename3 = time() . '_' . Str::random(8) . '.' . $image3->getClientOriginalExtension();
             $image3->storeAs('public', $filename3);
         }
 
@@ -85,7 +87,7 @@ class postController extends Controller
         $post->kategori = $request->kategori;
         $post->image = $filename;
         $post->image2 = $filename2;
-        $post->image2 = $filename3;
+        $post->image3 = $filename3;
         $post->konten = $request->konten;
         $post->slug = $request->slug;
         $post->link = $link;
@@ -133,7 +135,7 @@ class postController extends Controller
         if ($request->hasFile('image')) {
             Storage::delete('public/' . $post->image);
             $image = $request->file('image');
-            $filename = time() . '_' . $image->getClientOriginalName();
+            $filename = time() . '_' . Str::random(8) . '.' . $image->getClientOriginalExtension();
             $image->storeAs('public', $filename);
             $post->image = $filename;
         }   
@@ -141,7 +143,7 @@ class postController extends Controller
         if ($request->hasFile('image2')) {
             Storage::delete('public/' . $post->image2);
             $image2 = $request->file('image2');
-            $filename2 = time() . '_' . $image2->getClientOriginalName();
+            $filename2 = time() . '_' . Str::random(8) . '.' . $image2->getClientOriginalExtension();
             $image2->storeAs('public', $filename2);
             $post->image2 = $filename2;
         }
@@ -149,7 +151,7 @@ class postController extends Controller
         if ($request->hasFile('image3')) {
             Storage::delete('public/' . $post->image3);
             $image3 = $request->file('image3');
-            $filename3 = time() . '_' . $image3->getClientOriginalName();
+            $filename3 = time() . '_' . Str::random(8) . '.' . $image3->getClientOriginalExtension();
             $image3->storeAs('public', $filename3);
             $post->image3 = $filename3;
         }
