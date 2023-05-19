@@ -41,25 +41,27 @@
         {!! html_entity_decode($post->konten) !!}
       </div>
 
-      @if ($post->image2)
       <div class="relative grid-rows-none sm:grid sm:grid-cols-2 py-6 ">
-        <div class="content-center sm:px-20 pt-4">
+        @if ($post->image2)
+        <div class="content-center px-6 sm:px-20 pt-4">
           <div class="relative drop-shadow-md rounded-2xl overflow-hidden">
             <div class="relative inset-0">
               <img class="h-full w-full object-cover object-center max-h-64" src="{{ asset('storage/' . $post->image2) }}" alt="Img Header">
             </div>
           </div>
         </div>
+        @endif
 
-        <div class="content-center sm:px-20 pt-4">
+        @if ($post->image3)
+        <div class="content-center px-6 sm:px-20 pt-4">
           <div class="relative drop-shadow-md rounded-2xl overflow-hidden">
             <div class="relative inset-0">
               <img class="h-full w-full object-cover object-center max-h-64" src="{{ asset('storage/' . $post->image3) }}" alt="Img Header">
             </div>
           </div>
         </div>
+        @endif
       </div>
-      @endif
 
       @if ($post->link)
       <div class="flex justify-center mb-12 mt-6">
