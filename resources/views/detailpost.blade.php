@@ -37,16 +37,16 @@
         <time class="text-sm font-medium text-gray-600" datetime="{{ date('Y-m-d H:i:s', strtotime($post->created_at)) }}">{{ $post->created_at->format('M d, Y') }}</time>       
   </div>
 
-      <div class="text-base font-normal text-justify py-6">
+      <div class="text-base font-normal text-justify py-2">
         {!! html_entity_decode($post->konten) !!}
       </div>
 
-      <div class="relative grid-rows-none sm:grid sm:grid-cols-2 py-6 ">
+      <div class="relative grid-rows-none sm:grid {{ $post->image2 && $post->image3 ? 'sm:grid-cols-2' : 'sm:grid-cols-1' }}">
         @if ($post->image2)
         <div class="content-center px-6 sm:px-20 pt-4">
           <div class="relative drop-shadow-md rounded-2xl overflow-hidden">
             <div class="relative inset-0">
-              <img class="h-full w-full object-cover object-center max-h-64" src="{{ asset('storage/' . $post->image2) }}" alt="Img Header">
+              <img class="h-full w-full object-cover object-center {{ $post->image2 && $post->image3 ? 'max-h-64' : 'max-h-128' }} " src="{{ asset('storage/' . $post->image2) }}" alt="Img Header">
             </div>
           </div>
         </div>
@@ -56,7 +56,7 @@
         <div class="content-center px-6 sm:px-20 pt-4">
           <div class="relative drop-shadow-md rounded-2xl overflow-hidden">
             <div class="relative inset-0">
-              <img class="h-full w-full object-cover object-center max-h-64" src="{{ asset('storage/' . $post->image3) }}" alt="Img Header">
+              <img class="h-full w-full object-cover object-center {{ $post->image2 && $post->image3 ? 'max-h-64' : 'max-h-128' }}" src="{{ asset('storage/' . $post->image3) }}" alt="Img Header">
             </div>
           </div>
         </div>
@@ -65,12 +65,11 @@
 
       @if ($post->link)
       <div class="flex justify-center mb-12 mt-6">
-        <iframe class=" rounded-lg" width="560" height="315" src="{{ $post->link }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="rounded-lg" width="560" height="315" src="{{ $post->link }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
       @endif
-      
 
-<a href="/post/{{ $post->kategori }}" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+<a href="/post/{{ $post->kategori }}" class="inline-flex items-center px-3 mt-6 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
   
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-2 -ml-1">
       <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />

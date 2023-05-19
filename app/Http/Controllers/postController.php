@@ -12,7 +12,7 @@ class postController extends Controller
 {
     public function index()
     {
-        $posts = post::all();
+        $posts = post::orderBy('created_at', 'desc')->get();
         $chosenPost = post::where('isChosen', true)->get();
         $chosenPost2 = post::where('isChosen2', true)->get();
         return view('dashboard_post', [
@@ -79,6 +79,9 @@ class postController extends Controller
         $link = $request->link;
         if (strpos($link, 'https://www.youtube.com/watch?v=') === 0) {
             $videoId = substr($link, strpos($link, '=') + 1);
+            $link = "https://www.youtube.com/embed/{$videoId}?controls=0";
+        }elseif (strpos($link, 'https://youtu.be/') === 0) {
+            $videoId = substr($link, strpos($link, '/', 8) + 1);
             $link = "https://www.youtube.com/embed/{$videoId}?controls=0";
         }
         

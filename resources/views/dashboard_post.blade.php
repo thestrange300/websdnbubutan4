@@ -134,7 +134,11 @@
                   <tr>
                     <td class="whitespace-nowrap py-4 text-sm font-medium text-gray-900 sm:pl-6">{{ $item->id }}</td>
                     <td class="whitespace-nowrap py-4 text-sm text-gray-500">{{ $item->judul }}</td>
-                    <td class="whitespace-nowrap text-sm text-gray-500 max-w-md truncate overflow-auto">{!! html_entity_decode($item->konten) !!}</td>
+                    <td class="whitespace-nowrap text-sm text-gray-500 max-w-md">
+                    <div class=" line-clamp-3">
+                      {!! html_entity_decode($item->konten) !!}
+                    </div>
+                    </td>
                     <td class="whitespace-nowrap py-4 px-8 text-sm text-gray-500">
                         {{-- action = "{{ route('delete',$post) }}" --}}
                       <form method="post" action="{{ route('delete.post', ['id' => $item->id]) }}" enctype="multipart/form-data">
