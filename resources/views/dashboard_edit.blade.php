@@ -33,6 +33,15 @@
           <trix-editor input="konten" class="shadow-md"></trix-editor>
         </div>
 
+        <style>
+          .trix-button-group.trix-button-group--file-tools 
+          {display:none;}
+          .trix-button--icon-increase-nesting-level,
+          .trix-button--icon-decrease-nesting-level,
+          .trix-button--icon-heading-1,
+          .trix-button--icon-code { display:none; }
+        </style>
+
         <div>
           <label for="embed" class="form-label block text-sm font-medium text-gray-700 pb-2">Link Youtube</label>
           <input

@@ -10,7 +10,7 @@ class postController extends Controller
 {
     public function index()
     {
-        $posts = post::all();
+        $posts = post::orderBy('created_at', 'desc')->get();
         $chosenPost = post::where('isChosen', true)->get();
         $chosenPost2 = post::where('isChosen2', true)->get();
         return view('dashboard_post', [
