@@ -46,7 +46,7 @@
         <div class="content-center px-6 sm:px-20 pt-4">
           <div class="relative drop-shadow-md rounded-2xl overflow-hidden">
             <div class="relative inset-0">
-              <img class="h-full w-full object-cover object-center {{ $post->image2 && $post->image3 ? 'max-h-64' : 'max-h-128' }} " src="{{ asset('storage/' . $post->image2) }}" alt="Img Header">
+              <img class="h-full w-full object-cover object-center {{ $post->image2 && $post->image3 ? 'max-h-64' : 'max-h-64 sm:max-h-128' }} " src="{{ asset('storage/' . $post->image2) }}" alt="Img Header">
             </div>
           </div>
         </div>
@@ -56,7 +56,7 @@
         <div class="content-center px-6 sm:px-20 pt-4">
           <div class="relative drop-shadow-md rounded-2xl overflow-hidden">
             <div class="relative inset-0">
-              <img class="h-full w-full object-cover object-center {{ $post->image2 && $post->image3 ? 'max-h-64' : 'max-h-128' }}" src="{{ asset('storage/' . $post->image3) }}" alt="Img Header">
+              <img class="h-full w-full object-cover object-center {{ $post->image2 && $post->image3 ? 'max-h-64' : 'max-h-64 sm:max-h-128' }}" src="{{ asset('storage/' . $post->image3) }}" alt="Img Header">
             </div>
           </div>
         </div>
