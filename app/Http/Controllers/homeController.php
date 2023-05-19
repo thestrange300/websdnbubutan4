@@ -28,7 +28,7 @@ class homeController extends Controller
     
 
     public function filterPost($kategori, Request $request){
-        $post = post::where('kategori', $kategori)->paginate(8);
+        $post = post::where('kategori', $kategori)->orderBy('created_at', 'desc')->paginate(8);
         $kategori = ucwords($kategori);
         $active = $request->kategori;
         return view('post', [
