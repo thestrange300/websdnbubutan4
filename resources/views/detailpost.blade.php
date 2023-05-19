@@ -63,9 +63,11 @@
 
       @if ($post->link)
       <div class="flex justify-center mb-12 mt-6">
-        <iframe class=" rounded-lg" width="560" height="315" src="{{ $post->link }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="rounded-lg" width="560" height="315" src="{{ $post->link }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
       @endif
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/0qBDItmpOb0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       
 
 <a href="/post/{{ $post->kategori }}" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">

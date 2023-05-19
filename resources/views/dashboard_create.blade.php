@@ -41,8 +41,17 @@
           <div class="py-6">
             <label for="konten" class="form-label block text-sm font-medium text-gray-700 pb-2">Konten</label>
             <input id="konten" type="hidden" name="konten">
-            <trix-editor input="konten" class="shadow-md" data-trix-toolbar="bold italic link file-tools"></trix-editor>
+            <trix-editor input="konten" class="shadow-md"></trix-editor>
           </div>
+
+          <style>
+            .trix-button-group.trix-button-group--file-tools 
+            {display:none;}
+            .trix-button--icon-increase-nesting-level,
+            .trix-button--icon-decrease-nesting-level,
+            .trix-button--icon-heading-1,
+            .trix-button--icon-code { display:none; }
+          </style>
 
           <div>
             <label for="embed" class="form-label block text-sm font-medium text-gray-700 pb-2">Link Youtube</label>
