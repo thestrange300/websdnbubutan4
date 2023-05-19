@@ -212,16 +212,59 @@
         </div>
         
         <div class="pt-8">
-          <button type="submit" class=" drop-shadow-lg inline-flex items-center px-4 py-2 shadow-md border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" onclick="return confirm('Apakah kamu yakin?')">
+          <button 
+          type="button" 
+          class=" drop-shadow-lg inline-flex items-center px-4 py-2 shadow-md border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" 
+          data-te-toggle="modal"
+          data-te-target="#editmodal"
+          data-te-ripple-init
+          data-te-ripple-color="light" >
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 pr-1">
               <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
             </svg>                   
               Edit Post
             </button>
         </div>
-      </form>
+
     @endforeach
   </div>
+
+  <div
+  data-te-modal-init
+  class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+  id="editmodal"
+  tabindex="-1"
+  aria-labelledby="editmodallabel"
+  aria-hidden="true">
+  <div data-te-modal-dialog-ref
+  class=" relative w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:max-w-[500px]">
+
+  <div class="bg-white drop-shadow-lg rounded-lg md:max-w-md md:mx-auto p-4 fixed inset-x-0 bottom-0 z-50 mb-4 mx-4 md:relative">
+    <div class="md:flex items-center">
+      <div class="rounded-full p-2 border border-gray-300 flex items-center justify-center w-16 h-16 flex-shrink-0 mx-auto">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" text-red-400 w-auto h-auto">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+        </svg>            
+      </div>
+      <div class="mt-4 md:mt-0 md:ml-6 text-center md:text-left">
+        <p class="font-bold">Edit Post</p>
+        <p class="text-sm text-gray-700 mt-1">Sebelum melakukan edit, pastikan kamu telah memeriksa kembali konten yang ingin diubah. Apakah kamu yakin ingin melanjutkan?
+        </p>
+      </div>
+    </div>
+    <div class="text-center md:text-right mt-4 md:flex md:justify-end">
+      <button type="submit" class="block w-full md:inline-block md:w-auto px-4 py-3 md:py-2 bg-green-200 text-green-700 hover:bg-green-300 hover:text-green-700 rounded-lg font-semibold text-sm md:ml-2 md:order-2">Edit Postingan</button>
+      <button 
+      type="button" 
+      class="block w-full md:inline-block md:w-auto px-4 py-3 md:py-2 bg-gray-200 rounded-lg font-semibold text-sm mt-4
+        md:mt-0 md:order-1 hover:bg-gray-300"
+        data-te-modal-dismiss
+        data-te-ripple-init
+        data-te-ripple-color="light">Batal</button>
+    </div>
+  </div>
+</form>
+</div>
 
   <script>
     // Get the button and dropdown list elements
