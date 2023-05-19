@@ -39,7 +39,11 @@
           .trix-button--icon-increase-nesting-level,
           .trix-button--icon-decrease-nesting-level,
           .trix-button--icon-heading-1,
+          .trix-button--icon-bullet-list { display:none; }
+          .trix-button--icon-link { display:none; }
           .trix-button--icon-code { display:none; }
+          .trix-button--icon-quote { display:none; }
+          .trix-button--icon-number-list { display:none; }
         </style>
 
         <div>
