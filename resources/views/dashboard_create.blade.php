@@ -290,10 +290,10 @@
 
   <div class="bg-white drop-shadow-lg rounded-lg md:max-w-md md:mx-auto p-4 fixed inset-x-0 bottom-0 z-50 mb-4 mx-4 md:relative">
     <div class="md:flex items-center">
-      <div class="rounded-full p-2 border border-gray-300 flex items-center justify-center w-16 h-16 flex-shrink-0 mx-auto">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" text-red-400 w-auto h-auto">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
-        </svg>            
+      <div class="rounded-full p-3 border border-gray-300 flex items-center justify-center w-16 h-16 flex-shrink-0 mx-auto">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-auto h-auto text-emerald-500">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m3.75 9v6m3-3H9m1.5-12H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+        </svg>                    
       </div>
       <div class="mt-4 md:mt-0 md:ml-6 text-center md:text-left">
         <p class="font-bold">Buat Post</p>
@@ -302,11 +302,11 @@
       </div>
     </div>
     <div class="text-center md:text-right mt-4 md:flex md:justify-end">
-      <button type="submit" class="block w-full md:inline-block md:w-auto px-4 py-3 md:py-2 bg-green-200 text-green-700 hover:bg-green-300 hover:text-green-700 rounded-lg font-semibold text-sm md:ml-2 md:order-2">Buat Postingan</button>
+      <button type="submit" class="block w-full md:inline-block md:w-auto px-4 py-3 md:py-2 bg-green-200 text-green-700 hover:bg-green-300 hover:text-green-700 transition duration-300 ease-in-out rounded-lg font-semibold text-sm md:ml-2 md:order-2">Buat Postingan</button>
       <button 
       type="button" 
       class="block w-full md:inline-block md:w-auto px-4 py-3 md:py-2 bg-gray-200 rounded-lg font-semibold text-sm mt-4
-        md:mt-0 md:order-1 hover:bg-gray-300"
+        md:mt-0 md:order-1 hover:bg-gray-300 transition duration-300 ease-in-out"
         data-te-modal-dismiss
         data-te-ripple-init
         data-te-ripple-color="light">Batal</button>
