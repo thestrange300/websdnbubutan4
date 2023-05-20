@@ -79,10 +79,10 @@ class postController extends Controller
         $link = $request->link;
         if (strpos($link, 'https://www.youtube.com/watch?v=') === 0) {
             $videoId = substr($link, strpos($link, '=') + 1);
-            $link = "https://www.youtube.com/embed/{$videoId}?controls=0";
+            $link = "https://www.youtube.com/embed/{$videoId}";
         }elseif (strpos($link, 'https://youtu.be/') === 0) {
             $videoId = substr($link, strpos($link, '/', 8) + 1);
-            $link = "https://www.youtube.com/embed/{$videoId}?controls=0";
+            $link = "https://www.youtube.com/embed/{$videoId}";
         }
         
         $post = new post();

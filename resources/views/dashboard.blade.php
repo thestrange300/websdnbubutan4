@@ -17,12 +17,12 @@
                   <div class="flex items-center justify-between space-x-5">
                     <div class="flex items-center flex-1 min-w-0">
                       <div class="mt-0 mr-0 mb-0 flex-1 min-w-0">
-                        <p class="text-base font-semibold text-gray-800 truncate">{{ $item->judul }}</p>
+                        <p class="text-base font-semibold text-gray-800 whitespace-normal">{{ $item->judul }}</p>
                         <a href="#" class="inline-block">
-                          <span class="inline-flex items-center px-3 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800"> {{ $item->mainKategori }} </span>
+                          <span class="inline-flex items-center px-3 py-0.5 rounded-full text-xs font-medium bg-{{ $item->warna1 }}-100 text-{{ $item->warna1 }}-800"> {{ $item->mainKategori }} </span>
                         </a>
                         <a href="/post/{{ $item->kategori }}" class="inline-block">
-                          <span class="inline-flex items-center px-3 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800"> {{ $item->kategori }} </span>
+                          <span class="inline-flex items-center px-3 py-0.5 rounded-full text-xs font-medium bg-{{ $item->warna2 }}-100 text-{{ $item->warna2 }}-800"> {{ $item->kategori }} </span>
                         </a>
                       </div>
                     </div>
@@ -42,7 +42,7 @@
         
        
         <div>
-          <div class="drop-shadow-md h-full pt-4 px-6 rounded-xl border border-gray-200 bg-white">
+          <div class="drop-shadow-md h-full p-4 rounded-xl border border-gray-200 bg-white">
               <h5 class="text-2xl text-gray-800 font-bold mb-8">Kategori</h5>
               @foreach($postsByCategory as $post)
               <div class="flex items-center justify-between" data-aos="zoom-in" data-aos-duration="300">
