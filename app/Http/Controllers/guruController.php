@@ -23,7 +23,8 @@ class guruController extends Controller
         return redirect()->route('index.guru')->with('success','Data Guru Berhasil Dibuat!');
     }
 
-    public function delete(guru $guru){
+    public function delete(guru $guru, Request $request){
+        $guru = guru::where('id', $request->id)->first();
         $guru->delete();
         return redirect()->route('index.guru')->with('success','Data Guru Berhasil Dihapus!');
     }

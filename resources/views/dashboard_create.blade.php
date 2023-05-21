@@ -274,7 +274,6 @@
                 Buat Post
               </button>
           </div>
-
   </div>
  
 <!-- Modal -->

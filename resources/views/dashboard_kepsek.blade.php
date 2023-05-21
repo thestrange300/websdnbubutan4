@@ -130,11 +130,11 @@ function previewImage(){
     <div class="md:flex items-center">
       <div class="rounded-full p-3 border border-gray-300 flex items-center justify-center w-16 h-16 flex-shrink-0 mx-auto">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-auto h-auto text-emerald-500">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m3.75 9v6m3-3H9m1.5-12H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-        </svg>                    
+          <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+        </svg>                          
       </div>
       <div class="mt-4 md:mt-0 md:ml-6 text-center md:text-left">
-        <p class="font-bold">Edit Kepala Sekolah</p>
+        <p class="font-bold">Update Profil Kepala Sekolah</p>
         <p class="text-sm text-gray-700 mt-1">Sebelum mengupdate, pastikan kamu telah memeriksa kembali data yang akan kamu update. Apakah kamu yakin ingin melanjutkan?
         </p>
       </div>

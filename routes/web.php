@@ -65,7 +65,7 @@ Route::put('/dashboard/setting', [adminController::class, 'update'])->name('upda
 
 Route::get('/dashboard/guru', [guruController::class, 'index'])->name('index.guru')->middleware('admin');
 Route::post('/dashboard/guru/tambah', [guruController::class, 'store'])->name('tambah.guru');
-Route::delete('/dashboard/guru/hapus/{guru:id}', [guruController::class, 'delete'])->name('hapus.guru');
+Route::delete('/dashboard/guru/hapus/{id}', [guruController::class, 'delete'])->name('hapus.guru');
 
 Route::get('/dashboard/post', [postController::class, 'index'])->name('index.post')->middleware('admin');
 Route::get('/dashboard/posts/{id}', [postController::class, 'getPosts'])->name('posts.get')->middleware('admin');
