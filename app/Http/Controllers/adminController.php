@@ -52,9 +52,9 @@ class adminController extends Controller
             return redirect()->intended('/dashboard');
         }
 
-        return back()->withErrors([
-            'username' => 'Kredensial yang diberikan tidak cocok dengan catatan yang ada.',
-        ]);
+        return redirect()->back()->withErrors([
+            'username' => 'Data tidak sesuai. Coba lagi.',
+        ])->withInput($request->except('password'));
     }
 
     public function logout(){

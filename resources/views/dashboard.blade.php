@@ -122,46 +122,48 @@
         </div>
     </div>
     <div class="drop-shadow-md h-2/5 relative p-2 mt-6 rounded-xl border border-gray-200 bg-white " id="line-chart">
-      <script>
-          var dom = document.getElementById('line-chart');
-          var myChart = echarts.init(dom, null, {
+        @php
+            use Carbon\Carbon;
+        @endphp
+        <script>
+            var dom = document.getElementById('line-chart');
+            var myChart = echarts.init(dom, null, {
               renderer: 'canvas',
               useDirtyRect: false
-          });
-          var app = {};
-  
-          var option;
-          var today = new Date();
-          var year = today.getFullYear();
-          var month = today.toLocaleString('default', { month: 'long' });
-  
-          option = {
+            });
+            var app = {};
+          
+            var option;
+            var month = {!! json_encode(Carbon::now()->format('F')) !!};
+            var year = {!! json_encode(Carbon::now()->format('Y')) !!};
+          
+            option = {
               title: {
-                  text: 'Post Count by Day',
-                  subtext: month + ' ' + year,
-                  left: 'center'
+                text: 'Post Count by Day',
+                subtext: month + ' ' + year,
+                left: 'center'
               },
               xAxis: {
-                  type: 'category',
-                  data: {!! json_encode($postsByDate->pluck('dayname')) !!}
+                type: 'category',
+                data: {!! json_encode($postsByDate->pluck('day')) !!}
               },
               yAxis: {
-                  type: 'value'
+                type: 'value'
               },
               series: [
-                  {
-                      data: {!! json_encode($postsByDate->pluck('total')) !!},
-                      type: 'line'
-                  }
+                {
+                  data: {!! json_encode($postsByDate->pluck('total')) !!},
+                  type: 'line'
+                }
               ]
-          };
-  
-          if (option && typeof option === 'object') {
+            };
+          
+            if (option && typeof option === 'object') {
               myChart.setOption(option);
-          }
-  
-          window.addEventListener('resize', myChart.resize);
-      </script>
+            }
+          
+            window.addEventListener('resize', myChart.resize);
+          </script>                    
   </div>
   
 </div>

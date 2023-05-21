@@ -39,6 +39,9 @@ initTE({ Carousel });
                     <div data-aos="fade-up" data-aos-duration="700" class="drop-shadow-md h-100 w-96 py-6 px-6 rounded-xl border border-gray-200 bg-white mx-auto">
                         <img data-aos="fade-up" data-aos-duration="800" class="h-16 w-auto mx-auto flex items-center justify-center" src="{{asset('img/Logo-Sekolah.png')}}" alt="">
                         <h1 data-aos="fade-up" data-aos-duration="900" class="text-3xl font-bold text-center my-4">Login</h1>
+                        @if ($errors->has('username'))
+                              <span class="text-red-500">{{ $errors->first('username') }}</span>
+                          @endif
                         <div class="relative">
                             <form action="{{ route('login') }}" method="post">
                               @csrf

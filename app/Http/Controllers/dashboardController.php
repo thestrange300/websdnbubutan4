@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\DB;
 use App\Models\post;
 use App\Models\kepsek;
+use Carbon\Carbon;
 
 class dashboardController extends Controller
 {
@@ -16,9 +17,13 @@ class dashboardController extends Controller
                                ->get();
         $total = post::count();
         $latest = post::latest()->get();
-        $postsByDate = post::select(DB::raw("DAYNAME(created_at) as dayname"), DB::raw("count(*) as total"))
-                        ->groupBy("dayname")
-                        ->get();
+        $startDate = Carbon::now()->startOfMonth();
+        $endDate = Carbon::now()->endOfMonth();
+
+        $postsByDate = Post::select(DB::raw("DATE_FORMAT(created_at, '%W-%e') AS day"), DB::raw("COUNT(*) as total"))
+                            ->whereBetween('created_at', [$startDate, $endDate])
+                            ->groupBy('day')
+                            ->get();
     
         return view('dashboard', [
             'active' => 'dashboard',
