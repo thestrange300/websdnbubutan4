@@ -2,21 +2,44 @@
 
 @section('container')
 
+{{-- <script>
+  setTimeout(() => {
+  const toastPost = document.getElementById('toast-post');
+  toastPost.classList.add('transition', 'duration-500', 'ease-in-out', 'opacity-0', 'h-0', 'hidden');
+}, 4000);
+</script> --}}
+
 @if (session()->has('success'))
-    <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
-      <span class="block sm:inline">{{ session('success') }}</span>
-      <span class="absolute top-0 bottom-0 right-0 px-4 py-3">
-        <svg class="fill-current h-6 w-6 text-green-500" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>Close</title><path d="M14.348 5.652c-.78-.781-2.047-.781-2.828 0L10 7.172 8.48 5.652c-.78-.781-2.048-.781-2.828 0-.781.78-.781 2.047 0 2.828L7.172 10l-1.52 1.52c-.78.781-.78 2.048 0 2.828.78.78 2.048.78 2.828 0L10 12.828l1.52 1.52c.78.78 2.047.78 2.828 0 .78-.78.78-2.047 0-2.828L12.828 10l1.52-1.52c.78-.781.78-2.048 0-2.828z"/></svg>
-      </span>
+    <div class="absolute right-8 top-16 max-w-xs bg-white border rounded-md shadow-lg" role="alert" id="toast-post">
+      <div class="flex p-4">
+        <div class="flex-shrink-0">
+          <svg class="h-4 w-4 text-green-500 mt-0.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+          </svg>
+        </div>
+        <div class="ml-3">
+          <p class="text-sm text-gray-700">
+            {{ session('success') }}
+          </p>
+        </div>
+      </div>
     </div>
 @endif
 
 @if (session()->has('error'))
-    <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
-      <span class="block sm:inline">{{ session('error') }}</span>
-      <span class="absolute top-0 bottom-0 right-0 px-4 py-3">
-        <svg class="fill-current h-6 w-6 text-red-500" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>Close</title><path d="M14.348 5.652c-.78-.781-2.047-.781-2.828 0L10 7.172 8.48 5.652c-.78-.781-2.048-.781-2.828 0-.781.78-.781 2.047 0 2.828L7.172 10l-1.52 1.52c-.78.781-.78 2.048 0 2.828.78.78 2.048.78 2.828 0L10 12.828l1.52 1.52c.78.78 2.047.78 2.828 0 .78-.78.78-2.047 0-2.828L12.828 10l1.52-1.52c.78-.781.78-2.048 0-2.828z"/></svg>
-      </span>
+    <div class="absolute right-8 top-16 max-w-xs bg-white border rounded-md shadow-lg" role="alert" id="toast-post">
+      <div class="flex p-4">
+        <div class="flex-shrink-0">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 text-red-400 mt-0.5">
+            <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z" clip-rule="evenodd" />
+          </svg>          
+        </div>
+        <div class="ml-3">
+          <p class="text-sm text-gray-700">
+            {{ session('error') }}
+          </p>
+        </div>
+      </div>
     </div>
 @endif
 
