@@ -30,11 +30,11 @@ class adminController extends Controller
              'password' => Hash::make($request->new_password)
              ])->save();
          
-            $request->session()->flash('success', 'Password changed');
+            $request->session()->flash('success', 'Password diubah!');
              return redirect()->route('index.setting');
          
          } else {
-             $request->session()->flash('error', 'Password does not match');
+             $request->session()->flash('error', 'Password tidak sesuai!');
              return redirect()->route('index.setting');
          }
     }
@@ -53,7 +53,7 @@ class adminController extends Controller
         }
 
         return back()->withErrors([
-            'username' => 'The provided credentials do not match our records.',
+            'username' => 'Kredensial yang diberikan tidak cocok dengan catatan yang ada.',
         ]);
     }
 

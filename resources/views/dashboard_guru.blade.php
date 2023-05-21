@@ -131,16 +131,15 @@ class=" relative w-auto translate-y-[-50px] opacity-0 transition-all duration-30
         </p>
       </div>
     </div>
+    <form id="reqdeleteid" method="post" action="{{ route('hapus.guru', ['id' => ':id']) }}" enctype="multipart/form-data">
     <div class="text-center md:text-right mt-4 md:flex md:justify-end">
-      
-      <form id="reqdeleteid" method="post" action="{{ route('hapus.guru', ['id' => ':id']) }}" enctype="multipart/form-data">
+      <button type="submit" class="block w-full md:inline-block md:w-auto px-4 py-3 md:py-2 bg-red-200 text-red-700 hover:bg-red-300 hover:text-red-700 transition duration-300 ease-in-out rounded-lg font-semibold text-sm md:ml-2 md:order-2">Hapus Guru</button>
       <button 
       type="button" 
       class="block w-full md:inline-block md:w-auto px-4 py-3 md:py-2 bg-gray-200 rounded-lg font-semibold text-sm mt-4 md:mt-0 md:order-1 hover:bg-gray-300 transition duration-300 ease-in-out"
       data-te-modal-dismiss
       data-te-ripple-init
       data-te-ripple-color="light">Batal</button>   
-      <button type="submit" class="block w-full md:inline-block md:w-auto px-4 py-3 md:py-2 bg-red-200 text-red-700 hover:bg-red-300 hover:text-red-700 transition duration-300 ease-in-out rounded-lg font-semibold text-sm md:ml-2 md:order-2">Hapus Guru</button>
       @method('DELETE')
       @csrf                   
       </form>

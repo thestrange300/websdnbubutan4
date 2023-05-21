@@ -185,45 +185,48 @@
       }
     </script>
 
-    <div
-    data-te-modal-init
-    class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
-    id="removemodal"
-    tabindex="-1"
-    aria-labelledby="removemodallabel"
-    aria-hidden="true">
-    <div data-te-modal-dialog-ref
-    class=" relative w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:max-w-[500px]">
-  
-  <div class="bg-white drop-shadow-lg rounded-lg md:max-w-md md:mx-auto p-4 fixed inset-x-0 bottom-0 z-50 mb-4 mx-4 md:relative">
-        <div class="md:flex items-center">
-          <div class="rounded-full p-2 border border-gray-300 flex items-center justify-center w-16 h-16 flex-shrink-0 mx-auto">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" text-red-400 w-auto h-auto">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
-            </svg>            
-          </div>
-          <div class="mt-4 md:mt-0 md:ml-6 text-center md:text-left">
-            <p class="font-bold">Edit Post</p>
-            <p class="text-sm text-gray-700 mt-1">Sebelum melakukan edit, pastikan kamu telah memeriksa kembali konten yang ingin diubah. Apakah kamu yakin ingin melanjutkan?
-            </p>
-          </div>
+    <div data-te-modal-init
+        class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+        id="removemodal" tabindex="-1" aria-labelledby="removemodallabel" aria-hidden="true">
+        <div data-te-modal-dialog-ref
+            class=" relative w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:max-w-[500px]">
+
+            <div
+                class="bg-white drop-shadow-lg rounded-lg md:max-w-md md:mx-auto p-4 fixed inset-x-0 bottom-0 z-50 mb-4 mx-4 md:relative">
+                <div class="md:flex items-center">
+                    <div
+                        class="rounded-full p-2 border border-gray-300 flex items-center justify-center w-16 h-16 flex-shrink-0 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class=" text-red-400 w-auto h-auto">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+                        </svg>
+                    </div>
+                    <div class="mt-4 md:mt-0 md:ml-6 text-center md:text-left">
+                        <p class="font-bold">Hapus Post</p>
+                        <p class="text-sm text-gray-700 mt-1">Apakah kamu yakin ingin melanjutkan dengan menghapus post?
+                            Jika kamu melakukannya, kamu tidak akan dapat mengembalikannya.
+                        </p>
+                    </div>
+                </div>
+
+                <form id="reqdeleteid" method="post"
+                    action="{{ route('delete.post', ['id' => ':id']) }}"
+                    enctype="multipart/form-data">
+                    <div class="text-center md:text-right mt-4 md:flex md:justify-end">
+                        <button type="submit"
+                            class="block w-full md:inline-block md:w-auto px-4 py-3 md:py-2 bg-red-200 text-red-700 hover:bg-red-300 hover:text-red-700 transition duration-300 ease-in-out rounded-lg font-semibold text-sm md:ml-2 md:order-2">Hapus
+                            Postingan</button>
+                        <button type="button"
+                            class="block w-full md:inline-block md:w-auto px-4 py-3 md:py-2 bg-gray-200 rounded-lg font-semibold text-sm mt-4 md:mt-0 md:order-1 hover:bg-gray-300 transition duration-300 ease-in-out"
+                            data-te-modal-dismiss data-te-ripple-init data-te-ripple-color="light">Batal</button>
+                        @method('DELETE')
+                        @csrf
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="text-center md:text-right mt-4 md:flex md:justify-end">
-          
-          <form id="reqdeleteid" method="post" action="{{ route('delete.post', ['id' => ':id']) }}" enctype="multipart/form-data">
-          <button 
-          type="button" 
-          class="block w-full md:inline-block md:w-auto px-4 py-3 md:py-2 bg-gray-200 rounded-lg font-semibold text-sm mt-4 md:mt-0 md:order-1 hover:bg-gray-300 transition duration-300 ease-in-out"
-          data-te-modal-dismiss
-          data-te-ripple-init
-          data-te-ripple-color="light">Batal</button>   
-          <button type="submit" class="block w-full md:inline-block md:w-auto px-4 py-3 md:py-2 bg-red-200 text-red-700 hover:bg-red-300 hover:text-red-700 transition duration-300 ease-in-out rounded-lg font-semibold text-sm md:ml-2 md:order-2">Hapus Postingan</button>
-          @method('DELETE')
-          @csrf                   
-          </form>
-        </div>
-      </div>
-  </div>    
+    </div>
 
 
     {{-- MODAL POST 1 --}}
@@ -273,10 +276,10 @@
           <!--Modal footer-->
           <div class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 border-opacity-100 p-4 ">
             <button type="button" class="inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200" data-te-modal-dismiss data-te-ripple-init data-te-ripple-color="light">
-              Close
+              Batal
             </button>
             <button type="button" id="saveBtn" class="ml-1 inline-block rounded bg-indigo-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]" data-te-ripple-init data-te-ripple-color="light">
-              Save changes
+              Edit
             </button>
           </div>
         </div>
@@ -331,10 +334,10 @@
           <!--Modal footer-->
           <div class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 border-opacity-100 p-4 ">
             <button type="button" class="inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200" data-te-modal-dismiss data-te-ripple-init data-te-ripple-color="light">
-              Close
+              Batal
             </button>
             <button type="button" id="saveBtn2" class="ml-1 inline-block rounded bg-indigo-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]" data-te-ripple-init data-te-ripple-color="light">
-              Save changes
+              Edit
             </button>
           </div>
         </div>
