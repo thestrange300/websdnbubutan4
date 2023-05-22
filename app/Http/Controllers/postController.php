@@ -187,15 +187,13 @@ class postController extends Controller
     public function destroy(Request $request, post $post)
     {
         $post = post::where('id', $request->id)->first();
-        // Get the filename of the image associated with the post
+
         $filename = $post->image;
         $filename2 = $post->image2;
         $filename3 = $post->image3;
 
-        // Delete the post from the database
         $post->delete();
 
-        // Delete the image from storage if it exists
         if ($filename && Storage::exists('public/' . $filename)) {
             Storage::delete('public/' . $filename);
         }
@@ -213,10 +211,8 @@ class postController extends Controller
 
     public function updateSpecial(Request $request)
     {
-        // Find all posts where isChosen is true
         $prevSelectedPosts = post::where('isChosen', true)->get();
 
-        // If any such post(s) exist, set their isChosen attribute to false
         if ($prevSelectedPosts->count() > 0) {
             foreach ($prevSelectedPosts as $prevSelectedPost) {
                 $prevSelectedPost->isChosen = false;
@@ -224,7 +220,6 @@ class postController extends Controller
             }
         }
 
-        // Find the newly selected post and set its isChosen attribute to true
         $post = post::findOrFail($request->id);
         $post->isChosen = true;
         $post->save();
@@ -234,10 +229,8 @@ class postController extends Controller
 
     public function updateSpecial2(Request $request)
     {
-        // Find all posts where isChosen is true
         $prevSelectedPosts2 = post::where('isChosen2', true)->get();
 
-        // If any such post(s) exist, set their isChosen attribute to false
         if ($prevSelectedPosts2->count() > 0) {
             foreach ($prevSelectedPosts2 as $prevSelectedPost) {
                 $prevSelectedPost->isChosen2 = false;
@@ -245,7 +238,6 @@ class postController extends Controller
             }
         }
 
-        // Find the newly selected post and set its isChosen attribute to true
         $post = post::findOrFail($request->id);
         $post->isChosen2 = true;
         $post->save();
