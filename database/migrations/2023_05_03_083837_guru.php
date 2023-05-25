@@ -18,6 +18,8 @@ return new class extends Migration
             $table->timestamps();
             $table->string('nama');
             $table->string('posisi');
+            $table->string('nip');
+            $table->string('image')->nullable();
         });
     }
 

@@ -213,15 +213,23 @@
             <table class="table-auto w-full px-6 min-w-full divide-y divide-gray-300">
               <thead class="bg-gray-50">
                 <tr>
-                  <th scope="col" class="py-3.5 lg:px-10 text-left text-sm font-semibold text-gray-900 pl-6">Nama</th>
-                  <th scope="col" class="py-3.5 lg:px-10 text-left text-sm font-semibold text-gray-900">Posisi</th>
+                    <th scope="col" class="py-3.5 lg:px-10 text-left text-sm font-semibold text-gray-900 pl-6"></th>
+                    <th scope="col" class="py-3.5 lg:px-10 text-left text-sm font-semibold text-gray-900 pl-6">NIP</th>
+                    <th scope="col" class="py-3.5 lg:px-10 text-left text-sm font-semibold text-gray-900 pl-6">Nama</th>
+                    <th scope="col" class="py-3.5 lg:px-10 text-left text-sm font-semibold text-gray-900">Posisi</th>
                 </tr>
               </thead>
               @foreach ($guru as $item)
               <tbody class="divide-y divide-gray-200 bg-white">
                 <tr>
-                  <td class="whitespace-nowrap py-4 lg:px-10 text-sm font-medium text-gray-900 pl-6">{{ $item->nama }}</td>
-                  <td class="whitespace-nowrap py-4 lg:px-10 text-sm text-gray-700">{{ $item->posisi }}</td>
+                    <td class="whitespace-nowrap py-4 lg:px-10 pl-6" style="width: 60px;">
+                        <div class="inline-block">
+                          <img src="{{ asset('storage/' . $item->image) }}" alt="{{ $item->nama }}" class="h-full">
+                        </div>
+                    </td>
+                    <td class="whitespace-nowrap py-4 lg:px-10 text-sm font-medium text-gray-900 pl-6">{{ $item->nip }}</td>
+                    <td class="whitespace-nowrap py-4 lg:px-10 text-sm font-medium text-gray-900 pl-6">{{ $item->nama }}</td>
+                    <td class="whitespace-nowrap py-4 lg:px-10 text-sm text-gray-700">{{ $item->posisi }}</td>
                 </tr>
                 @endforeach
               </tbody>

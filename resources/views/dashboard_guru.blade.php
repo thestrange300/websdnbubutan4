@@ -51,20 +51,25 @@
         <div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
           <div class="drop-shadow-md inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
             <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
-                {{-- @foreach ($posts as $post) --}}
-                  {{-- @endforeach --}}
                   <table class="table-auto w-full min-w-full divide-y divide-gray-300">
                     <thead class="bg-gray-50">
                       <tr>
-                        <th scope="col" class=" py-3.5 lg:px-10 text-left text-sm font-semibold text-gray-900 sm:pl-6">Nama</th>
+                        <th scope="col" class="py-3.5 lg:px-10 text-left text-sm font-semibold text-gray-900 sm:pl-6"></th>
+                        <th scope="col" class="py-3.5 lg:px-10 text-left text-sm font-semibold text-gray-900 sm:pl-6">NIP</th>
+                        <th scope="col" class="py-3.5 lg:px-10 text-left text-sm font-semibold text-gray-900 sm:pl-6">Nama</th>
                         <th scope="col" class="py-3.5 lg:px-10 text-left text-sm font-semibold text-gray-900">Posisi</th>
                         <th scope="col" class="py-3.5 lg:px-10 text-left text-sm font-semibold text-gray-900">Action</th>
                       </tr>
                     </thead>
-                    {{-- @foreach ($teachers as $teacher) --}}
                     <tbody class="divide-y divide-gray-200 bg-white">
                       @foreach ($guru as $item)
                         <tr>
+                          <td class="whitespace-nowrap py-4 lg:px-10 pl-6">
+                            <div class="w-32 h-32">
+                              <img src="{{ asset('storage/' . $item->image) }}" alt="{{ $item->nama }}" class="h-full">
+                            </div>
+                          </td>
+                          <td class="whitespace-nowrap py-4 lg:px-10 text-sm font-medium text-gray-900 sm:pl-6">{{ $item->nip }}</td>
                           <td class="whitespace-nowrap py-4 lg:px-10 text-sm font-medium text-gray-900 sm:pl-6">{{ $item->nama }}</td>
                           <td class="whitespace-nowrap py-4 lg:px-10 text-sm text-gray-500">{{ $item->posisi }}</td>
                           <td class="whitespace-nowrap pt-4 lg:px-10 text-sm text-gray-500">
@@ -193,8 +198,20 @@ class=" relative w-auto translate-y-[-50px] opacity-0 transition-all duration-30
 
       <!--Modal body-->
       <div class="relative p-4">
-        <form action="{{ route('tambah.guru') }}" method="post">
+        <form action="{{ route('tambah.guru') }}" method="post" enctype="multipart/form-data">
           @csrf
+          <div class="mb-1">
+            <label for="nip" class="form-label block text-sm font-medium text-gray-700 pt-4 pb-2">NIP</label>
+            <input type="text" class="form-control drop-shadow-md px-2 py-2 
+            mt-1
+            block
+            w-full
+            rounded-md
+            border-gray-300
+            shadow-sm
+            focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
+            max-w-lg" id="nip" name="nip">
+          </div>
           <div class="mb-1">
             <label for="nama" class="form-label block text-sm font-medium text-gray-700 pt-4 pb-2">Nama Guru</label>
             <input type="text" class="form-control drop-shadow-md px-2 py-2 
@@ -218,7 +235,19 @@ class=" relative w-auto translate-y-[-50px] opacity-0 transition-all duration-30
             shadow-sm
             focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
             max-w-lg" id="posisi" name="posisi">
-          </div>                
+          </div>
+          <div class="mb-1" style="width: 100px;">
+            <label for="image" class="form-label block text-sm font-medium text-gray-700 pt-4 pb-2">Image</label>
+            <img class="img-preview hidden h-auto w-full object-cover aspect-w-3 aspect-h-4" src="" alt="Preview Image">
+          </div> 
+          <div class="mb-1">
+            <input type="file" id="image" name="image" class="block w-full text-sm text-slate-500
+            file:mr-4 file:py-2 file:px-4
+            file:rounded-full file:border-0
+            file:text-sm file:font-semibold
+            file:bg-violet-50 file:text-violet-700
+            hover:file:bg-violet-100" onchange="previewImage()"/>
+          </div>               
       </div>
 
       <!--Modal footer-->
@@ -230,19 +259,36 @@ class=" relative w-auto translate-y-[-50px] opacity-0 transition-all duration-30
           data-te-modal-dismiss
           data-te-ripple-init
           data-te-ripple-color="light">
-          Close
+          Batal
         </button>
         <button
           type="submit"
           class="ml-1 inline-block rounded bg-indigo-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
           data-te-ripple-init
           data-te-ripple-color="light">
-          Save changes
+          Tambah
         </button>
       </div>
     </form>
     </div>
   </div>
 </div>    
+
+<script>
+  function previewImage() {
+  const img = document.querySelector('#image');
+  const imgPreview = document.querySelector('.img-preview');
+
+  imgPreview.style.display = 'block';
+
+  const oFReader = new FileReader();
+  oFReader.readAsDataURL(img.files[0]);
+
+  oFReader.onload = function(oFREvent) {
+    imgPreview.src = oFREvent.target.result;
+  };
+}
+
+</script>
 
 @endsection
